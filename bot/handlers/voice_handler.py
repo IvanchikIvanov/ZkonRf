@@ -100,7 +100,7 @@ async def handle_voice_message(update: Update, context: ContextTypes.DEFAULT_TYP
                 return
             
             # Rate limiting
-            rate_ok, rate_message = rate_limiter.check_rate_limit(user_id)
+            rate_ok, rate_message = await rate_limiter.check_rate_limit_async(user_id)
             if not rate_ok:
                 log.warning(f"Превышен rate limit для @{username} (ID: {user_id})")
                 await message.reply_text(rate_message)

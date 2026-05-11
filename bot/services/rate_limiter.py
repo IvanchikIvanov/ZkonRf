@@ -1,7 +1,10 @@
 """Сервис для ограничения частоты запросов."""
+import time
 from datetime import datetime, timedelta
 from collections import defaultdict
 from typing import Tuple
+
+from bot.services.cache_service import cache_service
 
 
 class RateLimiter:
@@ -12,47 +15,58 @@ class RateLimiter:
         self.user_last_seen = {}
         self.max_requests_per_minute = 3
         self.max_requests_per_hour = 20
-        # Защита от бесконечного роста памяти при большом количестве пользователей.
         self.max_tracked_users = 200000
         self._cleanup_every_n_checks = 1000
         self._checks_counter = 0
     
     def check_rate_limit(self, user_id: int) -> Tuple[bool, str]:
         """
-        Проверка лимита запросов для пользователя.
-        
-        Args:
-            user_id: ID пользователя
-            
-        Returns:
-            Tuple[bool, str]: (is_allowed, message_if_blocked)
+        Проверка лимита (in-process fallback, если Redis недоступен).
         """
         now = datetime.now()
         self._checks_counter += 1
         self.user_last_seen[user_id] = now
         user_history = self.user_requests[user_id]
         
-        # Удаляем старые записи (старше часа)
         user_history[:] = [req_time for req_time in user_history 
                           if now - req_time < timedelta(hours=1)]
         
-        # Проверка лимита в минуту
         recent_requests = [req_time for req_time in user_history 
                           if now - req_time < timedelta(minutes=1)]
         if len(recent_requests) >= self.max_requests_per_minute:
             return False, "⏳ Слишком много запросов. Подождите минуту."
         
-        # Проверка лимита в час
         if len(user_history) >= self.max_requests_per_hour:
             return False, "⏳ Превышен лимит запросов в час. Подождите."
         
-        # Добавляем текущий запрос
         user_history.append(now)
         
         if self._checks_counter % self._cleanup_every_n_checks == 0:
             self._cleanup_inactive_users(now)
         
         return True, ""
+    
+    async def check_rate_limit_async(self, user_id: int) -> Tuple[bool, str]:
+        """
+        Проверка лимита с Redis (общая для нескольких реплик), иначе fallback в память.
+        """
+        if cache_service.is_available:
+            now = int(time.time())
+            minute_bucket = now // 60
+            hour_bucket = now // 3600
+            k_min = f"rl:1m:{user_id}:{minute_bucket}"
+            k_h = f"rl:1h:{user_id}:{hour_bucket}"
+            n_min = await cache_service.incr_expire(k_min, 120)
+            n_h = await cache_service.incr_expire(k_h, 7200)
+            if n_min is None or n_h is None:
+                return self.check_rate_limit(user_id)
+            if n_min > self.max_requests_per_minute:
+                return False, "⏳ Слишком много запросов. Подождите минуту."
+            if n_h > self.max_requests_per_hour:
+                return False, "⏳ Превышен лимит запросов в час. Подождите."
+            return True, ""
+        
+        return self.check_rate_limit(user_id)
     
     def _cleanup_inactive_users(self, now: datetime):
         """Удаляет пользователей, которые давно не активны."""
@@ -70,6 +84,4 @@ class RateLimiter:
             self.user_last_seen.pop(uid, None)
 
 
-# Глобальный экземпляр
 rate_limiter = RateLimiter()
-

@@ -9,6 +9,16 @@ from bot.services.conversation_context import conversation_context
 from bot.utils.config import settings
 
 
+def _expected_stars_for_months(months: int) -> int | None:
+    if months == 1:
+        return settings.subscription_price_stars_1month
+    if months == 3:
+        return settings.subscription_price_stars_3months
+    if months == 12:
+        return settings.subscription_price_stars_1year
+    return None
+
+
 async def handle_subscribe(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Обработка команды /subscribe - выбор периода подписки."""
     user_id = update.effective_user.id
@@ -170,6 +180,11 @@ async def handle_pre_checkout(update: Update, context: ContextTypes.DEFAULT_TYPE
     query = update.pre_checkout_query
     
     try:
+        payer = query.from_user
+        if not payer:
+            await query.answer(ok=False, error_message="Ошибка обработки платежа")
+            return
+        
         # Проверяем payload
         payload = query.invoice_payload
         if not payload.startswith("subscription_"):
@@ -185,10 +200,31 @@ async def handle_pre_checkout(update: Update, context: ContextTypes.DEFAULT_TYPE
         user_id = int(parts[1])
         months = int(parts[2])
         
+        if user_id != payer.id:
+            log.warning(
+                f"PreCheckout: user_id в payload ({user_id}) != payer.id ({payer.id})"
+            )
+            await query.answer(ok=False, error_message="Неверный платеж")
+            return
+        
+        if (query.currency or "").upper() != "XTR":
+            await query.answer(ok=False, error_message="Неверная валюта")
+            return
+        
+        expected_stars = _expected_stars_for_months(months)
+        if expected_stars is None or query.total_amount != expected_stars:
+            log.warning(
+                f"PreCheckout: сумма {query.total_amount} не совпадает с тарифом за {months} мес."
+            )
+            await query.answer(ok=False, error_message="Неверная сумма платежа")
+            return
+        
         # Подтверждаем платеж
         await query.answer(ok=True)
         
-        log.info(f"Предварительная проверка платежа Stars для пользователя {user_id}, период: {months} месяцев")
+        log.info(
+            f"Предварительная проверка платежа Stars для пользователя {user_id}, период: {months} месяцев"
+        )
     except Exception as e:
         log.error(f"Ошибка предварительной проверки платежа: {e}")
         await query.answer(ok=False, error_message="Ошибка обработки платежа")
@@ -197,6 +233,10 @@ async def handle_pre_checkout(update: Update, context: ContextTypes.DEFAULT_TYPE
 async def handle_successful_payment(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Обработка успешного платежа (Telegram Stars)."""
     payment = update.message.successful_payment
+    payer = update.effective_user
+    if not payer:
+        log.error("successful_payment без effective_user")
+        return
     
     try:
         payload = payment.invoice_payload
@@ -205,8 +245,25 @@ async def handle_successful_payment(update: Update, context: ContextTypes.DEFAUL
         if len(parts) < 3:
             raise ValueError("Неверный формат payload")
         
-        user_id = int(parts[1])
+        payload_user_id = int(parts[1])
         months = int(parts[2])
+        
+        if payload_user_id != payer.id:
+            log.error(
+                f"successful_payment: payload user {payload_user_id} != payer {payer.id}"
+            )
+            await update.message.reply_text(
+                "❌ Ошибка проверки платежа. Обратитесь в поддержку."
+            )
+            return
+        
+        if (payment.currency or "").upper() != "XTR":
+            raise ValueError("Неверная валюта")
+        expected_stars = _expected_stars_for_months(months)
+        if expected_stars is None or payment.total_amount != expected_stars:
+            raise ValueError("Неверная сумма или период")
+        
+        user_id = payer.id
         
         # Активируем подписку
         await payment_service.activate_subscription(user_id, months=months)
@@ -225,7 +282,7 @@ async def handle_successful_payment(update: Update, context: ContextTypes.DEFAUL
         log.info(f"Подписка активирована через Stars для пользователя {user_id}, период: {months} месяцев")
         
         # Логируем действие пользователя
-        username = update.effective_user.username or "без username"
+        username = payer.username or "без username"
         log_user_action(user_id, username, "subscription", f"Подписка активирована на {months} месяцев через Telegram Stars")
     except Exception as e:
         log.error(f"Ошибка обработки успешного платежа: {e}")

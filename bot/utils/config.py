@@ -17,6 +17,8 @@ class Settings(BaseSettings):
     
     # Telegram
     telegram_bot_token: str
+    # Имя бота без @ для ссылок t.me/<username> (return_url ЮKassa и т.п.)
+    telegram_bot_username: str = ""
     
     # OpenAI
     openai_api_key: str
@@ -82,6 +84,13 @@ class Settings(BaseSettings):
     yookassa_shop_id: str = ""
     yookassa_secret_key: str = ""
     yookassa_test_mode: bool = True
+    # Опционально: Basic Auth на URL вебхука (логин/пароль из настроек уведомлений в ЮKassa)
+    yookassa_webhook_basic_user: str = ""
+    yookassa_webhook_basic_password: str = ""
+    # Опционально: список IP или CIDR через запятую (адреса ЮKassa из документации)
+    yookassa_webhook_allowed_ips: str = ""
+    # За обратным прокси брать первый hop из X-Forwarded-For (только если доверяете прокси)
+    yookassa_webhook_trust_x_forwarded_for: bool = False
     
     # Payment - Настройки
     free_requests_per_day: int = 3
@@ -152,6 +161,14 @@ class Settings(BaseSettings):
         path = Path(self.log_path)
         path.mkdir(parents=True, exist_ok=True)
         return path
+    
+    @property
+    def telegram_bot_deeplink(self) -> str:
+        """Ссылка для открытия бота в Telegram (t.me)."""
+        un = (self.telegram_bot_username or "").strip().lstrip("@")
+        if un:
+            return f"https://t.me/{un}"
+        return f"https://t.me/{self.telegram_bot_token.split(':')[0]}"
 
 
 settings = Settings()

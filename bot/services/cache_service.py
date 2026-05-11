@@ -13,6 +13,10 @@ class CacheService:
     def __init__(self):
         self.redis_client: Optional[redis.Redis] = None
     
+    @property
+    def is_available(self) -> bool:
+        return self.redis_client is not None
+    
     async def connect(self):
         """Подключение к Redis."""
         try:
@@ -110,6 +114,32 @@ class CacheService:
             return True
         except Exception as e:
             log.error(f"Ошибка удаления из кэша: {e}")
+            return False
+    
+    async def incr_expire(self, key: str, ttl_seconds: int) -> Optional[int]:
+        """
+        INCR с EXPIRE при первой установке ключа (окна rate limit).
+        Возвращает новое значение счётчика или None, если Redis недоступен/ошибка.
+        """
+        if not self.redis_client:
+            return None
+        try:
+            n = await self.redis_client.incr(key)
+            if n == 1:
+                await self.redis_client.expire(key, ttl_seconds)
+            return int(n)
+        except Exception as e:
+            log.error(f"Ошибка incr_expire для ключа {key}: {e}")
+            return None
+    
+    async def acquire_lock(self, key: str, ttl_seconds: int) -> bool:
+        """Простой распределённый lock (SET NX EX)."""
+        if not self.redis_client:
+            return False
+        try:
+            return bool(await self.redis_client.set(key, "1", nx=True, ex=ttl_seconds))
+        except Exception as e:
+            log.error(f"Ошибка acquire_lock {key}: {e}")
             return False
     
     async def extend_ttl(self, key: str, ttl: int) -> bool:

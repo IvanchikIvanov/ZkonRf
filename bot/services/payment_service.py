@@ -1,13 +1,13 @@
 """Сервис для работы с платежами и подписками."""
-import json
+import asyncio
 from datetime import datetime, timedelta
-from typing import Optional, Dict, Any
+from decimal import Decimal
+from typing import Optional, Dict, Any, Set
 from yookassa import Configuration, Payment
 from bot.utils.config import settings
 from bot.utils.logger import log
 from bot.services.cache_service import cache_service
 from bot.services.user_service import user_service
-from bot.services.crypto_service import crypto_service
 
 
 class PaymentService:
@@ -38,6 +38,13 @@ class PaymentService:
     def is_whitelisted(self, user_id: int) -> bool:
         """Проверить, находится ли пользователь в вайтлисте."""
         return user_id in self.whitelist
+    
+    def _yookassa_allowed_amounts_rub(self) -> Set[Decimal]:
+        return {
+            Decimal(str(settings.subscription_price_yookassa_1month)),
+            Decimal(str(settings.subscription_price_yookassa_3months)),
+            Decimal(str(settings.subscription_price_yookassa_1year)),
+        }
     
     async def check_subscription(self, user_id: int) -> Dict[str, Any]:
         """
@@ -130,7 +137,8 @@ class PaymentService:
             return None
         
         try:
-            amount = amount or settings.subscription_price_yookassa
+            if amount is None:
+                amount = settings.subscription_price_yookassa_1month
             
             payment = Payment.create({
                 "amount": {
@@ -139,7 +147,7 @@ class PaymentService:
                 },
                 "confirmation": {
                     "type": "redirect",
-                    "return_url": f"https://t.me/{settings.telegram_bot_token.split(':')[0]}"
+                    "return_url": settings.telegram_bot_deeplink
                 },
                 "capture": True,
                 "description": description,
@@ -190,61 +198,120 @@ class PaymentService:
     
     async def handle_yookassa_webhook(self, event_data: Dict[str, Any]) -> bool:
         """Обработка вебхука от ЮKassa."""
+        if not self.yookassa_enabled:
+            return False
+        
+        if not cache_service.is_available:
+            log.error("Redis недоступен: вебхук ЮKassa отклонён (идемпотентность невозможна)")
+            return False
+        
         try:
             event_type = event_data.get("event")
             if event_type != "payment.succeeded":
                 log.debug(f"Игнорируем событие {event_type}")
                 return False
             
-            payment_data = event_data.get("object", {})
+            payment_data = event_data.get("object", {}) or {}
             payment_id = payment_data.get("id")
-            metadata = payment_data.get("metadata", {})
-            user_id_str = metadata.get("user_id", "0")
-            
-            try:
-                user_id = int(user_id_str)
-            except (ValueError, TypeError):
-                log.error(f"Неверный user_id в метаданных платежа {payment_id}: {user_id_str}")
+            if not payment_id or not isinstance(payment_id, str):
+                log.error("Вебхук ЮKassa: нет payment id")
                 return False
             
-            if not user_id:
-                log.error(f"Не найден user_id в метаданных платежа {payment_id}")
-                return False
-            
-            # Проверяем, что платеж еще не обработан
-            payment_key = f"payment:{payment_id}"
-            existing = await cache_service.get(payment_key)
-            
-            if existing and existing.get("processed"):
-                log.warning(f"Платеж {payment_id} уже обработан")
+            lock_key = f"yookassa:pay:lock:{payment_id}"
+            if not await cache_service.acquire_lock(lock_key, ttl_seconds=120):
+                log.info(f"Вебхук ЮKassa: платеж {payment_id} уже обрабатывается другим воркером")
                 return True
             
-            # Извлекаем период из метаданных
-            months = int(metadata.get("months", "1"))
-            
-            # Активируем подписку
-            await self.activate_subscription(user_id, months=months)
-            
-            # Помечаем платеж как обработанный
-            if existing:
-                existing["processed"] = True
-                existing["processed_at"] = datetime.now().isoformat()
-                await cache_service.set(payment_key, existing, ttl=86400 * 7)
-            else:
-                # Сохраняем информацию о платеже, если его еще нет
-                await cache_service.set(
-                    payment_key,
-                    {
-                        "user_id": user_id,
-                        "processed": True,
-                        "processed_at": datetime.now().isoformat(),
-                        "payment_id": payment_id
-                    },
-                    ttl=86400 * 7
-                )
-            
-            log.info(f"Подписка активирована через ЮKassa для пользователя {user_id}, платеж {payment_id}")
-            return True
+            try:
+                try:
+                    verified = await asyncio.to_thread(Payment.find_one, payment_id)
+                except Exception as api_err:
+                    log.error(f"ЮKassa API: не удалось подтвердить платеж {payment_id}: {api_err}")
+                    return False
+                
+                if verified.status != "succeeded":
+                    log.warning(f"ЮKassa: платеж {payment_id} в статусе {verified.status}, подписка не активируется")
+                    return False
+                
+                if getattr(verified, "paid", None) is False:
+                    log.warning(f"ЮKassa: платеж {payment_id} не помечен как paid")
+                    return False
+                
+                amount = verified.amount
+                if not amount or (amount.currency or "").upper() != "RUB":
+                    log.error(f"Платеж {payment_id}: неверная валюта или сумма")
+                    return False
+                
+                try:
+                    value_dec = amount.value if amount.value is not None else Decimal("0")
+                except Exception:
+                    value_dec = Decimal(str(amount.value))
+                
+                allowed = self._yookassa_allowed_amounts_rub()
+                if value_dec not in allowed:
+                    log.error(
+                        f"Платеж {payment_id}: сумма {value_dec} RUB не из разрешённого набора тарифов"
+                    )
+                    return False
+                
+                metadata = verified.metadata or {}
+                
+                user_id_str = metadata.get("user_id", "0")
+                try:
+                    user_id = int(user_id_str)
+                except (ValueError, TypeError):
+                    log.error(f"Неверный user_id в метаданных платежа {payment_id}: {user_id_str}")
+                    return False
+                
+                if not user_id:
+                    log.error(f"Не найден user_id в метаданных платежа {payment_id}")
+                    return False
+                
+                try:
+                    months = int(metadata.get("months", "1"))
+                except (ValueError, TypeError):
+                    months = 1
+                
+                if months not in (1, 3, 12):
+                    log.error(f"Платеж {payment_id}: недопустимый months={months} в metadata")
+                    return False
+                
+                # Проверяем, что платеж еще не обработан (источник истины — Redis после API)
+                payment_key = f"payment:{payment_id}"
+                existing = await cache_service.get(payment_key)
+                
+                if existing and existing.get("processed"):
+                    log.warning(f"Платеж {payment_id} уже обработан")
+                    return True
+                
+                # Согласуем с записью при создании платежа (если есть)
+                if existing:
+                    if existing.get("user_id") not in (user_id, None):
+                        log.error(f"Платеж {payment_id}: user_id в кэше не совпадает с API metadata")
+                        return False
+                    cached_amt = existing.get("amount")
+                    if cached_amt is not None and Decimal(str(cached_amt)) != value_dec:
+                        log.error(f"Платеж {payment_id}: сумма в кэше не совпадает с API")
+                        return False
+                
+                await self.activate_subscription(user_id, months=months)
+                
+                merged = dict(existing) if existing else {}
+                merged.update({
+                    "user_id": user_id,
+                    "amount": int(value_dec),
+                    "processed": True,
+                    "processed_at": datetime.now().isoformat(),
+                    "payment_id": payment_id
+                })
+                saved = await cache_service.set(payment_key, merged, ttl=86400 * 7)
+                if not saved:
+                    log.error(f"КРИТИЧНО: подписка активирована для {user_id}, но не удалось сохранить флаг в Redis")
+                
+                log.info(f"Подписка активирована через ЮKassa для пользователя {user_id}, платеж {payment_id}")
+                return True
+            finally:
+                await cache_service.delete(lock_key)
             
         except Exception as e:
             log.error(f"Ошибка обработки вебхука ЮKassa: {e}")
@@ -254,4 +321,3 @@ class PaymentService:
 
 
 payment_service = PaymentService()
-
