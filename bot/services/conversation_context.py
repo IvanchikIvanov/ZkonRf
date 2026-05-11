@@ -1,8 +1,9 @@
 """Сервис для хранения контекста разговора пользователей."""
 import asyncio
+import json
 import time
 from pathlib import Path
-from typing import List, Dict, Optional
+from typing import List, Dict, Optional, Any
 import aiosqlite
 from bot.utils.config import settings
 from bot.utils.logger import log
@@ -162,6 +163,35 @@ class ConversationContextService:
             log.error(f"Ошибка очистки контекста для user {user_id}: {e}", exc_info=True)
             return False
     
+    async def save_legal_scope(self, user_id: int, scope: Dict[str, Any]) -> bool:
+        """Сохранить последний юридический scope как system-сообщение."""
+        payload = {
+            "country": scope.get("country"),
+            "codex": scope.get("codex"),
+            "topic": scope.get("topic"),
+            "intent": scope.get("intent"),
+            "country_confidence": scope.get("country_confidence"),
+            "codex_confidence": scope.get("codex_confidence"),
+        }
+        return await self.add_message(
+            user_id,
+            "system",
+            "LEGAL_SCOPE_JSON:" + json.dumps(payload, ensure_ascii=False)
+        )
+    
+    async def get_last_legal_scope(self, user_id: int) -> Dict[str, Any]:
+        """Получить последний сохраненный юридический scope."""
+        context = await self.get_context(user_id, limit=self.scan_messages)
+        for msg in reversed(context):
+            content = msg.get("content", "")
+            if msg.get("role") == "system" and content.startswith("LEGAL_SCOPE_JSON:"):
+                try:
+                    return json.loads(content.split("LEGAL_SCOPE_JSON:", 1)[1])
+                except Exception as e:
+                    log.warning(f"Не удалось прочитать LEGAL_SCOPE для user {user_id}: {e}")
+                    return {}
+        return {}
+    
     async def extract_context_info(self, user_id: int) -> Dict[str, Optional[str]]:
         """Извлечь информацию о стране и кодексе из истории диалога."""
         context = await self.get_context(user_id, limit=self.scan_messages)
@@ -247,6 +277,8 @@ class ConversationContextService:
             content = msg.get("content", "")
             
             if role == "system":
+                if content.startswith("LEGAL_SCOPE_JSON:"):
+                    continue
                 system_messages.append(f"Система: {content}")
             elif role == "user":
                 formatted.append(f"Пользователь: {content}")

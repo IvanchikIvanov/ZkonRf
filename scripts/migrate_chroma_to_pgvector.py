@@ -2,6 +2,7 @@
 from typing import List, Dict, Any
 
 from bot.services.vector_db import ChromaVectorDBService, PGVectorDBService
+from bot.services.legal_scope_service import legal_scope_service
 from bot.utils.logger import log
 
 
@@ -14,11 +15,19 @@ def _normalize_rows(
     rows: List[Dict[str, Any]] = []
     for idx, item_id in enumerate(ids):
         meta = metadatas[idx] if idx < len(metadatas) and metadatas[idx] else {}
+        codex_name = meta.get("codex_name", "")
+        codex_key = meta.get("codex_key") or legal_scope_service.normalize_codex_key(codex_name)
         row: Dict[str, Any] = {
             "id": item_id,
             "text": documents[idx],
             "embedding": embeddings[idx],
-            "codex_name": meta.get("codex_name", ""),
+            "codex_name": codex_name,
+            "codex_key": codex_key,
+            "source_type": meta.get("source_type") or legal_scope_service.infer_source_type(codex_name),
+            "topic_tags": meta.get("topic_tags") or legal_scope_service.infer_topic_tags(
+                codex_key,
+                documents[idx],
+            ),
             "article_number": str(meta.get("article_number", "")),
             "country": meta.get("country", "ru"),
             "link": meta.get("link", ""),

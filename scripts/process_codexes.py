@@ -9,6 +9,7 @@ from bot.utils.config import settings
 from bot.utils.logger import log
 from bot.services.embeddings_service import embeddings_service
 from bot.services.vector_db import vector_db
+from bot.services.legal_scope_service import legal_scope_service
 
 
 def extract_text_from_odt(file_path: Path) -> str:
@@ -238,6 +239,8 @@ def parse_codex_file(file_path: Path, codexes_dir: Path) -> List[Dict[str, str]]
         # Убираем префикс страны из имени кодекса если он есть
         if codex_name.startswith(f"{country_code}_"):
             codex_name = codex_name[len(f"{country_code}_"):]
+        codex_key = legal_scope_service.normalize_codex_key(codex_name)
+        source_type = legal_scope_service.infer_source_type(codex_name)
         
         # Словарь для объединения частей одной статьи
         articles_dict = {}
@@ -257,9 +260,12 @@ def parse_codex_file(file_path: Path, codexes_dir: Path) -> List[Dict[str, str]]
                 else:
                     articles_dict[article_number] = {
                         "codex_name": codex_name,
+                        "codex_key": codex_key,
+                        "source_type": source_type,
                         "article_number": article_number,
                         "text": article_text,
                         "country": country_code,
+                        "topic_tags": legal_scope_service.infer_topic_tags(codex_key, article_text),
                         "link": ""  # Ссылка будет формироваться динамически или оставляется пустой
                     }
         
@@ -421,11 +427,14 @@ async def process_codexes():
                 chunk_article = {
                     "id": chunk_id,
                     "codex_name": article["codex_name"],
+                    "codex_key": article.get("codex_key", "unknown"),
+                    "source_type": article.get("source_type", "code"),
                     "article_number": article["article_number"],
                     "country": country_code,
                     "text": chunk_text,
                     "embedding": embeddings[0],
                     "link": article.get("link", ""),
+                    "topic_tags": article.get("topic_tags", ""),
                     "chunk_number": chunk_num + 1,
                     "total_chunks": len(chunks)
                 }

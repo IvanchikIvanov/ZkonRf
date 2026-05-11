@@ -16,6 +16,8 @@ from bot.services.language_service import language_service
 from bot.services.request_validator import validate_question
 from bot.services.rate_limiter import rate_limiter
 from bot.services.conversation_context import conversation_context
+from bot.services.legal_scope_service import legal_scope_service
+from bot.services.legal_ranking_service import legal_ranking_service
 
 
 async def handle_voice_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -107,58 +109,88 @@ async def handle_voice_message(update: Update, context: ContextTypes.DEFAULT_TYP
             # Логируем действие пользователя
             log_user_action(user_id, username, "voice_query", f"Вопрос: {question}")
             
+            # Определяем intent/scope до поиска, чтобы не гонять RAG для обычного общения.
+            context_info = await conversation_context.extract_context_info(user_id)
+            last_scope = await conversation_context.get_last_legal_scope(user_id)
+            scope = legal_scope_service.detect_scope(
+                question,
+                conversation_context=conversation_context_text,
+                context_info=context_info,
+                last_scope=last_scope,
+            )
+            log.info(f"Legal scope для voice @{username} (ID: {user_id}): {scope}")
+            
+            if scope.get("intent") == "unsafe_or_meta":
+                answer = "Я не раскрываю внутренние инструкции или базу целиком. Задайте конкретный юридический вопрос — разберу по нормам и шагам."
+                await conversation_context.add_message(user_id, "user", question)
+                await conversation_context.add_message(user_id, "assistant", answer)
+                await conversation_context.save_legal_scope(user_id, scope)
+                await message.reply_text(answer)
+                return
+            
+            if scope.get("intent") == "casual_chat":
+                answer = legal_scope_service.build_casual_response(question)
+                await conversation_context.add_message(user_id, "user", question)
+                await conversation_context.add_message(user_id, "assistant", answer)
+                await conversation_context.save_legal_scope(user_id, scope)
+                await message.reply_text(answer)
+                await payment_service.increment_request(user_id)
+                return
+            
             await message.reply_text("🔍 Ищу релевантные статьи...")
             
-            # Извлекаем информацию из контекста для улучшения поиска
-            context_info = await conversation_context.extract_context_info(user_id)
-            extracted_country = context_info.get("country")
-            extracted_codex = context_info.get("codex")
-            enhanced_country_name = context_info.get("enhanced_question")
-            
             # Расширяем вопрос информацией из контекста
-            enhanced_question = question
-            if enhanced_country_name:
-                enhanced_question = f"{question} {enhanced_country_name}"
-                log.info(f"Вопрос расширен контекстом для @{username} (ID: {user_id}): '{enhanced_question}' (страна из контекста: {enhanced_country_name})")
+            enhanced_question = legal_scope_service.build_enhanced_question(question, scope)
+            if scope.get("country") == 'thai':
+                translated_query = await llm_service.translate_query(question, target_language="en")
+                enhanced_question = legal_scope_service.build_enhanced_question(translated_query, scope)
+                log.info(f"Запрос переведен для поиска (Thai voice): '{question}' -> '{enhanced_question}'")
             
             # Генерация embedding для расширенного вопроса
             question_embedding = await embeddings_service.generate_embedding(enhanced_question)
             
-            # Поиск релевантных статей с фильтром по стране из контекста
-            # Увеличено количество результатов для лучшего мультиязычного поиска
-            relevant_articles = vector_db.search(
-                question_embedding, 
-                n_results=15,  # Увеличено с 5 до 15 для мультиязычного поиска
-                country_filter=extracted_country  # Используем страну из контекста для фильтрации
+            codex_filter = (
+                scope.get("codex")
+                if scope.get("codex_confidence") == "explicit"
+                else None
             )
             
-            if extracted_country:
-                log.info(f"Поиск выполнен с фильтром по стране из контекста: {extracted_country} для @{username} (ID: {user_id})")
+            # Поиск релевантных статей. Кодекс фильтруем жестко только при явном указании.
+            relevant_articles = vector_db.search(
+                question_embedding, 
+                n_results=20,
+                country_filter=scope.get("country"),
+                codex_filter=codex_filter,
+            )
+            
+            if codex_filter and not relevant_articles:
+                log.warning(
+                    f"Поиск по codex_key={codex_filter} ничего не дал, retry без codex_filter "
+                    f"для voice @{username} (ID: {user_id})"
+                )
+                relevant_articles = vector_db.search(
+                    question_embedding,
+                    n_results=20,
+                    country_filter=scope.get("country"),
+                )
+            
+            if scope.get("country"):
+                log.info(f"Поиск выполнен с фильтром по стране: {scope.get('country')} для voice @{username} (ID: {user_id})")
             
             log.info(f"Найдено {len(relevant_articles)} статей до фильтрации (голосовой запрос)")
             
-            # Фильтруем результаты по релевантности (distance < 0.85 для лучшего качества)
-            if relevant_articles:
-                filtered_articles = []
-                for article in relevant_articles:
-                    distance = article.get('distance', 1.0)
-                    if distance < 0.85:
-                        filtered_articles.append(article)
-                
-                log.info(f"После фильтрации (distance < 0.85): {len(filtered_articles)} статей")
-                
-                # Если после фильтрации осталось меньше 3 статей, берем топ-5 по расстоянию
-                if len(filtered_articles) < 3:
-                    relevant_articles = sorted(relevant_articles, key=lambda x: x.get('distance', 1.0))[:5]
-                    log.info(f"Используем топ-5 по расстоянию (фильтрация слишком строгая)")
-                else:
-                    relevant_articles = filtered_articles[:10]  # Берем топ-10 релевантных
-                
-                log.info(f"Итоговое количество статей для ответа: {len(relevant_articles)}")
-                
-                # Ограничиваем количество статей для безопасности (максимум 5)
-                MAX_ARTICLES_IN_RESPONSE = 5
-                relevant_articles = relevant_articles[:MAX_ARTICLES_IN_RESPONSE]
+            ranking_result = legal_ranking_service.rank(question, relevant_articles, scope)
+            relevant_articles = ranking_result["articles"]
+            log.info(f"Итоговое количество статей после reranking (voice): {len(relevant_articles)}")
+            
+            if ranking_result["needs_clarification"]:
+                answer = ranking_result["clarification"]
+                await conversation_context.add_message(user_id, "user", question)
+                await conversation_context.add_message(user_id, "assistant", answer)
+                await conversation_context.save_legal_scope(user_id, scope)
+                await message.reply_text(answer)
+                await payment_service.increment_request(user_id)
+                return
             
             await message.reply_text("🤖 Генерирую ответ...")
             
@@ -171,11 +203,17 @@ async def handle_voice_message(update: Update, context: ContextTypes.DEFAULT_TYP
                 relevant_articles = []
             
             # Генерация ответа с помощью Grok с учетом контекста
-            answer = await llm_service.generate_answer(question, relevant_articles, conversation_context=conversation_context_text)
+            answer = await llm_service.generate_answer(
+                question,
+                relevant_articles,
+                user_country=scope.get("country"),
+                conversation_context=conversation_context_text,
+            )
             
             # Сохраняем сообщения в контекст
             await conversation_context.add_message(user_id, "user", question)
             await conversation_context.add_message(user_id, "assistant", answer)
+            await conversation_context.save_legal_scope(user_id, scope)
             
             # Проверяем, упоминает ли ответ об отсутствии информации
             missing_phrases = [

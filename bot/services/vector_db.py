@@ -66,7 +66,10 @@ class ChromaVectorDBService:
                     "codex_name": article["codex_name"],
                     "article_number": article["article_number"],
                     "country": article.get("country", "ru"),
-                    "link": article.get("link", "")
+                    "link": article.get("link", ""),
+                    "codex_key": article.get("codex_key", "unknown"),
+                    "source_type": article.get("source_type", "code"),
+                    "topic_tags": article.get("topic_tags", ""),
                 }
                 if "chunk_number" in article:
                     metadata["chunk_number"] = str(article["chunk_number"])
@@ -89,13 +92,28 @@ class ChromaVectorDBService:
         self,
         query_embedding: List[float],
         n_results: int = 5,
-        country_filter: Optional[str] = None
+        country_filter: Optional[str] = None,
+        codex_filter: Optional[str] = None,
+        source_type_filter: Optional[str] = None,
     ) -> List[Dict[str, Any]]:
         if not self.collection:
             raise RuntimeError("Векторная БД (chroma) не инициализирована")
         
         try:
-            where_filter = {"country": country_filter} if country_filter else None
+            filters = []
+            if country_filter:
+                filters.append({"country": country_filter})
+            if codex_filter:
+                filters.append({"codex_key": codex_filter})
+            if source_type_filter:
+                filters.append({"source_type": source_type_filter})
+            
+            if len(filters) == 1:
+                where_filter = filters[0]
+            elif len(filters) > 1:
+                where_filter = {"$and": filters}
+            else:
+                where_filter = None
             results = self.collection.query(
                 query_embeddings=[query_embedding],
                 n_results=n_results,
@@ -113,6 +131,9 @@ class ChromaVectorDBService:
                         "article_number": metadata.get("article_number", ""),
                         "country": metadata.get("country", "ru"),
                         "link": metadata.get("link", ""),
+                        "codex_key": metadata.get("codex_key", ""),
+                        "source_type": metadata.get("source_type", ""),
+                        "topic_tags": metadata.get("topic_tags", ""),
                         "distance": results["distances"][0][i] if "distances" in results else None
                     }
                     if "chunk_number" in metadata:
@@ -196,6 +217,9 @@ class PGVectorDBService:
                             link TEXT NOT NULL DEFAULT '',
                             text TEXT NOT NULL,
                             embedding vector({}) NOT NULL,
+                            codex_key TEXT NOT NULL DEFAULT 'unknown',
+                            source_type TEXT NOT NULL DEFAULT 'code',
+                            topic_tags TEXT NOT NULL DEFAULT '',
                             chunk_number INTEGER NULL,
                             total_chunks INTEGER NULL,
                             created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
@@ -207,8 +231,29 @@ class PGVectorDBService:
                     )
                 )
                 cur.execute(
+                    sql.SQL("ALTER TABLE {} ADD COLUMN IF NOT EXISTS codex_key TEXT NOT NULL DEFAULT 'unknown'").format(
+                        sql.Identifier(self.table_name)
+                    )
+                )
+                cur.execute(
+                    sql.SQL("ALTER TABLE {} ADD COLUMN IF NOT EXISTS source_type TEXT NOT NULL DEFAULT 'code'").format(
+                        sql.Identifier(self.table_name)
+                    )
+                )
+                cur.execute(
+                    sql.SQL("ALTER TABLE {} ADD COLUMN IF NOT EXISTS topic_tags TEXT NOT NULL DEFAULT ''").format(
+                        sql.Identifier(self.table_name)
+                    )
+                )
+                cur.execute(
                     sql.SQL("CREATE INDEX IF NOT EXISTS {} ON {} (country)").format(
                         sql.Identifier(f"{self.table_name}_country_idx"),
+                        sql.Identifier(self.table_name)
+                    )
+                )
+                cur.execute(
+                    sql.SQL("CREATE INDEX IF NOT EXISTS {} ON {} (codex_key)").format(
+                        sql.Identifier(f"{self.table_name}_codex_key_idx"),
                         sql.Identifier(self.table_name)
                     )
                 )
@@ -250,9 +295,10 @@ class PGVectorDBService:
             insert_query = sql.SQL(
                 """
                 INSERT INTO {} (
-                    id, codex_name, article_number, country, link, text, embedding, chunk_number, total_chunks
+                    id, codex_name, article_number, country, link, text, embedding,
+                    codex_key, source_type, topic_tags, chunk_number, total_chunks
                 )
-                VALUES (%s, %s, %s, %s, %s, %s, %s::vector, %s, %s)
+                VALUES (%s, %s, %s, %s, %s, %s, %s::vector, %s, %s, %s, %s, %s)
                 ON CONFLICT (id) DO UPDATE SET
                     codex_name = EXCLUDED.codex_name,
                     article_number = EXCLUDED.article_number,
@@ -260,6 +306,9 @@ class PGVectorDBService:
                     link = EXCLUDED.link,
                     text = EXCLUDED.text,
                     embedding = EXCLUDED.embedding,
+                    codex_key = EXCLUDED.codex_key,
+                    source_type = EXCLUDED.source_type,
+                    topic_tags = EXCLUDED.topic_tags,
                     chunk_number = EXCLUDED.chunk_number,
                     total_chunks = EXCLUDED.total_chunks
                 """
@@ -278,6 +327,9 @@ class PGVectorDBService:
                         article.get("link", ""),
                         article["text"],
                         self._embedding_to_vector_literal(article["embedding"]),
+                        article.get("codex_key", "unknown"),
+                        article.get("source_type", "code"),
+                        article.get("topic_tags", ""),
                         int(chunk_number) if chunk_number is not None else None,
                         int(total_chunks) if total_chunks is not None else None,
                     )
@@ -294,41 +346,48 @@ class PGVectorDBService:
         self,
         query_embedding: List[float],
         n_results: int = 5,
-        country_filter: Optional[str] = None
+        country_filter: Optional[str] = None,
+        codex_filter: Optional[str] = None,
+        source_type_filter: Optional[str] = None,
     ) -> List[Dict[str, Any]]:
         if not self.conn:
             raise RuntimeError("Векторная БД (pgvector) не инициализирована")
         
         try:
             query_vector = self._embedding_to_vector_literal(query_embedding)
+            where_clauses = []
+            params: List[Any] = [query_vector]
             
             if country_filter:
-                query = sql.SQL(
-                    """
-                    SELECT
-                        id, text, codex_name, article_number, country, link,
-                        chunk_number, total_chunks,
-                        embedding <=> %s::vector AS distance
-                    FROM {}
-                    WHERE country = %s
-                    ORDER BY embedding <=> %s::vector
-                    LIMIT %s
-                    """
-                ).format(sql.Identifier(self.table_name))
-                params = (query_vector, country_filter, query_vector, n_results)
-            else:
-                query = sql.SQL(
-                    """
-                    SELECT
-                        id, text, codex_name, article_number, country, link,
-                        chunk_number, total_chunks,
-                        embedding <=> %s::vector AS distance
-                    FROM {}
-                    ORDER BY embedding <=> %s::vector
-                    LIMIT %s
-                    """
-                ).format(sql.Identifier(self.table_name))
-                params = (query_vector, query_vector, n_results)
+                where_clauses.append(sql.SQL("country = %s"))
+                params.append(country_filter)
+            if codex_filter:
+                where_clauses.append(sql.SQL("codex_key = %s"))
+                params.append(codex_filter)
+            if source_type_filter:
+                where_clauses.append(sql.SQL("source_type = %s"))
+                params.append(source_type_filter)
+            
+            where_sql = (
+                sql.SQL("WHERE ") + sql.SQL(" AND ").join(where_clauses)
+                if where_clauses
+                else sql.SQL("")
+            )
+            params.extend([query_vector, n_results])
+            
+            query = sql.SQL(
+                """
+                SELECT
+                    id, text, codex_name, article_number, country, link,
+                    codex_key, source_type, topic_tags,
+                    chunk_number, total_chunks,
+                    embedding <=> %s::vector AS distance
+                FROM {}
+                {}
+                ORDER BY embedding <=> %s::vector
+                LIMIT %s
+                """
+            ).format(sql.Identifier(self.table_name), where_sql)
             
             with self.conn.cursor(row_factory=dict_row) as cur:
                 cur.execute(query, params)
@@ -343,6 +402,9 @@ class PGVectorDBService:
                     "article_number": row["article_number"],
                     "country": row["country"],
                     "link": row["link"],
+                    "codex_key": row["codex_key"],
+                    "source_type": row["source_type"],
+                    "topic_tags": row["topic_tags"],
                     "distance": float(row["distance"]) if row["distance"] is not None else None,
                 }
                 if row.get("chunk_number") is not None:
@@ -409,12 +471,16 @@ class VectorDBService:
         self,
         query_embedding: List[float],
         n_results: int = 5,
-        country_filter: Optional[str] = None
+        country_filter: Optional[str] = None,
+        codex_filter: Optional[str] = None,
+        source_type_filter: Optional[str] = None,
     ) -> List[Dict[str, Any]]:
         return self.backend.search(
             query_embedding=query_embedding,
             n_results=n_results,
-            country_filter=country_filter
+            country_filter=country_filter,
+            codex_filter=codex_filter,
+            source_type_filter=source_type_filter,
         )
     
     def get_existing_ids(self) -> set:
