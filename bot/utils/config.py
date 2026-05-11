@@ -21,7 +21,7 @@ class Settings(BaseSettings):
     # OpenAI
     openai_api_key: str
     openai_model: str = "gpt-4o"
-    openai_embedding_model: str = "text-embedding-3-small"
+    openai_embedding_model: str = "text-embedding-3-large"
     openai_tts_model: str = "tts-1"
     openai_tts_voice: str = "alloy"
     tts_provider: str = "chatgpt"  # Поддерживаемые значения: chatgpt, elevenlabs
@@ -51,6 +51,7 @@ class Settings(BaseSettings):
     
     # Database
     database_path: str = "/app/data/embeddings"
+    redis_url: str = ""
     redis_host: str = "redis"
     redis_port: int = 6379
     redis_db: int = 0
@@ -61,6 +62,7 @@ class Settings(BaseSettings):
     vector_backend: str = "chroma"  # Поддерживаемые значения: chroma, pgvector
     
     # PostgreSQL + pgvector
+    database_url: str = ""
     postgres_host: str = "postgres"
     postgres_port: int = 5432
     postgres_db: str = "zakonrff"
@@ -100,6 +102,42 @@ class Settings(BaseSettings):
     
     # Whitelist
     user_whitelist: str = ""  # Список ID пользователей с бесплатным доступом через запятую (например: "123456,789012")
+    
+    @property
+    def postgres_database_url(self) -> str:
+        """Railway/managed Postgres connection URL, if provided."""
+        return os.getenv("DATABASE_URL") or self.database_url
+    
+    @property
+    def postgres_host_resolved(self) -> str:
+        """Postgres host with Railway PGHOST fallback."""
+        return os.getenv("POSTGRES_HOST") or os.getenv("PGHOST") or self.postgres_host
+    
+    @property
+    def postgres_port_resolved(self) -> int:
+        """Postgres port with Railway PGPORT fallback."""
+        value = os.getenv("POSTGRES_PORT") or os.getenv("PGPORT")
+        return int(value) if value else self.postgres_port
+    
+    @property
+    def postgres_db_resolved(self) -> str:
+        """Postgres database name with Railway PGDATABASE fallback."""
+        return os.getenv("POSTGRES_DB") or os.getenv("PGDATABASE") or self.postgres_db
+    
+    @property
+    def postgres_user_resolved(self) -> str:
+        """Postgres user with Railway PGUSER fallback."""
+        return os.getenv("POSTGRES_USER") or os.getenv("PGUSER") or self.postgres_user
+    
+    @property
+    def postgres_password_resolved(self) -> str:
+        """Postgres password with Railway PGPASSWORD fallback."""
+        return os.getenv("POSTGRES_PASSWORD") or os.getenv("PGPASSWORD") or self.postgres_password
+    
+    @property
+    def redis_url_resolved(self) -> str:
+        """Redis URL with Railway REDIS_URL fallback."""
+        return os.getenv("REDIS_URL") or self.redis_url
     
     @property
     def database_path_resolved(self) -> Path:

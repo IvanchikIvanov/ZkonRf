@@ -28,19 +28,22 @@ Railway автоматически определит Dockerfile. Нужно н�
 ```
 TELEGRAM_BOT_TOKEN=ваш_токен_бота
 OPENAI_API_KEY=ваш_openai_ключ
+GROK_API_KEY=ваш_grok_ключ
 ```
 
 **Остальные переменные (скопируйте из env.example):**
 ```
 OPENAI_MODEL=gpt-4o
-OPENAI_EMBEDDING_MODEL=text-embedding-3-small
+OPENAI_EMBEDDING_MODEL=text-embedding-3-large
 OPENAI_TTS_MODEL=tts-1
 OPENAI_TTS_VOICE=alloy
+GROK_MODEL=grok-beta
 MAX_TOKENS=2000
 TEMPERATURE=0.7
 FREE_REQUESTS_PER_DAY=3
 DATABASE_PATH=/app/data/embeddings
-REDIS_HOST=ваш_redis_сервис.railway.internal
+REDIS_URL=${{Redis.REDIS_URL}}
+DATABASE_URL=${{Postgres.DATABASE_URL}}
 REDIS_PORT=6379
 REDIS_DB=0
 REDIS_CACHE_TTL=3600
@@ -49,32 +52,38 @@ LOG_PATH=/app/logs
 WORKER_COUNT=2
 ```
 
-**Важно:** `REDIS_HOST` нужно будет изменить после создания Redis сервиса (см. ниже)
+**Важно:** для Railway проще использовать `REDIS_URL` и `DATABASE_URL`.
 
 #### 2.2. Создание Redis сервиса
 
 1. В проекте Railway нажмите **"+ New"** → **"Database"** → **"Add Redis"**
 2. Railway автоматически создаст Redis
-3. После создания Redis, скопируйте его **Internal Hostname** (например: `redis-production.up.railway.app`)
+3. После создания Redis подключите переменную `REDIS_URL` к Bot сервису
 4. Вернитесь в настройки Bot сервиса → **Variables**
-5. Обновите `REDIS_HOST` на внутренний хостнейм Redis (Railway автоматически создаст переменную `REDIS_URL`, но нам нужен хост)
+5. Убедитесь, что `REDIS_URL` доступна Bot сервису
 
-**Или используйте переменную Railway:**
-- Railway автоматически создаст переменную `REDIS_URL` для Redis сервиса
-- Вы можете использовать её, но нужно будет изменить код для парсинга URL
+Код также поддерживает ручные `REDIS_HOST`, `REDIS_PORT`, `REDIS_PASSWORD`, если вы не используете `REDIS_URL`.
 
-#### 2.3. Настройка Volumes (для данных)
+#### 2.3. Создание PostgreSQL сервиса
+
+1. В проекте Railway нажмите **"+ New"** → **"Database"** → **"Add PostgreSQL"**
+2. Для pgvector нужен образ/расширение с поддержкой `CREATE EXTENSION vector`
+3. Подключите `DATABASE_URL` к Bot сервису
+4. Установите:
+```bash
+VECTOR_BACKEND=pgvector
+OPENAI_EMBEDDING_MODEL=text-embedding-3-large
+EMBEDDING_DIMENSIONS=3072
+```
+
+#### 2.4. Настройка Volumes (для данных)
 
 1. В настройках Bot сервиса → **Volumes**
-2. Добавьте volume для embeddings:
-   - **Mount Path:** `/app/data/embeddings`
-   - **Name:** `embeddings-data`
+2. Добавьте volume для всех runtime-данных:
+   - **Mount Path:** `/app/data`
+   - **Name:** `app-data`
 
-3. Добавьте volume для кодексов:
-   - **Mount Path:** `/app/data/codexes`
-   - **Name:** `codexes-data`
-
-4. Добавьте volume для логов:
+3. Добавьте volume для логов:
    - **Mount Path:** `/app/logs`
    - **Name:** `logs-data`
 
@@ -158,18 +167,18 @@ mkdir -p data/codexes
 ```bash
 TELEGRAM_BOT_TOKEN=ваш_токен_от_BotFather
 OPENAI_API_KEY=ваш_openai_ключ
+GROK_API_KEY=ваш_grok_ключ
 ```
 
 ### Redis настройки:
 
-После создания Redis сервиса в Railway, обновите:
+После создания Redis сервиса в Railway подключите переменную:
 
 ```bash
-REDIS_HOST=redis-production.up.railway.app  # Внутренний хостнейм Redis
-REDIS_PORT=6379
+REDIS_URL=${{Redis.REDIS_URL}}
 ```
 
-Railway автоматически создаст переменную `REDIS_URL`, но наш код использует `REDIS_HOST` и `REDIS_PORT`.
+Код также поддерживает ручные `REDIS_HOST` и `REDIS_PORT`, но для Railway предпочтителен `REDIS_URL`.
 
 ### Опциональные переменные:
 
@@ -185,11 +194,12 @@ Railway Project
 │   ├── Dockerfile: docker/Dockerfile
 │   ├── Variables: все из env.example
 │   └── Volumes:
-│       ├── /app/data/embeddings
-│       ├── /app/data/codexes
+│       ├── /app/data
 │       └── /app/logs
-└── Redis Service
-    └── Автоматически настроен Railway
+├── Redis Service
+│   └── REDIS_URL подключен к Bot Service
+└── PostgreSQL Service
+    └── DATABASE_URL подключен к Bot Service
 ```
 
 ---
@@ -240,7 +250,7 @@ railway variables
 ### Ошибка подключения к Redis
 
 1. Убедитесь, что Redis сервис создан в том же проекте
-2. Проверьте `REDIS_HOST` - должен быть внутренний хостнейм Railway
+2. Проверьте `REDIS_URL` или ручные `REDIS_HOST`/`REDIS_PORT`
 3. Проверьте, что Redis сервис запущен
 
 ### Ошибка "No codexes found"

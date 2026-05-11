@@ -265,7 +265,7 @@ zakonrff/
 - **Модели**:
   - `text-embedding-3-small` - $0.02/1M токенов, 1536 размерность
   - `text-embedding-3-large` - $0.13/1M токенов, 3072 размерность
-- **Рекомендация**: `text-embedding-3-small` для кодексов
+- **Рекомендация**: `text-embedding-3-large` для pgvector с `EMBEDDING_DIMENSIONS=3072`
 
 ## Конфигурация
 
@@ -277,7 +277,7 @@ TELEGRAM_BOT_TOKEN=your_bot_token
 # OpenAI
 OPENAI_API_KEY=your_openai_key
 OPENAI_MODEL=gpt-4o
-OPENAI_EMBEDDING_MODEL=text-embedding-3-small
+OPENAI_EMBEDDING_MODEL=text-embedding-3-large
 OPENAI_TTS_MODEL=tts-1
 OPENAI_TTS_VOICE=alloy
 MAX_TOKENS=2000

@@ -18,7 +18,7 @@ Telegram бот с ИИ на базе ChatGPT, который отвечает �
 - **STT**: OpenAI Whisper API
 - **TTS**: OpenAI TTS API
 - **LLM**: OpenAI ChatGPT (GPT-4o)
-- **Embeddings**: OpenAI text-embedding-3-small
+- **Embeddings**: OpenAI text-embedding-3-large
 - **Vector DB**: ChromaDB
 - **Cache**: Redis
 - **Containerization**: Docker + Docker Compose
@@ -43,6 +43,7 @@ cp env.example .env
 Отредактируйте `.env`:
 - `TELEGRAM_BOT_TOKEN` - токен бота от @BotFather
 - `OPENAI_API_KEY` - API ключ OpenAI
+- `GROK_API_KEY` - API ключ xAI/Grok для генерации ответов
 
 ### 2.1 Прод-конфигурация векторной БД (рекомендуется)
 
@@ -52,6 +53,8 @@ cp env.example .env
 
 ```bash
 VECTOR_BACKEND=pgvector
+OPENAI_EMBEDDING_MODEL=text-embedding-3-large
+DATABASE_URL=postgresql://user:password@host:5432/dbname  # Railway/managed Postgres, если есть
 POSTGRES_HOST=postgres
 POSTGRES_PORT=5432
 POSTGRES_DB=zakonrff

@@ -169,14 +169,18 @@ class PGVectorDBService:
             )
         
         try:
-            self.conn = psycopg.connect(
-                host=settings.postgres_host,
-                port=settings.postgres_port,
-                dbname=settings.postgres_db,
-                user=settings.postgres_user,
-                password=settings.postgres_password,
-                connect_timeout=10
-            )
+            database_url = settings.postgres_database_url
+            if database_url:
+                self.conn = psycopg.connect(database_url, connect_timeout=10)
+            else:
+                self.conn = psycopg.connect(
+                    host=settings.postgres_host_resolved,
+                    port=settings.postgres_port_resolved,
+                    dbname=settings.postgres_db_resolved,
+                    user=settings.postgres_user_resolved,
+                    password=settings.postgres_password_resolved,
+                    connect_timeout=10
+                )
             self.conn.autocommit = True
             
             with self.conn.cursor() as cur:
@@ -220,10 +224,17 @@ class PGVectorDBService:
                 except Exception as idx_error:
                     log.warning(f"Не удалось создать HNSW индекс pgvector: {idx_error}")
             
+            connection_label = (
+                "DATABASE_URL"
+                if database_url
+                else (
+                    f"{settings.postgres_host_resolved}:{settings.postgres_port_resolved}/"
+                    f"{settings.postgres_db_resolved}"
+                )
+            )
             log.info(
                 f"Векторная БД инициализирована (pgvector): "
-                f"{settings.postgres_host}:{settings.postgres_port}/{settings.postgres_db}, "
-                f"table={self.table_name}"
+                f"{connection_label}, table={self.table_name}"
             )
         except Exception as e:
             log.error(f"Ошибка инициализации pgvector: {e}")

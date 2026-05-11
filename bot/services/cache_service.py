@@ -16,18 +16,25 @@ class CacheService:
     async def connect(self):
         """Подключение к Redis."""
         try:
-            redis_kwargs = {
-                "host": settings.redis_host,
-                "port": settings.redis_port,
-                "db": settings.redis_db,
-                "decode_responses": True
-            }
-            
-            # Добавляем пароль если указан
-            if settings.redis_password:
-                redis_kwargs["password"] = settings.redis_password
-            
-            self.redis_client = redis.Redis(**redis_kwargs)
+            redis_url = settings.redis_url_resolved
+            if redis_url:
+                self.redis_client = redis.Redis.from_url(
+                    redis_url,
+                    decode_responses=True
+                )
+            else:
+                redis_kwargs = {
+                    "host": settings.redis_host,
+                    "port": settings.redis_port,
+                    "db": settings.redis_db,
+                    "decode_responses": True
+                }
+                
+                # Добавляем пароль если указан
+                if settings.redis_password:
+                    redis_kwargs["password"] = settings.redis_password
+                
+                self.redis_client = redis.Redis(**redis_kwargs)
             await self.redis_client.ping()
             log.info("Подключение к Redis установлено")
         except Exception as e:
