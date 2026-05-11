@@ -94,9 +94,6 @@ async def handle_text_message(update: Update, context: ContextTypes.DEFAULT_TYPE
             await message.reply_text(text, reply_markup=keyboard)
             return
         
-        # Увеличиваем счетчик запросов
-        await payment_service.increment_request(user_id)
-        
         searching_text = language_service.get_text('searching', user_language)
         await message.reply_text(searching_text)
         
@@ -170,13 +167,13 @@ async def handle_text_message(update: Update, context: ContextTypes.DEFAULT_TYPE
         if conversation_context_text:
             log.info(f"Контекст разговора для @{username} (ID: {user_id}):\n{conversation_context_text[:500]}{'...' if len(conversation_context_text) > 500 else ''}")
         
-        # Если нет статей, передаем пустой список - ChatGPT сам скажет что информации нет
+        # Если нет статей, передаем пустой список - Grok сам скажет что информации нет
         if not relevant_articles:
             log_missing_topic(user_id, username, question, "не найдено релевантных статей в базе")
-            # Передаем пустой список статей - ChatGPT сам сформулирует ответ
+            # Передаем пустой список статей - Grok сам сформулирует ответ
             relevant_articles = []
         
-        # Генерация ответа с помощью ChatGPT с учетом контекста
+        # Генерация ответа с помощью Grok с учетом контекста
         answer = await llm_service.generate_answer(question, relevant_articles, conversation_context=conversation_context_text)
         
         # Сохраняем сообщения в контекст
@@ -194,8 +191,15 @@ async def handle_text_message(update: Update, context: ContextTypes.DEFAULT_TYPE
         if any(phrase in answer_lower for phrase in missing_phrases):
             log_missing_topic(user_id, username, question, "LLM указал на отсутствие информации в ответе")
         
-        # Отправка ответа
-        await message.reply_text(answer, parse_mode="Markdown")
+        # Отправка ответа (с fallback без Markdown, если модель вернула невалидную разметку)
+        try:
+            await message.reply_text(answer, parse_mode="Markdown")
+        except Exception as send_error:
+            log.warning(f"Не удалось отправить Markdown-ответ, отправляем plain text: {send_error}")
+            await message.reply_text(answer)
+        
+        # Учитываем запрос только после успешной отправки ответа
+        await payment_service.increment_request(user_id)
         
         # Логируем вопрос и ответ в консоль
         question_preview = question[:100] + "..." if len(question) > 100 else question

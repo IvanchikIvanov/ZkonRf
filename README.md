@@ -44,6 +44,29 @@ cp env.example .env
 - `TELEGRAM_BOT_TOKEN` - токен бота от @BotFather
 - `OPENAI_API_KEY` - API ключ OpenAI
 
+### 2.1 Прод-конфигурация векторной БД (рекомендуется)
+
+Для production рекомендуется использовать `PostgreSQL + pgvector`.
+
+В `.env`:
+
+```bash
+VECTOR_BACKEND=pgvector
+POSTGRES_HOST=postgres
+POSTGRES_PORT=5432
+POSTGRES_DB=zakonrff
+POSTGRES_USER=zakonrff
+POSTGRES_PASSWORD=zakonrff
+PGVECTOR_TABLE=codex_embeddings
+EMBEDDING_DIMENSIONS=3072
+```
+
+Запуск инфраструктуры:
+
+```bash
+docker-compose -f docker/docker-compose.yml up -d postgres redis
+```
+
 ### 3. Загрузка кодексов
 
 Поместите файлы кодексов в `data/codexes/`
@@ -96,9 +119,30 @@ python -m scripts.process_codexes
 docker-compose -f docker/docker-compose.yml run --rm bot python -m scripts.process_codexes
 ```
 
+### 4.1 Миграция существующих embeddings из Chroma в pgvector
+
+Если у вас уже есть данные в Chroma, перенесите их в PostgreSQL:
+
+```bash
+python -m scripts.migrate_chroma_to_pgvector
+```
+
+## Деплой
+
+### Railway.app (самый простой способ)
+
+📖 **Подробная инструкция:** [`RAILWAY_DEPLOY.md`](RAILWAY_DEPLOY.md)
+
+1. Создайте проект на [railway.app](https://railway.app)
+2. Подключите GitHub репозиторий
+3. Railway автоматически определит Dockerfile и задеплоит бота
+4. Добавьте переменные окружения и Redis сервис
+
+---
+
 ## Запуск
 
-### Docker Compose (рекомендуется)
+### Docker Compose (для локального запуска)
 
 ```bash
 # Запуск с одним воркером

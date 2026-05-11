@@ -22,6 +22,9 @@ async def handle_photo_message(update: Update, context: ContextTypes.DEFAULT_TYP
         
         log.info(f"Фото от @{username} (ID: {user_id})")
         
+        # Получаем подпись к фото, если есть
+        caption = message.caption or ""
+        
         # Логируем действие пользователя
         caption_info = f"Подпись: {caption}" if caption else "Без подписи"
         log_user_action(user_id, username, "photo_query", f"Отправлено фото. {caption_info}")
@@ -64,14 +67,8 @@ async def handle_photo_message(update: Update, context: ContextTypes.DEFAULT_TYP
             await message.reply_text(text, reply_markup=keyboard)
             return
         
-        # Увеличиваем счетчик запросов
-        await payment_service.increment_request(user_id)
-        
         # Получаем самое большое фото (последний элемент в списке - самое высокое качество)
         photo = message.photo[-1]
-        
-        # Получаем подпись к фото, если есть
-        caption = message.caption or ""
         
         # Скачиваем фото
         photo_file = await context.bot.get_file(photo.file_id)
@@ -88,8 +85,15 @@ async def handle_photo_message(update: Update, context: ContextTypes.DEFAULT_TYP
             # Анализируем изображение
             analysis = await llm_service.analyze_image(tmp_path, caption, user_language)
             
-            # Отправляем результат
-            await message.reply_text(analysis, parse_mode="Markdown")
+            # Отправляем результат (fallback без Markdown)
+            try:
+                await message.reply_text(analysis, parse_mode="Markdown")
+            except Exception as send_error:
+                log.warning(f"Не удалось отправить Markdown-анализ фото, отправляем plain text: {send_error}")
+                await message.reply_text(analysis)
+            
+            # Учитываем запрос только после успешной отправки ответа
+            await payment_service.increment_request(user_id)
             
             log.info(f"Анализ фото завершен для @{username} (ID: {user_id})")
             

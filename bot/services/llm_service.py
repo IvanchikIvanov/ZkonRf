@@ -1,34 +1,120 @@
-"""Сервис для работы с ChatGPT."""
+"""Сервис для работы с Grok."""
 import base64
+import hashlib
 from typing import List, Dict, Any, Optional
-from openai import OpenAI
+import httpx
 from bot.utils.config import settings
 from bot.utils.logger import log
 from bot.services.cache_service import cache_service
 
 
+class GrokClient:
+    """Клиент для работы с Grok API (совместим с OpenAI форматом)"""
+    def __init__(self, api_key: str, http_client=None):
+        self.api_key = api_key
+        self.base_url = "https://api.x.ai/v1"
+        self.http_client = http_client or httpx.AsyncClient(timeout=120.0)
+        self.chat = self
+    
+    class Completions:
+        def __init__(self, client):
+            self.client = client
+        
+        async def create(self, model: str, messages: list, max_tokens: int = None, temperature: float = 0.7):
+            """Создает чат-комплетион через Grok API"""
+            urls_to_try = [
+                "https://api.x.ai/v1/chat/completions",
+                "https://api.xai.com/v1/chat/completions"
+            ]
+            
+            if not self.client.api_key:
+                raise Exception("GROK_API_KEY не установлен в .env файле")
+            
+            headers = {
+                "Authorization": f"Bearer {self.client.api_key}",
+                "Content-Type": "application/json"
+            }
+            data = {
+                "model": model,
+                "messages": messages,
+                "temperature": temperature
+            }
+            if max_tokens:
+                data["max_completion_tokens"] = max_tokens
+            
+            last_error = None
+            result = None
+            
+            for url in urls_to_try:
+                try:
+                    log.debug(f"Пробую Grok API URL: {url}")
+                    response = await self.client.http_client.post(url, headers=headers, json=data)
+                    if response.status_code == 200:
+                        result = response.json()
+                        if 'choices' not in result:
+                            log.error(f"Grok API ответ не содержит 'choices': {result}")
+                            continue
+                        log.info(f"Grok API успешно ответил с URL: {url}")
+                        break
+                    else:
+                        error_text = response.text[:200] if hasattr(response, 'text') else "N/A"
+                        log.warning(f"Ошибка {response.status_code} для URL {url}: {error_text}")
+                        last_error = f"Ошибка {response.status_code} для {url}: {error_text}"
+                        continue
+                except Exception as e:
+                    log.error(f"Ошибка при запросе к {url}: {e}")
+                    last_error = f"Ошибка для {url}: {str(e)}"
+                    continue
+            
+            if result is None:
+                error_msg = f"Grok API недоступен: {last_error}"
+                log.error(error_msg)
+                raise Exception(error_msg)
+            
+            class FakeChoice:
+                def __init__(self, choice_data):
+                    message_obj = choice_data.get('message', {})
+                    if isinstance(message_obj, dict):
+                        content = message_obj.get('content', '')
+                    else:
+                        content = str(message_obj) if message_obj else ''
+                    self.message = type('obj', (object,), {'content': content})()
+                    self.finish_reason = choice_data.get('finish_reason', 'stop')
+            
+            class FakeResponse:
+                def __init__(self, json_data):
+                    choices_list = json_data.get('choices', [])
+                    self.choices = [FakeChoice(choice) for choice in choices_list]
+            
+            return FakeResponse(result)
+    
+    @property
+    def completions(self):
+        return self.Completions(self)
+
+
 class LLMService:
-    """Сервис для работы с OpenAI ChatGPT."""
+    """Сервис для работы с Grok."""
     
     def __init__(self):
-        client_kwargs = {"api_key": settings.openai_api_key}
-        
-        # Добавляем прокси если указан
-        if settings.openai_proxy:
-            import httpx
-            proxy_url = settings.openai_proxy
-            proxies = {
-                "http://": proxy_url,
-                "https://": proxy_url
-            }
-            client_kwargs["http_client"] = httpx.Client(
-                proxies=proxies,
-                timeout=60.0,
-                verify=True
+        # Настройка прокси для Grok
+        grok_http_client = None
+        if settings.grok_proxy:
+            grok_http_client = httpx.AsyncClient(
+                proxies={
+                    "http://": settings.grok_proxy,
+                    "https://": settings.grok_proxy
+                },
+                timeout=120.0
             )
+        else:
+            grok_http_client = httpx.AsyncClient(timeout=120.0)
         
-        self.client = OpenAI(**client_kwargs)
-        self.model = settings.openai_model
+        self.client = GrokClient(
+            api_key=settings.grok_api_key,
+            http_client=grok_http_client
+        )
+        self.model = settings.grok_model
     
     def _format_articles(self, articles: List[Dict[str, Any]]) -> str:
         """Форматирование статей для промпта."""
@@ -92,7 +178,7 @@ class LLMService:
         return codex_name.replace('_', ' ').title()
     
     def _create_prompt(self, question: str, articles: List[Dict[str, Any]], user_country: Optional[str] = None, conversation_context: Optional[str] = None) -> str:
-        """Создание промпта для ChatGPT.
+        """Создание промпта для Grok с голосом девушки.
         
         Args:
             question: Текущий вопрос пользователя
@@ -100,6 +186,25 @@ class LLMService:
             user_country: Страна пользователя (опционально)
             conversation_context: Контекст предыдущих сообщений (опционально)
         """
+        # Инструкция о голосе девушки
+        voice_instruction = """Ты - дружелюбная девушка-юрист, которая помогает людям разобраться в юридических вопросах.
+Твой стиль общения:
+- Дружелюбный и приветливый
+- Используй естественную речь, как в разговоре с другом
+- Можешь использовать эмодзи для выражения эмоций (но не переборщи)
+- Отвечай понятно и просто, избегая излишней формальности
+- Будь внимательной и заботливой
+
+"""
+        intent_instruction = ""
+        if settings.confirm_intent_first:
+            intent_instruction = """Перед тем как давать основной ответ, сначала коротко проверь понимание запроса:
+- Начни с фразы в стиле: "Правильно ли я понимаю, что вы хотите узнать ...?"
+- Если запрос короткий/неоднозначный и может относиться к разным темам из контекста, ОБЯЗАТЕЛЬНО задай уточняющий вопрос "к какому именно вопросу относится ваш запрос?"
+- Если запрос однозначный, после короткой проверки понимания сразу дай ответ.
+
+"""
+        
         # Формируем секцию с контекстом разговора
         context_section = ""
         if conversation_context:
@@ -113,8 +218,8 @@ class LLMService:
 - ВСЕГДА внимательно читай контекст предыдущих сообщений
 - Если пользователь задает короткий вопрос типа "да", "расскажи", "а про неё", "РФ" и т.д., это означает, что он продолжает предыдущий разговор
 - Используй информацию из предыдущих сообщений для понимания, о чем идет речь
-- Если в предыдущем ответе ты упоминал конкретную статью, страну или кодекс, а пользователь спрашивает "про неё" или "расскажи", значит он хочет узнать больше о той статье/стране/кодексе, которую ты только что упомянул
-- Если пользователь отвечает "да" на твой вопрос об уточнении страны или кодекса, используй ту информацию, которую ты только что предложил
+- Если в предыдущем ответе ты упоминала конкретную статью, страну или кодекс, а пользователь спрашивает "про неё" или "расскажи", значит он хочет узнать больше о той статье/стране/кодексе, которую ты только что упомянула
+- Если пользователь отвечает "да" на твой вопрос об уточнении страны или кодекса, используй ту информацию, которую ты только что предложила
 - НЕ игнорируй контекст - он критически важен для понимания намерений пользователя
 - Если контекст содержит информацию о стране или кодексе, используй её для ответа на текущий вопрос
 """
@@ -125,7 +230,7 @@ class LLMService:
         
         # Если статей нет, формируем специальный промпт
         if not articles:
-            prompt = f"""Ты - профессиональный юридический ассистент, специализирующийся на кодексах различных стран.
+            prompt = f"""{voice_instruction}{intent_instruction}Ты - профессиональный юридический ассистент, специализирующийся на кодексах различных стран.
 {context_section}
 К сожалению, в базе данных не найдено релевантных статей по данному вопросу.
 
@@ -179,7 +284,7 @@ class LLMService:
             clarification_instructions += "- Пример хорошего запроса: 'Я нашел статьи о браке в кодексах разных стран (Россия, Казахстан, Таиланд). Какую страну вас интересует?'\n"
             clarification_instructions += "- Или: 'Статьи о браке есть в Гражданском и Семейном кодексах. Какой кодекс вас интересует?'\n"
         
-        prompt = f"""Ты - профессиональный юридический ассистент, специализирующийся на кодексах различных стран.
+        prompt = f"""{voice_instruction}{intent_instruction}Ты - профессиональный юридический ассистент, специализирующийся на кодексах различных стран.
 {context_section}
 Ниже представлены релевантные статьи из {country_context}:
 
@@ -242,10 +347,21 @@ class LLMService:
         user_country: Optional[str] = None,
         conversation_context: Optional[str] = None
     ) -> str:
-        """Генерация ответа на вопрос с использованием ChatGPT."""
+        """Генерация ответа на вопрос с использованием Grok."""
         try:
             # Проверка кэша
-            cache_key = f"llm:{hash(question + str([a['id'] for a in articles]))}"
+            context_hash = hashlib.md5((conversation_context or "").encode("utf-8")).hexdigest()
+            article_ids = [str(a.get("id", "")) for a in articles]
+            cache_payload = "|".join([
+                self.model,
+                str(settings.temperature),
+                str(settings.max_tokens),
+                question,
+                ",".join(article_ids),
+                context_hash,
+                user_country or ""
+            ])
+            cache_key = f"llm:{hashlib.md5(cache_payload.encode('utf-8')).hexdigest()}"
             cached = await cache_service.get(cache_key)
             if cached:
                 log.debug("LLM ответ из кэша")
@@ -253,10 +369,10 @@ class LLMService:
             
             prompt = self._create_prompt(question, articles, user_country, conversation_context)
             
-            response = self.client.chat.completions.create(
+            response = await self.client.chat.completions.create(
                 model=self.model,
                 messages=[
-                    {"role": "system", "content": "Ты профессиональный юридический ассистент."},
+                    {"role": "system", "content": "Ты дружелюбная девушка-юрист, которая помогает людям разобраться в юридических вопросах. Отвечай естественно и понятно."},
                     {"role": "user", "content": prompt}
                 ],
                 max_tokens=settings.max_tokens,
@@ -297,8 +413,8 @@ class LLMService:
             
             prompt = f"Translate the following legal query into {target_language} language. Only output the translation, no explanations:\n\nQuery: {query}"
             
-            response = self.client.chat.completions.create(
-                model="gpt-3.5-turbo",  # Используем более дешевую модель для перевода
+            response = await self.client.chat.completions.create(
+                model=self.model,
                 messages=[
                     {"role": "system", "content": "You are a professional translator."},
                     {"role": "user", "content": prompt}
@@ -376,8 +492,27 @@ Be thorough and accurate. If this is text from a code, specify the specific arti
             # Формируем промпт
             prompt = self._get_image_prompt(language, caption)
             
-            # Отправляем запрос в Vision API
-            response = self.client.chat.completions.create(
+            # Отправляем запрос в Vision API (используем OpenAI для vision, так как Grok не поддерживает)
+            # Для vision оставляем OpenAI клиент
+            from openai import OpenAI as OpenAIClient
+            
+            client_kwargs = {"api_key": settings.openai_api_key}
+            if settings.openai_proxy:
+                import httpx as httpx_sync
+                proxy_url = settings.openai_proxy
+                proxies = {
+                    "http://": proxy_url,
+                    "https://": proxy_url
+                }
+                client_kwargs["http_client"] = httpx_sync.Client(
+                    proxies=proxies,
+                    timeout=60.0,
+                    verify=True
+                )
+            
+            openai_client = OpenAIClient(**client_kwargs)
+            
+            response = openai_client.chat.completions.create(
                 model="gpt-4o",  # GPT-4o поддерживает vision
                 messages=[
                     {

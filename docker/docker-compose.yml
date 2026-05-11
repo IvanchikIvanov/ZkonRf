@@ -1,6 +1,24 @@
 version: '3.8'
 
 services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: zakonrff-postgres
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-zakonrff}
+      POSTGRES_USER: ${POSTGRES_USER:-zakonrff}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-zakonrff}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-zakonrff} -d ${POSTGRES_DB:-zakonrff}"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    restart: unless-stopped
+
   redis:
     image: redis:7-alpine
     container_name: zakonrff-redis
@@ -24,6 +42,8 @@ services:
     depends_on:
       redis:
         condition: service_healthy
+      postgres:
+        condition: service_healthy
     volumes:
       - ../data/embeddings:/app/data/embeddings
       - ../data/codexes:/app/data/codexes
@@ -42,4 +62,5 @@ services:
 
 volumes:
   redis_data:
+  postgres_data:
 

@@ -3,10 +3,17 @@ import os
 from pathlib import Path
 from typing import Optional
 from pydantic_settings import BaseSettings
+from pydantic import ConfigDict
 
 
 class Settings(BaseSettings):
     """Настройки приложения."""
+    
+    model_config = ConfigDict(
+        env_file=".env",
+        case_sensitive=False,
+        extra="allow"  # Разрешаем дополнительные поля из .env
+    )
     
     # Telegram
     telegram_bot_token: str
@@ -17,9 +24,30 @@ class Settings(BaseSettings):
     openai_embedding_model: str = "text-embedding-3-small"
     openai_tts_model: str = "tts-1"
     openai_tts_voice: str = "alloy"
+    tts_provider: str = "chatgpt"  # Поддерживаемые значения: chatgpt, elevenlabs
     max_tokens: int = 2000
     temperature: float = 0.7
     openai_proxy: str = ""  # Прокси для OpenAI API (например: http://proxy.example.com:8080)
+    confirm_intent_first: bool = True  # Всегда начинать ответ с проверки понимания запроса
+    
+    # Grok
+    grok_api_key: str = ""
+    grok_model: str = "grok-beta"
+    grok_proxy: str = ""  # Прокси для Grok API
+    
+    # ElevenLabs (для голоса девушки)
+    elevenlabs_api_key: str = ""
+    elevenlabs_voice_id: str = ""  # ID голоса девушки из ElevenLabs
+    elevenlabs_model: str = "eleven_multilingual_v2"
+    elevenlabs_output_format: str = "mp3_44100_128"
+    elevenlabs_stability: float = 0.5
+    elevenlabs_similarity_boost: float = 0.75
+    max_text_length: int = 5000  # Максимальная длина текста для TTS
+    
+    # Conversation context
+    context_prompt_messages: int = 30  # Сколько последних сообщений передавать в промпт
+    context_scan_messages: int = 200  # Сколько сообщений анализировать для извлечения страны/кодекса
+    context_max_content_length: int = 4000  # Максимальная длина одного сообщения в истории
     
     # Database
     database_path: str = "/app/data/embeddings"
@@ -28,6 +56,18 @@ class Settings(BaseSettings):
     redis_db: int = 0
     redis_password: str = ""
     redis_cache_ttl: int = 3600
+    
+    # Vector DB backend
+    vector_backend: str = "chroma"  # Поддерживаемые значения: chroma, pgvector
+    
+    # PostgreSQL + pgvector
+    postgres_host: str = "postgres"
+    postgres_port: int = 5432
+    postgres_db: str = "zakonrff"
+    postgres_user: str = "zakonrff"
+    postgres_password: str = "zakonrff"
+    pgvector_table: str = "codex_embeddings"
+    embedding_dimensions: int = 3072  # text-embedding-3-large
     
     # Logging
     log_level: str = "INFO"
@@ -61,10 +101,6 @@ class Settings(BaseSettings):
     # Whitelist
     user_whitelist: str = ""  # Список ID пользователей с бесплатным доступом через запятую (например: "123456,789012")
     
-    class Config:
-        env_file = ".env"
-        case_sensitive = False
-        
     @property
     def database_path_resolved(self) -> Path:
         """Возвращает абсолютный путь к базе данных."""

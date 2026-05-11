@@ -1,149 +1,174 @@
 """Сервис для хранения контекста разговора пользователей."""
+import asyncio
 import time
+from pathlib import Path
 from typing import List, Dict, Optional
-from bot.services.cache_service import cache_service
+import aiosqlite
+from bot.utils.config import settings
 from bot.utils.logger import log
 
 
 class ConversationContextService:
     """Сервис для управления контекстом разговора."""
     
-    MAX_CONTEXT_MESSAGES = 5  # Максимум сообщений в контексте
-    CONTEXT_TTL = 1800  # 30 минут
-    MAX_CONTENT_LENGTH = 2000  # Максимальная длина контента
+    def __init__(self):
+        db_dir = Path(settings.database_path_resolved).parent
+        db_dir.mkdir(parents=True, exist_ok=True)
+        self.db_path = db_dir / "users.db"
+        self.max_content_length = settings.context_max_content_length
+        self.prompt_messages = settings.context_prompt_messages
+        self.scan_messages = settings.context_scan_messages
+        self._db_initialized = False
+        self._init_lock = asyncio.Lock()
     
-    def _get_context_key(self, user_id: int) -> str:
-        """Получить ключ для хранения контекста пользователя."""
-        return f"conversation_context:{user_id}"
+    async def _init_db(self):
+        """Инициализация таблицы истории диалогов."""
+        async with aiosqlite.connect(self.db_path) as db:
+            await db.execute(
+                """
+                CREATE TABLE IF NOT EXISTS conversation_messages (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    user_id INTEGER NOT NULL,
+                    role TEXT NOT NULL,
+                    content TEXT NOT NULL,
+                    ts INTEGER NOT NULL
+                )
+                """
+            )
+            await db.execute(
+                "CREATE INDEX IF NOT EXISTS idx_conversation_user_id ON conversation_messages(user_id, id)"
+            )
+            await db.commit()
+        log.info(f"История диалогов инициализирована: {self.db_path}")
+    
+    async def ensure_db_initialized(self):
+        """Убедиться, что таблица истории готова к использованию."""
+        if self._db_initialized:
+            return
+        
+        async with self._init_lock:
+            if self._db_initialized:
+                return
+            await self._init_db()
+            self._db_initialized = True
     
     async def add_message(self, user_id: int, role: str, content: str) -> bool:
         """
-        Добавить сообщение в контекст пользователя.
+        Добавить сообщение в историю пользователя.
         
         Args:
             user_id: ID пользователя
             role: Роль ('user', 'assistant' или 'system')
             content: Содержимое сообщения
-            
-        Returns:
-            True если успешно, False если ошибка
         """
+        await self.ensure_db_initialized()
+        
         try:
-            # Валидация роли
             if role not in ("user", "assistant", "system"):
                 log.warning(f"Невалидная роль: {role} для user {user_id}")
                 return False
             
-            # Валидация и ограничение контента
             if not isinstance(content, str):
                 content = str(content)
             
             original_length = len(content)
-            if len(content) > self.MAX_CONTENT_LENGTH:
-                content = content[:self.MAX_CONTENT_LENGTH] + "…"
-                log.debug(f"Контент обрезан для user {user_id} (было {original_length} символов, стало {len(content)})")
+            if len(content) > self.max_content_length:
+                content = content[:self.max_content_length] + "…"
+                log.debug(
+                    f"Контент обрезан для user {user_id} "
+                    f"(было {original_length}, стало {len(content)})"
+                )
             
-            # Получаем текущий контекст
-            context = await self.get_context(user_id)
+            async with aiosqlite.connect(self.db_path) as db:
+                await db.execute(
+                    """
+                    INSERT INTO conversation_messages (user_id, role, content, ts)
+                    VALUES (?, ?, ?, ?)
+                    """,
+                    (user_id, role, content, int(time.time()))
+                )
+                await db.commit()
             
-            # Добавляем новое сообщение с метаданными
-            new_msg = {
-                "role": role,
-                "content": content,
-                "ts": int(time.time())
-            }
-            context.append(new_msg)
-            
-            # Ограничиваем количество сообщений
-            if len(context) > self.MAX_CONTEXT_MESSAGES:
-                removed_count = len(context) - self.MAX_CONTEXT_MESSAGES
-                context = context[-self.MAX_CONTEXT_MESSAGES:]
-                log.debug(f"Контекст обрезан для user {user_id}: удалено {removed_count} старых сообщений")
-            
-            # Сохраняем в кэш (cache_service уже делает json.dumps)
-            context_key = self._get_context_key(user_id)
-            success = await cache_service.set(context_key, context, ttl=self.CONTEXT_TTL)
-            
-            if success:
-                log.debug(f"Сообщение добавлено в контекст для user {user_id} (role: {role}, длина: {len(content)})")
-            
-            return success
-            
+            return True
         except Exception as e:
             log.error(f"Ошибка добавления сообщения в контекст для user {user_id}: {e}", exc_info=True)
             return False
     
-    async def get_context(self, user_id: int) -> List[Dict[str, str]]:
+    async def get_context(self, user_id: int, limit: Optional[int] = None) -> List[Dict[str, str]]:
         """
         Получить контекст разговора пользователя.
         
         Args:
             user_id: ID пользователя
-            
-        Returns:
-            Список сообщений в формате [{"role": "user/assistant", "content": "...", "ts": ...}]
+            limit: Сколько последних сообщений вернуть. Если None - берется context_prompt_messages.
         """
+        await self.ensure_db_initialized()
+        
         try:
-            context_key = self._get_context_key(user_id)
-            context = await cache_service.get(context_key)
+            limit = self.prompt_messages if limit is None else limit
             
-            if context is None:
+            async with aiosqlite.connect(self.db_path) as db:
+                db.row_factory = aiosqlite.Row
+                if limit and limit > 0:
+                    cursor = await db.execute(
+                        """
+                        SELECT role, content, ts
+                        FROM conversation_messages
+                        WHERE user_id = ?
+                        ORDER BY id DESC
+                        LIMIT ?
+                        """,
+                        (user_id, limit)
+                    )
+                else:
+                    cursor = await db.execute(
+                        """
+                        SELECT role, content, ts
+                        FROM conversation_messages
+                        WHERE user_id = ?
+                        ORDER BY id DESC
+                        """,
+                        (user_id,)
+                    )
+                rows = await cursor.fetchall()
+            
+            if not rows:
                 return []
             
-            # Проверяем что это список словарей
-            if not isinstance(context, list):
-                log.warning(f"Неожиданный формат контекста для user {user_id}: {type(context)}")
-                return []
-            
-            # Продлеваем TTL при чтении (если контекст существует)
-            if context:
-                await cache_service.extend_ttl(context_key, self.CONTEXT_TTL)
-            
+            # Возвращаем в хронологическом порядке
+            context = [
+                {"role": row["role"], "content": row["content"], "ts": row["ts"]}
+                for row in reversed(rows)
+            ]
             return context
-            
         except Exception as e:
             log.error(f"Ошибка получения контекста для user {user_id}: {e}", exc_info=True)
             return []
     
     async def clear_context(self, user_id: int) -> bool:
-        """
-        Очистить контекст разговора пользователя.
+        """Очистить историю контекста пользователя."""
+        await self.ensure_db_initialized()
         
-        Args:
-            user_id: ID пользователя
-            
-        Returns:
-            True если успешно
-        """
         try:
-            context_key = self._get_context_key(user_id)
-            success = await cache_service.delete(context_key)
-            
-            if success:
-                log.info(f"Контекст очищен для пользователя {user_id}")
-            
-            return success
-            
+            async with aiosqlite.connect(self.db_path) as db:
+                await db.execute(
+                    "DELETE FROM conversation_messages WHERE user_id = ?",
+                    (user_id,)
+                )
+                await db.commit()
+            log.info(f"Контекст очищен для пользователя {user_id}")
+            return True
         except Exception as e:
             log.error(f"Ошибка очистки контекста для user {user_id}: {e}", exc_info=True)
             return False
     
     async def extract_context_info(self, user_id: int) -> Dict[str, Optional[str]]:
-        """
-        Извлечь информацию о стране и кодексе из контекста разговора.
-        
-        Args:
-            user_id: ID пользователя
-            
-        Returns:
-            Словарь с ключами: 'country', 'codex', 'enhanced_question'
-        """
-        context = await self.get_context(user_id)
+        """Извлечь информацию о стране и кодексе из истории диалога."""
+        context = await self.get_context(user_id, limit=self.scan_messages)
         
         if not context:
             return {"country": None, "codex": None, "enhanced_question": None}
         
-        # Маппинг названий стран на коды
         country_mapping = {
             "таиланд": "thai", "тайланд": "thai", "thailand": "thai",
             "россия": "ru", "рф": "ru", "russia": "ru", "российск": "ru",
@@ -155,7 +180,6 @@ class ConversationContextService:
             "азербайджан": "az", "azerbaijan": "az", "азербайджанск": "az"
         }
         
-        # Ключевые слова для кодексов
         codex_keywords = {
             "гражданский": "гражданский",
             "трудовой": "трудовой",
@@ -168,59 +192,49 @@ class ConversationContextService:
         found_country = None
         found_codex = None
         
-        # Анализируем последние сообщения (более приоритетны)
-        for msg in reversed(context):
+        # Приоритет - сообщения пользователя, чтобы не подтягивать шум из ответов ассистента.
+        user_messages = [msg for msg in context if msg.get("role") == "user"]
+        messages_to_scan = user_messages if user_messages else context
+        
+        for msg in reversed(messages_to_scan):
             content_lower = msg.get("content", "").lower()
             
-            # Ищем страну
             if not found_country:
                 for country_name, country_code in country_mapping.items():
                     if country_name in content_lower:
                         found_country = country_code
-                        log.debug(f"Найдена страна в контексте для user {user_id}: {country_code}")
                         break
             
-            # Ищем кодекс
             if not found_codex:
                 for keyword, codex_name in codex_keywords.items():
                     if keyword in content_lower:
                         found_codex = codex_name
-                        log.debug(f"Найден кодекс в контексте для user {user_id}: {codex_name}")
                         break
             
-            # Если нашли оба, можно прервать поиск
             if found_country and found_codex:
                 break
         
-        # Формируем расширенный вопрос
-        enhanced_question = None
+        enhanced_parts = []
         if found_country:
             country_names = {
-                "thai": "Thailand Таиланд",  # Добавляем английское название для поиска
+                "thai": "Thailand Таиланд",
                 "ru": "Россия", "kz": "Казахстан",
                 "am": "Армения", "by": "Беларусь", "tj": "Таджикистан",
                 "uz": "Узбекистан", "az": "Азербайджан"
             }
-            country_name = country_names.get(found_country, found_country)
-            enhanced_question = country_name
+            enhanced_parts.append(country_names.get(found_country, found_country))
+        if found_codex:
+            enhanced_parts.append(f"{found_codex} кодекс")
         
         return {
             "country": found_country,
             "codex": found_codex,
-            "enhanced_question": enhanced_question
+            "enhanced_question": " ".join(enhanced_parts) if enhanced_parts else None
         }
     
     async def format_context_for_prompt(self, user_id: int) -> str:
-        """
-        Форматировать контекст для передачи в промпт.
-        
-        Args:
-            user_id: ID пользователя
-            
-        Returns:
-            Отформатированная строка с контекстом
-        """
-        context = await self.get_context(user_id)
+        """Форматировать последние сообщения для передачи в промпт."""
+        context = await self.get_context(user_id, limit=self.prompt_messages)
         
         if not context:
             return ""
@@ -239,7 +253,6 @@ class ConversationContextService:
             else:
                 formatted.append(f"Ассистент: {content}")
         
-        # System сообщения всегда первыми
         return "\n".join(system_messages + formatted)
 
 

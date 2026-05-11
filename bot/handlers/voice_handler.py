@@ -62,9 +62,6 @@ async def handle_voice_message(update: Update, context: ContextTypes.DEFAULT_TYP
             await message.reply_text(text)
             return
         
-        # Увеличиваем счетчик запросов
-        await payment_service.increment_request(user_id)
-        
         await message.reply_text("🎤 Обрабатываю голосовое сообщение...")
         
         # Скачивание голосового файла
@@ -88,8 +85,12 @@ async def handle_voice_message(update: Update, context: ContextTypes.DEFAULT_TYP
             log.info(f"Распознано от @{username} (ID: {user_id}): {question}")
             await message.reply_text(f"📝 Распознано: {question}")
             
+            # Для коротких уточнений ("да", "РФ", "про неё") учитываем наличие контекста.
+            conversation_context_text = await conversation_context.format_context_for_prompt(user_id)
+            has_context = bool(conversation_context_text)
+            
             # Валидация запроса
-            is_valid, reason = validate_question(question)
+            is_valid, reason = validate_question(question, allow_short_with_context=has_context)
             if not is_valid:
                 log_suspicious_request(user_id, username, question, reason)
                 log.warning(f"Заблокирован подозрительный запрос от @{username} (ID: {user_id}): {reason}")
@@ -161,16 +162,15 @@ async def handle_voice_message(update: Update, context: ContextTypes.DEFAULT_TYP
             
             await message.reply_text("🤖 Генерирую ответ...")
             
-            # Получаем контекст разговора
-            conversation_context_text = await conversation_context.format_context_for_prompt(user_id)
+            # Контекст уже вычислен выше до валидации
             
-            # Если нет статей, передаем пустой список - ChatGPT сам скажет что информации нет
+            # Если нет статей, передаем пустой список - Grok сам скажет что информации нет
             if not relevant_articles:
                 log_missing_topic(user_id, username, question, "не найдено релевантных статей в базе (голосовой запрос)")
-                # Передаем пустой список статей - ChatGPT сам сформулирует ответ
+                # Передаем пустой список статей - Grok сам сформулирует ответ
                 relevant_articles = []
             
-            # Генерация ответа с помощью ChatGPT с учетом контекста
+            # Генерация ответа с помощью Grok с учетом контекста
             answer = await llm_service.generate_answer(question, relevant_articles, conversation_context=conversation_context_text)
             
             # Сохраняем сообщения в контекст
@@ -188,8 +188,15 @@ async def handle_voice_message(update: Update, context: ContextTypes.DEFAULT_TYP
             if any(phrase in answer_lower for phrase in missing_phrases):
                 log_missing_topic(user_id, username, question, "LLM указал на отсутствие информации в ответе (голосовой запрос)")
             
-            # Отправка текстового ответа
-            await message.reply_text(answer, parse_mode="Markdown")
+            # Отправка текстового ответа (fallback без Markdown)
+            try:
+                await message.reply_text(answer, parse_mode="Markdown")
+            except Exception as send_error:
+                log.warning(f"Не удалось отправить Markdown-ответ (voice), отправляем plain text: {send_error}")
+                await message.reply_text(answer)
+            
+            # Учитываем запрос только после успешной отправки ответа
+            await payment_service.increment_request(user_id)
             
             # Логируем вопрос и ответ в консоль
             question_preview = question[:100] + "..." if len(question) > 100 else question
