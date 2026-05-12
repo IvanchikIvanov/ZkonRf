@@ -56,20 +56,19 @@ class CacheService:
         hash_value = hashlib.md5(value.encode()).hexdigest()
         return f"{prefix}:{hash_value}"
     
-    async def delete(self, key: str) -> bool:
-        """Получение значения из кэша."""
+    async def get(self, key: str) -> Optional[Any]:
+        """Значение из кэша (JSON), если Redis доступен и ключ есть."""
         if not self.redis_client:
             return None
-        
         try:
             value = await self.redis_client.get(key)
-            if value:
-                return json.loads(value)
+            if value is None:
+                return None
+            return json.loads(value)
         except Exception as e:
             log.error(f"Ошибка получения из кэша: {e}")
-        
-        return None
-    
+            return None
+
     async def set(self, key: str, value: Any, ttl: Optional[int] = None) -> bool:
         """Сохранение значения в кэш."""
         if not self.redis_client:
