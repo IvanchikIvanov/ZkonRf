@@ -205,7 +205,21 @@ class PGVectorDBService:
             self.conn.autocommit = True
             
             with self.conn.cursor() as cur:
-                cur.execute("CREATE EXTENSION IF NOT EXISTS vector")
+                cur.execute("SELECT 1 FROM pg_extension WHERE extname = 'vector'")
+                if cur.fetchone() is None:
+                    try:
+                        cur.execute("CREATE EXTENSION IF NOT EXISTS vector")
+                    except Exception as ext_err:
+                        if isinstance(ext_err, psycopg.errors.InsufficientPrivilege):
+                            cur.execute("SELECT 1 FROM pg_extension WHERE extname = 'vector'")
+                            if cur.fetchone() is None:
+                                raise RuntimeError(
+                                    "Нет прав на CREATE EXTENSION vector (нужен суперпользователь PostgreSQL). "
+                                    "Один раз: sudo -u postgres psql -d ИМЯ_БД -c \"CREATE EXTENSION vector\" "
+                                    "(ИМЯ_БД — как в DATABASE_URL / POSTGRES_DB)."
+                                ) from ext_err
+                        else:
+                            raise
                 cur.execute(
                     sql.SQL(
                         """
