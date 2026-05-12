@@ -29,6 +29,13 @@ class EmbeddingsService:
         
         self.client = OpenAI(**client_kwargs)
         self.model = settings.openai_embedding_model
+
+    def _embeddings_request_kwargs(self, texts: List[str]) -> dict:
+        """Параметры embeddings.create: для text-embedding-3-* задаётся dimensions (= EMBEDDING_DIMENSIONS)."""
+        kw: dict = {"model": self.model, "input": texts}
+        if self.model.startswith("text-embedding-3"):
+            kw["dimensions"] = settings.embedding_dimensions
+        return kw
     
     async def generate_embeddings(self, texts: List[str]) -> List[List[float]]:
         """Генерация embeddings для списка текстов."""
@@ -42,8 +49,7 @@ class EmbeddingsService:
                 for i in range(0, len(texts), max_batch_size):
                     batch = texts[i:i + max_batch_size]
                     response = self.client.embeddings.create(
-                        model=self.model,
-                        input=batch
+                        **self._embeddings_request_kwargs(batch)
                     )
                     embeddings = [item.embedding for item in response.data]
                     all_embeddings.extend(embeddings)
@@ -51,8 +57,7 @@ class EmbeddingsService:
                 return all_embeddings
             
             response = self.client.embeddings.create(
-                model=self.model,
-                input=texts
+                **self._embeddings_request_kwargs(texts)
             )
             
             embeddings = [item.embedding for item in response.data]

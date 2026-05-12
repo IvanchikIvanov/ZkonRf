@@ -271,9 +271,31 @@ class PGVectorDBService:
                         sql.Identifier(self.table_name)
                     )
                 )
-                # HNSW в pgvector < 0.7 ограничен 2000 измерениями; для 3072 (text-embedding-3-large) — IVFFlat.
+                # pgvector 0.6.x из apt: и hnsw, и ivfflat — макс. 2000 измерений. 0.7+ часто поднимает лимит для hnsw.
+                # При размерности > 2000 сначала пробуем только hnsw; ivfflat на 0.6 тоже падает — не дёргать зря.
                 try:
                     if self.dimensions <= 2000:
+                        try:
+                            cur.execute(
+                                sql.SQL(
+                                    "CREATE INDEX IF NOT EXISTS {} ON {} USING hnsw (embedding vector_cosine_ops)"
+                                ).format(
+                                    sql.Identifier(f"{self.table_name}_embedding_hnsw_idx"),
+                                    sql.Identifier(self.table_name)
+                                )
+                            )
+                        except Exception as hnsw_err:
+                            log.warning(f"HNSW pgvector: {hnsw_err}")
+                            cur.execute(
+                                sql.SQL(
+                                    "CREATE INDEX IF NOT EXISTS {} ON {} USING ivfflat (embedding vector_cosine_ops) WITH (lists = 100)"
+                                ).format(
+                                    sql.Identifier(f"{self.table_name}_embedding_ivfflat_idx"),
+                                    sql.Identifier(self.table_name)
+                                )
+                            )
+                            log.info("Создан IVFFlat-индекс pgvector (fallback после ошибки HNSW)")
+                    else:
                         cur.execute(
                             sql.SQL(
                                 "CREATE INDEX IF NOT EXISTS {} ON {} USING hnsw (embedding vector_cosine_ops)"
@@ -282,20 +304,14 @@ class PGVectorDBService:
                                 sql.Identifier(self.table_name)
                             )
                         )
-                    else:
-                        cur.execute(
-                            sql.SQL(
-                                "CREATE INDEX IF NOT EXISTS {} ON {} USING ivfflat (embedding vector_cosine_ops) WITH (lists = 100)"
-                            ).format(
-                                sql.Identifier(f"{self.table_name}_embedding_ivfflat_idx"),
-                                sql.Identifier(self.table_name)
-                            )
-                        )
-                        log.info(
-                            "Векторный индекс pgvector: IVFFlat (размерность > 2000, HNSW недоступен)"
-                        )
+                        log.info("Создан HNSW-индекс pgvector (размерность > 2000, нужен pgvector 0.7+)")
                 except Exception as idx_error:
-                    log.warning(f"Не удалось создать векторный индекс pgvector: {idx_error}")
+                    log.info(
+                        "Векторный ANN-индекс не создан (%s). Поиск — без индекса (для небольших таблиц обычно терпимо). "
+                        "Вариант A: обновить pgvector. B: выставить EMBEDDING_DIMENSIONS=1536 (или ≤2000), "
+                        "пересоздать таблицу/переиндексировать; для text-embedding-3-* в API уже передаётся dimensions.",
+                        idx_error,
+                    )
             
             connection_label = (
                 "DATABASE_URL"
