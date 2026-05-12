@@ -3,7 +3,7 @@ import os
 from pathlib import Path
 from typing import Optional
 from pydantic_settings import BaseSettings
-from pydantic import ConfigDict
+from pydantic import ConfigDict, field_validator
 
 
 class Settings(BaseSettings):
@@ -36,6 +36,27 @@ class Settings(BaseSettings):
     grok_api_key: str = ""
     grok_model: str = "grok-beta"
     grok_proxy: str = ""  # Прокси для Grok API
+    
+    @field_validator("openai_proxy", "grok_proxy", mode="before")
+    @classmethod
+    def normalize_optional_http_proxy(cls, v):
+        """
+        Пусто, если прокси не нужен. Обрезает inline-комментарий (# ...) из .env.
+        Некорректные значения (не http/https) — как пусто, чтобы не ломать httpx.
+        """
+        if v is None:
+            return ""
+        s = str(v).strip()
+        if not s:
+            return ""
+        if "#" in s:
+            s = s.split("#", 1)[0].strip()
+        if not s:
+            return ""
+        low = s.lower()
+        if low.startswith("http://") or low.startswith("https://"):
+            return s
+        return ""
     
     # ElevenLabs (для голоса девушки)
     elevenlabs_api_key: str = ""
