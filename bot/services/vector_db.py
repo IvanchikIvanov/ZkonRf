@@ -307,10 +307,9 @@ class PGVectorDBService:
                         log.info("Создан HNSW-индекс pgvector (размерность > 2000, нужен pgvector 0.7+)")
                 except Exception as idx_error:
                     log.info(
-                        "Векторный ANN-индекс не создан (%s). Поиск — без индекса (для небольших таблиц обычно терпимо). "
+                        f"Векторный ANN-индекс не создан ({idx_error}). Поиск — без индекса (для небольших таблиц обычно терпимо). "
                         "Вариант A: обновить pgvector. B: выставить EMBEDDING_DIMENSIONS=1536 (или ≤2000), "
-                        "пересоздать таблицу/переиндексировать; для text-embedding-3-* в API уже передаётся dimensions.",
-                        idx_error,
+                        "пересоздать таблицу/переиндексировать; для text-embedding-3-* в API уже передаётся dimensions."
                     )
             
             connection_label = (
