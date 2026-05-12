@@ -100,7 +100,13 @@ async def post_init(app: Application):
     
     if payment_service.yookassa_enabled:
         log.info("ЮKassa настроена и готова к работе")
-        await start_webhook_server()
+        if settings.yookassa_http_webhook_enabled:
+            await start_webhook_server()
+        elif settings.yookassa_poll_interval_seconds <= 0:
+            log.warning(
+                "ЮKassa: входящий webhook выключен и интервал опроса 0 — "
+                "оплаты картой не активируют подписку автоматически"
+            )
         if settings.yookassa_poll_interval_seconds > 0:
             yookassa_poll_task = asyncio.create_task(_yookassa_poll_loop())
     else:

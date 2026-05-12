@@ -84,12 +84,13 @@ class Settings(BaseSettings):
     yookassa_shop_id: str = ""
     yookassa_secret_key: str = ""
     yookassa_test_mode: bool = True
-    # Опционально: Basic Auth на URL вебхука (логин/пароль из настроек уведомлений в ЮKassa)
+    # Входящий HTTP POST от ЮKassa (нужен публичный URL и проброс WEBHOOK_PORT). false = только опрос API.
+    yookassa_http_webhook_enabled: bool = False
+    # Только если yookassa_http_webhook_enabled: Basic Auth на URL вебхука
     yookassa_webhook_basic_user: str = ""
     yookassa_webhook_basic_password: str = ""
-    # Опционально: список IP или CIDR через запятую (адреса ЮKassa из документации)
+    # Только если yookassa_http_webhook_enabled: IP/CIDR ЮKassa через запятую
     yookassa_webhook_allowed_ips: str = ""
-    # За обратным прокси брать первый hop из X-Forwarded-For (только если доверяете прокси)
     yookassa_webhook_trust_x_forwarded_for: bool = False
     
     # Payment - Настройки
@@ -102,9 +103,8 @@ class Settings(BaseSettings):
     subscription_price_yookassa_1month: int = 100  # Рубли за 1 месяц
     subscription_price_yookassa_3months: int = 200  # Рубли за 3 месяца
     subscription_price_yookassa_1year: int = 900  # Рубли за 1 год
-    webhook_url: str = ""  # URL для вебхуков ЮKassa
-    webhook_port: int = 8080  # Порт для веб-сервера вебхуков
-    # Опрос незавершённых платежей в Redis (пока работает бот), сек. 0 = только webhook
+    webhook_port: int = 8080  # Порт aiohttp только при yookassa_http_webhook_enabled
+    # Опрос Redis payment:* и API ЮKassa пока работает бот, сек. 0 = выключить (нужен webhook или ручная активация)
     yookassa_poll_interval_seconds: int = 120
     
     # Payment - Crypto / EVM
