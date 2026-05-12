@@ -27,8 +27,9 @@ pypdf==4.0.1
 
 # Utilities
 python-dotenv==1.0.0
-pydantic>=2.4.1,<2.6
-pydantic-settings==2.1.0
+# elevenlabs требует pydantic-core>=2.18.2 — верхняя граница <2.6 ломала установку
+pydantic>=2.10.0,<3
+pydantic-settings>=2.6.0,<3
 aiofiles==23.2.1
 
 # Logging
