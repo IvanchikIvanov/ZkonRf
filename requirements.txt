@@ -9,7 +9,7 @@ elevenlabs==2.27.0
 
 # Vector Database
 chromadb==0.4.22
-faiss-cpu==1.7.4
+# faiss-cpu не нужен для Chroma в этом проекте; старые пины (1.7.4) отсутствуют на PyPI для новых Python
 numpy<2.0.0
 
 # Redis
