@@ -36,7 +36,6 @@ loguru==0.7.2
 
 # HTTP client
 httpx~=0.25.2
-aiohttp==3.9.1
 
 # Payment
 yookassa==3.0.0

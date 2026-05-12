@@ -329,35 +329,6 @@ class PaymentService:
                 await self.process_yookassa_payment_by_id(pid)
             except Exception as e:
                 log.error(f"ЮKassa poll: платёж {pid}: {e}")
-    
-    async def handle_yookassa_webhook(self, event_data: Dict[str, Any]) -> bool:
-        """Обработка вебхука от ЮKassa (тонкая обёртка над process_yookassa_payment_by_id)."""
-        if not self.yookassa_enabled:
-            return False
-        
-        if not cache_service.is_available:
-            log.error("Redis недоступен: вебхук ЮKassa отклонён (идемпотентность невозможна)")
-            return False
-        
-        try:
-            event_type = event_data.get("event")
-            if event_type != "payment.succeeded":
-                log.debug(f"Игнорируем событие {event_type}")
-                return False
-            
-            payment_data = event_data.get("object", {}) or {}
-            payment_id = payment_data.get("id")
-            if not payment_id or not isinstance(payment_id, str):
-                log.error("Вебхук ЮKassa: нет payment id")
-                return False
-            
-            return await self.process_yookassa_payment_by_id(payment_id)
-            
-        except Exception as e:
-            log.error(f"Ошибка обработки вебхука ЮKassa: {e}")
-            import traceback
-            log.error(traceback.format_exc())
-            return False
 
 
 payment_service = PaymentService()
