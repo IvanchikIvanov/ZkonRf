@@ -31,6 +31,27 @@ from bot.services.payment_service import payment_service
 
 # Глобальная переменная для хранения runner веб-сервера
 webhook_runner = None
+yookassa_poll_task: asyncio.Task | None = None
+
+
+async def _yookassa_poll_loop():
+    """Пока бот запущен — периодически догоняем оплаты ЮKassa без отдельного процесса."""
+    interval = settings.yookassa_poll_interval_seconds
+    if interval <= 0:
+        return
+    interval = max(15, int(interval))
+    log.info(f"Фоновый опрос ЮKassa: каждые {interval} с")
+    while True:
+        try:
+            await payment_service.poll_pending_yookassa_from_redis()
+        except asyncio.CancelledError:
+            raise
+        except Exception:
+            log.exception("Ошибка фонового опроса ЮKassa")
+        try:
+            await asyncio.sleep(interval)
+        except asyncio.CancelledError:
+            break
 
 
 async def start_webhook_server():
@@ -75,10 +96,13 @@ async def post_init(app: Application):
     vector_db.initialize()
     
     # Инициализация сервиса платежей
+    global webhook_runner, yookassa_poll_task
+    
     if payment_service.yookassa_enabled:
         log.info("ЮKassa настроена и готова к работе")
-        # Запуск веб-сервера для вебхуков в фоне
         await start_webhook_server()
+        if settings.yookassa_poll_interval_seconds > 0:
+            yookassa_poll_task = asyncio.create_task(_yookassa_poll_loop())
     else:
         log.info("ЮKassa не настроена (работает только Telegram Stars)")
     
@@ -88,9 +112,17 @@ async def post_init(app: Application):
 
 async def post_shutdown(app: Application):
     """Очистка при остановке бота."""
-    global webhook_runner
+    global webhook_runner, yookassa_poll_task
     
     log.info("Остановка сервисов...")
+    
+    if yookassa_poll_task:
+        yookassa_poll_task.cancel()
+        try:
+            await yookassa_poll_task
+        except asyncio.CancelledError:
+            pass
+        yookassa_poll_task = None
     
     # Остановка веб-сервера для вебхуков
     if webhook_runner:

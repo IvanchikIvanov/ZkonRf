@@ -56,7 +56,7 @@ class CacheService:
         hash_value = hashlib.md5(value.encode()).hexdigest()
         return f"{prefix}:{hash_value}"
     
-    async def get(self, key: str) -> Optional[Any]:
+    async def delete(self, key: str) -> bool:
         """Получение значения из кэша."""
         if not self.redis_client:
             return None
@@ -166,6 +166,18 @@ class CacheService:
         except Exception as e:
             log.error(f"Ошибка продления TTL для ключа {key}: {e}")
             return False
+    
+    async def scan_keys(self, pattern: str) -> list:
+        """Все ключи по шаблону (для служебных скриптов, например опрос ЮKassa)."""
+        if not self.redis_client:
+            return []
+        keys: list = []
+        try:
+            async for k in self.redis_client.scan_iter(match=pattern, count=200):
+                keys.append(k)
+        except Exception as e:
+            log.error(f"Ошибка scan_keys {pattern}: {e}")
+        return keys
     
     async def cache_query(self, query: str, func, *args, **kwargs) -> Any:
         """Кэширование результата запроса."""

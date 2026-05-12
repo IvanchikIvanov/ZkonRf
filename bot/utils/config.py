@@ -104,6 +104,8 @@ class Settings(BaseSettings):
     subscription_price_yookassa_1year: int = 900  # Рубли за 1 год
     webhook_url: str = ""  # URL для вебхуков ЮKassa
     webhook_port: int = 8080  # Порт для веб-сервера вебхуков
+    # Опрос незавершённых платежей в Redis (пока работает бот), сек. 0 = только webhook
+    yookassa_poll_interval_seconds: int = 120
     
     # Payment - Crypto / EVM
     crypto_enabled_networks: str = "ethereum,bsc"  # Список включенных сетей через запятую
