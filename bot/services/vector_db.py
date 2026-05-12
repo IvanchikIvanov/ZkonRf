@@ -271,17 +271,31 @@ class PGVectorDBService:
                         sql.Identifier(self.table_name)
                     )
                 )
+                # HNSW в pgvector < 0.7 ограничен 2000 измерениями; для 3072 (text-embedding-3-large) — IVFFlat.
                 try:
-                    cur.execute(
-                        sql.SQL(
-                            "CREATE INDEX IF NOT EXISTS {} ON {} USING hnsw (embedding vector_cosine_ops)"
-                        ).format(
-                            sql.Identifier(f"{self.table_name}_embedding_hnsw_idx"),
-                            sql.Identifier(self.table_name)
+                    if self.dimensions <= 2000:
+                        cur.execute(
+                            sql.SQL(
+                                "CREATE INDEX IF NOT EXISTS {} ON {} USING hnsw (embedding vector_cosine_ops)"
+                            ).format(
+                                sql.Identifier(f"{self.table_name}_embedding_hnsw_idx"),
+                                sql.Identifier(self.table_name)
+                            )
                         )
-                    )
+                    else:
+                        cur.execute(
+                            sql.SQL(
+                                "CREATE INDEX IF NOT EXISTS {} ON {} USING ivfflat (embedding vector_cosine_ops) WITH (lists = 100)"
+                            ).format(
+                                sql.Identifier(f"{self.table_name}_embedding_ivfflat_idx"),
+                                sql.Identifier(self.table_name)
+                            )
+                        )
+                        log.info(
+                            "Векторный индекс pgvector: IVFFlat (размерность > 2000, HNSW недоступен)"
+                        )
                 except Exception as idx_error:
-                    log.warning(f"Не удалось создать HNSW индекс pgvector: {idx_error}")
+                    log.warning(f"Не удалось создать векторный индекс pgvector: {idx_error}")
             
             connection_label = (
                 "DATABASE_URL"
@@ -403,9 +417,12 @@ class PGVectorDBService:
                 """
             ).format(sql.Identifier(self.table_name), where_sql)
             
-            with self.conn.cursor(row_factory=dict_row) as cur:
-                cur.execute(query, params)
-                rows = cur.fetchall()
+            with self.conn.transaction():
+                with self.conn.cursor(row_factory=dict_row) as cur:
+                    if self.dimensions > 2000:
+                        cur.execute("SET LOCAL ivfflat.probes = 10")
+                    cur.execute(query, params)
+                    rows = cur.fetchall()
             
             articles = []
             for row in rows:
