@@ -1,3 +1,7 @@
+# --- Python (pip) ---
+# Системно на сервере отдельно: PostgreSQL + пакет pgvector для версии Postgres (apt: postgresql, postgresql-contrib, postgresql-N-pgvector),
+# Redis (apt: redis-server или свой образ), ffmpeg (для STT/аудио в Docker уже в Dockerfile).
+#
 # Telegram Bot
 python-telegram-bot==20.7
 
@@ -7,12 +11,12 @@ openai==1.12.0
 # ElevenLabs
 elevenlabs==2.27.0
 
-# Vector Database
+# Vector: Chroma (VECTOR_BACKEND=chroma) — локальные файлы; pgvector не требует chromadb в рантайме, но оставлено для скриптов/миграций
 chromadb==0.4.22
 # faiss-cpu не нужен для Chroma в этом проекте; старые пины (1.7.4) отсутствуют на PyPI для новых Python
 numpy<2.0.0
 
-# Redis
+# Redis — клиент для кеша, счётчиков, ключей payment:* (нужен запущенный redis-server или URL managed)
 redis==5.0.1
 hiredis==2.2.3
 
@@ -42,8 +46,10 @@ httpx~=0.25.2
 yookassa==3.0.0
 
 # Database
+# aiosqlite — users.db / история в каталоге рядом с DATABASE_PATH
 aiosqlite==0.19.0
-psycopg[binary]
+# psycopg — PostgreSQL + расширение pgvector при VECTOR_BACKEND=pgvector (на сервере должен быть установлен Postgres и CREATE EXTENSION vector)
+psycopg[binary]>=3.1,<4
 
 # Crypto / EVM
 eth-account==0.10.0
