@@ -1,7 +1,7 @@
 """Импорт источников по ЗПП РФ в формат для индексации."""
 import html
 import re
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
 from typing import List
 
@@ -17,31 +17,36 @@ class Source:
     title: str
     url: str
     category: str
+    alt_urls: tuple[str, ...] = field(default_factory=tuple)
 
 
+# Отдельного «Налогового процессуального кодекса» в РФ нет: процессуальные нормы в НК РФ (zpp_nk_rf_part1/2).
 SOURCES: List[Source] = [
     Source(
         filename="zpp_pravo_gov_portal",
-        title="Официальный портал правовой информации",
-        url="https://pravo.gov.ru/",
+        title="Официальный портал правовой информации (замена: Consultant+; pravo.gov.ru с этой сети недоступен)",
+        url="https://www.consultant.ru/",
         category="Официальный источник",
+        alt_urls=("https://zpp.rospotrebnadzor.ru/",),
     ),
     Source(
         filename="zpp_pravo_gov_codex",
-        title="Раздел Кодексы на pravo.gov.ru",
-        url="https://pravo.gov.ru/codex/",
+        title="Раздел кодексов (замена: справочник Consultant+; pravo.gov.ru/codex с этой сети недоступен)",
+        url="https://www.consultant.ru/law/ref/",
         category="Официальный источник",
+        alt_urls=("https://sudact.ru/law/koap/",),
     ),
     Source(
         filename="zpp_law_2300_consultant",
         title="Закон РФ О защите прав потребителей № 2300-1 (Consultant+)",
         url="https://www.consultant.ru/document/cons_doc_LAW_305/",
         category="Базовый закон ЗоЗПП",
+        alt_urls=("https://sudact.ru/law/zakon-rf-ot-07021992-n-2300-1-o/",),
     ),
     Source(
         filename="zpp_law_2300_pravo_gov",
-        title="Закон РФ О защите прав потребителей № 2300-1 (pravo.gov.ru)",
-        url="https://pravo.gov.ru/proxy/ips/?docbody&nd=102014512",
+        title="Закон РФ О защите прав потребителей № 2300-1 (замена: СудАкт; pravo.gov.ru с этой сети недоступен)",
+        url="https://sudact.ru/law/zakon-rf-ot-07021992-n-2300-1-o/",
         category="Базовый закон ЗоЗПП",
     ),
     Source(
@@ -55,60 +60,221 @@ SOURCES: List[Source] = [
         title="Гражданский кодекс РФ (часть 2)",
         url="https://www.consultant.ru/document/cons_doc_LAW_9027/",
         category="Кодексы РФ",
+        alt_urls=("https://sudact.ru/law/gk-rf-chast2/",),
     ),
     Source(
         filename="zpp_gk_rf_full",
         title="Гражданский кодекс РФ (полный)",
         url="https://www.consultant.ru/document/cons_doc_LAW_5142/",
         category="Кодексы РФ",
+        alt_urls=(
+            "https://sudact.ru/law/gk-rf-chast1/",
+            "https://sudact.ru/law/gk-rf-chast2/",
+        ),
     ),
     Source(
         filename="zpp_koap_rf",
         title="КоАП РФ",
         url="https://www.consultant.ru/document/cons_doc_LAW_34661/",
         category="Кодексы РФ",
+        alt_urls=("https://sudact.ru/law/koap/",),
+    ),
+    Source(
+        filename="zpp_uk_rf",
+        title="Уголовный кодекс РФ",
+        url="https://www.consultant.ru/document/cons_doc_LAW_10699/",
+        category="Кодексы РФ",
+        alt_urls=("https://sudact.ru/law/uk-rf/",),
+    ),
+    Source(
+        filename="zpp_apk_rf",
+        title="Арбитражный процессуальный кодекс РФ",
+        url="https://www.consultant.ru/document/cons_doc_LAW_37800/",
+        category="Кодексы РФ",
+        alt_urls=("https://sudact.ru/law/apk-rf/",),
+    ),
+    Source(
+        filename="zpp_nk_rf_part1",
+        title="Налоговый кодекс РФ (часть первая, 146-ФЗ)",
+        url="https://www.consultant.ru/document/cons_doc_LAW_19671/",
+        category="Кодексы РФ",
+        alt_urls=("https://sudact.ru/law/nk-rf-chast1/",),
+    ),
+    Source(
+        filename="zpp_nk_rf_part2",
+        title="Налоговый кодекс РФ (часть вторая, 117-ФЗ)",
+        url="https://www.consultant.ru/document/cons_doc_LAW_28165/",
+        category="Кодексы РФ",
+        alt_urls=("https://sudact.ru/law/nk-rf-chast2/",),
     ),
     Source(
         filename="zpp_gpk_rf",
         title="ГПК РФ",
         url="https://www.consultant.ru/document/cons_doc_LAW_39570/",
         category="Кодексы РФ",
+        alt_urls=("https://sudact.ru/law/gpk-rf/",),
     ),
     Source(
         filename="zpp_jk_rf",
         title="Жилищный кодекс РФ",
         url="https://www.consultant.ru/document/cons_doc_LAW_51057/",
         category="Кодексы РФ",
+        alt_urls=("https://sudact.ru/law/zhk-rf/",),
+    ),
+    Source(
+        filename="zpp_upk_rf",
+        title="Уголовно-процессуальный кодекс РФ",
+        url="https://www.consultant.ru/document/cons_doc_LAW_34481/",
+        category="Кодексы РФ",
+        alt_urls=("https://sudact.ru/law/upk-rf/",),
+    ),
+    Source(
+        filename="zpp_kas_rf",
+        title="Кодекс административного судопроизводства РФ",
+        url="https://www.consultant.ru/document/cons_doc_LAW_176147/",
+        category="Кодексы РФ",
+        alt_urls=("https://sudact.ru/law/kas-rf/",),
+    ),
+    Source(
+        filename="zpp_zk_rf",
+        title="Земельный кодекс РФ",
+        url="https://www.consultant.ru/document/cons_doc_LAW_33773/",
+        category="Кодексы РФ",
+        alt_urls=("https://sudact.ru/law/zemelnyi-kodeks/",),
+    ),
+    Source(
+        filename="zpp_tk_rf",
+        title="Трудовой кодекс РФ",
+        url="https://www.consultant.ru/document/cons_doc_LAW_34683/",
+        category="Кодексы РФ",
+        alt_urls=("https://sudact.ru/law/tk-rf/",),
+    ),
+    Source(
+        filename="zpp_sk_rf",
+        title="Семейный кодекс РФ",
+        url="https://www.consultant.ru/document/cons_doc_LAW_8982/",
+        category="Кодексы РФ",
+        alt_urls=("https://sudact.ru/law/sk-rf/",),
+    ),
+    Source(
+        filename="zpp_bk_rf",
+        title="Бюджетный кодекс РФ",
+        url="https://www.consultant.ru/document/cons_doc_LAW_19702/",
+        category="Кодексы РФ",
+        alt_urls=("https://sudact.ru/law/bk-rf/",),
+    ),
+    Source(
+        filename="zpp_vk_rf",
+        title="Водный кодекс РФ",
+        url="https://www.consultant.ru/document/cons_doc_LAW_60683/",
+        category="Кодексы РФ",
+        alt_urls=("https://sudact.ru/law/vodnyi-kodeks/",),
+    ),
+    Source(
+        filename="zpp_grk_rf",
+        title="Градостроительный кодекс РФ",
+        url="https://www.consultant.ru/document/cons_doc_LAW_525518/",
+        category="Кодексы РФ",
+        alt_urls=("https://sudact.ru/law/gradostroitelnyi-kodeks/",),
+    ),
+    Source(
+        filename="zpp_les_kod_rf",
+        title="Лесной кодекс РФ",
+        url="https://www.consultant.ru/document/cons_doc_LAW_64299/",
+        category="Кодексы РФ",
+        alt_urls=("https://sudact.ru/law/lesnoi-kodeks-rossiiskoi-federatsii-ot-04122006-n/",),
+    ),
+    Source(
+        filename="zpp_uik_rf",
+        title="Уголовно-исполнительный кодекс РФ",
+        url="https://www.consultant.ru/document/cons_doc_LAW_12940/",
+        category="Кодексы РФ",
+        alt_urls=("https://sudact.ru/law/uik-rf/",),
+    ),
+    Source(
+        filename="zpp_konst_rf",
+        title="Конституция Российской Федерации",
+        url="https://www.consultant.ru/document/cons_doc_LAW_28399/",
+        category="Кодексы РФ",
+        alt_urls=("https://base.garant.ru/12138275/",),
     ),
     Source(
         filename="zpp_pp_2463",
         title="Постановление Правительства РФ № 2463",
         url="https://www.consultant.ru/document/cons_doc_LAW_373622/",
         category="Подзаконные акты",
+        alt_urls=("https://sudact.ru/law/postanovlenie-pravitelstva-rf-ot-31122020-n-2463/postanovlenie/",),
     ),
     Source(
         filename="zpp_184_fz_tech_reg",
         title="ФЗ № 184 О техническом регулировании",
-        url="https://www.consultant.ru/document/cons_doc_LAW_34481/",
+        url="https://www.consultant.ru/document/cons_doc_LAW_512697/",
         category="Смежные законы",
+        alt_urls=("https://sudact.ru/law/federalnyi-zakon-ot-27122002-n-184-fz-o/",),
     ),
     Source(
         filename="zpp_38_fz_ads_reference",
         title="Ссылка из списка пользователя: Закон о рекламе",
-        url="https://www.consultant.ru/document/cons_doc_LAW_34481/",
+        url="https://www.consultant.ru/document/cons_doc_LAW_58968/",
         category="Смежные законы",
+        alt_urls=("https://sudact.ru/law/federalnyi-zakon-ot-13032006-n-38-fz-o/",),
     ),
     Source(
         filename="zpp_353_fz_credit",
         title="ФЗ № 353 О потребительском кредите (займе)",
         url="https://www.consultant.ru/document/cons_doc_LAW_155986/",
         category="Смежные законы",
+        alt_urls=("https://sudact.ru/law/federalnyi-zakon-ot-21122013-n-353-fz-o/",),
     ),
     Source(
         filename="zpp_rospotreb_npa_federal",
         title="Роспотребнадзор: федеральные НПА по ЗПП",
         url="https://zpp.rospotrebnadzor.ru/npa/federal",
         category="Реестры и перечни НПА",
+    ),
+    Source(
+        filename="zpp_rospotreb_npa_regional",
+        title="Роспотребнадзор: региональные НПА по ЗПП и иным обязательным требованиям (поддомен ЗПП)",
+        url="https://zpp.rospotrebnadzor.ru/npa/regional",
+        category="Реестры и перечни НПА",
+    ),
+    Source(
+        filename="zpp_52_fz_sanitary_epidemiological",
+        title='Федеральный закон № 52-ФЗ "О санитарно-эпидемиологическом благополучии населения" (Consultant+)',
+        url="https://www.consultant.ru/document/cons_doc_LAW_511660/",
+        category="Санитарное законодательство и СанПиН",
+        alt_urls=("https://base.garant.ru/12125253/",),
+    ),
+    Source(
+        filename="zpp_sp_213678_retail_services",
+        title="СП 2.1.3678-20: требования при продаже товаров, работах, услугах (помещения, торговля, быт, гостиницы и др.; СудАкт)",
+        url="https://sudact.ru/law/postanovlenie-glavnogo-gosudarstvennogo-sanitarnogo-vracha-rf-ot_1363/",
+        category="Санитарное законодательство и СанПиН",
+    ),
+    Source(
+        filename="zpp_sanpin_2343590_public_catering",
+        title="СанПиН 2.3/2.4.3590-20: общественное питание, производственный контроль и принципы ХАССП в санитарных нормах (СудАкт)",
+        url="https://sudact.ru/law/postanovlenie-glavnogo-gosudarstvennogo-sanitarnogo-vracha-rf-ot_1355/",
+        category="Санитарное законодательство и СанПиН",
+    ),
+    Source(
+        filename="zpp_sanpin_21368421_settlements_premises",
+        title="СанПиН 2.1.3684-21: территории, вода, воздух, жилые и общественные помещения, мероприятия (СудАкт)",
+        url="https://sudact.ru/law/postanovlenie-glavnogo-gosudarstvennogo-sanitarnogo-vracha-rf-ot_1364/",
+        category="Санитарное законодательство и СанПиН",
+    ),
+    Source(
+        filename="zpp_gost_r_51705_haccp",
+        title="ГОСТ Р 51705.1-2024: системы менеджмента на основе принципов ХАССП для пищевой продукции (Гарант; полный текст может требовать подписки)",
+        url="https://base.garant.ru/409077162/",
+        category="ХАССП и пищевая безопасность",
+    ),
+    Source(
+        filename="zpp_tr_ts_021_food_safety",
+        title="ТР ТС 021/2011 О безопасности пищевой продукции (СудАкт; альтернатива Consultant по расписанию)",
+        url="https://sudact.ru/law/reshenie-komissii-tamozhennogo-soiuza-ot-09122011-n_2/tr-ts-0212011/",
+        category="ХАССП и пищевая безопасность",
+        alt_urls=("https://www.consultant.ru/document/cons_doc_LAW_124768/",),
     ),
     Source(
         filename="zpp_vs_plenum_17_2012",
@@ -124,8 +290,8 @@ SOURCES: List[Source] = [
     ),
     Source(
         filename="zpp_rospotreb_main",
-        title="Официальный сайт Роспотребнадзора",
-        url="https://rospotrebnadzor.ru/",
+        title="Информация Роспотребнадзора для потребителя (поддомен ЗПП; rospotrebnadzor.ru с этой сети недоступен)",
+        url="https://zpp.rospotrebnadzor.ru/npa/global",
         category="Госресурсы",
     ),
     Source(
@@ -133,12 +299,14 @@ SOURCES: List[Source] = [
         title="LegalActs.ru: ЗоЗПП",
         url="https://legalacts.ru/doc/ZZPP/",
         category="Дополнительные ресурсы",
+        alt_urls=("https://www.consultant.ru/document/cons_doc_LAW_305/",),
     ),
     Source(
         filename="zpp_cntd",
-        title="CNTD: Закон РФ о защите прав потребителей",
-        url="https://docs.cntd.ru/document/9005388",
+        title="CNTD: Закон РФ о защите прав потребителей (замена: Consultant+; docs.cntd.ru с этой сети недоступен)",
+        url="https://www.consultant.ru/document/cons_doc_LAW_305/",
         category="Дополнительные ресурсы",
+        alt_urls=("https://sudact.ru/law/zakon-rf-ot-07021992-n-2300-1-o/",),
     ),
     Source(
         filename="zpp_sudact",
@@ -183,11 +351,11 @@ def extract_relevant_text(text: str) -> str:
     return text
 
 
-def split_to_articles(text: str, source: Source, max_chars: int = 5500) -> str:
+def split_to_articles(text: str, source: Source, fetched_url: str, max_chars: int = 5500) -> str:
     """Разбивает текст на формат `Статья X.` для текущего парсера."""
     normalized = re.sub(r"\s+", " ", text).strip()
     if not normalized:
-        normalized = f"Источник {source.title}. Не удалось извлечь текст с {source.url}."
+        normalized = f"Источник {source.title}. Не удалось извлечь текст с {fetched_url}."
     
     chunks = []
     cursor = 0
@@ -207,7 +375,7 @@ def split_to_articles(text: str, source: Source, max_chars: int = 5500) -> str:
     for idx, chunk in enumerate(chunks, start=1):
         lines.append(
             f"Статья {idx}. Источник: {source.title}. Категория: {source.category}. "
-            f"URL: {source.url}. Текст: {chunk}"
+            f"URL: {fetched_url}. Текст: {chunk}"
         )
         lines.append("")
     return "\n".join(lines).strip() + "\n"
@@ -223,43 +391,54 @@ def detect_encoding(response: httpx.Response) -> str:
     return "utf-8"
 
 
-def download_text(client: httpx.Client, source: Source) -> str:
-    """Скачивает и очищает текст документа."""
+def download_text(client: httpx.Client, source: Source) -> tuple[str, str]:
+    """Скачивает и очищает текст документа. Перебирает url и alt_urls."""
+    urls = (source.url,) + source.alt_urls
     last_error = None
-    for attempt in range(1, 3):
-        try:
-            response = client.get(source.url, follow_redirects=True)
-            response.raise_for_status()
-            encoding = detect_encoding(response)
+    for fetch_url in urls:
+        for attempt in range(1, 4):
             try:
-                raw_html = response.content.decode(encoding, errors="replace")
-            except Exception:
-                raw_html = response.text
-            cleaned = strip_html(raw_html)
-            cleaned = extract_relevant_text(cleaned)
-            if len(cleaned) < 200:
-                raise ValueError("Слишком мало текста после очистки")
-            return cleaned
-        except Exception as exc:
-            last_error = exc
-            log.warning(
-                f"Не удалось скачать {source.url} (попытка {attempt}/2): {exc}"
-            )
-    raise RuntimeError(f"Ошибка загрузки {source.url}: {last_error}")
+                response = client.get(fetch_url, follow_redirects=True)
+                response.raise_for_status()
+                encoding = detect_encoding(response)
+                try:
+                    raw_html = response.content.decode(encoding, errors="replace")
+                except Exception:
+                    raw_html = response.text
+                cleaned = strip_html(raw_html)
+                cleaned = extract_relevant_text(cleaned)
+                if len(cleaned) < 200:
+                    raise ValueError("Слишком мало текста после очистки")
+                if fetch_url != source.url:
+                    log.info(f"Использован альтернативный URL для {source.filename}: {fetch_url}")
+                return cleaned, fetch_url
+            except Exception as exc:
+                last_error = exc
+                log.warning(
+                    f"Не удалось скачать {fetch_url} (попытка {attempt}/3, источник {source.filename}): {exc}"
+                )
+    raise RuntimeError(f"Ошибка загрузки {source.filename} (все URL исчерпаны): {last_error}")
 
 
-def build_registry_file(codexes_ru_dir: Path, imported: List[Source], failed: List[Source]) -> None:
-    """Создает индексный файл со всеми ссылками."""
+def build_registry_file(
+    codexes_ru_dir: Path,
+    imported: List[tuple[Source, str]],
+    failed: List[Source],
+) -> None:
+    """Создает индексный файл со всеми ссылками (URL — фактически загруженный, если отличался)."""
     lines = []
     idx = 1
     lines.append("Статья 1. Сводный реестр источников по защите прав потребителей РФ на май 2026 года.")
     lines.append("")
     idx += 1
     
-    for src in imported:
+    for src, reg_url in imported:
+        detail = ""
+        if reg_url != src.url:
+            detail = f" Первичный URL: {src.url}."
         lines.append(
             f"Статья {idx}. Загруженный источник. Категория: {src.category}. "
-            f"Название: {src.title}. URL: {src.url}."
+            f"Название: {src.title}. URL: {reg_url}.{detail}"
         )
         lines.append("")
         idx += 1
@@ -283,24 +462,27 @@ def import_sources() -> None:
     codexes_ru_dir = codexes_dir / "ru"
     codexes_ru_dir.mkdir(parents=True, exist_ok=True)
     
-    imported: List[Source] = []
+    imported: List[tuple[Source, str]] = []
     failed: List[Source] = []
     
-    timeout = httpx.Timeout(timeout=25.0, connect=10.0)
-    with httpx.Client(timeout=timeout, verify=True) as client:
+    timeout = httpx.Timeout(timeout=60.0, connect=30.0)
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; rv:128.0) Gecko/20100101 Firefox/128.0"
+    }
+    with httpx.Client(timeout=timeout, verify=True, headers=headers) as client:
         for source in SOURCES:
             try:
                 target_file = codexes_ru_dir / f"{source.filename}.txt"
                 if target_file.exists() and target_file.stat().st_size > 2000:
-                    imported.append(source)
+                    imported.append((source, source.url))
                     log.info(f"Файл уже существует, пропускаем скачивание: {target_file.name}")
                     continue
                 
                 log.info(f"Загрузка: {source.title} ({source.url})")
-                text = download_text(client, source)
-                article_text = split_to_articles(text, source)
+                text, fetched_url = download_text(client, source)
+                article_text = split_to_articles(text, source, fetched_url)
                 target_file.write_text(article_text, encoding="utf-8")
-                imported.append(source)
+                imported.append((source, fetched_url))
                 log.info(
                     f"Сохранен файл {target_file.name}: {len(article_text)} символов"
                 )
