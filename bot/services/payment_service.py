@@ -1,5 +1,6 @@
 """Сервис для работы с платежами и подписками."""
 import asyncio
+import uuid
 from datetime import datetime, timedelta
 from decimal import Decimal
 from typing import Optional, Dict, Any, Set
@@ -140,6 +141,7 @@ class PaymentService:
             if amount is None:
                 amount = settings.subscription_price_yookassa_1month
             
+            idempotency_key = f"subscription:{user_id}:{months}:{uuid.uuid4().hex}"
             payment = Payment.create({
                 "amount": {
                     "value": f"{amount:.2f}",
@@ -155,7 +157,7 @@ class PaymentService:
                     "user_id": str(user_id),
                     "months": str(months)
                 }
-            }, settings.yookassa_test_mode)
+            }, idempotency_key)
             
             # Сохраняем информацию о платеже
             payment_key = f"payment:{payment.id}"
@@ -164,6 +166,8 @@ class PaymentService:
                 {
                     "user_id": user_id,
                     "amount": amount,
+                    "months": months,
+                    "idempotency_key": idempotency_key,
                     "status": payment.status,
                     "created_at": datetime.now().isoformat()
                 },
@@ -180,7 +184,7 @@ class PaymentService:
             log.error(f"Ошибка создания платежа ЮKassa: {e}")
             return None
     
-    async def activate_subscription(self, user_id: int, months: int = 1, requests_limit: int = 500):
+    async def activate_subscription(self, user_id: int, months: int = 1, requests_limit: int = 0):
         """Активировать подписку пользователя."""
         # Используем user_service для активации подписки
         # Для года используем 365 дней, для остальных - 30 дней на месяц

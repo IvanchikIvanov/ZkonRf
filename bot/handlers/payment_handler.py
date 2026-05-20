@@ -3,7 +3,6 @@ from telegram import Update, LabeledPrice, InlineKeyboardButton, InlineKeyboardM
 from telegram.ext import ContextTypes, PreCheckoutQueryHandler, MessageHandler, filters
 from bot.utils.logger import log, log_user_action
 from bot.services.payment_service import payment_service
-from bot.services.crypto_service import crypto_service
 from bot.services.language_service import language_service
 from bot.services.conversation_context import conversation_context
 from bot.utils.config import settings
@@ -276,7 +275,7 @@ async def handle_successful_payment(update: Update, context: ContextTypes.DEFAUL
         await update.message.reply_text(
             f"✅ Платеж успешно обработан!\n\n"
             f"🎉 Ваша подписка активирована на {period_name} ({days} дней).\n"
-            f"Теперь вы можете задавать неограниченное количество вопросов!"
+            f"Теперь вы можете задавать вопросы без лимита по подписке!"
         )
         
         log.info(f"Подписка активирована через Stars для пользователя {user_id}, период: {months} месяцев")
@@ -293,27 +292,15 @@ async def handle_successful_payment(update: Update, context: ContextTypes.DEFAUL
 
 async def handle_pay_crypto_callback(update: Update, context: ContextTypes.DEFAULT_TYPE, period: str):
     """Обработка выбора оплаты криптовалютой."""
-    user_id = update.effective_user.id
     query = update.callback_query
-    
+    user_id = update.effective_user.id
     user_language = await language_service.get_user_language(user_id)
-    
-    # Получаем информацию о пользователе
-    sub_info = await payment_service.check_subscription(user_id)
-    
-    # Если у пользователя еще нет кошелька, создаем его
-    if not sub_info.get('evm_wallet'):
-        wallet_address = await crypto_service.create_user_wallet(user_id)
-        if not wallet_address:
-            text = language_service.get_text('error_wallet', user_language)
-            await query.message.reply_text(text)
-            return
-    else:
-        wallet_address = sub_info['evm_wallet']
-    
-    text = language_service.get_text('crypto_payment', user_language).format(address=wallet_address)
-    
-    await query.message.reply_text(text, parse_mode="Markdown")
+    text = (
+        "❌ Cryptocurrency payment is temporarily unavailable."
+        if user_language == "en"
+        else "❌ Оплата криптовалютой временно недоступна."
+    )
+    await query.message.reply_text(text)
 
 
 async def handle_callback_query(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -422,14 +409,7 @@ async def handle_callback_query(update: Update, context: ContextTypes.DEFAULT_TY
             )
         ])
         
-        # Криптовалюта (EVM)
-        pay_crypto_text = language_service.get_text('pay_crypto', user_language)
-        keyboard.append([
-            InlineKeyboardButton(
-                pay_crypto_text,
-                callback_data=f"pay_crypto_{period}"
-            )
-        ])
+        # Crypto payments are hidden until payments can be attributed by transaction id.
         
         reply_markup = InlineKeyboardMarkup(keyboard)
         text = language_service.get_text('choose_payment', user_language).format(period=period_name)

@@ -277,7 +277,7 @@ class UserService:
                 'registered': False,
                 'can_make_request': False,
                 'free_requests_used': 0,
-                'free_requests_limit': 5,
+                'free_requests_limit': settings.free_requests_per_day,
                 'subscription_active': False,
                 'subscription_expires_at': None,
                 'requests_used': 0,
@@ -306,16 +306,16 @@ class UserService:
         
         if subscription_active:
             # Проверяем лимит подписки
-            can_make_request = user['requests_used'] < user['requests_limit']
+            can_make_request = user['requests_limit'] <= 0 or user['requests_used'] < user['requests_limit']
         else:
             # Проверяем бесплатный лимит
-            can_make_request = user['free_requests_used'] < 5
+            can_make_request = user['free_requests_used'] < settings.free_requests_per_day
         
         return {
             'registered': True,
             'can_make_request': can_make_request,
             'free_requests_used': user['free_requests_used'],
-            'free_requests_limit': 5,
+            'free_requests_limit': settings.free_requests_per_day,
             'subscription_active': subscription_active,
             'subscription_expires_at': subscription_expires_at,
             'requests_used': user['requests_used'],

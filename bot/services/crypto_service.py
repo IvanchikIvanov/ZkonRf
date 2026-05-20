@@ -65,11 +65,17 @@ class CryptoService:
         Returns:
             Адрес кошелька или None при ошибке
         """
+        if not self.master_wallet:
+            log.warning(
+                "Crypto payments disabled: CRYPTO_MASTER_WALLET is not configured. "
+                "Refusing to create an unrecoverable per-user wallet."
+            )
+            return None
+        
         try:
-            wallet = self.create_wallet()
-            address = wallet['address']
+            address = self.master_wallet
             
-            # Сохраняем только адрес в БД (приватный ключ НЕ сохраняем!)
+            # Store only the configured receiving address; generated private wallets are not used.
             success = await user_service.set_evm_wallet(user_id, address)
             
             if success:
@@ -99,6 +105,12 @@ class CryptoService:
             return False
         
         wallet_address = user['evm_wallet']
+        if self.master_wallet and wallet_address.lower() == self.master_wallet.lower():
+            log.warning(
+                "Crypto auto-activation skipped: shared CRYPTO_MASTER_WALLET balance "
+                "cannot be attributed to a specific Telegram user."
+            )
+            return False
         
         # Определяем сети для проверки
         networks_to_check = [network_id] if network_id else list(self.token_checkers.keys())

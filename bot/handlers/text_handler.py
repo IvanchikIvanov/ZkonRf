@@ -329,8 +329,8 @@ async def handle_help(update: Update, context: ContextTypes.DEFAULT_TYPE):
 /help - Показать эту справку
 /stats - Статистика по базе данных
 /subscribe - Оформить подписку
-/country - Выбрать страну для поиска
-/countries - Список доступных стран
+/templates - Показать шаблоны документов
+/cancel_doc - Отменить текущий черновик документа
 """
     await update.message.reply_text(help_text)
 
