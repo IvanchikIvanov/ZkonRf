@@ -233,6 +233,109 @@ SOURCES: List[Source] = [
         category="Реестры и перечни НПА",
     ),
     Source(
+        filename="zpp_152_fz_personal_data",
+        title="ФЗ № 152 О персональных данных",
+        url="https://www.consultant.ru/document/cons_doc_LAW_61801/",
+        category="Смежные законы: цифровые услуги и персональные данные",
+    ),
+    Source(
+        filename="zpp_149_fz_information",
+        title="ФЗ № 149 Об информации, информационных технологиях и о защите информации",
+        url="https://www.consultant.ru/document/cons_doc_LAW_61798/",
+        category="Смежные законы: цифровые услуги и персональные данные",
+    ),
+    Source(
+        filename="zpp_54_fz_cash_registers",
+        title="ФЗ № 54 О применении контрольно-кассовой техники",
+        url="https://www.consultant.ru/document/cons_doc_LAW_42359/",
+        category="Смежные законы: торговля и расчеты",
+    ),
+    Source(
+        filename="zpp_381_fz_trade",
+        title="ФЗ № 381 Об основах государственного регулирования торговой деятельности",
+        url="https://www.consultant.ru/document/cons_doc_LAW_95629/",
+        category="Смежные законы: торговля и розница",
+    ),
+    Source(
+        filename="zpp_395_1_banks",
+        title="Закон РФ № 395-1 О банках и банковской деятельности",
+        url="https://www.consultant.ru/document/cons_doc_LAW_5842/",
+        category="Смежные законы: банки и платежи",
+    ),
+    Source(
+        filename="zpp_161_fz_payment_system",
+        title="ФЗ № 161 О национальной платежной системе",
+        url="https://www.consultant.ru/document/cons_doc_LAW_115625/",
+        category="Смежные законы: банки и платежи",
+    ),
+    Source(
+        filename="zpp_230_fz_debt_collection",
+        title="ФЗ № 230 О защите прав физлиц при взыскании просроченной задолженности",
+        url="https://www.consultant.ru/document/cons_doc_LAW_200497/",
+        category="Смежные законы: кредиты и взыскание",
+        alt_urls=("https://legalacts.ru/doc/federalnyi-zakon-ot-03072016-n-230-fz-o/",),
+    ),
+    Source(
+        filename="zpp_151_fz_microfinance",
+        title="ФЗ № 151 О микрофинансовой деятельности и микрофинансовых организациях",
+        url="https://www.consultant.ru/document/cons_doc_LAW_102112/",
+        category="Смежные законы: кредиты и МФО",
+    ),
+    Source(
+        filename="zpp_127_fz_bankruptcy",
+        title="ФЗ № 127 О несостоятельности (банкротстве)",
+        url="https://www.consultant.ru/document/cons_doc_LAW_39331/",
+        category="Смежные законы: долги и банкротство",
+    ),
+    Source(
+        filename="zpp_40_fz_osago",
+        title="ФЗ № 40 Об обязательном страховании гражданской ответственности владельцев транспортных средств",
+        url="https://www.consultant.ru/document/cons_doc_LAW_36528/",
+        category="Смежные законы: страхование",
+    ),
+    Source(
+        filename="zpp_4015_1_insurance",
+        title="Закон РФ № 4015-1 Об организации страхового дела в Российской Федерации",
+        url="https://www.consultant.ru/document/cons_doc_LAW_1307/",
+        category="Смежные законы: страхование",
+    ),
+    Source(
+        filename="zpp_214_fz_shared_construction",
+        title="ФЗ № 214 Об участии в долевом строительстве",
+        url="https://www.consultant.ru/document/cons_doc_LAW_51038/",
+        category="Смежные законы: жилье и строительство",
+    ),
+    Source(
+        filename="zpp_273_fz_education",
+        title="ФЗ № 273 Об образовании в Российской Федерации",
+        url="https://www.consultant.ru/document/cons_doc_LAW_140174/",
+        category="Смежные законы: платные услуги",
+    ),
+    Source(
+        filename="zpp_323_fz_health",
+        title="ФЗ № 323 Об основах охраны здоровья граждан в Российской Федерации",
+        url="https://www.consultant.ru/document/cons_doc_LAW_121895/",
+        category="Смежные законы: платные медицинские услуги",
+    ),
+    Source(
+        filename="zpp_air_code_rf",
+        title="Воздушный кодекс Российской Федерации",
+        url="https://www.consultant.ru/document/cons_doc_LAW_13744/",
+        category="Кодексы РФ: перевозки",
+    ),
+    Source(
+        filename="zpp_18_fz_railway_transport_charter",
+        title="ФЗ № 18 Устав железнодорожного транспорта Российской Федерации",
+        url="https://www.consultant.ru/document/cons_doc_LAW_40444/",
+        category="Смежные законы: перевозки",
+    ),
+    Source(
+        filename="zpp_229_fz_enforcement",
+        title="ФЗ № 229 Об исполнительном производстве",
+        url="https://www.consultant.ru/document/cons_doc_LAW_71450/",
+        category="Смежные законы: исполнение решений и взыскание",
+    ),
+    Source(
         filename="zpp_rospotreb_npa_regional",
         title="Роспотребнадзор: региональные НПА по ЗПП и иным обязательным требованиям (поддомен ЗПП)",
         url="https://zpp.rospotrebnadzor.ru/npa/regional",
@@ -281,6 +384,7 @@ SOURCES: List[Source] = [
         title="Пленум ВС РФ № 17 от 28.06.2012",
         url="https://www.consultant.ru/document/cons_doc_LAW_131885/",
         category="Судебная практика",
+        alt_urls=("https://sudact.ru/law/postanovlenie-plenuma-verkhovnogo-suda-rf-ot-28062012/",),
     ),
     Source(
         filename="zpp_gis_zpp_rospotreb",
@@ -409,6 +513,13 @@ def download_text(client: httpx.Client, source: Source) -> tuple[str, str]:
                 cleaned = extract_relevant_text(cleaned)
                 if len(cleaned) < 200:
                     raise ValueError("Слишком мало текста после очистки")
+                bad_page_markers = (
+                    "Федеральный закон \"О полиции\" N 3-ФЗ",
+                    "Контактная информация 117292",
+                    "Сайт использует файлы cookies",
+                )
+                if any(marker in cleaned for marker in bad_page_markers):
+                    raise ValueError("Получена служебная страница вместо текста документа")
                 if fetch_url != source.url:
                     log.info(f"Использован альтернативный URL для {source.filename}: {fetch_url}")
                 return cleaned, fetch_url
