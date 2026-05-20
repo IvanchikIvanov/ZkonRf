@@ -12,6 +12,7 @@ from bot.services.rate_limiter import rate_limiter
 from bot.services.conversation_context import conversation_context
 from bot.services.legal_scope_service import legal_scope_service
 from bot.services.legal_ranking_service import legal_ranking_service
+from bot.services.document_template_service import document_template_service
 
 
 async def handle_text_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -27,6 +28,18 @@ async def handle_text_message(update: Update, context: ContextTypes.DEFAULT_TYPE
         question = message.text.strip()
         
         if not question:
+            return
+
+        document_result = await document_template_service.handle_text(user_id, question)
+        if document_result.status != "not_document":
+            await message.reply_text(document_result.message)
+            if document_result.status == "ready" and document_result.file_path:
+                with open(document_result.file_path, "rb") as document_file:
+                    await message.reply_document(
+                        document=document_file,
+                        filename=document_result.filename or document_result.file_path.name,
+                        caption="Файл создан как черновик. Проверьте данные перед подачей.",
+                    )
             return
         
         # Проверяем контекст разговора перед валидацией
@@ -320,6 +333,18 @@ async def handle_help(update: Update, context: ContextTypes.DEFAULT_TYPE):
 /countries - Список доступных стран
 """
     await update.message.reply_text(help_text)
+
+
+async def handle_templates(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Показать доступные шаблоны документов."""
+    await update.message.reply_text(document_template_service.template_list_text())
+
+
+async def handle_cancel_doc(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Отменить текущий черновик документа."""
+    user_id = update.effective_user.id
+    result = await document_template_service.handle_text(user_id, "/cancel_doc")
+    await update.message.reply_text(result.message)
 
 
 async def handle_stats(update: Update, context: ContextTypes.DEFAULT_TYPE):

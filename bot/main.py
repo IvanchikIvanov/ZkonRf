@@ -17,7 +17,9 @@ from bot.handlers.text_handler import (
     handle_text_message,
     handle_start,
     handle_help,
-    handle_stats
+    handle_stats,
+    handle_templates,
+    handle_cancel_doc
 )
 from bot.handlers.payment_handler import (
     handle_subscribe,
@@ -113,6 +115,8 @@ def main():
     application.add_handler(CommandHandler("help", handle_help))
     application.add_handler(CommandHandler("stats", handle_stats))
     application.add_handler(CommandHandler("subscribe", handle_subscribe))
+    application.add_handler(CommandHandler("templates", handle_templates))
+    application.add_handler(CommandHandler("cancel_doc", handle_cancel_doc))
     
     application.add_handler(CallbackQueryHandler(handle_callback_query))
     application.add_handler(PreCheckoutQueryHandler(handle_pre_checkout))
