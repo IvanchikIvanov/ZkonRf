@@ -218,6 +218,7 @@ class LegalScopeService:
 
         normalized = re.sub(r"[^a-zа-я0-9]+", " ", str(codex_name).lower()).strip()
         checks = {
+            "procedural": ("гпк", "апк", "кас", "process", "procedure", "procedural"),
             "criminal": ("уголов", " uk ", "criminal", "penal"),
             "civil": ("граждан", " gk ", "civil"),
             "labor": ("труд", " tk ", "labor", "employment"),
@@ -226,7 +227,6 @@ class LegalScopeService:
             "consumer": ("потреб", "зпп", "zpp", "2300", "consumer"),
             "tax": ("налог", " nk ", "tax"),
             "housing": ("жилищ", " jk ", "housing"),
-            "procedural": ("гпк", "апк", "кас", "process", "procedural"),
         }
         padded = f" {normalized} "
         for codex_key, patterns in checks.items():

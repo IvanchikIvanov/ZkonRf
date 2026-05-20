@@ -1,0 +1,116 @@
+Thailand legal sources registry (2026-05-21)
+English translations are reference materials unless the source explicitly says otherwise.
+For legal force in Thailand, verify against the Thai text published in the Royal Gazette or competent agency source.
+
+Imported sources:
+- Thailand Criminal/Penal Code B.E. 2499 (1956)
+  file: thai_penal_code.txt
+  category: Core codes
+  sections: 666
+  url: https://www.icnl.org/wp-content/uploads/Thailand_CrimCodeThai.pdf
+  note: English reference translation hosted by ICNL.
+- Thailand Criminal Procedure Code B.E. 2477 (1934), updated 2008
+  file: thai_criminal_procedure_code.txt
+  category: Core codes
+  sections: 572
+  url: https://www.icj.org/wp-content/uploads/2012/12/Thailand-Criminal-Procedure-Code-1934-2008-eng.pdf
+  note: English full text hosted by the International Commission of Jurists.
+- Thailand Civil and Commercial Code, part I
+  file: thai_civil_commercial_code_part_1.txt
+  category: Core codes
+  sections: 651
+  url: https://www.samuiforsale.com/law-texts/thailand-civil-code-part-1.html
+  note: English reference translation; official Thai text prevails.
+- Thailand Civil and Commercial Code, part II
+  file: thai_civil_commercial_code_part_2.txt
+  category: Core codes
+  sections: 573
+  url: https://www.samuiforsale.com/law-texts/thailand-civil-code-part-2.html
+  note: English reference translation; official Thai text prevails.
+- Thailand Civil and Commercial Code, part III
+  file: thai_civil_commercial_code_part_3.txt
+  category: Core codes
+  sections: 599
+  url: https://www.samuiforsale.com/law-texts/thailand-civil-code-part-3.html
+  note: English reference translation; official Thai text prevails.
+- Thailand civil procedure guide, Thai/English court reference
+  file: thai_civil_procedure_overview.txt
+  category: Procedure
+  sections: 9
+  url: https://hrm.m-society.go.th/wp-content/uploads/2021/08/%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%94%E0%B8%B3%E0%B9%80%E0%B8%99%E0%B8%B4%E0%B8%99%E0%B8%84%E0%B8%94%E0%B8%B5%E0%B9%81%E0%B8%9E%E0%B9%88%E0%B8%87-%E0%B8%89%E0%B8%9A%E0%B8%B1%E0%B8%9A%E0%B9%84%E0%B8%97%E0%B8%A2-%E0%B8%AD%E0%B8%B1%E0%B8%87%E0%B8%81%E0%B8%A4%E0%B8%A9.pdf
+  note: Court-oriented Thai/English civil procedure reference.
+- Consumer Protection Act B.E. 2522 (1979)
+  file: thai_consumer_protection_act.txt
+  category: Consumer protection
+  sections: 116
+  url: https://www.wipo.int/wipolex/en/legislation/details/6820
+  note: WIPO Lex page with English full text and PDF link.
+- Liability for Damages Arising from Unsafe Products Act B.E. 2551 (2008)
+  file: thai_product_liability_act.txt
+  category: Consumer protection
+  sections: 21
+  url: https://www.thailawforum.com/laws/Liability%20for%20Damages%20Arising%20from%20Unsafe%20Products%20Act.pdf
+  note: English reference translation.
+- Unfair Contract Terms Act B.E. 2540 (1997)
+  file: thai_unfair_contract_terms_act.txt
+  category: Consumer protection
+  sections: 17
+  url: https://www.samuiforsale.com/law-texts/unfair-contract-terms-act.html
+  note: English reference translation.
+- Trade Competition Act B.E. 2560 (2017)
+  file: thai_trade_competition_act.txt
+  category: Commerce
+  sections: 145
+  url: https://www.asean-competition.org/file/pdf_file/Thailand%20Trade%20Competition%20Act%202017.pdf
+  note: English unofficial translation distributed through ASEAN Competition.
+- Electronic Transactions Act B.E. 2544 (2001)
+  file: thai_electronic_transactions_act.txt
+  category: Digital services
+  sections: 61
+  url: https://www.bot.or.th/content/dam/bot/fipcs/documents/FPG/2551/EngPDF/25510316.pdf
+  note: English unofficial translation hosted by Bank of Thailand.
+- Personal Data Protection Act B.E. 2562 (2019)
+  file: thai_personal_data_protection_act.txt
+  category: Digital services
+  sections: 233
+  url: https://data.opendevelopmentmekong.net/dataset/78c90118-6671-4c19-afe1-7bfbace4d46a/resource/ec616be5-9fbf-4071-b4b5-cb1f3e46e826/download/entranslation_of_the_personal_data_protection_act_0.pdf
+  note: English version; Open Development Thailand identifies Office of the Council of State as issuing agency.
+- Office of the Consumer Protection Board online complaint portal
+  file: thai_ocpb_complaint_portal.txt
+  category: Complaint templates
+  sections: 1
+  url: https://complaint.ocpb.go.th/
+  note: Official OCPB consumer complaint portal and practical filing channel.
+- Tourism Authority of Thailand complaint: product and services
+  file: thai_tourism_complaint_product_services.txt
+  category: Complaint templates
+  sections: 1
+  url: https://complaint-center.tourismthailand.org/en/p/complaint-about-product-and-services
+  note: Official tourism complaint category page referencing OCPB for consumer/product/service complaints.
+- Tourism Authority of Thailand complaint: robbery, pickpocketing, assault, fraud
+  file: thai_tourism_complaint_robbery_fraud.txt
+  category: Complaint templates
+  sections: 1
+  url: https://complaint-center.tourismthailand.org/en/p/complaint-about-robbery
+  note: Official tourism complaint category page referencing Tourist Police contacts.
+- Tourism Authority of Thailand complaint: tour agency, travel company, tour guide
+  file: thai_tourism_complaint_tour_agency.txt
+  category: Complaint templates
+  sections: 1
+  url: https://complaint-center.tourismthailand.org/en/p/complaint-about-a-tour-agency
+  note: Official tourism complaint category page referencing Department of Tourism contacts.
+- Tourism Authority of Thailand complaint: tourist damage and tourism safety
+  file: thai_tourism_complaint_tourist_damage.txt
+  category: Complaint templates
+  sections: 1
+  url: https://complaint-center.tourismthailand.org/en/p/complaint-about-tourist-suffer-damage
+  note: Official tourism complaint category page referencing Tourism Safety and Security Standards Bureau.
+- Tourism Authority of Thailand complaint: transportation, taxi, bus, minibus
+  file: thai_tourism_complaint_transportation.txt
+  category: Complaint templates
+  sections: 1
+  url: https://complaint-center.tourismthailand.org/en/p/other-complaints
+  note: Official tourism complaint category page referencing Department of Land Transport complaint contacts.
+
+Failed sources:
+- none

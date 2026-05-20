@@ -1,0 +1,66 @@
+Thailand practical statement templates for bot drafting
+Source basis:
+- OCPB online complaint system: https://complaint.ocpb.go.th/
+- OCPB help/FAQ: https://complaint.ocpb.go.th/help
+- TAT complaint center: https://complaint-center.tourismthailand.org/en
+- Tourist Police Bureau: https://www.touristpolice.go.th/en/main
+
+These are drafting templates derived from official complaint intake fields and complaint-category pages.
+They are not court forms and must be reviewed before filing.
+
+Section 1. Consumer complaint to the Office of the Consumer Protection Board (OCPB).
+Use for purchased goods, services, restaurants, entertainment venues, shops, non-standard products or services.
+Recipient: Office of the Consumer Protection Board.
+Channels: OCPB online complaint system https://complaint.ocpb.go.th/, hotline 1166, Line @ocpbconnect, provincial complaint channels.
+Template fields:
+1. Complainant: full name, passport or ID number, date of birth, mobile phone, email, current address for contact.
+2. Respondent/business: company/shop/person name, address or online platform, phone/email/website/social account if known.
+3. Transaction: product or service, date, place or website, order/reservation number, amount paid in THB, payment method.
+4. Facts: chronological description of purchase, defect/non-performance/misrepresentation, attempts to contact the business, responses received.
+5. Evidence: receipts, contract, warranty, chat records, photos/videos, delivery documents, bank or card proof, advertisement or label.
+6. Requested remedy: refund, replacement, repair, cancellation, compensation amount, correction of advertisement/label, inspection of operator.
+7. Fasttrack consent if offered: whether the complaint may be forwarded directly to a participating business.
+
+Draft wording:
+I request the Office of the Consumer Protection Board to accept this consumer complaint, review the attached evidence, contact the business, and assist with the remedy described above. I confirm that the facts and documents submitted are true to the best of my knowledge.
+
+Section 2. Tourism product or service complaint.
+Use for tourism-related product/service issues, restaurants, entertainment venues, purchased goods, shops, or non-standard services.
+Recipient: Tourism Complaint and Suggestion Coordination Centre / responsible agency indicated by TAT; for consumer goods/services, OCPB may be the responsible agency.
+Template fields:
+1. Tourist/complainant details: full name, nationality, passport number, phone, email, address or accommodation.
+2. Business/provider details: name, location, booking/order number, guide/driver/staff name if known.
+3. Incident details: date, time, place, service/product, amount paid, what was promised and what happened.
+4. Harm/damage: financial loss, safety issue, health issue, delay, denial of service, property damage.
+5. Evidence and witnesses.
+6. Requested action: refund, compensation, investigation, warning, referral to competent agency, written response.
+
+Section 3. Tourist Police report for robbery, pickpocketing, assault, fraud, or similar incident.
+Recipient: Tourist Police Bureau.
+Contacts referenced by TAT pages include call center 1155 and Tourist Police channels.
+Template fields:
+1. Reporter/victim: full name, nationality, passport number, phone, email, accommodation address.
+2. Incident: date, time, exact location, type of incident, persons involved, vehicle/license plate if any.
+3. Loss or injury: stolen property, money amount, documents, injuries, medical treatment.
+4. Suspect/description: appearance, names/accounts/phone numbers, photos/videos if available.
+5. Evidence: CCTV location, receipts, chats, bank transfers, witness contacts.
+6. Requested action: register the report, investigate, issue report confirmation if available, assist with documents/embassy/insurance.
+
+Section 4. Tour agency, travel company, or tour guide complaint.
+Recipient: Department of Tourism, Ministry of Tourism and Sports / TAT complaint channel.
+Template fields:
+1. Complainant and booking details.
+2. Tour agency/company/guide name, license number if known, contact details.
+3. Package/tour description: dates, itinerary, price, payment method, contract/advertisement.
+4. Breach: cancelled tour, changed itinerary, unsafe service, unlicensed guide, overcharge, refusal to refund.
+5. Evidence and requested remedy.
+
+Section 5. Transportation complaint: taxi, bus, minibus, motorcycle taxi, tuk-tuk, ticket reservation.
+Recipient: Department of Land Transport / public passenger protection complaint channels referenced by TAT.
+Template fields:
+1. Passenger details.
+2. Transport type, route, date/time, pickup/drop-off place.
+3. Vehicle details: license plate, driver name/ID, company, ticket or booking number.
+4. Problem: overcharge, refusal, unsafe driving, accident, lost property, ticket/reservation issue, misconduct.
+5. Evidence: receipt, ticket, photos, GPS route, video, witnesses.
+6. Requested action: investigation, refund, penalty/disciplinary action, assistance recovering property, written response.
