@@ -1,0 +1,23 @@
+Title: Kazakhstan digital asset and crypto regulation
+Country: kz
+Source: https://adilet.zan.kz/rus/docs/Z2300000193
+Source: https://adilet.zan.kz/eng/docs/Z2300000193
+As of: 2026-05-22
+
+Section 1. Core legal act.
+Kazakhstan has a special Law on Digital Assets in the Republic of Kazakhstan dated 6 February 2023. The law regulates digital assets, digital mining, digital asset exchanges, and state control, with later amendments including rules for digital financial assets and unsecured digital assets.
+
+Section 2. Digital mining.
+Digital mining activities in Kazakhstan are licensed and tied to digital mining pools and mining data centers. In practical questions, identify whether the person is a miner, mining-pool participant, data-center operator, investor, exchange user, or ordinary buyer/seller.
+
+Section 3. Exchanges and AIFC.
+Digital asset exchanges and many exchange-related requirements are linked to the Astana International Financial Centre and other competent authorities. For sale of mined digital assets or exchange operations, check whether the exchange or operator is licensed and what mandatory sale/reporting rules apply.
+
+Section 4. Unsecured digital assets.
+Kazakhstan restricts issuance and circulation of unsecured digital assets except in legally permitted regimes, including AIFC and special regulatory frameworks. A legal answer should distinguish secured digital assets, unsecured digital assets, digital financial assets, mining output, and ordinary crypto trading.
+
+Section 5. Consumer and fraud issues.
+Common disputes include unlicensed exchange activity, failed withdrawals, false investment promises, mining equipment contracts, electricity/data-center disputes, tax reporting, and AML account blocking. Combine this source with civil, criminal, tax, consumer, personal-data, and AIFC materials.
+
+Section 6. Bot checklist.
+Ask: asset type, platform/operator name, AIFC or National Bank status, mining license, pool/data-center details, source of assets, transaction hashes, bank route, tax status, user citizenship/residence, and whether the matter is licensing, exchange access, mining, tax, AML, fraud, or civil recovery.

@@ -1,0 +1,23 @@
+Title: Russia crypto and digital asset regulation
+Country: ru
+Source: https://publication.pravo.gov.ru/Document/View/0001202007310056
+Source: https://www.cbr.ru/fintech/digital_assets/
+As of: 2026-05-22
+
+Section 1. Core legal act.
+Federal Law No. 259-FZ of 31 July 2020 is the core Russian act on digital financial assets, digital currency, and related amendments. It separates regulated digital financial assets from digital currency and places issue and circulation of digital financial assets into a supervised legal framework.
+
+Section 2. Digital financial assets.
+Digital financial assets are rights recorded in an information system under Russian law. Issuance, accounting, and exchange normally require information-system operators and exchange operators included in the Bank of Russia registers. A practical request should check whether the platform is registered, what asset is issued, and which operator rules apply.
+
+Section 3. Digital currency and payments.
+Digital currency is treated differently from digital financial assets. Russian residents should be cautious about using cryptocurrency as payment for goods, works, or services in Russia because the legal regime restricts monetary substitutes and public payment acceptance. A legal answer should distinguish holding, disposal, mining, exchange, advertising, and payment use.
+
+Section 4. Mining and reporting risk.
+Russian crypto questions often involve mining, electricity use, tax accounting, exchange transactions, sanctions compliance, and AML controls. The user should be asked whether they act as an individual, entrepreneur, legal entity, miner, exchanger, investor, or merchant accepting payment.
+
+Section 5. Consumer and fraud issues.
+For crypto fraud, fake exchanges, blocked accounts, failed withdrawals, investment promises, or wallet theft, combine this source with criminal, civil, consumer, banking, personal-data, and payment-system materials. Key facts are wallet addresses, exchange terms, KYC documents, transaction hashes, payment evidence, advertisements, and communications.
+
+Section 6. Bot checklist.
+For Russia crypto regulation, ask: asset type, platform/operator name, registration status, transaction date, role of the user, payment route, wallet/exchange evidence, residence/tax status, and whether the dispute is consumer, civil recovery, tax, AML blocking, criminal fraud, or business licensing.

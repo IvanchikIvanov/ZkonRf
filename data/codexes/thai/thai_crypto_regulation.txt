@@ -1,0 +1,23 @@
+Title: Thailand digital asset and crypto regulation
+Country: thai
+Source: https://www.sec.or.th/EN/Pages/LawandRegulations/DigitalAssetBusiness.aspx
+Source: https://www.sec.or.th/EN/Documents/EnforcementIntroduction/digitalasset_decree_2561_EN.pdf
+As of: 2026-05-22
+
+Section 1. Core legal act.
+Thailand regulates crypto and digital token activity mainly through the Emergency Decree on Digital Asset Businesses B.E. 2561 (2018), supervised by the Thai SEC and the Ministry of Finance. The regime covers cryptocurrency, digital tokens, digital asset business operators, and token portal services.
+
+Section 2. Licensed business categories.
+Digital asset businesses include digital asset exchange, broker, and dealer activities. SEC materials also track approved or licensed operators and related forms. A user-facing answer should verify whether the service provider is licensed in Thailand or is a foreign/unlicensed provider targeting Thai users.
+
+Section 3. Tokens and offerings.
+Digital token offerings, ICO portals, disclosure, screening, and investor protection are regulated separately from ordinary spot exchange activity. Questions about fundraising, token issuance, or tokenized investment should be classified as offering/compliance questions rather than ordinary consumer exchange disputes.
+
+Section 4. Foreign operators and Thai users.
+Thai SEC guidance warns the public about unlicensed digital asset operators. Thailand has also tightened treatment of foreign digital-asset platforms that provide services to persons in Thailand without proper authorization, including signals such as Thai-language platforms, Thai domains, or Thai-baht payment routes.
+
+Section 5. Consumer and fraud issues.
+For a Russian citizen or foreigner in Thailand, relevant practical issues include exchange licensing, KYC, withdrawal refusal, scam investment schemes, cybercrime reports, tax records, and whether the transaction was made while in Thailand or through a Thai bank/payment channel.
+
+Section 6. Bot checklist.
+Ask: exchange/operator name, license status, user location, Thai bank/payment involvement, asset type, wallet addresses, transaction hashes, KYC status, marketing language, complaint history, and whether the issue concerns trading, custody, withdrawal, ICO/token offering, taxation, or fraud.

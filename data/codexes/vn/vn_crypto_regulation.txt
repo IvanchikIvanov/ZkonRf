@@ -1,0 +1,23 @@
+Title: Vietnam digital asset and crypto regulation
+Country: vn
+Source: https://vanban.chinhphu.vn/?classid=1&docid=215249&orggroupid=2&pageid=27160
+Source: https://thuvienphapluat.vn/van-ban/EN/Cong-nghe-thong-tin/Law-71-2025-QH15-Digital-Technology-Industry/668801/tieng-anh.aspx
+As of: 2026-05-22
+
+Section 1. Core legal acts.
+Vietnam has moved from a gray-zone approach toward a formal digital asset framework. Law No. 71/2025/QH15 on Digital Technology Industry recognizes digital assets, including virtual assets and crypto assets, with effect from 1 January 2026. Government Resolution No. 05/2025/NQ-CP establishes a pilot market for crypto assets in Vietnam.
+
+Section 2. Digital asset categories.
+The Vietnamese framework distinguishes virtual assets and crypto assets from securities, digital forms of legal tender, and other financial assets regulated elsewhere. Crypto asset questions should be separated from payment-money questions because crypto assets are not the same as legal tender.
+
+Section 3. Pilot market and licensed services.
+Resolution No. 05/2025/NQ-CP concerns the pilot implementation of a crypto-asset market, including issuance, trading-market organization, service providers, state management, AML controls, and enforcement. A practical answer should check whether a platform participates in the pilot or is operating outside the permitted framework.
+
+Section 4. AML and user identification.
+Vietnam's pilot framework emphasizes customer identification, transaction monitoring, suspicious transaction reporting, cyber safety, and anti-money-laundering obligations. A user question about blocked accounts or exchange onboarding should collect KYC, source-of-funds, transaction-value, and platform status facts.
+
+Section 5. Consumer and fraud issues.
+Before the pilot regime and during transition, many user disputes may involve unlicensed offshore platforms, fraud, multi-level marketing, wallet theft, or payment disputes. Combine this source with Vietnam criminal, civil, cybersecurity, personal data, consumer, and tax materials.
+
+Section 6. Bot checklist.
+Ask: transaction date, whether before or after 1 January 2026, platform name, Vietnam presence, user residence, asset type, wallet addresses, transaction hashes, KYC records, payment method, suspicious-promotion evidence, and whether the user needs complaint, police report, tax, or civil recovery guidance.

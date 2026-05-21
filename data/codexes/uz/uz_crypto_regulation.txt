@@ -1,0 +1,23 @@
+Title: Uzbekistan crypto asset regulation
+Country: uz
+Source: https://lex.uz/Pages/GetPdf.aspx?file=LexUz_6378939.pdf
+Source: https://www.lex.uz/pdffile/6158332
+As of: 2026-05-22
+
+Section 1. Core regulatory framework.
+Uzbekistan regulates crypto assets through presidential acts and rules of the National Agency of Perspective Projects. Key materials include rules for issuance, registration of issuance and circulation of crypto assets by residents, licensing of service providers, exchange trading rules, mining-related rules, fees, and regulatory sandbox rules.
+
+Section 2. Crypto asset definition.
+Uzbek regulation treats a crypto asset as a property right represented by digital records in a distributed ledger, having value and an owner. A legal answer should distinguish crypto assets, tokens, secured tokens, NFTs, smart contracts, exchange trading, mining, custody, and provider services.
+
+Section 3. Service providers and licenses.
+Service-provider categories include crypto exchange, mining pool, crypto depository, crypto store, and related permitted activities. Monthly fees and licensing/permission obligations apply to legal entities that operate in the crypto-asset turnover sphere.
+
+Section 4. Exchange trading and clients.
+Rules for crypto-asset exchange trading address clients, clearing, quote lists, direct trading, NFT trading, settlement accounts, and platform operations. A user dispute should identify whether the transaction occurred on a licensed Uzbek exchange or through an unlicensed/offshore platform.
+
+Section 5. Payment and sandbox limits.
+Uzbekistan's special regulatory sandbox materials indicate that projects using crypto assets as payment or acceptance of payment in Uzbekistan may be prohibited within the special regime. Always separate investment/trading from payment-use questions.
+
+Section 6. Bot checklist.
+Ask: platform/provider type, license status, user role, resident/non-resident status, asset/token type, transaction hashes, KYC records, bank/payment route, mining involvement, whether crypto was used as payment, and whether the issue is exchange trading, issuance, custody, tax/fees, AML, fraud, or civil recovery.

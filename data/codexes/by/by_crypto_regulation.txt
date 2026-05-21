@@ -1,0 +1,23 @@
+Title: Belarus token and crypto regulation
+Country: by
+Source: https://president.gov.by/ru/documents/dekret-8-ot-21-dekabrja-2017-g-17716
+Source: https://pravo.by/document/?guid=12551&p0=Pd1700008
+As of: 2026-05-22
+
+Section 1. Core legal act.
+Belarus crypto regulation is centered on Presidential Decree No. 8 of 21 December 2017 on the Development of the Digital Economy and the High Technologies Park regime. The decree introduced a legal framework for digital signs, commonly called tokens, and related blockchain activities.
+
+Section 2. Token operations.
+The Belarus regime covers creation, placement, storage, alienation, exchange, and other operations with tokens, especially through High Technologies Park residents and approved crypto-platform or exchange operators. A practical answer should check whether the operator is a HTP resident and whether the specific activity is authorized.
+
+Section 3. Individuals and business activity.
+Questions from individuals should distinguish personal acquisition, holding, mining, sale, exchange, investment, and professional service activity. Professional or repeated activity, custody, brokerage, platform, bank-like, or exchange services may require a regulated operator and specific internal rules.
+
+Section 4. Tax and compliance.
+Belarus crypto questions often include tax benefits, accounting treatment, token income, foreign platforms, AML/KYC controls, and cross-border payment routes. Always verify the current tax period and whether special rules have been extended or amended.
+
+Section 5. Consumer and fraud issues.
+For fraud, blocked withdrawals, fake investment projects, lost wallets, or token-sale disputes, combine this source with criminal, civil, consumer, banking, personal-data, and appeals materials. Key facts are operator status, user agreement, advertisements, wallet addresses, transaction hashes, KYC documents, and payment trail.
+
+Section 6. Bot checklist.
+Ask: token type, operator/platform name, HTP resident status, user's role, whether activity is personal or business, mining or exchange details, transaction hashes, bank/payment evidence, tax year, and whether the issue is licensing, AML blocking, fraud, tax, accounting, or civil recovery.

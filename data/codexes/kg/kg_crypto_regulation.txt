@@ -1,0 +1,23 @@
+Title: Kyrgyzstan virtual asset and crypto regulation
+Country: kg
+Source: https://cbd.minjust.gov.kg/4-3134/edition/1220896/ru
+Source: https://cbd.minjust.gov.kg/
+As of: 2026-05-22
+
+Section 1. Core legal act.
+Kyrgyzstan regulates crypto-related activity through the Law of the Kyrgyz Republic on Virtual Assets dated 21 January 2022 No. 12. The official text is published in the Centralized Database of Legal Information of the Ministry of Justice.
+
+Section 2. Virtual assets and services.
+The Kyrgyz regime covers virtual assets and activities of virtual asset service providers. A practical answer should distinguish ordinary holding, exchange, service-provider activity, mining or technical activity, investment solicitation, custody, and payment-related facts.
+
+Section 3. Supervision and compliance.
+Virtual asset service providers may face registration, licensing, AML/CFT, reporting, internal-control, and customer-identification duties depending on the activity. For a user question, ask whether the platform or person is operating in Kyrgyzstan, serving Kyrgyz users, or using Kyrgyz payment infrastructure.
+
+Section 4. Cross-border and foreign users.
+For Russian citizens and other foreigners, important facts include residence, location of the platform, bank/payment route, whether the user was physically in Kyrgyzstan, and whether the service provider claims Kyrgyz registration. Cross-border activity may involve foreign law and private international law questions.
+
+Section 5. Consumer and fraud issues.
+Crypto fraud, blocked withdrawals, fake investment projects, wallet theft, and exchange disputes should be combined with Kyrgyz civil, criminal, offences, consumer, personal-data, tax, and migration materials. Evidence includes wallet addresses, transaction hashes, screenshots, KYC records, contracts, advertisements, and bank transfers.
+
+Section 6. Bot checklist.
+Ask: asset type, service provider name, Kyrgyz registration/license status, user location and citizenship, bank/payment trail, transaction hashes, KYC records, platform terms, mining involvement, and whether the issue is licensing, AML blocking, fraud, tax, payment, or civil recovery.
