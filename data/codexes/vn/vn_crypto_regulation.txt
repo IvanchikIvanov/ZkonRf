@@ -2,6 +2,7 @@ Title: Vietnam digital asset and crypto regulation
 Country: vn
 Source: https://vanban.chinhphu.vn/?classid=1&docid=215249&orggroupid=2&pageid=27160
 Source: https://thuvienphapluat.vn/van-ban/EN/Cong-nghe-thong-tin/Law-71-2025-QH15-Digital-Technology-Industry/668801/tieng-anh.aspx
+Source: https://www.sbv.gov.vn/vi/%C4%91%E1%BB%93ng-ti%E1%BB%81n-vi%E1%BB%87t-nam
 As of: 2026-05-22
 
 Section 1. Core legal acts.
@@ -21,3 +22,12 @@ Before the pilot regime and during transition, many user disputes may involve un
 
 Section 6. Bot checklist.
 Ask: transaction date, whether before or after 1 January 2026, platform name, Vietnam presence, user residence, asset type, wallet addresses, transaction hashes, KYC records, payment method, suspicious-promotion evidence, and whether the user needs complaint, police report, tax, or civil recovery guidance.
+
+Section 7. Legal tender boundary.
+The State Bank of Vietnam describes Vietnamese dong banknotes and coins issued by the State Bank as legal tender and the unlimited means of payment in Vietnam. Crypto asset services and digital assets should therefore be separated from payment instruments and legal tender questions.
+
+Section 8. Crypto asset services.
+Law No. 71/2025/QH15 requires future government regulation of business conditions for crypto asset services, rights and obligations of parties, cyber safety, AML, terrorism-financing and proliferation-financing controls, inspection, and handling of violations.
+
+Section 9. Pilot market risk.
+Resolution No. 05/2025/NQ-CP is a pilot market instrument, not a blanket legalization of every offshore crypto platform. Answers should ask whether the provider is within the pilot, whether Vietnamese residents were targeted, and whether the transaction is issuance, trading, custody, brokerage, payment, or fraud.

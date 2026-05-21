@@ -2,6 +2,9 @@ Title: Uzbekistan crypto asset regulation
 Country: uz
 Source: https://lex.uz/Pages/GetPdf.aspx?file=LexUz_6378939.pdf
 Source: https://www.lex.uz/pdffile/6158332
+Source: https://lex.uz/pdffile/6158227
+Source: https://lex.uz/pdffile/6623732
+Source: https://www.lex.uz/Pages/GetPdf.aspx?file=LexUz_6344412.pdf
 As of: 2026-05-22
 
 Section 1. Core regulatory framework.
@@ -21,3 +24,12 @@ Uzbekistan's special regulatory sandbox materials indicate that projects using c
 
 Section 6. Bot checklist.
 Ask: platform/provider type, license status, user role, resident/non-resident status, asset/token type, transaction hashes, KYC records, bank/payment route, mining involvement, whether crypto was used as payment, and whether the issue is exchange trading, issuance, custody, tax/fees, AML, fraud, or civil recovery.
+
+Section 7. Provider licensing detail.
+Uzbek licensing rules define a provider as a resident legal entity offering purchase, sale, exchange, storage, issuance, placement, and management services for crypto assets. Provider types include crypto exchange, mining pool, crypto depository, and crypto store. A foreign or individual provider claim should be treated as a red flag.
+
+Section 8. Mining permit detail.
+Mining in Uzbekistan is limited to legal entities and requires permission. Rules prohibit hidden mining, mining anonymous crypto assets, mining at an address different from the registered address, and mining without permission. Mined crypto assets must be sold through licensed crypto exchanges in Uzbekistan.
+
+Section 9. Fees and monthly charges.
+Uzbek rules establish monthly fees for miners and providers after receiving a license or permit. The bot should ask whether the user is a provider or miner, the license/permit date, the provider subtype, whether activity was suspended, and whether monthly fees were assessed.

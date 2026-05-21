@@ -2,6 +2,7 @@ Title: Belarus token and crypto regulation
 Country: by
 Source: https://president.gov.by/ru/documents/dekret-8-ot-21-dekabrja-2017-g-17716
 Source: https://pravo.by/document/?guid=12551&p0=Pd1700008
+Source: https://park.by/
 As of: 2026-05-22
 
 Section 1. Core legal act.
@@ -21,3 +22,12 @@ For fraud, blocked withdrawals, fake investment projects, lost wallets, or token
 
 Section 6. Bot checklist.
 Ask: token type, operator/platform name, HTP resident status, user's role, whether activity is personal or business, mining or exchange details, transaction hashes, bank/payment evidence, tax year, and whether the issue is licensing, AML blocking, fraud, tax, accounting, or civil recovery.
+
+Section 7. High Technologies Park gatekeeper.
+Belarus crypto activity is strongly connected with the High Technologies Park framework. For professional token exchange, crypto-platform operation, token offering, or custodial services, the bot should ask whether the provider is a High Technologies Park resident and whether its declared activity covers the service.
+
+Section 8. Individual token rights.
+Decree No. 8 allows individuals to own tokens and carry out operations such as mining, storage in virtual wallets, exchange for other tokens, acquisition, alienation for fiat or electronic money, donation, and inheritance, subject to the decree's special rules. The answer should distinguish private ownership from professional business services.
+
+Section 9. Tax period and amendments.
+Belarus token taxation has depended on special periods and amendments to the digital economy regime. A tax answer should ask the tax year, whether the person is an individual or HTP resident, whether income came from sale, exchange, mining, service provision, or employment, and whether any later extension or limitation applies.

@@ -2,6 +2,10 @@ Title: Kazakhstan digital asset and crypto regulation
 Country: kz
 Source: https://adilet.zan.kz/rus/docs/Z2300000193
 Source: https://adilet.zan.kz/eng/docs/Z2300000193
+Source: https://adilet.zan.kz/rus/docs/V2300032431
+Source: https://adilet.zan.kz/rus/docs/V2600038622
+Source: https://adilet.zan.kz/rus/docs/V2600038405
+Source: https://adilet.zan.kz/rus/docs/V2600038403
 As of: 2026-05-22
 
 Section 1. Core legal act.
@@ -21,3 +25,15 @@ Common disputes include unlicensed exchange activity, failed withdrawals, false 
 
 Section 6. Bot checklist.
 Ask: asset type, platform/operator name, AIFC or National Bank status, mining license, pool/data-center details, source of assets, transaction hashes, bank route, tax status, user citizenship/residence, and whether the matter is licensing, exchange access, mining, tax, AML, fraud, or civil recovery.
+
+Section 7. Mining licensing rules.
+Kazakhstan's rules for licensing digital mining distinguish miners with their own mining data center from miners whose hardware is placed in another mining data center. A mining answer should collect the subtype, license term, data-center documents, pool participation, electricity facts, and tax-information duties.
+
+Section 8. Operators of unsecured digital asset exchange.
+Rules adopted in 2026 regulate operators of exchange of unsecured digital assets, including licensing, qualification requirements, AML/CFT obligations, and mandatory operator documents. A user exchange complaint should check whether the operator is licensed under these rules or only claims AIFC/foreign status.
+
+Section 9. Stablecoin and digital financial asset rules.
+Kazakhstan's 2026 rules for issuance, placement, circulation, and redemption of digital financial assets cover money-backed stablecoin rules, issuer requirements, investor requirements, qualified-investor treatment, and segregation of backing assets. Stablecoin questions should be treated separately from unsecured crypto trading.
+
+Section 10. Platform operators.
+Rules for operators of platforms of digital financial assets and trading platforms of digital assets include platform, wallet, client, and operational requirements. For custody or wallet disputes, collect mnemonic phrase warnings, platform logs, operator rules, client agreement, and whether the platform was acting as an exchange, trading platform, or DFA platform.

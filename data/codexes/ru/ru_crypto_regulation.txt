@@ -1,7 +1,9 @@
 Title: Russia crypto and digital asset regulation
 Country: ru
 Source: https://publication.pravo.gov.ru/Document/View/0001202007310056
+Source: https://publication.pravo.gov.ru/document/0001202411010038
 Source: https://www.cbr.ru/fintech/digital_assets/
+Source: https://www.cbr.ru/eng/press/event/?id=23454
 As of: 2026-05-22
 
 Section 1. Core legal act.
@@ -21,3 +23,12 @@ For crypto fraud, fake exchanges, blocked accounts, failed withdrawals, investme
 
 Section 6. Bot checklist.
 For Russia crypto regulation, ask: asset type, platform/operator name, registration status, transaction date, role of the user, payment route, wallet/exchange evidence, residence/tax status, and whether the dispute is consumer, civil recovery, tax, AML blocking, criminal fraud, or business licensing.
+
+Section 7. Mining registry.
+Government Resolution No. 1464 of 31 October 2024 approved rules for maintaining the register of persons engaged in digital currency mining and the register of mining infrastructure operators. Mining questions should therefore check register status, electricity source, infrastructure operator, tax reporting, and whether the user is mining as an individual entrepreneur or legal entity.
+
+Section 8. Experimental legal regime.
+The Bank of Russia announced proposals for an experimental legal regime for cryptocurrency transactions by especially qualified investors and qualified-investor companies. Until enacted for a specific user case, ordinary retail cryptocurrency investments should be treated separately from regulated digital financial assets.
+
+Section 9. Investor access and DFA limits.
+Bank of Russia materials distinguish digital financial assets from currency and note that DFAs are not a means of payment. Investor access, qualified-investor status, operator registers, issuance decisions, and annual limits for non-qualified investors are separate compliance questions.

@@ -2,6 +2,8 @@ Title: Thailand digital asset and crypto regulation
 Country: thai
 Source: https://www.sec.or.th/EN/Pages/LawandRegulations/DigitalAssetBusiness.aspx
 Source: https://www.sec.or.th/EN/Documents/EnforcementIntroduction/digitalasset_decree_2561_EN.pdf
+Source: https://www.sec.or.th/EN/Pages/LawandRegulations/CivilPenalty.aspx
+Source: https://www.sec.or.th/EN/Pages/News_Detail.aspx?SECID=11503
 As of: 2026-05-22
 
 Section 1. Core legal act.
@@ -21,3 +23,12 @@ For a Russian citizen or foreigner in Thailand, relevant practical issues includ
 
 Section 6. Bot checklist.
 Ask: exchange/operator name, license status, user location, Thai bank/payment involvement, asset type, wallet addresses, transaction hashes, KYC status, marketing language, complaint history, and whether the issue concerns trading, custody, withdrawal, ICO/token offering, taxation, or fraud.
+
+Section 7. Custody and wallet providers.
+Thai SEC rules and 2025 updates address digital asset custodial wallet providers and custody arrangements for business operators. A dispute about lost assets, platform insolvency, or transfer of client assets should ask who held custody, whether the custodian was licensed or permitted, hot/cold wallet treatment, and whether client consent or regulatory transfer rules were triggered.
+
+Section 8. Civil sanction and unfair trading.
+Thai SEC enforcement materials state that civil sanctions can apply to misconduct under the Emergency Decree on Digital Asset Businesses, including false statements, unfair digital asset trading practice, and misuse of another person's digital asset trading or bank account. Account-rental and mule-account facts are therefore essential.
+
+Section 9. Tourist and payment pilots.
+Thailand has explored limited digital-asset payment conversion models such as tourist digital payment pilots through supervised digital asset dealers. The bot should not treat crypto as ordinary legal tender; it should ask whether a licensed operator converted assets into Thai baht and whether the merchant directly accepted crypto or only received fiat settlement.
