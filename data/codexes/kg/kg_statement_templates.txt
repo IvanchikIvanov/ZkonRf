@@ -1,0 +1,62 @@
+Kyrgyzstan statement and application templates for common bot questions.
+These are practical drafting/checklist templates for Russian citizens and other foreigners. They are not official forms unless a competent Kyrgyz authority publishes a specific form.
+
+Section 1. Consumer complaint / demand letter against seller or service provider.
+Use for defective goods, refund refusal, misleading service, online order, warranty dispute, delivery problem or paid service failure. Source basis: Consumer Protection Law; Civil Code; E-commerce Law; Advertising Law. Fields: consumer, seller/provider, order/payment, defect or breach, evidence, remedy and deadline.
+
+Section 2. Tourism service complaint.
+Use for hotel, tour operator, guide, transport, booking, overcharge or unsafe service problems in Kyrgyzstan. Source basis: Tourism Law; Consumer Protection Law; Civil Code. Fields: tourist identity and itinerary, provider, booking/payment, incident, evidence/witnesses, refund/replacement/compensation demand.
+
+Section 3. Police report for theft, fraud, assault, lost passport or property.
+Use when a Russian citizen or foreigner needs a written incident report for police, embassy, insurer or migration authority. Source basis: Criminal Code; Criminal Procedure Code; foreigner-status and migration laws. Fields: applicant, incident date/place, suspect if known, property/value, evidence, request for registration and case reference.
+
+Section 4. Visa and migration checklist for a Russian citizen.
+Use before entry, visa/e-visa question, registration, stay extension, temporary residence or residence planning. Source basis: External Migration Law; Law on Legal Status of Foreign Citizens; Citizenship Law. Russian-specific notes: verify visa-free/EAEU practice, registration deadlines, permitted stay, residence grounds and employment conditions separately.
+
+Section 5. Visa / stay application or correction request.
+Use for visa, invitation, migration-registration error, missing document or authority/portal question. Source basis: External Migration Law; offences procedure; appeal practice. Fields: application/registration number, passport, incorrect field, host/inviting party, attachments and evidence.
+
+Section 6. Temporary or permanent residence checklist.
+Use for longer stay, family, study, work, investment/business or residence status questions. Source basis: External Migration Law; Law on Legal Status of Foreign Citizens; Citizenship Law. Fields: current stay, residence ground, address, income/work/study documents, medical/criminal-record items if required.
+
+Section 7. Work / employment checklist for foreigner or Russian citizen.
+Use for employment contract, work authorization, employer documents or labour dispute. Source basis: Labour Code; External Labour Migration Law; External Migration Law. Fields: worker status, employer, contract terms, authorization issue, wages/dismissal/safety/migration risk and evidence.
+
+Section 8. Administrative offence / fine response.
+Use for migration, traffic, consumer, public-order or other offence notices. Source basis: Code on Offences; Criminal Procedure Code where relevant. Fields: person, protocol, authority and article, facts, objections, mitigating circumstances, requested action.
+
+Section 9. Foreign real-estate purchase due-diligence checklist.
+Use for apartment, house, land, lease, new-build, registration or seller/developer due diligence. Source basis: Civil Code; Land Code; Housing Code; real-estate registration law and rules. Russian-specific risk checks: foreign ownership and land limits, payment route from Russia, notarization/registration duty, tax and banking risk.
+
+Section 10. Real-estate registration / correction request.
+Use for registration of ownership, correction of registry error, encumbrance removal or transaction registration. Source basis: Law on State Registration of Rights to Immovable Property; registration rules; Civil Code. Fields: applicant, property identifier, requested action, basis document, attachments and payment proof.
+
+Section 11. Civil claim / pre-trial demand.
+Use for contract debt, damage, service failure, unjust enrichment, property dispute or compensation. Source basis: Civil Code; Civil Procedure Code. Fields: claimant/respondent, legal basis, timeline, amount, evidence, voluntary settlement demand.
+
+Section 12. Tax / payment-residency checklist.
+Use for tax registration, income, rental income, business income, VAT, customs/payment questions. Source basis: Tax Code; Civil Code; Investments Law. Fields: person/entity, residency facts, transaction, amounts/currency, Kyrgyz-source indicators and documents.
+
+Section 13. Digital service / e-commerce / advertising complaint.
+Use for online store, platform, electronic contract, misleading ad, blocked account or digital-service issue. Source basis: E-commerce Law; Advertising Law; Personal Information Law; Consumer Protection Law. Fields: platform, account/order/ad, screenshots, payment proof, requested correction/refund/restoration/removal.
+
+Section 14. Appeal to Kyrgyz state body.
+Use for administrative request, complaint against official action/inaction, request for information or deadline issue. Source basis: Constitution; relevant administrative and sectoral laws. Fields: applicant, authority, facts, previous applications, legal interest, requested action, attachments.
+
+Section 15. Consular support request for Russian citizen.
+Use for lost passport, detention, accident, death, emergency travel document, migration problem or document legalization. Source basis: External Migration Law; Criminal Procedure Code; foreigner-status law. Fields: Russian citizen identity, location, emergency facts, authority involved, needed support.
+
+Section 16. Marriage / family-status checklist.
+Use for marriage registration, divorce, child issues, alimony, civil-status certificates or spouse consent. Source basis: Family Code; Civil Code. Fields: parties, citizenship, passports, addresses, event, foreign documents, legalization/translation and competent body.
+
+Section 17. Citizenship / passport / statelessness checklist.
+Use for Kyrgyz citizenship, loss/termination, child citizenship, passport/documentation question or statelessness. Source basis: Citizenship Law; Constitution; foreigner-status law. Fields: citizenship history, birthplace, parents, marriage, residence, requested result, evidence and risk flags.
+
+Section 18. Personal data complaint.
+Use for unlawful data collection, publication, refusal to correct/delete data, transfer issue or platform leak. Source basis: Personal Information Law; digital-service and offence context. Fields: data subject, operator/controller, data categories, violation, evidence, access/correction/deletion/restriction demand.
+
+Section 19. Tourism service complaint / insurance checklist.
+Use for package tour, hotel, guide, transport, accident, denied service or tourist insurance issue. Source basis: Tourism Law; Consumer Protection Law; Civil Code. Fields: tourist/booking data, provider, breach/loss/incident, evidence, medical/insurance documents and remedy.
+
+Section 20. Investment / permits / e-commerce checklist.
+Use for foreign investment, company participation, online trade, advertising, permits, real estate or commercial dispute. Source basis: Investments Law; Business Partnerships and Companies Law; E-commerce Law; Tax Code. Fields: investor/business participant, transaction, company/permit/registration checks, tax/currency/payment and beneficial-owner risks.

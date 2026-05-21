@@ -1,0 +1,158 @@
+Kyrgyzstan legal sources registry (2026-05-22)
+Primary source is the Centralized Database of Legal Information of the Kyrgyz Republic.
+Verify current legal force against official Kyrgyz/Russian text before filing or court use.
+
+Imported sources:
+- Constitution of the Kyrgyz Republic
+  file: kg_constitution.txt
+  category: Core constitutional law
+  sections: 116
+  url: https://cbd.minjust.gov.kg/1-2/edition/1202952/ru
+  note: Current official CBD Minjust text.
+- Civil Code of the Kyrgyz Republic, Part One
+  file: kg_civil_code_part_1.txt
+  category: Core codes
+  sections: 471
+  url: https://cbd.minjust.gov.kg/3-1/edition/52160/ru
+  note: Civil-law basis for contracts, obligations, property and damages.
+- Civil Code of the Kyrgyz Republic, Part Two
+  file: kg_civil_code_part_2.txt
+  category: Core codes
+  sections: 921
+  url: https://cbd.minjust.gov.kg/3-2/edition/40564/ru
+  note: Specific contracts, sale, lease and other obligations.
+- Civil Procedure Code of the Kyrgyz Republic
+  file: kg_civil_procedure_code.txt
+  category: Procedure
+  sections: 460
+  url: https://cbd.minjust.gov.kg/111521/edition/52162/ru
+  note: Civil court procedure and procedural remedies.
+- Criminal Code of the Kyrgyz Republic
+  file: kg_criminal_code.txt
+  category: Core codes
+  sections: 447
+  url: https://cbd.minjust.gov.kg/112309/edition/50116/ru
+  note: Criminal liability and offences.
+- Criminal Procedure Code of the Kyrgyz Republic
+  file: kg_criminal_procedure_code.txt
+  category: Procedure
+  sections: 557
+  url: https://cbd.minjust.gov.kg/112308/edition/42104/ru
+  note: Criminal complaints, reports and investigation procedure.
+- Code of the Kyrgyz Republic on Offences
+  file: kg_offences_code.txt
+  category: Administrative offences
+  sections: 674
+  url: https://cbd.minjust.gov.kg/112306/edition/51920/ru
+  note: Administrative liability, including migration and consumer-related penalties.
+- Labour Code of the Kyrgyz Republic
+  file: kg_labour_code.txt
+  category: Labour
+  sections: 591
+  url: https://cbd.minjust.gov.kg/570/edition/282855/ru
+  note: Employment contracts, workers' rights and labour disputes.
+- Tax Code of the Kyrgyz Republic
+  file: kg_tax_code.txt
+  category: Tax
+  sections: 492
+  url: https://cbd.minjust.gov.kg/112340/edition/45757/ru
+  note: Tax obligations, administration and taxpayer rights.
+- Family Code of the Kyrgyz Republic
+  file: kg_family_code.txt
+  category: Family
+  sections: 152
+  url: https://cbd.minjust.gov.kg/1327/edition/36036/ru
+  note: Marriage, divorce, children, alimony and civil-status context.
+- Land Code of the Kyrgyz Republic
+  file: kg_land_code.txt
+  category: Land and real estate
+  sections: 131
+  url: https://cbd.minjust.gov.kg/3-47/edition/34746/ru
+  note: Land rights, land-use rules and land restrictions.
+- Housing Code of the Kyrgyz Republic
+  file: kg_housing_code.txt
+  category: Land and real estate
+  sections: 93
+  url: https://cbd.minjust.gov.kg/203926/edition/37148/ru
+  note: Housing rights, residential premises and housing-use rules.
+- Law on Citizenship of the Kyrgyz Republic
+  file: kg_citizenship_law.txt
+  category: Immigration and citizenship
+  sections: 44
+  url: https://cbd.minjust.gov.kg/202103/edition/29242/ru
+  note: Citizenship acquisition, termination, passports and citizenship status.
+- Law on Legal Status of Foreign Citizens in the Kyrgyz Republic
+  file: kg_foreigners_legal_status_law.txt
+  category: Immigration and visas
+  sections: 31
+  url: https://cbd.minjust.gov.kg/772/edition/1264919/ru
+  note: Rights and duties of foreign citizens and stateless persons.
+- Law on External Migration
+  file: kg_external_migration_law.txt
+  category: Immigration and visas
+  sections: 71
+  url: https://cbd.minjust.gov.kg/350/edition/51933/ru
+  note: Entry, stay, residence permits, visas and migration quotas.
+- Law on External Labour Migration
+  file: kg_external_labour_migration_law.txt
+  category: Labour
+  sections: 31
+  url: https://cbd.minjust.gov.kg/1792/edition/34870/ru
+  note: Foreign labour migration and employment-related migration rules.
+- Law on Protection of Consumer Rights
+  file: kg_consumer_protection_law.txt
+  category: Consumer protection
+  sections: 62
+  url: https://cbd.minjust.gov.kg/590/edition/44233/ru
+  note: Consumer complaints, refunds, defects, services and seller duties.
+- Law on State Registration of Rights to Immovable Property and Transactions
+  file: kg_real_estate_registration_law.txt
+  category: Land and real estate
+  sections: 66
+  url: https://cbd.minjust.gov.kg/160/edition/37920/ru
+  note: Registration of immovable property rights and transactions.
+- Rules for State Registration of Rights and Encumbrances to Immovable Property
+  file: kg_real_estate_registration_rules.txt
+  category: Land and real estate
+  sections: 3
+  url: https://cbd.minjust.gov.kg/94056/edition/41828/ru
+  note: Practical registration rules for immovable property and transactions.
+- Law on Personal Information
+  file: kg_personal_data_law.txt
+  category: Digital services
+  sections: 33
+  url: https://cbd.minjust.gov.kg/202269/edition/36802/ru
+  note: Personal data collection, processing, transfer and subject-rights context.
+- Law on Tourism
+  file: kg_tourism_law.txt
+  category: Tourism and travel complaints
+  sections: 19
+  url: https://cbd.minjust.gov.kg/201/edition/1389/ru
+  note: Tourism services, tour operators, guides and tourist rights context.
+- Law on Investments in the Kyrgyz Republic
+  file: kg_investments_law.txt
+  category: Business and investment
+  sections: 29
+  url: https://cbd.minjust.gov.kg/1190/edition/36069/ru
+  note: Investor rights, investment guarantees and investment activity context.
+- Law on Electronic Commerce
+  file: kg_ecommerce_law.txt
+  category: Digital services
+  sections: 21
+  url: https://cbd.minjust.gov.kg/112333/edition/35680/ru
+  note: E-commerce contracts, platforms, sellers and online consumer context.
+- Law on Advertising
+  file: kg_advertising_law.txt
+  category: Digital services
+  sections: 7
+  url: https://cbd.minjust.gov.kg/4-5386/edition/13677/ru
+  note: Advertising duties, restrictions and online/offline advertising rules.
+- Law on Business Partnerships and Companies
+  file: kg_business_companies_law.txt
+  category: Business and investment
+  sections: 57
+  url: https://cbd.minjust.gov.kg/667/edition/34512/ru
+  note: Company formation, participants, charter capital and governance.
+
+Failed sources:
+- none
