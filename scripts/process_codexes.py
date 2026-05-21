@@ -167,7 +167,8 @@ def extract_country_from_path(file_path: Path, codexes_dir: Path) -> str:
         "tj": "Таджикистан",
         "uz": "Узбекистан",
         "az": "Азербайджан",
-        "thai": "Таиланд"
+        "thai": "Таиланд",
+        "vn": "Вьетнам"
     }
     
     try:
@@ -294,7 +295,7 @@ async def process_codexes():
     codexes_dir.mkdir(parents=True, exist_ok=True)
     
     # Поддерживаемые коды стран
-    supported_countries = ["ru", "kz", "am", "by", "tj", "uz", "az", "thai"]
+    supported_countries = ["ru", "kz", "am", "by", "tj", "uz", "az", "thai", "vn"]
     
     # Поиск всех файлов кодексов
     # Поддерживаем структуру: codexes/{country}/*.txt или codexes/*.txt

@@ -1,0 +1,152 @@
+Vietnam legal sources registry (2026-05-22)
+English translations are reference materials unless the source explicitly says otherwise.
+For legal force in Vietnam, verify against the Vietnamese text published by the competent authority.
+
+Imported sources:
+- Vietnam Civil Code No. 91/2015/QH13
+  file: vn_civil_code_2015.txt
+  category: Core codes
+  sections: 1580
+  url: https://www.wipo.int/wipolex/en/legislation/details/17200
+  note: WIPO Lex English reference text; Vietnamese official text prevails.
+- Vietnam Civil Procedure Code No. 92/2015/QH13
+  file: vn_civil_procedure_code_2015.txt
+  category: Procedure
+  sections: 1581
+  url: https://www.wipo.int/wipolex/en/legislation/details/17221
+  note: WIPO Lex English reference text.
+- Vietnam Criminal Procedure Code No. 101/2015/QH13
+  file: vn_criminal_procedure_code_2015.txt
+  category: Procedure
+  sections: 669
+  url: https://english.luatvietnam.vn/law-no-101-2015-qh13-dated-november-27-2015-of-the-national-assembly-on-criminal-procedure-code-101322-doc1.html
+  note: WIPO Lex English reference text.
+- Vietnam Penal/Criminal Code 2015, amended 2017
+  file: vn_penal_code_2015_amended_2017.txt
+  category: Core codes
+  sections: 1380
+  url: https://dazpro.com/law-100-2015-vietnam-on-penal-crime/
+  note: Consolidated English reference text; includes Law 12/2017/QH14 amendments.
+- Vietnam Labour Code No. 45/2019/QH14
+  file: vn_labour_code_2019.txt
+  category: Labour
+  sections: 536
+  url: https://vietanlaw.com/vietnam-labour-code-2019/
+  note: English reference text of the 2019 Labour Code.
+- Vietnam Law on Enterprises No. 59/2020/QH14
+  file: vn_enterprise_law_2020.txt
+  category: Business and investment
+  sections: 333
+  url: https://english.luatvietnam.vn/law-on-enterprises-no-59-2020-qh14-dated-june-17-2020-of-the-national-assembly-186272-doc1.html
+  note: English text published by LuatVietnam.
+- Vietnam Law on Investment No. 61/2020/QH14
+  file: vn_investment_law_2020.txt
+  category: Business and investment
+  sections: 172
+  url: https://english.luatvietnam.vn/law-on-investment-no-61-2020-qh14-dated-june-17-2020-of-the-national-assembly-186270-doc1.html
+  note: English text published by LuatVietnam.
+- Vietnam Law on Tax Administration No. 38/2019/QH14
+  file: vn_tax_administration_law_2019.txt
+  category: Tax
+  sections: 208
+  url: https://english.luatvietnam.vn/law-no-38-2019-qh14-dated-june-13-2019-of-the-national-assembly-on-tax-administration-174969-doc1.html
+  note: English text published by LuatVietnam.
+- Vietnam Land Law No. 31/2024/QH15
+  file: vn_land_law_2024.txt
+  category: Land and real estate
+  sections: 565
+  url: https://english.luatvietnam.vn/dat-dai/land-law-2024-no-31-2024-qh15-296638-d1.html
+  note: New Land Law effective from July 1, 2024; English text published by LuatVietnam.
+- Vietnam Housing Law No. 27/2023/QH15
+  file: vn_housing_law_2023.txt
+  category: Land and real estate
+  sections: 523
+  url: https://english.luatvietnam.vn/dat-dai/housing-law-no-27-2023-qh15-284800-d1.html
+  note: Includes foreign-organization and foreign-individual housing ownership provisions.
+- Vietnam Law on Real Estate Business No. 29/2023/QH15
+  file: vn_real_estate_business_law_2023.txt
+  category: Land and real estate
+  sections: 151
+  url: https://english.luatvietnam.vn/dat-dai/law-on-real-estate-business-2023-no-29-2023-qh15-284798-d1.html
+  note: Real-estate business and services law effective under the 2023 reform package.
+- Vietnam Decree No. 95/2024/ND-CP detailing the Housing Law
+  file: vn_housing_decree_95_2024_foreigners.txt
+  category: Land and real estate
+  sections: 308
+  url: https://english.luatvietnam.vn/dau-tu/decree-95-2024-nd-cp-detail-housing-law-361551-d1.html
+  note: Practical implementation rules for housing, including foreign ownership restrictions.
+- Vietnam Law on Protection of Consumers' Rights No. 19/2023/QH15
+  file: vn_consumer_protection_law_2023.txt
+  category: Consumer protection
+  sections: 114
+  url: https://english.luatvietnam.vn/thuong-mai/law-on-protection-of-consumer-rights-no-19-2023-qh15-259732-d1.html
+  note: New consumer law effective from July 1, 2024.
+- Vietnam Tourism Law No. 09/2017/QH14
+  file: vn_tourism_law_2017.txt
+  category: Tourism and travel complaints
+  sections: 104
+  url: https://english.luatvietnam.vn/law-no-09-2017-qh14-dated-june-19-2017-of-the-national-assembly-on-tourism-115518-doc1.html
+  note: Rights and obligations of tourists and tourism service providers.
+- Vietnam Law on Advertising No. 16/2012/QH13
+  file: vn_advertising_law_2012.txt
+  category: Consumer protection
+  sections: 102
+  url: https://www.wipo.int/wipolex/en/legislation/details/17223
+  note: WIPO Lex English text; useful for misleading advertising and service representations.
+- Vietnam Competition Law No. 23/2018/QH14
+  file: vn_competition_law_2018.txt
+  category: Commerce
+  sections: 195
+  url: https://english.luatvietnam.vn/law-no-23-2018-qh14-dated-june-12-2018-of-the-national-assembly-on-competition-164727-doc1.html
+  note: Competition and unfair competition reference.
+- Vietnam Law on E-Transactions No. 20/2023/QH15
+  file: vn_e_transactions_law_2023.txt
+  category: Digital services
+  sections: 61
+  url: https://english.luatvietnam.vn/thuong-mai/law-on-e-transactions-2023-no-20-2023-qh15-259738-d1.html
+  note: New electronic transactions law effective from July 1, 2024.
+- Vietnam Cybersecurity Law No. 24/2018/QH14
+  file: vn_cybersecurity_law_2018.txt
+  category: Digital services
+  sections: 1
+  url: https://thuviennhadat.vn/van-ban-phap-luat-viet-nam
+  note: English full-text reference via LawNet.
+- Vietnam Decree No. 13/2023/ND-CP on Personal Data Protection
+  file: vn_personal_data_decree_13_2023.txt
+  category: Digital services
+  sections: 55
+  url: https://www.dataguidance.com/sites/default/files/decree-13-2023-pdpd_en_clean.pdf
+  note: English reference translation of Vietnam's personal data protection decree.
+- Vietnam Law on Entry, Exit, Transit and Residence of Foreigners No. 47/2014/QH13
+  file: vn_immigration_law_2014.txt
+  category: Immigration and visas
+  sections: 94
+  url: https://english.luatvietnam.vn/law-no-47-2014-qh13-on-entry-exit-transit-and-residence-of-foreigners-in-vietnam-87925-doc1.html
+  note: Core law for foreigner entry, exit, transit, visas and residence.
+- Vietnam Law No. 51/2019/QH14 amending foreigner entry/exit/residence rules
+  file: vn_immigration_law_2019_amendments.txt
+  category: Immigration and visas
+  sections: 1
+  url: https://vplsdms.vn/en/advising-on-the-law-on-entry-exit-transit-and-residence-of-foreigners-in-vietnam-no.-472014qh13-dated-june-16-2014
+  note: VPLSDMS page referencing the 2019 amendments and current status.
+- Official guide to Vietnam e-Visa application
+  file: vn_official_evisa_guide.txt
+  category: Immigration and visas
+  sections: 1
+  url: https://vietnam.travel/plan-your-trip/official-vietnam-evisa-application
+  note: Vietnam National Authority of Tourism guide pointing travelers to the official e-visa website.
+- Information on Viet Nam visa and immigration regulations
+  file: vn_visa_information_mofa.txt
+  category: Immigration and visas
+  sections: 1
+  url: https://vietnam.travel/plan-your-trip/official-vietnam-evisa-application
+  note: Official Vietnam Tourism e-visa information; useful for tourist/e-visa questions.
+- Vietnam Decree No. 152/2020/ND-CP on foreign workers
+  file: vn_foreign_worker_decree_152_2020.txt
+  category: Labour
+  sections: 88
+  url: https://english.luatvietnam.vn/decree-no152-2020-nd-cp-dated-december-30-2020-of-the-government-providing-regulations-on-foreign-employees-working-in-vietnam-and-recruitment-mana-196375-doc1.html
+  note: Foreign worker and work permit rules.
+
+Failed sources:
+- none

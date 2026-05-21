@@ -201,6 +201,7 @@ class ConversationContextService:
         
         country_mapping = {
             "таиланд": "thai", "тайланд": "thai", "thailand": "thai",
+            "вьетнам": "vn", "вьетнамск": "vn", "vietnam": "vn", "viet nam": "vn",
             "россия": "ru", "рф": "ru", "russia": "ru", "российск": "ru",
             "казахстан": "kz", "kazakhstan": "kz", "казахск": "kz",
             "армения": "am", "armenia": "am", "армянск": "am",
@@ -248,6 +249,7 @@ class ConversationContextService:
         if found_country:
             country_names = {
                 "thai": "Thailand Таиланд",
+                "vn": "Vietnam Вьетнам",
                 "ru": "Россия", "kz": "Казахстан",
                 "am": "Армения", "by": "Беларусь", "tj": "Таджикистан",
                 "uz": "Узбекистан", "az": "Азербайджан"
@@ -290,4 +292,3 @@ class ConversationContextService:
 
 # Глобальный экземпляр
 conversation_context = ConversationContextService()
-

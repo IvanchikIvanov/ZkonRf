@@ -1,0 +1,167 @@
+Vietnam statement and application templates for common bot questions.
+These are practical drafting/checklist templates for Russian citizens and other foreigners. They are not official forms unless a competent Vietnamese authority publishes a specific form.
+
+Section 1. Consumer complaint / demand letter against seller or service provider.
+Use for defective goods, refund refusal, misleading service, online order, hotel/service issue or warranty dispute.
+Source basis: Law on Protection of Consumers' Rights 2023; Civil Code 2015; Advertising Law 2012 where misleading statements matter.
+Template fields:
+1. Consumer: full name, passport, nationality, address/contact in Vietnam or abroad.
+2. Seller/service provider: legal name, address, website/platform, phone/email.
+3. Contract/order details: date, price, payment proof, invoice/order number.
+4. Problem: defect, non-delivery, misleading information, unsafe service, refusal to refund.
+5. Evidence: photos, chat, receipt, advertisement, warranty card, delivery record.
+6. Demand: refund, replacement, repair, compensation, written explanation and deadline.
+Draft wording:
+I request that the seller/service provider resolve the consumer rights issue described above within the stated deadline. If no response is received, I reserve the right to submit a complaint to competent Vietnamese authorities and pursue available civil remedies.
+
+Section 2. Tourism complaint for hotel, tour operator, guide, transport or travel service.
+Use for cancelled tours, unsafe service, misrepresentation, overcharge, lost booking, guide misconduct or tourist damage.
+Source basis: Tourism Law 2017; Consumer Protection Law 2023; Civil Code 2015.
+Template fields:
+1. Tourist details: name, passport, nationality, contacts and itinerary dates.
+2. Service provider: hotel/tour company/guide/transport provider.
+3. Booking details: date, route, voucher, price, payment proof.
+4. Incident description and harm.
+5. Evidence and witnesses.
+6. Requested remedy: refund, replacement service, compensation, written apology, authority review.
+
+Section 3. Police report for theft, fraud, assault, lost passport or property.
+Use when a Russian citizen or foreigner needs a written incident report for police, embassy, insurer or immigration.
+Source basis: Penal Code 2015 amended 2017; Criminal Procedure Code 2015; immigration law for passport/visa consequences.
+Template fields:
+1. Applicant: name, passport, nationality, visa/e-visa/residence details, Vietnam address.
+2. Incident: date, time, place, suspect if known, property/value, bank/cards/devices affected.
+3. Evidence: photos, CCTV location, transaction records, witnesses, chats.
+4. Requested action: register report, investigate, issue confirmation/case number/copy for embassy or insurer.
+Draft wording:
+I request registration of this report and a written confirmation/case reference for use with my embassy, insurer and immigration authorities.
+
+Section 4. E-visa application checklist for a Russian citizen.
+Use before filing or correcting a Vietnam e-visa application.
+Source basis: official e-visa guide; Law on Entry, Exit, Transit and Residence of Foreigners; MOFA visa information.
+Template fields:
+1. Passport data: full name, sex, date/place of birth, nationality, passport number, issue/expiry date.
+2. Trip data: arrival/departure dates, entry/exit border gates, address in Vietnam, host/hotel.
+3. Visa type: single/multiple entry if available, purpose, planned stay.
+4. Uploads: passport bio page, portrait photo, payment confirmation.
+5. Risk checks: exact spelling, passport validity, selected border gate, duplicated applications, scam/third-party website avoidance.
+Russian-specific notes:
+Use the official e-visa portal or official guidance pages. Check payment route/card availability and preserve application code, receipt and email from official domain.
+
+Section 5. Visa correction / supplement explanation letter.
+Use when e-visa data is wrong, an application is returned for correction, or documents must be supplemented.
+Source basis: official e-visa guide and immigration law.
+Template fields:
+1. Application code and applicant passport details.
+2. Incorrect field and corrected value.
+3. Reason for correction: typo, photo mismatch, passport renewal, changed itinerary.
+4. Attached documents.
+Draft wording:
+I respectfully request correction or review of my e-visa application using the accurate information and supporting documents listed above.
+
+Section 6. Visa extension / temporary stay issue explanation.
+Use for overstay risk, flight cancellation, illness, lost passport, administrative delay or request to regularize stay.
+Source basis: immigration law on entry, exit, residence and exit suspension; embassy visa guidance.
+Template fields:
+1. Applicant identity and current visa/stay permission.
+2. Current location and Vietnam contact address.
+3. Problem and dates.
+4. Evidence: flight cancellation, medical certificate, police report, embassy letter, application receipt.
+5. Requested action: guidance, extension/regularization, exit assistance, written confirmation.
+Draft wording:
+The circumstances were outside my control / arose from the facts described above. I request guidance on the lawful procedure to regularize my stay or exit Vietnam.
+
+Section 7. Temporary residence card / residence status checklist.
+Use for employment, family, investment or other longer-stay questions.
+Source basis: immigration law and amendments; work permit rules where employment is involved.
+Template fields:
+1. Applicant passport and current visa.
+2. Sponsor: employer, investment company, family member, school or other host.
+3. Basis: work permit/work permit exemption, investment registration, family relation, study.
+4. Documents: sponsor letter, enterprise documents, work permit, photos, address, prior visa/stay evidence.
+5. Questions for review: eligibility, validity period, sponsor responsibility, local submission place.
+
+Section 8. Work permit / foreign worker checklist.
+Use for Russian citizens and other foreigners working in Vietnam.
+Source basis: Labour Code 2019 and Decree 152/2020/ND-CP on foreign workers.
+Template fields:
+1. Worker identity, passport, education, professional experience.
+2. Employer: legal name, enterprise registration, workplace.
+3. Position type and job description.
+4. Documents: health certificate, criminal record, degree/experience proof, legalized/translated documents if required.
+5. Requested review: whether work permit, exemption or temporary residence card path applies.
+
+Section 9. Foreign residential property purchase due-diligence checklist.
+Use before a foreigner or Russian citizen pays deposit for apartment/house in Vietnam.
+Source basis: Housing Law 2023; Decree 95/2024/ND-CP; Land Law 2024; Real Estate Business Law 2023; Civil Code 2015.
+Template fields:
+1. Buyer: passport, nationality, visa/entry status, Vietnam contact.
+2. Property: project name, developer/seller, apartment/house number, location, price.
+3. Eligibility: project is not in restricted defense/security area; foreign quota available; buyer permitted to enter Vietnam.
+4. Title/rights: ownership certificate/pink book status, project permits, mortgage/encumbrance, handover and warranty.
+5. Contract terms: deposit, refund, transfer date, fees/taxes, default, foreign ownership term, extension/resale.
+6. Russian-specific risk checks: bank transfer route, sanctions/payment delays, currency source evidence, Russian tax/currency advice if needed.
+Draft request:
+Please review whether this property can lawfully be owned by a foreign individual and identify missing documents before I pay deposit or sign the sale agreement.
+
+Section 10. Lease / long-term rental / serviced apartment checklist.
+Use for foreigner rentals, deposit disputes or long-stay housing arrangements.
+Source basis: Civil Code 2015; Housing Law 2023; immigration address/residence practice.
+Template fields:
+1. Tenant and landlord identity.
+2. Premises: address, unit, term, rent, deposit, utilities.
+3. Documents: landlord title/authority, contract, payment receipts, inventory/photos.
+4. Clauses: early termination, deposit return, repairs, sublease, registration/address support.
+5. Immigration angle: hotel/landlord address reporting, proof of address for visa/residence needs.
+
+Section 11. Demand letter to developer, seller, agent or landlord.
+Use for deposit refusal, misleading foreign-ownership promise, construction defect, delayed transfer, rental deposit dispute or unauthorized fee.
+Source basis: Civil Code 2015; Housing Law 2023; Real Estate Business Law 2023; Consumer Protection Law 2023.
+Template fields:
+1. Claimant and respondent details.
+2. Contract/reservation/lease details and amounts paid.
+3. Problem and legal/business basis.
+4. Evidence: contract, receipts, chats, advertisements, photos, title/project documents.
+5. Demand and deadline.
+Draft wording:
+I request that you resolve the issue described above by the stated deadline. If no satisfactory response is received, I reserve all rights to file complaints and seek legal remedies in Vietnam.
+
+Section 12. Real-estate agent / broker complaint checklist.
+Use when broker misrepresented foreign quota, price, fees, title, developer status or refund conditions.
+Source basis: Real Estate Business Law 2023; Consumer Protection Law 2023; Advertising Law 2012.
+Template fields:
+1. Broker identity and license/company details if known.
+2. Advertisement or statements relied on.
+3. Payment and contract history.
+4. Misrepresentation or non-performance.
+5. Requested remedy and authority/escalation route.
+
+Section 13. Foreign investor / company setup checklist for property-related or business activity.
+Use when a foreigner asks whether to open a company, invest, or structure property/business activity in Vietnam.
+Source basis: Law on Enterprises 2020; Law on Investment 2020; Land/Housing/Real Estate Business laws.
+Template fields:
+1. Investor identity and nationality.
+2. Planned activity: trading, services, consulting, real estate, leasing, employment.
+3. Ownership/investment capital and partners.
+4. Required licenses/conditional business lines.
+5. Risk flags: nominee arrangements, using a company only to bypass property restrictions, tax and reporting duties.
+
+Section 14. Personal data / online platform complaint.
+Use for misuse of passport/photo/identity data, platform account issue, online service, data transfer, scam website or unauthorized processing.
+Source basis: Decree 13/2023/ND-CP on personal data protection; E-Transactions Law 2023; Cybersecurity Law 2018; Consumer Protection Law 2023.
+Template fields:
+1. Data subject identity and contacts.
+2. Controller/processor/platform details.
+3. Data involved: passport, phone, address, biometric/photo, payment, account.
+4. Harm/risk and requested action: delete, correct, restrict, explain, compensate.
+5. Evidence: screenshots, emails, consent forms, privacy notices.
+
+Section 15. Embassy / consular support request for Russian citizen.
+Use after lost passport, arrest, serious accident, visa/overstay issue, document legalization or emergency.
+Source basis: immigration law, criminal procedure principles and practical consular workflows.
+Template fields:
+1. Citizen identity and Russian passport/internal passport details if available.
+2. Vietnam location and contact.
+3. Emergency facts and authority involved.
+4. Documents/evidence and people to contact.
+5. Requested support: return certificate, police/immigration liaison, document confirmation, lawyer/translator contacts.

@@ -146,7 +146,8 @@ class LLMService:
             "tj": "Республика Таджикистан",
             "uz": "Республика Узбекистан",
             "az": "Азербайджанская Республика",
-            "thai": "Таиланд"
+            "thai": "Таиланд",
+            "vn": "Вьетнам"
         }
         return country_mapping.get(country_code.lower(), country_code.upper())
     
@@ -562,4 +563,3 @@ Be thorough and accurate. If this is text from a code, specify the specific arti
 
 
 llm_service = LLMService()
-

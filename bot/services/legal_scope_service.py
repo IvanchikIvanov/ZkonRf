@@ -14,6 +14,7 @@ COUNTRY_NAMES = {
     "uz": "Узбекистан",
     "az": "Азербайджан",
     "thai": "Таиланд",
+    "vn": "Вьетнам",
 }
 
 CODEX_LABELS = {
@@ -35,6 +36,7 @@ class LegalScopeService:
 
     COUNTRY_PATTERNS = {
         "thai": ("таиланд", "тайланд", "thailand", "thai"),
+        "vn": ("вьетнам", "вьетнамск", "vietnam", "viet nam", "vn"),
         "ru": ("россия", "рф", "russia", "российск"),
         "kz": ("казахстан", "kazakhstan", "казахск", "рк"),
         "am": ("армения", "armenia", "армянск"),
@@ -222,10 +224,10 @@ class LegalScopeService:
             "criminal": ("уголов", " uk ", "criminal", "penal"),
             "civil": ("граждан", " gk ", "civil"),
             "labor": ("труд", " tk ", "labor", "employment"),
+            "tax": ("налог", " nk ", "tax", "revenue"),
             "koap": ("коап", " koap ", "административ", "admin"),
             "family": ("семейн", " sk ", "family"),
             "consumer": ("потреб", "зпп", "zpp", "2300", "consumer"),
-            "tax": ("налог", " nk ", "tax", "revenue"),
             "housing": ("жилищ", " jk ", "housing"),
         }
         padded = f" {normalized} "
