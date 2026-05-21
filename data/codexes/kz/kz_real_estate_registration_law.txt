@@ -1,0 +1,1051 @@
+Kazakhstan source: Law on State Registration of Rights to Immovable Property
+Category: Land and real estate
+Source URL: https://www.adilet.zan.kz/eng/docs/Z070000310_
+Note: Real-estate registration rules; useful for apartment/ownership questions.
+
+Section 1. Original section/article: 1. Source: Law on State Registration of Rights to Immovable Property.
+Basic concepts used in this Law 
+The following basic concepts shall be used in this Law:
+1) preferential interests – the rights (encumbrance of a right) to immovable property, which are not subject to the compulsory state registration in the legal cadaster and shall be recognized as valid without state registration in accordance with this Law and other legislative acts; 
+2) previously accrued right (encumbrance of a right) – a right (encumbrance of a right) to immovable property, which is accrued before 1 March, 1996 and valid upon condition of its compliance with the legislation, and being in force at the time of origin of the relevant right;
+3) record registration – registration of rights (encumbrance of the rights) to immovable property for the purposes of accounting of rights (encumbrance of the rights) to immovable property, valid without state registration in the legal cadaster, as well as previously accrued rights; 
+4) personal easement – easement in favour of a certain person, not related with possession of the dominant item of immovable property; 
+5) immovable property (immovable property) – land plots, buildings, constructions and other property, inseparable from land, in other words the objects, transfer of which is impossible without disproportionate damage to the assignment; 
+6) state registration of rights to immovable property (hereinafter – state registration) – compulsory procedure of recognition and approval of accrual, change or termination of rights (encumbrance of the rights) to immovable property and other objects of the state registration in the legal cadaster by the state in the manner and terms, established by this Law and other Laws; 
+7) primary object of immovable property – buildings and constructions of various functional purpose, as well as objects of special regulation and town-planning regulation;
+7-1) information system of the unified state real estate cadastre - an information system containing information on land and legal cadastres, the procedure for maintaining which is determined by this Law and the Land Code of the Republic of Kazakhstan;
+8) secondary object of immovable property - residential and non-residential premises, to which the cadastral numbers are assigned as the object of individual (separate) property right (other property law) for the purposes of registration of rights;
+9) encumbrance of a right to immovable property – any restriction of a right to immovable property, accrued in the manner provided by the Laws of the Republic of Kazakhstan or agreement of the parties and expressed in restrictions on authority of rightholder to possession, use and (or) disposition of immovable property;
+10) formation of the object of immovable property – a process of establishment of unique identification characteristics of object of immovable property and assignment of cadastral number;
+11) serving object of immovable property – an object of servient immovable property;
+11-1) cadastral passport of a real estate property - an identification document containing technical, identification characteristics of a primary or secondary property, as well as identification characteristics of a land plot located in the cities of republican status, the capital, cities of regional and district significance, in accordance with the form established by the authorized body for state regulation and control of activities in the state registration of real estate title and state technical inspection of real estate and the central authorized land management body;
+12) identifying characteristics of the object of immovable property – details on the object of immovable property, including address, registration code of address (in its existence), type of immovable property, cadastral number, form of property, number of components, category of land, designated purpose, number of floors, areas (total, dwelling, useful), necessary for the purposes of maintenance of legal cadaster;
+13) legal claim – legal facts, which testify on contestation by third persons or existence of interests in relation of rights to immovable property, transactions with it;
+14) cadastral number – individual number of object of immovable property, not recurring in the territory of the Republic of Kazakhstan, which is assigned in the manner established by the legislation of the Republic of Kazakhstan;
+15) an object of condominium – a property complex, consisting of the land plot (land plots), primary and secondary objects, on which the ownership to immovable property in the form of condominium is established in accordance with the legislation of the Republic of Kazakhstan;
+16) right stating documents – the documents, on the basis of which the rights (encumbrance of rights) to immovable property are accrued, changed and (or) terminated;
+16-1) electronic copy of right stating document – electronic document, completely reproducing information of original paper document in the electronic form with electronic digital signature of testifier;
+17) legal cadastre - a unified state register of registered rights (encumbrances of rights) to real estate;
+18) systematic registration of previously accrued rights in the legal cadaster – record registration of rights (encumbrance of rights) to immovable property, which are accrued before introduction of the system of the state registration of rights to immovable property and valid, if they comply with the legislation, being in force at the time of their accrual;
+19) details from legal cadaster – information on registered rights (encumbered rights) to immovable property and other objects of the state registration, contained in the legal cadaster, and copies of documents, which are in the registration file, provided by the registering body; 
+20) state technical investigation of immovable property – determination of technical, identification characteristics of buildings, structures and their components, necessary for maintenance of legal cadaster;
+21) an object of the state registration – the rights and encumbrance of rights to immovable property, as well as a legal claim, subject to the state registration in the legal cadaster;
+21-1) registration code of address – unique code of address of object of immovable property;
+22) applicant – rightholder, acquirer and other persons, in the interests of which the state registration is carried out;
+23) an authorized applicant's representative – a person, who on behalf of applicant shall file an application and carry out other actions, related with the state registration, by virtue of power, based on the power of attorney, legislation, court decision or legal act;
+24) easement – a right of restricted purposeful use of others land plots and (or) other objects of immovable property, as well as for pass, passage, laying and operation of the necessary communication and other needs;
+25) Excluded by the Law of the Republic of Kazakhstan dated 05.04.2023 № 221-VII (shall be enforced from 01.07.2023); 
+26) registration file – a part of legal cadaster, in which the storage of copies of documents, represented for the state registration is carried out on the object principle;
+27) registering body - State Corporation "Government for Citizens", which carries out state registration at the location of real estate;
+28) Authorized body - state body that carries out state regulation and control of activities in the field of state registration of rights to real estate and state technical inspection of real estate;
+28-1) excluded by the Law of the Republic of Kazakhstan dated 24.05.2018 № 156-VI (shall be enforced upon expiration of ten calendar days after the day of its first official publication); 
+29) easement in favor of the dominant land plot or other object of immovable property – easement, established in favor of the owner (other rightholder) of other, usually neighboring immovable property for the needs satisfaction, as well as for the pass, passage, plumb and other purposes;
+30) a dominant object of immovable property – an object of immovable property, the owner (other rightholder) of which has a right of restricted purposeful use of others immovable property (easement);
+31) electronic registration - state registration, carried out on the basis of an electronic copy of the title document received by the registration authority through the information system of the legal cadastre.
+Footnote.
+
+Section 2. Original section/article: 1. Source: Law on State Registration of Rights to Immovable Property.
+as amended by the Laws of the Republic of Kazakhstan dated 25.03.2011 № 421-IV (shall be enforced upon expiry of ten calendar days after its first official publication); dated 21.07.2011 № 468-IV(shall be enforced upon expiry of ten calendar days after its first official publication); dated 27.04.2012 № 15-V (the order of enforcement see
+
+Section 3. Original section/article: 2. Source: Law on State Registration of Rights to Immovable Property.
+); dated 17.11.2015 № 408-V (shall be enforced from 01.03.2016); dated 24.05.2018 № 156-VI (shall be enforced upon the expiration of ten calendar days after the day of its first official publication); dated 02.04.2019 № 241-VI (shall be enforced upon the expiration of ten calendar days after the day of its first official publication); dated 25.11.2019 № 272-VI (shall be enforced upon expiry of ten calendar days after its first official publication); № 412-VI dated 26.01.2021 (shall be enforced upon expiry of ten calendar days after its first official publication); dated 05.04.2023 № 221-VII (shall be enforced from 01.07.2023).
+
+Section 4. Original section/article: 2. Source: Law on State Registration of Rights to Immovable Property.
+The scope of effect of this Law 
+1. This Law shall be applied to the relations on the state registration of rights to immovable property. 
+2. Effect of this Law shall not be distributed to the air and sea crafts, inland water vessels, sailing ships of the "river-sea", space objects.
+Footnote.
+
+Section 5. Original section/article: 2. Source: Law on State Registration of Rights to Immovable Property.
+is in the wording of the Law of the Republic of Kazakhstan dated 25.03.2011 № 421-IV (shall be enforced upon expiry of ten calendar days after its first official publication).
+
+Section 6. Original section/article: 2-1. Source: Law on State Registration of Rights to Immovable Property.
+Main purpose, objectives and principles of this Law 
+1. The main purpose of this Law shall be to regulate public relations in the field of state registration of rights to real estate aimed at exercising the rights, freedoms and legitimate interests of individuals and legal entities.
+2. The main objectives of this Law shall be:
+1) state registration of the emergence, change and termination of rights (encumbrance of rights) to real estate;
+2) realization and provision of guarantees of rights, freedoms and legal interests of individuals and legal entities having legal rights to real estate;
+3) maintenance of the legal cadastre and entry of records of registered rights by the registering authority.
+3. The main principles of this Law shall be:
+1) legality;
+2) inviolability of property;
+3) transparency of the activities of state bodies.
+Footnote. Chapter 1 as added by the
+
+Section 7. Original section/article: 2-1. Source: Law on State Registration of Rights to Immovable Property.
+in accordance with the Law of the Republic of Kazakhstan dated 05.07.2024 № 115-VIII (shall enter into force upon expiry of ten calendar days after the day of its first official publication).
+
+Section 8. Original section/article: 3. Source: Law on State Registration of Rights to Immovable Property.
+Objects of the state registration 
+1. Accrual, change and termination of the rights (encumbrance of the rights) to immovable property, as well as legal claim shall subject to the state registration in the legal cadaster. 
+2. Transfer, encumbrance, change or termination of the right to immovable property may not be registered in the legal cadaster, while such right is not registered in the manner established by this Law, except for the cases, provided by Chapter 6 of this Law.
+
+Section 9. Original section/article: 4. Source: Law on State Registration of Rights to Immovable Property.
+The state registration of rights to immovable property 
+The following rights to immovable property shall subject to the state registration in the legal cadaster: 
+1) right of property;
+2) right of economic management;
+3) right of operational management;
+4) land use right for the term not later than one year; 
+5) easement in favor of the dominant land plot or other object of immovable property for the term at least one year. 
+Other rights may be registered at the wish of rights holders.
+Footnote.
+
+Section 10. Original section/article: 4. Source: Law on State Registration of Rights to Immovable Property.
+as amended by the Law of the Republic of Kazakhstan dated 25.03.2011 № 421-IV (shall be enforced upon expiry of ten calendar days after its first official publication).
+
+Section 11. Original section/article: 5. Source: Law on State Registration of Rights to Immovable Property.
+The state registration of encumbrance of rights to immovable property 
+The state registration in the legal cadaster shall subject to the following encumbrance of rights to immovable property: 
+1) the right to use for a period of at least one year, including rent, gratuitous use, easements, the right to life maintenance with a dependent, rent;
+2) right of trust management, as well as upon guardianship, trusteeship, in the hereditary relations, bankruptcy and other;
+3) pledge;
+4) arrest;
+5) restriction (prohibition) to the use, disposal of immovable property or execution of specified works, imposed by the state bodies within their competence;
+6) other encumbrances of rights to immovable property, provided by the Laws of the Republic of Kazakhstan, except for the preferential interests.
+In case the tenant is a recipient of housing payments in accordance with Articles 101-1 and 101-3 of the Law of the Republic of Kazakhstan ‘On Housing Relations’, the tenancy agreement shall be subject to state registration regardless of the term of use of the immovable property.
+Footnote.
+
+Section 12. Original section/article: 5. Source: Law on State Registration of Rights to Immovable Property.
+as amended by the Law of the Republic of Kazakhstan dated 27.02.2017 № 49-VI (shall be enforced upon expiry of ten calendar days after the day its first official publication); dated 30.06.2025 № 203-VIII (shall be enforced from 01.07.2025).
+
+Section 13. Original section/article: 6. Source: Law on State Registration of Rights to Immovable Property.
+The state registration of change of rights (encumbrances of rights) to immovable property
+1) The state registration in the legal cadaster shall subject to:
+1) change of identification characteristics of object of immovable property, necessary for the maintenance of legal cadaster, except for the cases, provided by paragraph 2 of this Article;
+2) change of details on right holder, contained in the registration list of the legal cadaster; 
+3) change of type of the right, except for the case of change of type of the right on the basis of legislative acts;
+4) change of conditions of agreements, if they concern the details, contained in the registration list, have an effect on the scope of the rights, established to the object of immovable property, or if they shall be registered by agreement of the parties. 
+5) other changes shall subject to the state registration in the legal cadaster, if it is provided by this Law, other legislative acts or agreements of parties. 
+2. In the cases, when the change of identification characteristics of immovable property comes by the decision of the state bodies, registration of such changes may not be imposed on the rightholder, as well as upon change of the name of inhabited localities, name of the streets, as well as serial number of buildings and other structures (address) or upon change of cadastral number in connection with reform of administrative-territorial system of the Republic of Kazakhstan and shall be carried out without compensation.
+State registration of changes in the identification characteristics of immovable property, that occurred by the decision of state bodies, including when changing the name of settlements, street names, as well as the serial number of buildings and other structures (addresses), shall be carried out through integration of state information systems.
+3. State registration of changes in the information of a righth older shall be carried out free of charge without contacting the registering body through integration of state information systems with notification of a righth older.
+Footnote.
+
+Section 14. Original section/article: 6. Source: Law on State Registration of Rights to Immovable Property.
+as amended by the Law of the Republic of Kazakhstan dated 10.12.2008 № 101-IV (shall be enforced from 01.01.2009); dated November 25.11.2019 № 272-VI (shall be enforced upon expiry of ten calendar days after its first official publication).
+
+Section 15. Original section/article: 7. Source: Law on State Registration of Rights to Immovable Property.
+Legal meaning of the state registration 
+1. Rights (encumbrances of rights) to immovable property in accordance with Articles 4.5 and 6 of this Law, subjected to the compulsory state registration in the legal cadaster shall accrue from the date of their state registration, unless otherwise established by this Law and other legislative acts.
+If the registration is not rejected, the time of the state registration shall be recognized the time of filling of an application.
+In case of electronic registration, the moment of state registration of the right (encumbrance of the right) to real estate shall be the moment of confirmation of its occurrence, change or termination by the registering body by sending a notification of registration.
+2. Rights (encumbrances of the rights) to immovable property, not subjected to the compulsory state registration in the legal cadaster shall accrue in accordance with the legislative acts of the Republic of Kazakhstan, regulating the relevant relations, unless otherwise established by the agreement of parties. 
+3. Is excluded by the Law of the Republic of Kazakhstan dated 25.03.2011 № 421-IV (shall be enforced upon expiry of ten calendar days after its first official publication). 
+4. Previously accrued rights shall subject to the record registration in the legal cadaster in the manner, provided by Chapter 6 of this Law. 
+5. Upon the state registration of rights to the land plot, the rights to immovable property, inseparable from land plot, except for the rights to the primary and secondary objects, which are registered separately or together with the state registration of the rights to the land plot shall be simultaneously considered as registered. 
+6. Upon concession of priorities among several rights (encumbrances of rights) on the same object of immovable property, it is necessary to proceed from the following provisions: 
+1) registered rights (encumbrances of rights) to immovable property in the legal cadaster, which are subject to the state registration in accordance with Articles 4 and 5 of this Law shall have the priority over the unregistered;
+2) priority of previously accrued rights (encumbrances of rights) to immovable property shall be established on the date of accrual of a right in accordance with the civil legislation. 
+7. From the date of maintenance of state registration of the rights to immovable property, the legal cadaster and right stating document shall be the single sources of information, approving the registered rights (encumbrances of rights) to immovable property. 
+In the event of discrepancies in the data contained in the information system of legal cadastre and the title document, the priority is given to the registered title document in the registration file.
+Footnote.
+
+Section 16. Original section/article: 7. Source: Law on State Registration of Rights to Immovable Property.
+as amended by the Law of the Republic of Kazakhstan dated 25.03.2011 № 421-IV (shall be enforced upon expiry of ten calendar days after its first official publication); dated 27.04.2012 № 15-V (shall be enforced from 01.01.2013); dated 29.12.2014 № 269-V (shall be enforced from 01.01.2015); dated 27.02.2017 № 49-VI (shall be enforced upon expiry of ten calendar days after the day its first official publication); dated 25.06.2020 № 347-VI (shall be enforced upon expiry of ten calendar days after its first official publication); dated 29.06.2020 № 352-VI (shall be enforced upon expiry of ten calendar days after its first official publication).
+
+Section 17. Original section/article: 7-1. Source: Law on State Registration of Rights to Immovable Property.
+Guarantee of state registration of rights to immovable property
+1. The state guarantees the reliability of the issued information on registered rights and restrictions on real estate.
+2. Losses caused by violation of the registration procedure, introduction of incorrect registration data, issuance of information, distortion of the content of information are subject to compensation in court.
+Footnote. Chapter 1 has been supplemented by
+
+Section 18. Original section/article: 7-1. Source: Law on State Registration of Rights to Immovable Property.
+of the Law of the Republic of Kazakhstan dated 24.05.2018 № 156-VI (shall be enforced upon the expiration of ten calendar days after the day of its first official publication).
+
+Section 19. Original section/article: 8. Source: Law on State Registration of Rights to Immovable Property.
+Preferential interests 
+Preferential interests, not subjected to the compulsory state registration in the legal cadaster shall be:
+1) encumbrances, acting as general rules and prohibitions, established by the legislative acts of the Republic of Kazakhstan; 
+2) the rights (encumbrances of rights), which are accrued on the basis of regulatory legal acts, as well as the right of residence in the land plots and passages through them, public easements, closed for the public access; 
+3) land use right for the term less than one year; 
+4) right of use of others immovable property for the term less than one year, as well as the tenant right, uncompensated use, easements less than a year;
+5) the right of access for people and transport to power lines, telephone and telegraph lines and poles, pipelines, geodetic points and other communication lines, due to public needs;
+6) actual possession of immovable property of persons, not being the rights holders, before recognition of right of ownership to immovable property by virtue of acquisitive prescription for the actual owner in the established procedure; 
+7) the right of use of private premises, located in the state housing fund, or the right of use of private premises, leased by the local executive bodies in the private housing fund.
+Footnote.
+
+Section 20. Original section/article: 8. Source: Law on State Registration of Rights to Immovable Property.
+as amended by the Law of the Republic of Kazakhstan dated 21.12.2022 № 167-VII (shall be enforced upon expiry of ten calendar days after the date of its first official publication).
+
+Section 21. Original section/article: 9. Source: Law on State Registration of Rights to Immovable Property.
+Terms of submission of documents to the state registration
+1. Is excluded by the Law of the Republic of Kazakhstan dated 26.01.2021 № 412-VI (shall be enforced upon expiry of ten calendar days after its first official publication).
+2. Is excluded by the Law of the Republic of Kazakhstan dated 26.01.2021 № 412-VI (shall be enforcedupon expiry of ten calendar days after its first official publication).
+3. Is excluded by the Law of the Republic of Kazakhstan dated 22.04.2009 № 151-IV (the order of enforcement see
+
+Section 22. Original section/article: 2. Source: Law on State Registration of Rights to Immovable Property.
+). 
+4. An application on the state registration of encumbrances of rights, imposed by the state bodies and authorized person, and in other cases, when such encumbrances of rights are established not on the will of the right holder, as well as an application on registration of legal claims shall be immediately filed to the state registration.
+5. Is excluded by the Law of the Republic of Kazakhstan dated 26.01.2021 № 412-VI (shall be enforced upon expiry of ten calendar days after its first official publication). 
+Footnote.
+
+Section 23. Original section/article: 9. Source: Law on State Registration of Rights to Immovable Property.
+as amended by the Laws of the Republic of Kazakhstan dated 22.04.2009 № 151-IV (the order of enforcement see
+
+Section 24. Original section/article: 2. Source: Law on State Registration of Rights to Immovable Property.
+); dated 27.04.2012 № 15-V (shall be enforced upon expiry of ten calendar days after its first official publication); dated 26.01.2021 № 412-VI (shall be enforced upon expiry of ten calendar days after its first official publication).
+
+Section 25. Original section/article: 10. Source: Law on State Registration of Rights to Immovable Property.
+Prices for goods (works, services) produced and (or) sold by the registering authority, for state registration of rights to real estate and state technical inspection of buildings, structures and (or) their components
+1. Activity on state registration of the rights (encumbrances of the rights) to real estate, on entering into the information system of legal cadastre of identification and technical data of buildings, constructions and (or) their components on newly created real estate and state technical inspection of buildings, constructions and (or) their components belongs to the state monopoly and is carried out by the registering body at the location of the real estate object.
+2. Prices for goods (work, services) produced and (or) sold by the registering authority, for state registration of real estate title, including in an expedited manner, and state technical inspection of buildings, structures and (or) their components shall be established by decision of the authorized body that organizes and coordinates the activities of the State Corporation “Government for Citizens”, in agreement with the authorized body and antimonopoly authority.
+Footnote.
+
+Section 26. Original section/article: 10. Source: Law on State Registration of Rights to Immovable Property.
+of the Law of the Republic of Kazakhstan dated 02.04.2019 № 241-VI (shall be enforced upon expiration of ten calendar days after the day of its first official publication); as amended by the Law of the Republic of Kazakhstan dated 19.04.2023 № 223-VII (shall be enforced ten calendar days after the date of its first official publication). 
+Chapter 2. LEGAL CADASTER
+
+Section 27. Original section/article: 11. Source: Law on State Registration of Rights to Immovable Property.
+Maintenance of legal cadaster
+1. The legal cadaster shall be maintained by the registering bodies and contain information on existing and terminated rights to immovable property and other objects of registration, identification characteristics of immovable property, details on rights holders, information on available requests from the legal cadaster.
+2. The state registration of rights to immovable property shall be carried out by the registering bodies on location of the object of immovable property in recognition of identification and other characteristics of immovable property, necessary for the maintenance of legal cadaster.
+3. All entries in the legal cadaster shall be maintained on each object of immovable property and objects, equated to them. Objects of immovable property shall be identified by the cadastral number.
+All entries on the state registration of rights (encumbrances of rights) to immovable property, rights to the objects, equated to the immovable property shall be entered to the information system of legal cadaster by the registering body. 
+Unified information system of legal cadaster shall be formed by the authorized body.
+Procedure of maintenance and use of information system of legal cadaster shall be determined by the authorized body.
+4. Procedure of interaction of the state bodies on exchange of information for the purposes of maintenance of legal and other cadasters shall be determined by the authorized body.
+Footnote.
+
+Section 28. Original section/article: 11. Source: Law on State Registration of Rights to Immovable Property.
+as amended by the Law of the Republic of Kazakhstan dated 29.09.2014 № 239-V (shall be enforced upon expiry of ten calendar days after its first official publication); dated 26.01.2021 № 412-VI (shall be enforced upon expiry of ten calendar days after its first official publication).
+
+Section 29. Original section/article: 12. Source: Law on State Registration of Rights to Immovable Property.
+The composition of legal cadaster
+Legal cadaster shall consist of:
+1) book of record of documents, received for registration;
+2) registration sheets;
+3) books of records of requests for provision of details from the legal cadaster;
+4) registration files;
+5) is excluded by the Law of the Republic of Kazakhstan dated 26.01.2021 № 412-VI (shall be enforced upon expiry of ten calendar days after its first official publication); 
+6) information system.
+Footnote.
+
+Section 30. Original section/article: 12. Source: Law on State Registration of Rights to Immovable Property.
+as amended by the Law of the Republic of Kazakhstan dated 26.01.2021 № 412-VI (shall be enforced upon expiry of ten calendar days after its first official publication).
+
+Section 31. Original section/article: 13. Source: Law on State Registration of Rights to Immovable Property.
+Book of record of documents, received to the state registration
+1. Book of record of documents, received to the state registration shall be maintained by the registering bodies for the purposes of record and establishement of priority between applications, filed to the state registration of accrual, change or termination of rights (encumbrances of rights) to immovable property and other objects of registration.
+2. Priority between applications, entered to the book of record of documents, received to the state registration shall be established on the date, hour and minute of filing of an application to the state registration.
+3. Form, content and procedure of maintenance of the book of record of documents, received to the state registration shall be determined by the authorized body.
+
+Section 32. Original section/article: 14. Source: Law on State Registration of Rights to Immovable Property.
+Registration sheet
+Footnote. The heading of
+
+Section 33. Original section/article: 14. Source: Law on State Registration of Rights to Immovable Property.
+is in the wording of the Law of the Republic of Kazakhstan dated 26.01.2021 № 412-VI (shall be enforced upon expiry of ten calendar days after its first official publication).
+1. The registration sheet shall be filled in for the following real estate objects:
+1) land plot;
+2) secondary object of immovable property;
+3) land plot together with primary objects of immovable property, located on it. 
+2. Registration sheet shall consist of four sections:
+1) identification characteristics of immovable property, specified in the paragraph 1 of this Article; 
+2) register of rights to immovable property with allocation of easements, established in favor of the dominant land plot or other object of immovable property;
+3) register of encumbrances of rights to immovable property with allocation of pledge, as well as obligations, following the immovable property;
+4) register of legal claims and transactions, not involving accrual of rights or encumbrances of rights to immovable property.
+3. Form and procedure of making the entries to the registration sheet shall be determined by the authorized body.
+Footnote.
+
+Section 34. Original section/article: 14. Source: Law on State Registration of Rights to Immovable Property.
+as amended by the Law of the Republic of Kazakhstan dated 26.01.2021 № 412-VI (shall be enforced upon expiry of ten calendar days after its first official publication).
+
+Section 35. Original section/article: 15. Source: Law on State Registration of Rights to Immovable Property.
+Registration file
+1. Registration file shall be maintained for each land plot and contain the copies of right stating and other documents, attached to the application, filed to registration, as well as copies of identification document to the land plot, as well as documents of registering body, relating to this object of immovable property or its rights holders, and paper copies of electronic documents, except for the case, provided by paragraph 3 of this Article. 
+2. The separate registration file shall be maintained for each secondary object of immovable property, entering to the composition of object of condominium.
+3. If it is necessary, the registration file for the land plot, on which several primary objects of immovable property are located shall be maintained in the several volumes.
+Footnote.
+
+Section 36. Original section/article: 15. Source: Law on State Registration of Rights to Immovable Property.
+as amended by the Laws of the Republic of Kazakhstan dated 27.04.2012 № 15-V (shall be enforced from 01.01.2013); dated 29.12.2014 № 269-V (shall be enforced from 01.01.2015).
+
+Section 37. Original section/article: 16. Source: Law on State Registration of Rights to Immovable Property.
+The book of record of requests for provision of information from the legal cadaster
+1. Book of record of requests for provision of information from the legal cadaster shall be maintained by the registering bodies for the purposes of record of received requests and provided information from the legal cadaster.
+2. Form, content and procedure of maintenance of the book of record for provision of information from the legal cadaster shall be determined by the authorized body.
+
+Section 38. Original section/article: 17. Source: Law on State Registration of Rights to Immovable Property.
+Provision of details from the legal cadaster
+1. Information disclosing information about individuals (personal data), with the exception of data identifying the right holder (surname, first name, patronymic (if it is indicated in an identity document) and date of birth of an individual), cannot be provided.
+2. Copies of documents that are in the registration file of the legal cadastre shall be submitted at the motivated requests of judicial, law enforcement and other state bodies in accordance with their competence established by the legislation of the Republic of Kazakhstan, temporary, bankruptcy and rehabilitation managers as part of the rehabilitation and bankruptcy procedures, the liquidation commission (liquidator) of a forcibly liquidated legal entity, as well as bailiffs within their competence established by the legislation of the Republic of Kazakhstan, on the cases of enforcement proceedings in their proceedings with a copy of the writ of execution certified by the seal of a private bailiff or territorial department. The specified information shall be issued to other persons with the written consent of the copyright holder.
+3. Information on a specific real estate object and generalized data on the rights (encumbrances of rights) of an individual or legal entity to the real estate objects he owns, certified by the registering body shall be issued at the request of the right holder (authorized representative) and motivated requests:
+1) lawyers;
+2) law-enforcement, judicial bodies on the proceeding criminal, civil, administrative cases in accordance with their competence, established by the legislation of the Republic of Kazakhstan;
+3) judicial enforcement agents on proceedings enforcement documents in accordance with their competence, established by the legislation of the Republic of Kazakhstan;
+4) bodies of the public revenues and other state bodies in accordance with their competence, established by the legislation of the Republic of Kazakhstan;
+4-1) a housing construction savings bank with the status of a national development institute in compliance with the requirements established by the legislation of the Republic of Kazakhstan on personal data and their protection;
+5) notaries, heirs;
+6) temporary, bankrupt and rehabilitation managers within the procedures of rehabilitation and bankruptcy, liquidation commission (liquidator) of compulsory liquidated legal entity;
+6-1) financial managers in the framework of procedures for restoring solvency or judicial bankruptcy of a citizen of the Republic of Kazakhstan;
+7) bodies of trusteeship and guardianship;
+8) other persons with the written consent of the copyright holder, unless otherwise provided by paragraphs 3-1 and 3-2 of this Article.
+3-1. Information from the legal cadastre on the registered encumbrance of the right to real estate shall be issued at the request of individuals and legal entities.
+3-2. Information from the legal cadastre on registered rights (encumbrances of rights) of legal entities and registered encumbrances on real estate, legal claims on real estate shall be issued to any person on the basis of a request.
+3-3. The persons, specified in paragraph 3 of this Article shall be entitled to receive information on a specific real estate object and generalized data on the rights (encumbrances of rights) of an individual or a legal entity to its real estate objects through integration with the information system of the legal cadastre or on the web portal of the "electronic government" in the manner prescribed by the legislation of the Republic of Kazakhstan.
+4. Copies of documents that are in the registration file of the legal cadastre must be provided by the registration body no later than three working days from the date of submission of the request for information.
+5. Procedure of provision of information from the legal cadaster shall be determined by the authorized body.
+Footnote.
+
+Section 39. Original section/article: 17. Source: Law on State Registration of Rights to Immovable Property.
+as amended by the Laws of the Republic of Kazakhstan dated 25.03.2011 № 421-IV (shall be enforced upon expiry of ten calendar days after its first official publication); dated 27.04.2012 № 15-V (shall be enforced upon expiry of ten calendar days after its first official publication); от 07.03.2014 № 177-V (shall be enforced upon expiry of ten calendar days after its first official publication); dated 07.11.2014 № 248-V (shall be enforced upon expiry of ten calendar days after its first official publication); dated 29.12.2014 № 269-V (shall be enforced from 01.01.2015); dated 29.06.2020 № 352-VI (shall be enforced upon expiry of ten calendar days after its first official publication); dated 26.01.2021 № 412-VI (shall be enforced upon expiry of ten calendar days after its first official publication); dated 30.12.2022 №. 179-VII (shall be enforced upon expiry of sixty calendar days after the date of its first official publication); dated 22.11.2024 № 138-VIII (effective six months after the date of its first official publication). 
+Chapter 3. THE STATE TECHNICAL INVESTIGATION OF BUILDINGS,
+STRUCTURES AND (OR) THEIR COMPONENTS
+
+Section 40. Original section/article: 18. Source: Law on State Registration of Rights to Immovable Property.
+State technical inspection of real estate 
+1. Entering identification and technical information of real estate into the information system of the legal cadastre for newly created real estate and state technical inspection of real estate shall be the necessary conditions for state registration of real estate title.
+2. State technical inspection of real estate of newly created real estate is not carried out and a cadastral passport of the real estate property is not issued.
+Identification and technical data of real estate for newly created real estate shall be entered by the registering authority into the information system of the legal cadastre on the basis of an act of the object commissioning, subject to accounting in the structural units of the relevant local executive bodies.
+To establish discrepancies between the identification and technical information contained in the title document and the actual data of the newly created real estate, the right owner has the right to apply to the registering authority for identifying such discrepancies, by the results of which a conclusion shall be drawn up in the form established by the authorized body.
+State technical inspection of real estate, as well as assignment of a cadastral number to real estate, shall be carried out when the technical and (or) identification characteristics of real estate change as a result of their reconstruction, redevelopment, re-equipment, except for cases when changes in such characteristics can be reflected in the cadastral passport of the real estate property without conducting a state technical inspection of real estate, including when changing the cadastral number, address, address registration code (if any).
+Based on the results of the state technical inspection of real estate, a cadastral passport of the real estate property is issued, which shall reflect the identified changes.
+3. The procedure and terms for entering identification and technical information of real estate on newly created real estate into the information system of the legal cadastre, the state technical inspection of real estate, assigning a cadastral number to primary and secondary real estate, as well as forms of information required to be entered into the information system of the legal cadastre, the form of the cadastral passport of the real estate object shall be determined by the authorized body.
+Footnote.
+
+Section 41. Original section/article: 18. Source: Law on State Registration of Rights to Immovable Property.
+- as amended by the Law of the Republic of Kazakhstan dated 05.04.2023 № 221-VII (shall be enforced from 01.07.2023).
+
+Section 42. Original section/article: 18-1. Source: Law on State Registration of Rights to Immovable Property.
+Competence of the authorized body
+The authorized body shall:
+1) exercises state control over the activities of the registering body;
+2) develops and approves the requirements to the legal cadastre support and rules of access to the legal cadastre;
+3) excluded by the Law of the Republic of Kazakhstan dated 24.05.2018 № 156-VI (shall be expired upon expiration of ten calendar days after the day of its first official publication); 
+4) develops and approves the rules for providing statistical and other reporting information in the field of state registration of rights to real estate;
+4-1) develops and approves the instruction on state technical inspection of real estate objects;
+4-2) develop and approve the form of a cadastral passport of a real estate property in agreement with the central authorized land management body;
+4-3) develop and approve, together with the central authorized land management body, the procedure for maintaining and using the information system of the unified state real estate cadastre;
+5) exercise other powers provided for by the laws of the Republic of Kazakhstan, acts of the President of the Republic of Kazakhstan and the Government of the Republic of Kazakhstan.
+Footnote. Chapter 3 is supplemented by
+
+Section 43. Original section/article: 18-1. Source: Law on State Registration of Rights to Immovable Property.
+in accordance with the Law of the Republic of Kazakhstan dated 17.11.2015 № 408-V (shall be enforced from 01.03.2016); with changes introduced by the Law of the Republic of Kazakhstan dated 24.05.2018 № 156-VI (shall be enforced upon the expiration of ten calendar days after the day of its first official publication); dated 05.04.2023 № 221-VII (shall be enforced from 01.07.2023).
+
+Section 44. Original section/article: 18-2. Source: Law on State Registration of Rights to Immovable Property.
+Competence of the registering body
+Registration authority:
+1) ensures compliance with the requirements for the support of the legal cadastre and the rules of access to the legal cadastre;
+2) provide the authorized body with statistical and other reporting information in the field of state registration of rights to immovable property in accordance with the rules;
+3) is excluded by the Law of the Republic of Kazakhstan dated 26.01.2021 № 412-VI (shall be enforced upon expiry of ten calendar days after its first official publication); 
+4) ensure reliability of entering information into the legal cadastre; 
+5) perform other functions stipulated by the laws of the Republic of Kazakhstan.
+Footnote. Chapter 3 is supplemented by
+
+Section 45. Original section/article: 18-2. Source: Law on State Registration of Rights to Immovable Property.
+in accordance with the Law of the Republic of Kazakhstan dated 24.05.2018 № 156-VI (shall be enforced upon expiration of ten calendar days after the day of its first official publication); as amended by the Law of the Republic of Kazakhstan dated 26.01.2021 № 412-VI (shall be enforced upon expiry of ten calendar days after its first official publication).
+
+Section 46. Original section/article: 18-3. Source: Law on State Registration of Rights to Immovable Property.
+State control over the activity of the registering body in the sphere of state registration of rights to immovable property
+1. State control over the activities of the registration body in the field of state registration of rights to real estate shall be carried out by the authorized body and its territorial divisions in the form of unscheduled inspection and preventive control with a visit to the subject (object) of control in accordance with the Entrepreneurial Code of the Republic of Kazakhstan.
+2. The state control is carried out for compliance of the activity of the registering body in the sphere of state registration of rights to immovable property with the requirements of the legislation of the Republic of Kazakhstan on:
+1) state registration of rights to immovable property;
+2) maintenance of the legal cadastre;
+3) is excluded by the Law of the Republic of Kazakhstan dated 26.01.2021 № 412-VI (shall be enforced upon expiry of ten calendar days after its first official publication); 
+3. is excluded by the Law of the Republic of Kazakhstan dated 06.04.2024 № 71-VIII (shall be enforced upon expiry of sixty calendar days after the day of its first official publication). 
+Footnote. Chapter 3 has been supplemented by
+
+Section 47. Original section/article: 18-3. Source: Law on State Registration of Rights to Immovable Property.
+in accordance with the Law of the Republic of Kazakhstan dated 24.05.2018 № 156-VI (shall be enforced upon ten calendar days after the day of its first official publication); as amended by the Law of the Republic of Kazakhstan dated 26.01.2021 № 412-VI (shall be enforced upon expiry of ten calendar days after its first official publication); dated 06.04.2024 № 71-VIII (shall be enforced upon expiry of sixty calendar days after the day of its first official publication).
+
+Section 48. Original section/article: 19. Source: Law on State Registration of Rights to Immovable Property.
+Payment for the state technical investigation
+Footnote.
+
+Section 49. Original section/article: 19. Source: Law on State Registration of Rights to Immovable Property.
+is excluded by the Law of the Republic of Kazakhstan dated 10.07.2012 № 34-V (shall be enforced from the date of its official publication).
+Chapter 4. PROCEDURE OF THE STATE REGISTRATION OF
+RIGHTS TO IMMOVABLE PROPERTY
+
+Section 50. Original section/article: 20. Source: Law on State Registration of Rights to Immovable Property.
+Procedure of conducting of the state registration of rights to immovable property
+1. The state registration of right to immovable property shall be conducted in the following procedure:
+1) reception of documents, provided by
+
+Section 51. Original section/article: 21. Source: Law on State Registration of Rights to Immovable Property.
+if this Law for the state registration;
+2) verification of documents, presented for the state registration, including monitoring of legality of made transaction and (or) other legal facts (legal compositions), being the grounds of accrual, change, termination of rights (encumbrances of rights) to immovable property or other objects of the state registration for compliance with the current legislation. 
+The registering body shall receive details on technical and identification characteristics of object of immovable property, necessary for the state registration of rights to immovable property from the relevant state information system;
+3) making entries to the registration list on the made registration or refusal or suspension of the state registration in the cases, provided by this Law;
+4) making inscription on the right stating document on the conducted state registration;
+5) issuance of the right stating document with the mark on the conducted registration, or document on refusal or suspension of the state registration on the grounds, provided by this Law, as well as issuance of certificate on the state registration in the cases, provided by the legislative acts of the Republic of Kazakhstan. 
+When making a settlement on a real estate transaction in a non-cash form, made in a simple written form, the registering body, with the consent of the parties shall send a notification on the registration to a second-tier bank or the National postal operator, in which a bank account is opened in order to secure the transaction.
+1-1. Electronic registration shall be carried out in cases when the rights (encumbrances of rights) arise, change or terminate on the basis of a transaction, certificate of inheritance, certificate of ownership, as well as in other cases established by this Law.
+2. Electronic registration of rights (encumbrances of rights) on the basis of a notarized transaction, a certificate of inheritance, a certificate of ownership shall be carried out in the following order:
+1) the notary after the transaction certification, issuance of the certificate of the right of inheritance or the certificate of ownership:
+sends an electronic copy of the title deed certified by an electronic digital signature by means of a single notary information system to the information system of the legal cadastre;
+informs the purchaser of immovable property:
+a unique number of the title document assigned by a single notary information system;
+the amount of payment for the state registration of rights to immovable property or exemption from payment established by the authorized body determined by the decision of the Government of the Republic of Kazakhstan from among the central state bodies in coordination with the authorized body and antimonopoly body;
+in case of exemption of the real estate purchaser from payment for the state registration of rights to real estate, the document confirming the right to a benefit shall be scanned;
+sends the legal cadastre to the information system:
+E-mail addresses of transaction participants in the Internet - if available;
+electronic copy of the document confirming the exemption from payment for the state registration of rights to immovable property;
+2) the owner of the right or his authorized representative pays the amount for the state registration through the payment gateway of the "electronic government" (hereinafter - PSEP) in any way provided by the legislation of the Republic of Kazakhstan on informatization, with the obligatory indication of the data of the payer of payment for the state registration of rights to real estate and the unique number of the title document.
+After the payment for the state registration of rights to real estate, the receipt details (unique payment code, name of the payment recipient, name of the second-tier bank or organization performing certain types of banking operations, data of the payment payer, including its identification number, payment amount, date and time of payment, unique number of the title document) are saved on the PSEP in the form of an electronic check and sent to the information system of the legal cadastre;
+3) registration authority:
+checks the legal cadastre information system and, if necessary, the PSEP for the electronic receipt confirming the payment for the state registration of rights to real estate, the completeness of the payment and compliance of the unique number of the title document indicated on the electronic receipt and the electronic copy of the title document;
+Performs the actions provided for by subparagraphs 2) and 3) of paragraph 1 of this article, subject to confirmation in the information system of the legal cadastre of the payment for the state registration of rights to real estate or exemption from payment;
+send a notification on the registration or refusal or suspension of state registration on the grounds provided by this Law to the unified notary information system, as well as to the e-mail addresses of the transaction participants, if any;
+prints on paper the title document, the notice of registration or refusal or suspension of state registration and the electronic check confirming payment for the state registration of rights to immovable property, for storage in the registration file.
+3. Electronic registration of rights (encumbrances of rights) to real estate shall be carried out in the manner determined by this Law and the regulatory legal act of the authorized body.
+Footnote.
+
+Section 52. Original section/article: 20. Source: Law on State Registration of Rights to Immovable Property.
+as amended by the Laws of the Republic of Kazakhstan dated 27.04.2012 № 15-V (the order of enforcement see
+
+Section 53. Original section/article: 2. Source: Law on State Registration of Rights to Immovable Property.
+); dated 15.04.2013 № 89-V (shall be enforced upon expiry of thirty calendar days after its first official publication); dated 29.12.2014 № 269-V (shall be enforced from 01.01.2015); dated 24.11.2015 № 419-V (shall be enforced from 01.01.2016); dated 24.05.2018 № 156-VI (shall be enforced upon the expiration of ten calendar days after the day of its first official publication); dated 02.04.2019 № 241-VI (shall be enforced upon the expiration of ten calendar days after the day of its first official publication); dated November 25.11.2019 № 272-VI (shall be enforced upon expiry of ten calendar days after its first official publication); dated 25.06.2020 № 347-VI (shall be enforced upon expiry of of ten calendar days after its first official publication); dated 29.06.2020 № 352-VI (shall be enforced upon expiy of ten calendar days after its first official publication); dated 26.01.2021 № 412-VI (shall be enforced upon expiry of ten calendar days after its first official publication).
+
+Section 54. Original section/article: 21. Source: Law on State Registration of Rights to Immovable Property.
+Reception of documents for the state registration of rights to immovable property
+1. The state registration of rights to immovable property shall be carried out on the basis of application of rightholder, parties (participants) of transaction, state body (its authorized representative) or other authorized persons, filed in the registering body.
+2. For state registration, the applicant (authorized representative of the applicant) must present an identity document and submit the following documents:
+1) an application for state registration of the established sample;
+2) a title document confirming the object of registration. In case of registration of the right (encumbrance) to a land plot, an identification document for the land plot shall be submitted. In case of assignment of rights (claims) under agreements on pledge of immovable property, an agreement on assignment of rights (claims) (agreement on simultaneous transfer of assets and liabilities) shall be submitted;
+3) a document confirming payment for state registration of rights to immovable property.
+2-1. The registration authority receives information, which is the state electronic information resources necessary for state registration of rights to a real estate from the relevant state information systems in the form of electronic documents certified by electronic digital signatures.
+3. In addition to the documents specified in paragraph 2 of this Article, legal entities shall submit the minutes of meetings (extracts from them) of the founders (participants, board of directors, board of shareholders) for the acquisition or alienation of real estate in cases provided for by the laws of the Republic of Kazakhstan or constituent documents. Foreign legal entities shall submit a legalized extract from the trade register or other legalized document certifying that the foreign legal entity is a legal entity under the laws of a foreign state, with a notarized translation into the state language and, if necessary, into Russian.
+3-1. If the application for registration contains information that the aggregate book value of the assets being acquired or sold exceeds the amounts established by the legislation of the Republic of Kazakhstan in the field of competition protection, then the applicant, in addition to the documents specified in paragraphs 2 and 3 of this article, submits the preliminary written consent of the antimonopoly authority.
+3-2. In the case of compulsory acquisition of land plot or other immovable property in connection with seizure of land plot for the state needs, the registration of termination of rights of the owner of seized property and accrual of rights of the state shall be carried out upon condition of presentation of the document, approving the payment of compensation by the applicant to the registering body. 
+4. If the transaction is not notarially certified, registering body shall be obliged to verify authenticity of signature of persons, made transaction (their authorized representatives), their capability (legal capacity), as well as compliance with their wish of expression of will. 
+This requirement shall not be distributed to the pledge agreements, concluded in ensuring of agreement of bank loan and agreement on provision of microloan.
+5. In the existence of several applications for the state registration of the same right (encumbrance of right) in relation of the same object of immovable property, priority of application shall be determined in accordance with this Law and legislative acts of the Republic of Kazakhstan. 
+6. Provisions of this Article shall not be applied upon electronic registration. 
+Footnote.
+
+Section 55. Original section/article: 21. Source: Law on State Registration of Rights to Immovable Property.
+as amended by the Laws of the Republic of Kazakhstan dated 25.12.2008 № 113-IV (shall be enforced from 01.01.2009); dated 10.02.2011 № 406-IV (shall be enforced upon expiry of ten calendar days after its first official publication); dated 01.03.2011 № 414-IV (shall be enforced from the date of its official publication); dated 27.04.2012 № 15-V (shall be enforced from 01.01.2013); dated 26.11.2012 № 57-V (shall be enforced upon expiry of ten calendar days after its first official publication); dated 08.01.2013 № 64-V (shall be enforced from 01.01.2013); dated 29.12.2014 № 269-V (shall be enforced from 01.01.2015); dated 27.04.2015 № 311-V (shall be enforced upon expiry of ten calendar days after its first official publication); dated 29.10.2015 № 376-V (shall be enforced from 01.01.2016); dated 24.11.2015 № 419-V (shall be enforced from 01.01.2016); dated 24.05.2018 № 156-VI (shall be enforced ten calendar days after the day of its first official publication); dated 06.04.2024 № 71-VIII (shall be enforced upon expiry of sixty calendar days after the day of its first official publication).
+
+Section 56. Original section/article: 22. Source: Law on State Registration of Rights to Immovable Property.
+Filling of an application on the state registration of rights to immovable property 
+1. In the cases, when the rights (encumbrances of rights) accrue on the basis of notarially certified transaction, registration shall be carried out by application of any party (participant) of transaction. 
+Electronic registration of rights (encumbrances of rights), provided for in paragraph 2 of
+
+Section 57. Original section/article: 20. Source: Law on State Registration of Rights to Immovable Property.
+of this Law shall be carried out without the application of the parties to the transaction.
+2. In the cases when the rights (encumbrances of rights) accrue on the basis of agreement or other transaction in the absence of their notarial certification, an application shall be filed by all participants of transaction in the established procedure. 
+An application for registration of occurrence and change of the pledge provided as security for the bank loan agreement and (or) the micro loan agreement shall be submitted by the pledgor and (or) the pledgee.
+In the case of filing of application by the pledge holder shall be required notarially certified consent of the pledger to such registration.
+Upon cession of rights (requirements) by agreements of pledge of immovable property, an application for the registration of accrual and change of pledge shall be filed by the right holder, to whom the rights (requirements) are conceded without the consent of pledger to such registration. 
+3. An application on registration may be directed to the registering body by postal service in the following cases:
+1) registration of legal claims, accrued on the basis of references (complaints (applications, petitions, lawsuits), filed to the state authorized bodies, being outside the location of registering body, as well as in other states;
+2) registration of encumbrances or legal claims, accruing on the basis of acts of the state bodies, being out of the location of registering body, as well as in other states. 
+4. Upon state registration of accrual, change or termination of the right of joint property, an application on registration may be filed by all participants or one of them with presentation of consent of other participants, certified by a notary.
+An application on the state registration may be also filed by one of right holders without the consent of others in the case, provided by part of the second paragraph 5 of this Article. 
+5. Upon state registration of accrual, change, termination of the right of joint property (other common right), an application on the state registration shall be filed by all participants (authorized representatives).
+Unless otherwise follows from the legislative acts of the Republic of Kazakhstan, upon conclusion of transaction in relation of share in the joint shared ownership, an application shall be filed in the established procedure with observation of rights of first refusal of other rights holders. 
+6. An applicant, reached the marriage age in accordance with the legislation of the Republic of Kazakhstan shall specify details on the absence of fact of state in the marital relations or details on their spouse with the annex of copies of document, approving existence of marital relations for registration of rights of other spouse, the data of whom is not contained in the right stating document. 
+If the regime of share or separate ownership to immovable property of spouses is established by the agreement of marriage, an agreement of marriage shall be provided to the registering body. 
+6-1. In the event that the aggregate book value of the assets being acquired or sold exceeds the amounts established by the legislation of the Republic of Kazakhstan in the field of competition protection, then the application for registration by the applicant specifies the following information.
+7. Where one title establishing document contains two or more objects of state registration, the applicant shall specify in the application all objects of registration or for registration of each object of state registration by interested persons, separate applications shall be submitted.
+In cases where there is only one object of state registration in the title establishing document, the registering body shall be entitled to indicate to the applicant the necessity of state registration of other objects of state registration and payment for it.
+8. State registration of encumbrances, imposed by the state bodies and other authorized persons shall be carried out by application of specified persons, unless otherwise followed from the legislative acts of the Republic of Kazakhstan. Encumbrance, imposed in the interests of third persons in accordance with acts of law-enforcement, judicial and other state bodies may be registered on the basis of application of third person.
+In this cases the documents for the state registration of encumbrances shall be filed to the registering body. 
+9. Is excluded by the Law of the Republic of Kazakhstan dated 22.04.2009 № 151-IV (the order of enforcement see
+
+Section 58. Original section/article: 2. Source: Law on State Registration of Rights to Immovable Property.
+). 
+10. Form and content of application on registration of right to immovable property and other objects of registration shall be determined by the authorized body.
+Footnote.
+
+Section 59. Original section/article: 22. Source: Law on State Registration of Rights to Immovable Property.
+as amended by the Laws of the Republic of Kazakhstan dated 25.12.2008 № 113-IV (shall be enforced from 01.01.2009); dated 22.04.2009 № 151-IV (the order of enforcement see
+
+Section 60. Original section/article: 2. Source: Law on State Registration of Rights to Immovable Property.
+); dated 10.02.2011 № 406-IV (shall be enforced upon expiry of ten calendar days after its first official publication); dated 27.04.2012 № 15-V (the order of enforcement see
+
+Section 61. Original section/article: 2. Source: Law on State Registration of Rights to Immovable Property.
+); dated 29.12.2014 № 269-V (shall be enforced from 01.01.2015); dated 27.04.2015 № 311-V (shall be enforced upon expiry of ten calendar days after its first official publication); dated 29.10.2015 № 376-V (shall be enforced from 01.01.2016); dated 24.05.2018 № 156-VI (shall be enforced upon the expiration of ten calendar days after the date of its first official publication); dated 21.01.2019 № 217-VI (shall be enforced upon the expiration of ten calendar days after the date of its first official publication); dated November 25.11.2019 № 272-VI (shall be enforced upon expiry of ten calendar days after its first official publication); dated 29.06.2020 № 352-VI (shall be enforced upon expiy of ten calendar days after its first official publication).
+
+Section 62. Original section/article: 23. Source: Law on State Registration of Rights to Immovable Property.
+Terms of conducting of the state registration 
+1. State registration of rights to real estate (encumbrances of such rights) must be carried out within three working days from the date of receipt of the application by the registering body, except for the cases provided for in paragraphs 1-1, 1-2, 1-3, 2 and 2 -1 of this Article.
+1-1 Electronic registration shall be made not later than one working day following the day of receipt of the legal cadastre of confirmation of payment for state registration of rights to immovable property or exemption from payment in the information system of the legal cadastre.
+1-2. State registration of rights to immovable property of a notarized transaction shall be made within one working day from the moment of receipt of the application to the registering authority, except for the cases stipulated by paragraphs 1-1 and 2 of this Article.
+1-3. State registration of rights (encumbrances of rights) to immovable property in an expedited manner is carried out at the request of the applicant not later than one working day following the day of receipt of the application to the registration authority.
+2. Registration of encumbrances, imposed by the state bodies and other authorized persons, as well as legal claims shall be immediately conducted from the date of receipt of application to the registering body. 
+2-1. State registration of termination of encumbrances, as well as legal claims, must be carried out within one working day from the moment the application is received by the registering body.
+3. Excluded by the Law of the RK dated 24.05.2018 № 156-VI (to be put into effect after ten calendar days after the day of its first official publication). 
+Footnote.
+
+Section 63. Original section/article: 23. Source: Law on State Registration of Rights to Immovable Property.
+as amended by the Laws of the Republic of Kazakhstan dated 10.12.2008 № 101-IV (shall be enforced from 01.01.2009); dated 27.04.2012 № 15-V (the order of enforcement see
+
+Section 64. Original section/article: 2. Source: Law on State Registration of Rights to Immovable Property.
+); dated 29.12.2014 № 269-V (shall be enforced from 01.01.2015); dated 29.03.2016 № 479-V (shall be enforced upon expiry of twenty one calendar days after the day its first official publication); dated 24.05.2018 № 156-VI (shall be enforce upon the expiration of ten calendar days after the day of its first official publication); dated 02.04.2019 № 241-VI (shall be enforced upon the expiration of ten calendar days after the day of its first official publication); dated 26.01.2021 № 412-VI (shall be enforced upon expiry of ten calendar days after its first official publication).
+
+Section 65. Original section/article: 24. Source: Law on State Registration of Rights to Immovable Property.
+Requirements to the documents, presented to the state registration 
+1. Right stating and other documents, approving the right (encumbrances of rights) to immovable property and other objects of the state registration shall comply with requirements of the legislation of the Republic of Kazakhstan, presented to them at the time of registration, except for the rights (encumbrances of rights) to immovable property, not subjected to the compulsory state registration, as well as previously accrued rights (encumbrances of rights). 
+2. Documents approving accrual, change or termination of rights (encumbrances of rights) to immovable property and other objects of the state registration shall be properly executed in the cases, established by the legislation of the Republic of Kazakhstan, sealed (in its existence), executed in the special forms, have appropriate signatures of parties or civil servants, determined by the legislation of the Republic of Kazakhstan. Documents outgoing from courts, law-enforcement and other state bodies shall be executed in the form, presented for the relevant documents.
+In the cases, established by the legislative acts, right stating and other documents shall be certified by a notary. 
+Electronic copies of right stating documents may not contain the parties signatures and subject to the compulsory certification by electronic digital signature of a notary.
+Documents in electronic form shall be subject to mandatory certification by the parties to the contract and authorized organizations through electronic digital signatures.
+3. The documents, having erasures or additions, crossed out words or other unspecified corrections, as well as documents, executed by pencil shall not be accepted. 
+4. Right stating documents shall contain details on rights holders, made to the registration sheet, on type of registered right (encumbrance of a right), address, registration code of address (in its existence), as well as necessary data on the object of immovable property for the purposes of maintenance of legal cadaster. 
+5. Form of notification for making of relevant entries to the registration documents (on nonperformance of obligation, on intention to challenge of executed registration or registered right and so on.) shall comply with requirements, established by the authorized body.
+6. Documents, approving accrual, change and termination of rights to immovable property and other objects of the state registration shall be presented to the registering body in two copies, one of which is an original or notarially certified copy.
+In the cases, when the right stating document is the judicial act and in other cases, when the original document is not issued to the rightholder, two certified copies of such document shall be presented for registration.
+An agreement of marriage shall be presented in two copies, one of which is original or notarially certified copy.
+7. Original document or certified copy shall be returned to the applicant (authorized representative) after registration in the cases, provided by paragraph 6 of this Article.
+8. In the cases when registration is carried out on the basis of power of attorney, two copies of power of attorney, one of which is original or notarially certified copy shall be presented to the registering body. The original of power of attorney shall be returned to the applicant (authorized representative) after registration. 
+Upon electronic registration the power of attorney shall not be presented to the registering body.
+9. Upon registration of rights (encumbrances of rights), established on a part of immovable property, right stating document (on rent, easements, uncompensated use of property and other) shall contain detailed description of a part of property, being the incidence of a right (encumbrances of rights). 
+Upon pledge of a part of immovable property, the plan of division of object for the case of alienation of subject of pledge in connection with nonperformance of obligation shall be approved by the body, carrying out division or merging of this object of immovable property. 
+Footnote.
+
+Section 66. Original section/article: 24. Source: Law on State Registration of Rights to Immovable Property.
+as amended by the Laws of the Republic of Kazakhstan dated 25.03.2011 № 421-IV (shall be enforced upon expiry of ten calendar days after its first official publication); dated 21.07.2011 № 468-IV(shall be enforced upon expiry of ten calendar days after its first official publication); dated 27.04.2012 № 15-V (the order of enforcement see
+
+Section 67. Original section/article: 2. Source: Law on State Registration of Rights to Immovable Property.
+); dated 29.12.2014 № 269-V (shall be enforced from 01.01.2015); dated 25.06.2020 № 347-VI (shall be enforced upon expiry of ten calendar days after its first official publication).
+
+Section 68. Original section/article: 25. Source: Law on State Registration of Rights to Immovable Property.
+Refusal in reception of documents, received to the state registration 
+1. Refusal in reception of documents, received to the state registration shall be allowed on the following grounds: 
+1) application of improper person in connection with absence of documents of identification of applicant or authorized representative;
+2) existence of erasures or additions, crossed out words or other unspecified corrections in the documents;
+3) incorrect filling of form of applications, filed to registration;
+4) presentation of incomplete package of documents, necessary for the state registration by the applicant in accordance with requirements, established by paragraphs 2, 3 and 3-1 of
+
+Section 69. Original section/article: 21. Source: Law on State Registration of Rights to Immovable Property.
+of this Law; 
+5) presentation of documents, form and content of which do not correspond to the legislation of the Republic of Kazakhstan;
+6) Is excluded by the Law of the Republic of Kazakhstan dated 22.04.2009 № 151-IV (the order of enforcement see
+
+Section 70. Original section/article: 2. Source: Law on State Registration of Rights to Immovable Property.
+); 
+7) in the existence of encumbrances, which exclude the state registration of a right (encumbrances of rights). 
+2. In case of refusal to accept documents, a record about the acceptance of documents shall not be made in the book of registration of documents received for registration. At the request of the applicant, the body that accepts documents for registration shall issue a notice indicating the reasons for the refusal. Copies of such notice, application for registration and documents attached to it shall be kept in the manner established by the authorized body.
+A refusal to accept documents for registration may be appealed in the manner prescribed by the laws of the Republic of Kazakhstan.
+Footnote.
+
+Section 71. Original section/article: 25. Source: Law on State Registration of Rights to Immovable Property.
+as amended by the Laws of the Republic of Kazakhstan dated 25.12.2008 № 113-IV (shall be enforced from 01.01.2009); dated 22.04.2009 № 151-IV (the order of enforcement see
+
+Section 72. Original section/article: 2. Source: Law on State Registration of Rights to Immovable Property.
+); dated 27.04.2012 № 15-V (shall be enforced upon expiry of ten calendar days after its first official publication); dated 24.05.2018 № 156-VI (shall be enforced upon expiration of ten calendar days after the day of its first official publication); dated 29.06.2020 № 351-VI (shall be enforced from 01.07.2021).
+
+Section 73. Original section/article: 26. Source: Law on State Registration of Rights to Immovable Property.
+Specification of exact time of presentation of documents 
+1. Upon reception of documents to registration, details on date, time, minute of presentation of documents shall be made to the book of record of documents, received to the registration. 
+2. Receipt with notification of date, time and minute of reception of document to registration, surname, first name (patronymic) of responsible employee, received the documents, list of documents, presented to registration, addresses, registration code of address (in its existence) of object of immovable property shall be issued to applicant. 
+Footnote.
+
+Section 74. Original section/article: 26. Source: Law on State Registration of Rights to Immovable Property.
+as amended by the Law of the Republic of Kazakhstan dated 21.07.2011 № 468-IV (shall be enforced upon expiry of ten calendar days after its first official publication).
+
+Section 75. Original section/article: 27. Source: Law on State Registration of Rights to Immovable Property.
+Grounds for suspension of the state registration of rights to immovable property 
+1. The state registration of rights to immovable property shall be suspended in the following cases: 
+1) by regulation (determination) of a court on the basis of statements of claim (complaints), filed in court; 
+2) in accordance with acts of procuracy supervision before elimination of violation of the Law; 
+2-1) pursuant to the Law of the Republic of Kazakhstan “On Combating Legalization (Laundering) of Proceeds from Crime, Financing of Terrorism and Financing of the Proliferation of Weapons of Mass Destruction”;
+3) for presentation of documents by the applicant, necessary for the state registration in accordance with
+
+Section 76. Original section/article: 21. Source: Law on State Registration of Rights to Immovable Property.
+of this Law, if the absence of necessary documents was not a basis for refusal in reception of documents to registration; 
+4) for reception of explanations and reclamations of necessary information from the state bodies in connection with its absence in the documents, following from such bodies, or existence of contradictions in such documents, if the specified circumstances were not the grounds for refusal in reception of documents to registration; 
+5) upon non-conformity of object of registration, established on the basis of right stating documents, and object of registration, specified in application, for elimination of contradiction between them. 
+6) in case of incomplete payment for the state registration of rights to immovable property;
+7) if within three working days from the moment of receipt of the electronic copy of the title document the information system of the legal cadastre has not received a confirmation of payment for the state registration of rights to immovable property or of release of a person from payment.
+1-1. Electronic registration shall be not suspended on the grounds, specified in subparagraphs 3) and 5) of paragraph 1 of this Article.
+2. Decision on suspension of the state registration may be accepted by the registering body from the date of reception of documents to the state registration before the date of issuance of document, but not later than expiration of the term of the state registration.
+3. Registration shall be suspended before elimination of circumstances, being the basis for suspension of registration, but not more than one month, unless otherwise established by this Law or judicial act on suspension of registration. If the circumstances, being the grounds for suspension in the registration are not eliminated during one month, the state registration shall be refused.
+Details on suspension of registration shall be entered in the book of record of documents, received to registration.
+4. Upon suspension of the state registration, the registering body shall have a right to request information, explanations and documents from the applicant (authorized representative of applicant), other individuals or legal entities, as well as state bodies within its competence, if it is necessary for adoption of decision.
+5. Upon suspension of registration, the registering body shall direct a written notification with specification of reasons and terms of suspension, date and registration number of document to the applicant (authorized representative of applicant). The subsequent actions of applicant for elimination of reasons of suspension of registration and terms, necessary for that shall be specified in the notification. 
+In the case of electronic registration, the mentioned notification, certified by means of an electronic digital signature of the registering authority, is sent to a single notary information system, and, if available, to e-mail addresses of the transaction participants.
+When making a settlement on a real estate transaction in a non-cash form, made in a simple written form, the registering body shall send the specified notification to the second-tier bank or the National postal operator, in which a bank account is opened in order to secure the transaction.
+A copy of a written notification on suspension of registration and paper copy of electronic notification shall subject to storage in the registering file. 
+6. Upon suspension of registration, an application may be withdrawn by the applicant (authorized representative of applicant) in any time. Upon that the priority of withdrawn application shall be lost. 
+Footnote.
+
+Section 77. Original section/article: 27. Source: Law on State Registration of Rights to Immovable Property.
+as amended by the Laws of the Republic of Kazakhstan dated 28.08.2009 № 192-IV (shall be enforced from 08.03.2010); dated 25.03.2011 № 421-IV (shall be enforced upon expiry of ten calendar days after its first official publication); dated 27.04.2012 № 15-V (the order of enforcement see
+
+Section 78. Original section/article: 2. Source: Law on State Registration of Rights to Immovable Property.
+); dated 21.06.2012 № 19-V(shall be enforced upon expiry of ten calendar days after its first official publication); dated 10.06.2014 № 206-V (shall be enforced upon expiry of ten calendar days after its first official publication); dated 24.11.2015 № 419-V (shall be enforced from 01.01.2016); dated 24.05.2018 № 156-VI (shall be enforced upon ten calendar days after the day of its first official publication); dated 25.06.2020 № 347-VI (shall be enforced upon expiry of ten calendar days after its first official publication); dated 19.09.2025 № 219-VIII (effective sixty calendar days after the date of its first official publication).
+
+Section 79. Original section/article: 28. Source: Law on State Registration of Rights to Immovable Property.
+Suspension of registration for authentication of documents and reliability of details, specified therein 
+1. State registration shall be suspended by the registering body upon occurrence of doubts in authenticity of presented documents or reliability of details, specified therein. Registering body shall take the necessary measures on reception of additional details and authentication of documents or reliability of details, specified therein for elimination of such doubts. An applicant (authorized representatives of applicant) shall have a right to present additional evidences of documents authenticity and reliability of details, specified therein. 
+2. Where necessary the documents may be directed by the registering body for carrying out of expert examination for the documents authenticity and reliability of details, specified therein.
+
+Section 80. Original section/article: 29. Source: Law on State Registration of Rights to Immovable Property.
+Temporary termination of the state registration 
+1. An applicant may be applied to the registering body with application on temporary termination of registration of rights (encumbrances of rights) to the immovable property belonging to him (her) in the following cases:
+1) for the purposes of provision of a guarantee to their counterparty, that before the registration of relevant rights of the last to the object of immovable property, the rights of other persons or new encumbrances, arising at the expression of will of any of the party will not be registered; 
+2) upon loss of right stating document or in other cases, when unreasonable risks of loss of property arise for him (her) beyond his (her) will, except for the cases of compulsory termination of rights of such property on the grounds, provided by the legislation of the Republic of Kazakhstan.
+2. Registration of rights (encumbrances) on the grounds, provided by subparagraph 1) of paragraph 1 of this Article shall be temporarily terminated for the term not more than 15 business days from the date of filling of an application. 
+During the specified period, an application for registration of person, in the interests of whom the registration is temporary terminated shall have priority over other applications, filed in the specified term, except for the cases, provided in paragraph 4 of this Article.
+3. During the terms of temporary termination of registration in the cases, provided by subparagraph 1) of paragraph 1 of this Article, registration of rights (encumbrances of rights) to immovable property on the basis of application, filed for registration before the temporary termination of registration, as well as acts of the state bodies, established on the basis of court decisions or in other cases, not depending on the will of the right holder, as well as registration of notifications, provided by this Law, and legal claims shall be carried out in a general manner. 
+4. In the cases provided by subparagraph 2) of paragraph 1 of this Article, registration of rights (encumbrances of rights) to immovable property, which accrue on the will of the right holder shall be temporary terminated before the date of cancellation of application on temporary termination of registration by the right holder.
+
+Section 81. Original section/article: 30. Source: Law on State Registration of Rights to Immovable Property.
+Verification of documents, presented for the state registration of rights to immovable property
+1. Verification of documents shall be carried out for the purposes of establishment of compliance of documents, presented for registration, as well as subjects and objects of legal relations, type of the right or encumbrances of a right to immovable property, grounds of their accrual, change, termination with requirements of legislation.
+2. At the results of verification, the registering body shall make decision on the state registration, suspension or refusal in the state registration and make the relevant mark in the application with specification of surname, name (patronymic) of responsible employee of registering body, conducted verification, as well as the date of its conducting.
+
+Section 82. Original section/article: 31. Source: Law on State Registration of Rights to Immovable Property.
+Refusal in state registration of rights to a real estate
+1. Refusal in the state registration shall be carried out in the following cases:
+1) upon non-compliance of subjects and objects of legal relations, type of a right or encumbrance of a right to immovable property and other objects of registration or grounds of their accrual, change or termination with requirements of the legislation;
+1-1) if the applicant is included in the list of organizations and persons associated with financing of the proliferation of weapons of mass destruction, and (or) in the list of organizations and persons associated with financing of terrorism and extremism, in accordance with the legislation of the Republic of Kazakhstan, with the exception of a real estate, confiscated and (or) recovered by the court decision; 
+1-2) on the basis of relevant information from the bodies of architecture and urban planning, state architectural and construction control of local executive bodies on the non-compliance of construction objects to the requirements of the legislation of the Republic of Kazakhstan on architectural, urban planning and construction activities;
+2) upon presentation of incomplete package of documents by applicant, necessary for the state registration in accordance with
+
+Section 83. Original section/article: 21. Source: Law on State Registration of Rights to Immovable Property.
+of this Law, if the necessary documents were not presented upon suspension of the state registration;
+3) upon presentation of documents for registration, on form and content, inconsistent with requirements of the legislation;
+4) in the existence of encumbrances, which exclude the state registration of a right or other object of the state registration, except for the cases, provided by paragraph 1-1 of this Article;
+5) on the basis of judicial act, that has entered into legal force;
+6) if during the terms of suspension of registration, the circumstances, being the grounds for suspension were not eliminated; 
+7) upon non-conformity of previously accrued right to the legislation, being in force at the moment of its accrual, if the object of registration is transfer, change, termination or elimination of encumbrance in relation of such right;
+8) when applying for registration of rights and encumbrances of rights to a real estate belonging to the state Islamic special financial company, with the exception of registration of ownership rights of the authorized state property body and lease rights of the authorized body of the relevant field.
+1-1. Requirements established by subparagraphs 4) of paragraph 1 of this Article shall not be applied upon registration:
+1) accrual of rights to immovable property of the person, in the interest of whom the existing encumbrance is registered, in the case of absence of other encumbrances;
+2) transfer of rights to immovable property in the by inheritance;
+3) transfer of rights for management of property of debtor to the rehabilitation or bankruptcy manager;
+4) transfer of rights to immovable property, on which the encumbrance in the form of rights of use was registered;
+4-1) transfer of the right to a land plot, on which an encumbrance is registered in the form of an instruction on the need to take measures on using the land plot for its intended purpose and to eliminate violations of the legislation of the Republic of Kazakhstan;
+5) the rights to share in the common property;
+6) change of details on the right holder, contained in the registration list of legal cadaster;
+7) change of identification characteristics of object of immovable property, not involving its division (association), or changing the designated purpose;
+8) change of conditions of agreements, not involving an increase in the amount of pledges;
+9) notifications on non-performance of obligations, ensured by the pledge;
+10) cession of rights (claims) under real estate pledge agreements in respect of which encumbrances specified in subparagraphs 4), 5) and 6) of
+
+Section 84. Original section/article: 5. Source: Law on State Registration of Rights to Immovable Property.
+of this Law are registered by third parties or state bodies, provided that there is an appropriate indication in the contract containing the condition on the cession of rights (claims), (including in the agreement on simultaneous transfer of assets and liabilities) on the existence of possible encumbrances.
+In the case of registration of transfer of rights, in the existence of encumbrances, the registering body shall notify the pledge holder or relevant authorized body, by the decision of which the restriction is imposed, on conducted registration during seven business days from the date of filling of application for registration.
+2. Upon refusal in registration on the grounds, provided by paragraph 1 of this Article, the mark on refusal with specification of reasons shall be made in the documentation of registering body on reception of documents.
+3. Upon refusal in the state registration, the registering body shall direct notification with specification of reasons of refusal, the date and registration number to the applicant not later than the expiration of the state registration.
+In the case of electronic registration, the mentioned notification, certified by means of an electronic digital signature of the registering authority, is sent to a single notary information system, and, if available, to e-mail addresses of the transaction participants.
+When making a settlement on a real estate transaction in a non-cash form, made in a simple written form, the registering body shall send the specified notification to the second-tier bank or the National postal operator, in which a bank account is opened in order to secure the transaction.
+Copies of written notification on refusal in registration and other documents, presented by the applicant and registering body, as well as paper copy of electronic notification on refusal in registration shall subject to storage in the registration file.
+4. Refusal of state registration of rights to a real estate may be appealed in accordance with the procedure established by the laws of the Republic of Kazakhstan.
+5. Upon elimination of circumstances, being the grounds for refusal in the registration, an application for registration may be filed repeatedly. 
+Footnote.
+
+Section 85. Original section/article: 31. Source: Law on State Registration of Rights to Immovable Property.
+as amended by the Laws of the Republic of Kazakhstan dated 27.04.2012 № 15-V (the order of enforcement see
+
+Section 86. Original section/article: 2. Source: Law on State Registration of Rights to Immovable Property.
+); dated 07.03.2014 № 177-V (shall be enforced upon expiry of ten calendar days after its first official publication); dated 27.04.2015 № 311-V (shall be enforced upon expiry of ten calendar days after its first official publication); dated 02.08.2015 № 343-V (shall be enforced upon expiry of six months after the day its first official publication); dated 24.11.2015 № 419-V (shall be enforced from 01.01.2016); dated 24.11.2015 № 422-V (shall be enforced from 01.01.2016); dated 27.02.2017 № 49-VI (shall be enforced upon expiry of ten calendar days after the day its first official publication); dated 24.05.2018 № 156-VI (shall be enforced upon the expiration of ten calendar days after the day of its first official publication); dated 13.05.2020 № 325-VІ (shall be enforced upon expiry of six months after its first official publication); dated 25.06.2020 № 347-VI (shall be enforced upon expiry of ten calendar days after its first official publication); dated 29.06.2020 № 352-VI (shall be enforced upon expiry of ten calendar days after its first official publication); dated 29.06.2020 № 351-VI (shall be enforced from 01.07.2021).
+
+Section 87. Original section/article: 32. Source: Law on State Registration of Rights to Immovable Property.
+Correction of errors, committed upon the state registration 
+1. The errors, committed upon registration may be corrected at the initiative of registering body or upon the application of interested person in the manner established by the authorized body in recognition of rules established by this Article.
+2. The errors, committed upon registration, not changing the ownership, nature or content of registered right (encumbrances of rights) may be corrected by the registering body on its own initiative with the written notification of all interested parties. The mark on notification shall be made in the registration sheet. Copies of notifications shall subject to storage in the registration file. 
+Any person, the interests of whom are violated in the results of errors, committed upon registration, upon refusal of registering body to insert the relevant corrections to the registration documents may apply to the court with application on corrective actions on the basis of court decision. 
+3. If correction of errors affects to the ownership, nature or content of registered right (encumbrances of a right or other objects of the state registration), the interested persons shall be notified on necessity of making such corrections. Corrective actions in the specified cases shall be allowed only in the existence of written consent of all interested persons, certified notarially or personally filed to the registering body. In the cases, when the interested persons were refused to give the consent for making corrections or do not give a response during one month from the date of receipt of notification, the registering body shall apply to the court for rendering of decision on making corrections. 
+4. If the registration was conducted on the basis of document, issued by the state body, and corrections relate to the details, specified in this document, correction of errors shall be allowed upon condition of making of relevant amendments in such documents by this body. Making amendments in the specified case shall be carried out by the registering body with observance of ruled, provided in paragraphs 2 and 3 of this Article. 
+5. Procedure of making entries for the purposes of correction of errors, committed in the registration documents shall be established by the authorized body.
+
+Section 88. Original section/article: 33. Source: Law on State Registration of Rights to Immovable Property.
+Cancellation of entries in the registration sheet of legal cadaster 
+1. Cancellation of entries in the registration sheet of legal cadaster shall be carried out by the registering body on the basis of acts of the court, entered into legal force. 
+1-1. Existence of encumbrances shall not prevent to the execution of judicial acts on recognition of transaction or other right stating documents as invalid. 
+In the case of cancellation of entry on registration of accrual of a right to immovable property, in the existence of encumbrances, the registering body shall notify the pledge holder or relevant authorized body, by the decision of which the restriction was imposed, on conducted cancellation of an entry in the registration sheet of legal cadaster during seven business days from the date of reception of judicial act. 
+2. Procedure of cancellation of entries in the registration sheet of legal cadaster shall be established by the authorized body.
+Footnote.
+
+Section 89. Original section/article: 33. Source: Law on State Registration of Rights to Immovable Property.
+as amended by the Law of the Republic of Kazakhstan dated 27.04.2012 № 15-V (shall be enforced upon expiry of ten calendar days after its first official publication).
+
+Section 90. Original section/article: 34. Source: Law on State Registration of Rights to Immovable Property.
+Certification of conducted state registration 
+1. Registering body shall be obliged to certify the conducted registration by commission of inscription in the right stating document, presented for registration, except for the electronic registration. 
+1-1. Electronic registration shall be confirmed by sending of a notification of the registration made, certified by the electronic digital signature of the registering body from the information system of legal cadastre, in the manner determined by the authorized body.
+2. The registering body shall be is obliged to issue a certificate of ownership (other property right) for an immovable property to the applicant in cases, when the registration of rights was carried out on the basis of the documents on making a share contribution in full in housing-construction, dacha, garage and other consumer cooperatives.
+Footnote.
+
+Section 91. Original section/article: 34. Source: Law on State Registration of Rights to Immovable Property.
+as amended by the Laws of the Republic of Kazakhstan dated 27.04.2012 № 15-V (shall be enforced from 01.01.2013); dated 29.12.2014 № 269-V (shall be enforced from 01.01.2015); dated 24.11.2015 № 419-V (shall be enforced from 01.01.2016); dated 26.12.2019 № 284-VІ (shall be enforced upon expiry of ten calendar days after its first official publication); dated 26.01.2021 № 412-VI (shall be enforced upon expiry of ten calendar days after its first official publication).
+
+Section 92. Original section/article: 35. Source: Law on State Registration of Rights to Immovable Property.
+Powers of registering body upon loss (damaging) of right stating or other documents, being in the registration file, and destruction (damaging) of registration entries 
+1. If the right stating or other documents, stored in the registration file were damaged or destructed, the registering body may restore the specified documents by all acceptable ways, as well as by demand the necessary documents from the rightholder, state bodies, from which they are preceded. Reception of lost documents from the information system of legal cadaster shall be allowed. 
+2. Upon loss (damage) of registration sheets, filed on the paper mediums, details on the lost sheet may be recovered from the information system of legal cadaster and (or) materials, stored in the registration file.
+
+Section 93. Original section/article: 36. Source: Law on State Registration of Rights to Immovable Property.
+Recovery of right stating document 
+1. In the cases of loss or damage of original (certified copy) of right stating document to immovable property, on the basis of which the registration in the legal cadaster was conducted, recovery of right stating document shall be conducted by issuance of duplicate from copy of specified document, which is stored in the registration file. 
+If there is only a paper copy of electronic document in the registration file, a duplicate of right stating document shall be issued by the notary. 
+2. Issuance of duplicate and cancellation of original (certified copy) of lost or damaged right stating document in the cases, specified in paragraph 1 of this Article shall be carried out in the manner established by the authorized body. 
+Footnote.
+
+Section 94. Original section/article: 36. Source: Law on State Registration of Rights to Immovable Property.
+as amended by the Law of the Republic of Kazakhstan dated 27.04.2012 № 15-V (shall be enforced from 01.01.2013). 
+Chapter 5. FEATURES OF THE STATE REGISTRATION OF
+SEPARATE TYPES OF RIGHTS
+
+Section 95. Original section/article: 37. Source: Law on State Registration of Rights to Immovable Property.
+The state registration of change, termination or elimination of encumbrances in relation of previously accrued rights, recognized without the state registration 
+1. In the state registration of change, termination of previously accrued rights to immovable property (encumbrances of rights), recognized as accrued without the state registration in the legal cadaster, or establishement of encumbrance in relation of previously accrued rights may not be denied in connection with absence of registration of such right (encumbrance of a right). 
+2. Upon transfer of previously accrued right in the result of its alienation or occurrence of legal facts, the entry on accrual of previously accrued right and its termination shall be carried out simultaneously with registration of accrual of a right of rightholder. 
+3. In the cases provided by paragraphs 1 and 2 of this Article, the applicant (his (her) authorized representative), except for the cases, provided by paragraph 5 of this Article shall present the documents, approving previously accrued right (encumbrance of right) to immovable property to the registering body for the state registration. The specified documents shall comply with requirements of the legislation of the Republic of Kazakhstan, being in force at the date of accrual of a right (encumbrance of a right). 
+4. Rightholder of previously accrued right (authorized representative) shall represent details on previously accrued encumbrances of such right, recognized without state registration to the registering body in a written form. In the existence of documents, approving such encumbrances, the entry on them in the registration sheet shall be carried out in the same procedure that the entry on previously accrued rights. 
+5. Registering body shall make the information base on the subjective grounds for the purposes of the state registration of encumbrances, established in relation of previously accrued rights to immovable property by the court decision, law-enforcement, other state bodies and in other cases, when the encumbrance is imposed not at the will of rightholder, in the cases, when the legal cadaster does not have any information on the object of immovable property, its rightholder, and applicant does not have any opportunity to present the documents, approving previously accrued right.
+
+Section 96. Original section/article: 38. Source: Law on State Registration of Rights to Immovable Property.
+The state registration of rights to immovable property located on the unregistered land plot
+1. The state registration of rights to immovable property, located on the land plot, the right of which is not registered shall not be allowed without registration of right to the land plot, if the right to such plot is accrued after introduction of the system of the state registration of rights to immovable property and not recognized as accrued without the state registration. The state registration of rights to the land plot and specified objects to immovable property may be carried out simultaneously. 
+2. The state registration of rights to immovable property, located on the land plot, the right of which is not registered in the legal cadaster and efficient without the state registration as previously accrued right shall be allowed in the cases, when the record registration of a right to the land plot is conducted simultaneously by the rules, established in Chapter 6 of this Law for the systematic registration of previously accrued rights.
+3. State registration of rights to the buildings (structures, facilities) of the Baikonur complex assigned to a state legal entity, as well as state registration of rights to industrial buildings (structures, facilities) built at the expense of investors on land plots owned by another person, with the consent of the owner of land plot, shall be carried out without reference to a land plot in the cases provided for by the Land Code of the Republic of Kazakhstan.
+Footnote.
+
+Section 97. Original section/article: 38. Source: Law on State Registration of Rights to Immovable Property.
+as amended by the Law of the Republic of Kazakhstan dated 27.04.2012 № 15-V (shall be enforced upon expiry of ten calendar days after its first official publication); dated 02.01.2021 № 399-VI (shall be enforced upon expiry of ten calendar days after its first official publication).
+
+Section 98. Original section/article: 39. Source: Law on State Registration of Rights to Immovable Property.
+State registration of a condominium object
+1. For state registration of a condominium property, a written application must be submitted to the registering authority by at least two owners of apartments, non-residential premises, parking spaces, storage rooms in a multi-apartment residential building, the chairperson of the association of owners of a multi-apartment residential building, or an application from the local executive authority, or an application from the customer (developer) of a multi-apartment residential building.
+Upon state registration of a condominium object, the registering body shall enter information into the legal cadastre in accordance with the Law of the Republic of Kazakhstan "On Housing Relations".
+2. State registration of a condominium object may be carried out on the basis of an electronic application, submitted via the Internet, in the manner determined by the authorized body.
+3. If at the time of state registration of a condominium object, there is no information on registration of the right to a land plot in the legal cadastre, the registering authority enters information about the land plot from the automated information system of the state land cadastre.
+In the absence of information on the land plot in the information system of the state land cadastre, the registering authority shall send a notification to the local executive body about registration of the land title in accordance with the legislation of the Republic of Kazakhstan.
+4. Changes in the composition of the common property of the condominium and/or the size of the shares of the owners of apartments, non-residential premises, parking spaces, and storage rooms in the common property of the condominium as a result of changes in the usable area of apartments and non-residential premises of a multi-apartment residential building are subject to state registration. 
+5. The procedure for state registration of a condominium object shall be determined by the authorized body.
+Footnote.
+
+Section 99. Original section/article: 39. Source: Law on State Registration of Rights to Immovable Property.
+is in the wording of the Law of the Republic of Kazakhstan dated 26.12.2019 № 284-VІ (shall be enforced upon expiry of ten calendar days after its first official publication); as amended by the Law of the Republic of Kazakhstan dated 15.03.2023 № 207-VII (effective sixty calendar days after the date of its first official publication); dated 05.04.2023 № 221-VII (shall be enforced from 01.07.2023); dated 15.07.2025 № 207-VIII (shall be enforced sixty calendar days after the date of its first official publication).
+
+Section 100. Original section/article: 40. Source: Law on State Registration of Rights to Immovable Property.
+The state registration of rights for apartments and other premises, including in the composition of object of condominium 
+1. Each secondary object in the composition of object of condominium, being in the individual (separate) property (other property law) shall be considered as separate object of immovable property, to which a separate cadastral number is assigned for the purposes of the state registration in the manner established by the authorized body. 
+2. The right stating and identification documents to the land plot shall not be required for the state registration of rights for the secondary objects, including in the composition of object of condominium.
+In the cases when the share in the rights to the land plot, including in the composition of object of condominium subjects to redemption in accordance with the legislative acts of the Republic of Kazakhstan, participant of condominium shall present the document, approving redemption of a share in the right to the land plot for registration of rights for the secondary object or in the case of its alienation.
+
+Section 101. Original section/article: 41. Source: Law on State Registration of Rights to Immovable Property.
+The state registration of easements
+1. The easements, except for the easements, which are related to the preferential interests in accordance with
+
+Section 102. Original section/article: 8. Source: Law on State Registration of Rights to Immovable Property.
+of this Law shall subject to the state registration.
+2. An entry on registration of easement, relating to the land plot or other servient object of immovable property shall be carried out on the registration sheet. 
+In the cases when the easements are established in favour of dominant land plot or other object of immovable property, the registration entry shall be also carried out on the registration sheet, relating to the object of immovable property in favour of which the easement is occurred.
+3. Upon registration of easements, arising in relation of several objects of immovable property sequentially located on the basis of one or several right stating documents on establishment of homogeneous easements (for the pass of people, passage of vehicles, laying, technical services, repair and dismantling of the life support system utilities, including air, land and underground networks), an applicant shall have a right to file one application for registration. Upon that the registering body in relation of each object of immovable property shall make an entry on establishement of easements in the manner established by the authorized body.
+4. The scope of distribution of easement shall be determined by description in the right stating document or where necessary the copy of identification document to the land plot, which shows the scope of the easement shall be attached to the documents, provided by paragraph 2 of
+
+Section 103. Original section/article: 21. Source: Law on State Registration of Rights to Immovable Property.
+of this Law.
+If the scope of easement is not determined by its description or specification to the copies of identification document to the land plot, an easement shall be determined to all object of immovable property.
+Footnote.
+
+Section 104. Original section/article: 41. Source: Law on State Registration of Rights to Immovable Property.
+as amended by the Law of the Republic of Kazakhstan dated 29.12.2014 № 269-V (effective from 01.01.2015).
+
+Section 105. Original section/article: 42. Source: Law on State Registration of Rights to Immovable Property.
+The state registration of a right of the state property 
+1. Registration of a right of the state property shall occur simultaneously with registration of a right of economic management, operational management of the state legal entities or land use right of the state and non-state land users. 
+2. A right of the state ownership to the property, not assigned between the state legal entities shall not require the state registration. 
+Upon conclusion of transactions on transfer of primary and secondary objects of immovable property, not distributed between the state legal entities, to the lease, uncompensated use, trust management and in other cases, when conclusion of transaction does not entail transfer of such property to the private ownership, an entry on previously accrued rights of the state property shall be made in the registration sheet of legal cadaster before making an entry on registration of encumbrance. In the existence of right stating documents on the previously accrued right of the state property, the details on accrual of such right shall be made on the basis of specified documents. In the absence of such documents, an entry on previously accrued right of the state property shall be made by the registering body on the basis of document of authorized state body, approving the presence of such property in the state property. 
+3. The registering body shall bear responsibility for safety of details, relating to the state secrets in accordance with the legislative acts of the Republic of Kazakhstan.
+
+Section 106. Original section/article: 43. Source: Law on State Registration of Rights to Immovable Property.
+Features of registration of rights of non-state institutions 
+1. Upon registration of rights of non-state institutions to the immovable property, belonging to them, the relevant rights of founders of the same property shall be simultaneously considered as registered. 
+2. Immovable property registered for the non-state institution on the right of operational management shall be recognized as joint shared ownership of founders in proportion to contributions, unless otherwise established by the legislative acts of the Republic of Kazakhstan. 
+3. When registering the rights of a non-state institution to real estate, together with other documents necessary for registration, if there are several founders, information confirming the size of each founder’s share in common property or other common right must be provided. Based on such documents, information about the composition of founders, the size of their shares, and other necessary data shall be entered into the registration sheet.
+4. Upon change of founding members in the results of inheritance, secession, alienation of the share, as well as upon pledge of share in the property of the non-state institution shall subject to the state registration of relevant right of acquirers and pledge holders or change of shares.
+Footnote.
+
+Section 107. Original section/article: 43. Source: Law on State Registration of Rights to Immovable Property.
+as amended by the Law of the Republic of Kazakhstan dated 06.04.2024 № 71-VIII (shall be enforced upon expiry of sixty calendar days after the day of its first official publication).
+
+Section 108. Original section/article: 44. Source: Law on State Registration of Rights to Immovable Property.
+The state registration in the legal cadaster on the basis of judicial acts 
+1. A right (encumbrance of a right) to immovable property, established by judicial acts shall subject to registration on the general grounds in recognition of features, established by this Article.
+Registering body shall not have a right to refuse in registration of rights, established by court decision, except for the existence of encumbrance, arising on the basis of judicial act. 
+2. The state registration of legal claims shall be carried out on the basis of judicial acts, not entered into legal force. 
+3. As well as the facts of appeals or protestation of judicial acts, relating to the immovable property shall subject to registration in the legal cadaster. 
+4. Upon remission of judicial act on the basis and in the manner provided by the legislative acts of the Republic of Kazakhstan, an entry in the legal cadaster on registration shall subject to cancellation by the ruled, established by the authorized body. A right (encumbrance of a right) to immovable property shall not be considered as accrued in the specified cases. 
+Footnote.
+
+Section 109. Original section/article: 44. Source: Law on State Registration of Rights to Immovable Property.
+as amended by the Law of the Republic of Kazakhstan dated 27.04.2012 № 15-V (shall be enforced upon expiry of ten calendar days after its first official publication).
+
+Section 110. Original section/article: 44-1. Source: Law on State Registration of Rights to Immovable Property.
+The state registration of rights to immovable property, acquired in the manner established for execution of judicial decisions
+The ground for registration of a right of ownership to immovable property, acquired in the manner established for execution of judicial decisions shall be the buy and sell agreement, signed by legal executive and buyer, or provision of legal executive and act of reception and transmission assets. 
+Footnote. The Law is supplemented by
+
+Section 111. Original section/article: 44-1. Source: Law on State Registration of Rights to Immovable Property.
+in accordance with the Law of the Republic of Kazakhstan dated 02.04.2010 № 262-IV (shall be enforced from 21.10.2010).
+
+Section 112. Original section/article: 45. Source: Law on State Registration of Rights to Immovable Property.
+The state registration upon inheritance and recognition of a citizen as missing, impaired and incapable 
+1. Upon registration of rights of heirs to immovable property of testator, a certification on the right to inheritance or other documents, provided by the legislative acts of the Republic of Kazakhstan, as well as documents, provided by
+
+Section 113. Original section/article: 21. Source: Law on State Registration of Rights to Immovable Property.
+of this Law shall be presented by the applicant. 
+2. In the cases when the rights of testator to immovable property are not registered in the legal cadaster and rights without registration are not considered as accrued, a right for registration shall transfer to the heirs. Right stating and other documents, provided by
+
+Section 114. Original section/article: 21. Source: Law on State Registration of Rights to Immovable Property.
+of this Law in the name of testator and documents, approving the rights of heirs to inheritance of property of testator shall be presented in the specified case. The date of accrual of a right of testator shall be determined in the specified cases on the basis of right stating documents, and if necessary – on the date of occurrence of legal fact (legal structure), preceding the day of opening the inheritance.
+3. Registration of guardianship to immovable property of person, recognized as missing, impaired or incapable shall be carried out upon the application of guardian (authorized representative of guardian) over the property of missing person in the existence of relevant decision of body of guardianship and custody on assignment of guardian (tutorship).
+
+Section 115. Original section/article: 46. Source: Law on State Registration of Rights to Immovable Property.
+The state registration of rights upon reorganization of legal entity 
+1. Upon reorganization of legal entity the transfer act or separation balance sheet shall be presented for the legal successor for carrying out of registration of rights.
+The creditor's rights under an obligation transferred to another person as a result of universal succession shall be subject to registration without the consent of the pledgor who is also a debtor.
+2. In the cases when the rights of reorganized legal entity to immovable property are not registered and not considered as accrued without registration, the right to registration shall transfer to the legal successor. Right stating documents to immovable property, being the ground of accrual of a right of the reorganized legal entity shall be demanded for registration of rights for the legal successor in the specified cases. 
+3. Upon reorganization of legal entity, the date of accrual of a right to immovable property of the legal successor shall be considered the date of registration of legal entities for the purposes of certification of the fact of reorganization. 
+Footnote.
+
+Section 116. Original section/article: 46. Source: Law on State Registration of Rights to Immovable Property.
+as amended by the Law of the Republic of Kazakhstan dated 27.04.2015 № 311-V (shall be enforced upon expiry of ten calendar days after its first official publication); dated 27.02.2017 № 49-VI (shall be enforced upon expiry of ten calendar days after the day its first official publication).
+
+Section 117. Original section/article: 47. Source: Law on State Registration of Rights to Immovable Property.
+The state registration of rights (encumbrances of rights) to immovable property in the bankruptcy proceedings
+1. Transfer of a right for the management of property of a debtor to the rehabilitation or bankruptcy manager shall subject to registration in the legal cadaster in the manner, provided by
+
+Section 118. Original section/article: 21. Source: Law on State Registration of Rights to Immovable Property.
+of this Law. 
+2. In the cases, when the rights of a debtor to immovable property were not registered, the right for registration of rights to immovable property and filling of an application for registration on the basis of transactions, concluded (signed) by a debtor before implementation of a bankruptcy procedure and other right stating documents shall transfer to the persons, to whom the right of management of a property and cases of a debtor is transferred. 
+Refusal of specified persons in filling of an application for registration on the basis of transactions, signed by a debtor before implementation of a bankruptcy procedure may be challenged by the interests persons in a judicial procedure.
+Footnote.
+
+Section 119. Original section/article: 47. Source: Law on State Registration of Rights to Immovable Property.
+as amended by the Law of the Republic of Kazakhstan dated 07.03.2014 № 177-V (shall be enforced upon expiry of ten calendar days after its first official publication).
+
+Section 120. Original section/article: 48. Source: Law on State Registration of Rights to Immovable Property.
+The state registration of a pledge of immovable property 
+1. The state registration of a pledge shall be carried out by the general rules, established by this Law, and the Law on mortgage of immovable property in recognition of features, provided by this Article. 
+2. The object of the state registration in the legal cadaster shall be the pledge of immovable property, as well as the following operations with mortgage certificate: 
+1) issuance of mortgage certificate; 
+2) pledge and transfer of mortgage certificate. 
+3. Upon registration of termination of a pledge in connection with execution of basic obligation, forfeit (loss, damage) of subject of a pledge, a registering body shall simultaneously make an entry on termination of effect of mortgage certificate. 
+In the cases when requirements, following from the mortgage certificate were not presented to the debtor on the basic obligation before expiration of a month after occurrence of the term of execution of basic obligation, registering body shall make an entry on termination of effect of mortgage certificate. After termination of effect of mortgage certificate on this ground, the registering body shall be obliged to refuse in registration of subsequent operations with the mortgage certificate. 
+4. Registration of accrual, change, termination of rights (encumbrances of rights) to immovable property, being the subject of a pledge shall be carried out in accordance with the legislative acts of the Republic of Kazakhstan, regulating the specified relations.
+5. The following changes of a pledge shall subject to the state registration in the legal cadaster: 
+1) change of the subject;
+2) change of composition of participants and term of validity (execution) of basic obligation;
+This subparagraph shall not apply to cases provided for by the first part of paragraph 3-2 of
+
+Section 121. Original section/article: 34. Source: Law on State Registration of Rights to Immovable Property.
+of the Law of the Republic of Kazakhstan "On Banks and Banking Activities in the Republic of Kazakhstan," the first part of subparagraph 11-2) of paragraph 2 of
+
+Section 122. Original section/article: 7. Source: Law on State Registration of Rights to Immovable Property.
+of the Law of the Republic of Kazakhstan "On Microfinance Activities," the second part of paragraph 2 of
+
+Section 123. Original section/article: 6-1. Source: Law on State Registration of Rights to Immovable Property.
+of the Law of the Republic of Kazakhstan "On Collection Activities";
+3) change in the amount of main obligation, with the exception of a decrease in the monetary obligation for a mortgage loan issued in foreign currency, in the case provided for by paragraph six of part two of paragraph 3 of
+
+Section 124. Original section/article: 34. Source: Law on State Registration of Rights to Immovable Property.
+of the Law of the Republic of Kazakhstan “On Banks and Banking Activities in the Republic of Kazakhstan.
+Other changes of a pledge may be registered in the legal cadaster at the wish of participants. 
+6. An entry on the state registration of a pledge shall be redeemed: 
+1) upon termination of a pledge on the basis of application of pledge holder in connection with execution of basic obligation; 
+2) upon application of recovery for the subject of a pledge in the manner provided by the legislative acts of the Republic of Kazakhstan.
+3) upon termination of a pledge in connection with termination of an agreement of pledge; 
+4) upon termination of a pledge by other grounds, provided by
+
+Section 125. Original section/article: 322. Source: Law on State Registration of Rights to Immovable Property.
+of the Civil Code of the Republic of Kazakhstan.
+Footnote.
+
+Section 126. Original section/article: 48. Source: Law on State Registration of Rights to Immovable Property.
+as amended by the Law of the Republic of Kazakhstan dated 25.03.2011 № 421-IV (shall be enforced upon expiry of ten calendar days after its first official publication); dated 03.07.2020 № 359-VI (shall be enforced upon expiry of ten calendar days after its first official publication); dated 19.06.2024 № 97-VIII (shall enter into force upon expiry of sixty calendar days after its first official publication).
+
+Section 127. Original section/article: 49. Source: Law on State Registration of Rights to Immovable Property.
+Registration of combining and division of objects of immovable property
+1. Combining and division of land plots and other objects of immovable property shall subject to registration in the legal cadaster. 
+2. Registration of combining or division of objects of immovable property shall not be allowed: 
+1) if the combined objects are not associated and (or) the rights for them are not homogeneous;
+2) if the combining or division of land plot was conducted by execution of identification documents on the newly created objects; 
+3) if upon combining or division of primary and secondary objects, the requirements, presented by the legislation of the Republic of Kazakhstan on architectural, town-planning and construction activity were not complied;
+4) if upon combining or division of primary and secondary objects, the requirements of the legislation of the Republic of Kazakhstan, ensuring the interests of persons, being possessors of limited proprietary or other rights to the object of immovable property, being the subject of combining or division, as well as pledge holders, lessees, possessors of easement rights or other users.
+3. Upon registration of combining or division of object of immovable property, encumbered by a pledge, lease, easement or other encumbrances, the entries on encumbrances, the effect of which are kept in relation of specified objects shall be transferred to the registration sheets, filed on the newly created objects of immovable property. Transfer of other entries shall be carried out, if they are valid and retain their value. 
+4. Object of immovable property shall be considered as combined or divided from the date of registration of combining or division in the legal cadaster.
+
+Section 128. Original section/article: 50. Source: Law on State Registration of Rights to Immovable Property.
+Features of registration of rights to immovable property, subjected to the members of peasant or farm enterprise
+1. Upon registration of rights to immovable property of members of peasant or farm enterprise, all members of such enterprise shall be specified in the right stating document. 
+2. Upon change of the composition of members of peasant or farm enterprise, as well as in connection with inheritance, secession, inclusion of new members, accrual of rights to immovable property at the new members of peasant or farm enterprise and (or) change of amounts of shares shall subject to the state registration in the legal cadaster.
+
+Section 129. Original section/article: 51. Source: Law on State Registration of Rights to Immovable Property.
+Features of registration of rights to the underground constructions
+Upon registration of rights to the underground constructions, being immovable property shall be presented: 
+1) the right stating document to the underground construction; 
+2) right stating document to the land plot, necessary for operation of underground construction, in the case, if registration of rights to the land plot was not previously conducted; 
+3) documents provided for in subparagraphs 1) and 3) of paragraph 2 of
+
+Section 130. Original section/article: 21. Source: Law on State Registration of Rights to Immovable Property.
+of this Law.
+Footnote.
+
+Section 131. Original section/article: 51. Source: Law on State Registration of Rights to Immovable Property.
+as amended by the Law of the Republic of Kazakhstan dated 06.04.2024 № 71-VIII (shall be enforced upon expiry of sixty calendar days after the day of its first official publication).
+
+Section 132. Original section/article: 52. Source: Law on State Registration of Rights to Immovable Property.
+The state registration of rights to immovable property, including in the composition of property complex
+1. The state registration of rights to immovable property, including in the composition of property complex may be carried out on the basis of one application, to which the right stating document to the property complex or on each object of immovable property, including in its composition, is attached.
+2. Upon alienation of one or several objects of immovable property, including in the composition of property complex, the relevant mark on registration shall be made in the right stating document for the property complex.
+
+Section 133. Original section/article: 53. Source: Law on State Registration of Rights to Immovable Property.
+The state registration of legal claims 
+1. The legal claims, as well as the fact of filing of a statement of claim, appeal or protestation of judicial acts, decision on seizure of land plot, agreement (receipt) on advance deposit, preliminary agreement and other facts may be registered upon the application of interested persons. 
+2. For state registration, the interested person shall present to the registering authority an identification document, as well as a document confirming the legal claim.
+3. The state registration of legal claims shall be record and not entail suspension of the state registration or establishment of encumbrances of rights to immovable property. 
+4. Withdrawal of legal claims to the real estate object is carried out on the application of interested persons in the following cases:
+1) if the circumstances which served as a basis for registration of a legal claim have disappeared;
+2) at the request of the interested person and with the consent of the person who initiated the legal claim.
+If after three years from the moment of state registration of the legal claim it has not been withdrawn, the state registration of the legal claim is canceled.
+The registering body notifies the applicant about this not later than ten working days before the expiration of this period.
+Interested parties may apply for the extension of the registration of a legal claim prior to the expiration of the period specified in part two of this paragraph.
+The expiration of this period does not prevent the application for re-registration of a legal claim for immovable property.
+Footnote.
+
+Section 134. Original section/article: 53. Source: Law on State Registration of Rights to Immovable Property.
+as amended by the Law of the Republic of Kazakhstan dated 25.03.2011 № 421-IV (shall be enforced upon expiry of ten calendar days after its first official publication); dated 21.01.2019 № 217-VI (shall be enforced upon the expiration of ten calendar days after the day of its first official publication); dated 06.04.2024 № 71-VIII (shall be enforced upon expiry of sixty calendar days after the day of its first official publication).
+
+Section 135. Original section/article: 54. Source: Law on State Registration of Rights to Immovable Property.
+State registration of termination of the right in connection with the death (damage), demolition of a real estate or refusal of rights to it
+Footnote. The heading of
+
+Section 136. Original section/article: 54. Source: Law on State Registration of Rights to Immovable Property.
+as amended by the Law of the Republic of Kazakhstan dated 26.01.2021 № 412-VI (shall be enforced upon expiry of ten calendar days after its first official publication).
+1. For the state registration of termination of rights in connection with the loss of property or such damage, that entails termination of existence of property as the object of immovable property, the applicant (authorized representative of applicant) shall file and application on registration of termination of a right with the annex of documents of relevant state body, approving the circumstances of impossibility of further use (operation) of this object, determined at the results of investigation of technical (physical) state.
+For state registration of termination of the rights in connection with demolition of a real estate object, the applicant (an authorized representative of the applicant) shall submit an application for registration of termination of the right with attachment of an act of demolition of buildings and structures that has been registered and registered with the local executive body that performs functions in the field of architectural, urban planning and construction activities at the location of the property.
+Upon filling of an application not later than three months from the date of occurrence of specified circumstances, the rights to the immovable property shall be considered as terminated from the date of occurrence of circumstances, specified in the acts. In other cases the rights shall be terminated from the date of registration. 
+2. The state registration of termination of a right of ownership to immovable property in connection with release from it shall be carried out in the following manner: 
+1) registering body upon the application of right holder or local executive body, in the territory of which it was found shall register the immovable property as ownerless upon condition, if in the application there are details, that such property is not be in the possession of individuals or non-state legal entities, which possess such property as its own; 
+2) on the basis of court decision, adopted in relation of registered ownerless property shall make the entry in the registration sheet on termination of a right of the rightholder and accrual of a right at the person, to whom the rights to the specified object are transferred. 
+In any time before accrual of a right of third persons, the rightholder shall have a right to apply to the registering body with application on deregistration of immovable property belonging to it as ownerless. 
+In the case of deregistration of immovable property as ownerless, the registering body shall notify on that the local executive body.
+Footnote.
+
+Section 137. Original section/article: 54. Source: Law on State Registration of Rights to Immovable Property.
+as amended by the Laws of the Republic of Kazakhstan dated 01.03.2011 № 414-IV (shall be enforced from the date of its official publication); dated 25.03.2011 № 421-IV (shall be enforced upon expiry of ten calendar days after its first official publication); dated 26.01.2021 № 412-VI (shall be enforced upon expiry of ten calendar days after its first official publication).
+
+Section 138. Original section/article: 55. Source: Law on State Registration of Rights to Immovable Property.
+The state registration of rights to immovable property for the share investment funds and customers of Islamic bank by agreement on the investment deposit 
+1. Immovable property registered for the holders of shares of investment fund or customers of Islamic bank by agreement on the investment deposit shall be recognized their joint shared ownership. 
+Upon state registration of a right of joint shared ownership for the object of immovable property, including in the composition of assets of share investment fund or acquired by the Islamic bank at the expense of means of investment deposit, shall be specified in the legal cadaster, that the owners of such object shall be the holders of shares of investment funds or customers of Islamic bank by agreement on the investment deposit (without specification of details of holders of investments units or customers of Islamic bank and amounts of shares, belonging to them on the right of joint shared ownership). 
+2. An application on the state registration of rights (encumbrances of rights) to immovable property for the holders of shares in the investment fund or customers of Islamic bank by agreement on investment deposit shall be filed by the trust manager (management company) of the share investment fund or Islamic bank. 
+3. In addition to the documents specified in paragraph 2 of
+
+Section 139. Original section/article: 21. Source: Law on State Registration of Rights to Immovable Property.
+of this Law, the trustee of a mutual investment fund for registration shall submit notarized copies of trust management contracts, decisions on the creation of a mutual investment fund, certificates of state registration of the shares issue, rules of the mutual investment fund with amendments and additions made to them, registered in accordance with the procedure established by the legislation of the Republic of Kazakhstan on investment and venture funds. The Islamic Bank shall submit notarized copies of the rules on the general conditions for conducting operations of the Islamic Bank and the license of the Islamic Bank to conduct banking and other operations for registration.
+Footnote.
+
+Section 140. Original section/article: 55. Source: Law on State Registration of Rights to Immovable Property.
+as amended by the Law of the Republic of Kazakhstan dated 12.02.2009 № 133-IV (the order of enforcement see
+
+Section 141. Original section/article: 2. Source: Law on State Registration of Rights to Immovable Property.
+); dated 04.07.2018 № 174-VI (shall be enforced upon expiration of ten calendar days after the day of its first official publication); dated 06.04.2024 № 71-VIII (shall be enforced upon expiry of sixty calendar days after the day of its first official publication). 
+Chapter 6. SYSTEMATIC REGISTRATION IN THE LEGAL CADASTER
+
+Section 142. Original section/article: 56. Source: Law on State Registration of Rights to Immovable Property.
+The objects and legal meaning of systematic registration in the legal cadaster
+1. Systematic registration shall be carried out for the purposes of supplement of legal cadaster with details on previously accrued rights (encumbrances of rights) to immovable property and have the record nature. 
+2. The date of accrual of previously accrued right (encumbrance of a right) to immovable property upon systematic registration shall be determined on the basis of right stating documents in accordance with the legislation of the Republic of Kazakhstan, being in force at the date of accrual of previously accrued right (encumbrance of a right)
+
+Section 143. Original section/article: 57. Source: Law on State Registration of Rights to Immovable Property.
+Procedure of carrying out of systematic registration in the legal cadaster
+1. Terms and procedure of conducting of systematic registration in the Republic of Kazakhstan shall be determined by the authorized body. 
+2. Systematic registration of previously accrued right (encumbrances of rights) to immovable property may be carried out by filling of an application by the rightholder and (or) transfer of valid data on previously accrued rights (encumbrances of rights) from other information systems.
+3. For carrying out of systematic registration it is necessary population warning in the manner established by the authorized body.
+4. Upon conducting of systematic registration may be carried out the transfer of data on previously accrued rights and encumbrances of rights to immovable property, which are available in the registering body or other state bodies. Transfer of documents, relating to the previously accrued rights (encumbrances of rights) to immovable property, from other state bodies (organizations) shall be carried out according to the procedure established by the Ministry of justice of the Republic of Kazakhstan by coordination with the state bodies, holding valid data on previously accrued rights (encumbrances of rights). 
+5. Transfer of data on previously accrued rights and encumbrances of rights to immovable property in the legal cadaster may be carried out upon condition of validity of data, contained in the registering body in other state bodies.
+6. Systematic registration of previously accrued rights (encumbrances of rights) to immovable property shall be carried out without compensation. 
+Footnote.
+
+Section 144. Original section/article: 57. Source: Law on State Registration of Rights to Immovable Property.
+as amended by the Law of the Republic of Kazakhstan dated 29.09.2014 № 239-V (shall be enforced upon expiry of ten calendar days after its first official publication).
+
+Section 145. Original section/article: 58. Source: Law on State Registration of Rights to Immovable Property.
+Features of carrying out of systematic registration in particular cases
+1. If the rightholder, filed an application on registration of rights to primary or secondary object of immovable property does not have the right stating document to the land plot or acts of the old model, or other documents, approving accrual of rights to the land plot in accordance with previously effective legislation, does not have details necessary for the purposes of maintenance of legal cadaster, the registering body shall be obliged to conduct a record registration of previously accrued right to primary or secondary object of immovable property. 
+A record registration on previously accrued right to the land plot shall be carried out after issuance of identification document to the land plot by the authorized body on the basis of act of old model or other documents, approving accrual of rights to the land plot in accordance with previously effective legislation. The rightholder shall present an act of old model or other document, approving accrual of rights to the land plot, for the registration in accordance with previously effective legislation and identification document to the land plot. 
+In the absence of right stating document to the land plot of the rightholder, execution of right to him (her) shall be carried out in the established procedure. 
+2. When making record registration of previously arisen rights to primary and secondary objects, the registering authority may not require the right holder to provide a new cadastral passport of the real estate property. If necessary, state technical inspection during systematic registration is carried out free of charge by the registering authority.
+Footnote.
+
+Section 146. Original section/article: 58. Source: Law on State Registration of Rights to Immovable Property.
+as amended by the Law of the Republic of Kazakhstan dated 29.12.2014 № 269-V (shall be enforced from 01.01.2015); dated 17.11.2015 № 408-V (shall be enforced from 01.03.2016); dated 24.05.2018 № 156-VI (to be put into effect upon expiration of ten calendar days after the day of its first official publication); dated 05.04.2023 № 221-VII (shall be enforced from 01.07.2023). 
+Chapter 7. PROCEDURE OF RESOLUTION OF DISPUTES, FINAL PROVISIONS
+
+Section 147. Original section/article: 59. Source: Law on State Registration of Rights to Immovable Property.
+Dispute resolution procedure
+Disputes related to state registration shall be resolved in the manner prescribed by the laws of the Republic of Kazakhstan.
+Footnote.
+
+Section 148. Original section/article: 59. Source: Law on State Registration of Rights to Immovable Property.
+- is in the wording of the Law of the Republic of Kazakhstan dated 29.06.2020 № 351-VI (shall be enforced from 01.07.2021).
+
+Section 149. Original section/article: 60. Source: Law on State Registration of Rights to Immovable Property.
+Transitional provisions
+1. Previously accrued rights shall be recognized as valid upon condition of their correspondence to the legislation, being in force at the date of accrual of relevant right. 
+2. The state registration, conducted by bodies on assessment and registration of immovable property after introduction of the system of state registration and before creation in 1997, the registering body shall have a legal force. 
+3. Individuals and legal entities, not registered the rights to immovable property before enforcement of this Law shall be obliged to register their rights during six months from the date of enforcement of this Law.
+
+Section 150. Original section/article: 61. Source: Law on State Registration of Rights to Immovable Property.
+The order of enforcement of this Law 
+1. This Law shall be enforced upon expiry of ten calendar days after its first official publication. 
+2. Shall be deemed to have lost force the Decree of the President of the Republic of Kazakhstan, having the force of the Law, dated 25 December, 1995 №2727 “On the state registration of right to immovable property and transactions with it” (Bulletin of Supreme Council of the Republic of Kazakhstan, 1995, № 24,
+
+Section 151. Original section/article: 168. Source: Law on State Registration of Rights to Immovable Property.
+; Bulletin of the Parliament of the Republic of Kazakhstan, 1997, № 21,
+
+Section 152. Original section/article: 119. Source: Law on State Registration of Rights to Immovable Property.
+).
+The President
+of the Republic of Kazakhstan 
+If you found any error on the page, please highlight a word or a phrase and then press «Ctrl+Enter» key combination
+Database status
+Total documents: 451977 
+In Kazakh: 224985 
+In Russian: 224786 
+In English: 2205 
+Update date: 05/21/2026 
+Documents as of: 05/18/2026 
+Ministry of Justice of the Republic of Kazakhstan law information services
+Free call from landline phones 
+(7172) 58-00-58 over Kazakhstan 
+58-00-58 for Astana, Almaty 
+Feedback 
+Legal Advice 
+Screen Reader 
+Site map 
+Support
+Email: support@zqai.kz 
+Telephone (for technical issues of the site):
+(7172) - 572496 
+Working hours: 09:00 - 18:30 
+(Astana time) 
+Off days: Saturday, Sunday 
+Recent documents
+Civil procedural code of the Republic of Kazakhstan 
+Civil Code of the Republic of Kazakhstan (Special part) 
+Entrepreneur Code of the Republic of Kazakhstan 
+On Administrative Infractions 
+On Public Procurement 
+all latest documents 
+Popular documents
+Labour code of the Republic of Kazakhstan 
+On taxes and other obligatory payments to the budget (Tax Code) 
+On Administrative Infractions 
+Civil procedural code of the Republic of Kazakhstan 
+On Public Procurement 
+Civil Code of the Republic of Kazakhstan 
+Penal Code of the Republic of Kazakhstan 
+ADMINISTRATIVE PROCEDURAL AND PROCESS-RELATED CODE OF THE REPUBLIC OF KAZAKHSTAN 
+Civil Code of the Republic of Kazakhstan (Special part) 
+Entrepreneur Code of the Republic of Kazakhstan 
+Criminal Procedure Code of the Republic of Kazakhstan 
+Land Code of the Republic of Kazakhstan 
+© 2012. «Institute of legislation and legal information of the Republic of Kazakhstan» of the Ministry of Justice of the Republic of Kazakhstan 
+On-page search
+Next 
+Previous 
+Remove 
+Enter text to search
+Hint: Browser has internal on-page search. It works faster and is usually activated by pressing ctrl-F.

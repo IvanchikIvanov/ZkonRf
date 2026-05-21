@@ -37,13 +37,13 @@ class LegalScopeService:
     COUNTRY_PATTERNS = {
         "thai": ("таиланд", "тайланд", "thailand", "thai"),
         "vn": ("вьетнам", "вьетнамск", "vietnam", "viet nam", "vn"),
-        "ru": ("россия", "рф", "russia", "российск"),
         "kz": ("казахстан", "kazakhstan", "казахск", "рк"),
         "am": ("армения", "armenia", "армянск"),
         "by": ("беларусь", "belarus", "белорусск", "рб"),
         "tj": ("таджикистан", "tajikistan", "таджикск"),
         "uz": ("узбекистан", "uzbekistan", "узбекск"),
         "az": ("азербайджан", "azerbaijan", "азербайджанск"),
+        "ru": ("россия", "рф", "russia", "российск"),
     }
 
     EXPLICIT_CODEX_PATTERNS = {

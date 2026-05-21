@@ -1,0 +1,170 @@
+Kazakhstan statement and application templates for common bot questions.
+These are practical drafting/checklist templates for Russian citizens and other foreigners. They are not official forms unless a competent Kazakhstan authority publishes a specific form.
+
+Section 1. Consumer complaint / demand letter against seller or service provider.
+Use for defective goods, refund refusal, misleading service, online order, warranty dispute, delivery problem or paid service failure.
+Source basis: Law on Protection of Consumer Rights; Civil Code; Entrepreneur Code.
+Template fields:
+1. Consumer: full name, passport/IIN if available, nationality, Kazakhstan address/contact.
+2. Seller/service provider: legal name, BIN/IIN if known, address, website/platform, phone/email.
+3. Contract/order details: date, price, payment proof, invoice/order number.
+4. Problem: defect, non-delivery, misleading information, unsafe service, refusal to refund.
+5. Evidence: photos, chat, receipt, advertisement, warranty card, delivery record.
+6. Demand: refund, replacement, repair, compensation, written explanation and deadline.
+Draft wording:
+I request that the seller/service provider resolve the consumer rights issue described above within the stated deadline. If no response is received, I reserve the right to submit a complaint to the competent Kazakhstan authority and pursue available civil remedies.
+
+Section 2. Tourism or travel-service complaint.
+Use for hotel, tour operator, transport, event, booking, overcharge or unsafe service problems in Kazakhstan.
+Source basis: Consumer Protection Law; Civil Code; Entrepreneur Code.
+Template fields:
+1. Tourist details: name, passport, nationality, contacts and itinerary dates.
+2. Service provider: hotel/tour company/transport provider/platform.
+3. Booking details: date, route, voucher, price, payment proof.
+4. Incident description and harm.
+5. Evidence and witnesses.
+6. Requested remedy: refund, replacement service, compensation, written explanation.
+
+Section 3. Police report for theft, fraud, assault, lost passport or property.
+Use when a Russian citizen or foreigner needs a written incident report for police, embassy, insurer or migration authority.
+Source basis: Penal Code; Criminal Procedure Code; Law on the Legal Status of Foreigners.
+Template fields:
+1. Applicant: name, passport, nationality, visa/TRP/residence details, Kazakhstan address.
+2. Incident: date, time, place, suspect if known, property/value, bank/cards/devices affected.
+3. Evidence: photos, CCTV location, transaction records, witnesses, chats.
+4. Requested action: register report, investigate, issue confirmation/case number/copy for embassy or insurer.
+Draft wording:
+I request registration of this report and a written confirmation/case reference for use with my embassy, insurer and migration authorities.
+
+Section 4. Visa and migration checklist for a Russian citizen.
+Use before entry, visa/e-visa application, extension, notification or stay-planning question.
+Source basis: eGov entry/exit rules; gov.kz e-visa guide; Law on Migration; Law on the Legal Status of Foreigners.
+Template fields:
+1. Passport data: full name, date/place of birth, citizenship, passport number, issue/expiry date.
+2. Trip data: arrival/departure dates, address in Kazakhstan, host/receiving party.
+3. Purpose: tourism, business, work, study, family, treatment, investment or other.
+4. Entry/stay basis: visa-free entry, e-visa, visa, TRP, residence permit.
+5. Receiving-party notification: who submits arrival/address notification and by what channel.
+Russian-specific notes:
+Russian citizens usually rely on visa-free/EAEU rules rather than ordinary e-visa, but must still track permitted stay, address notification and TRP/residence requirements when staying longer or working.
+
+Section 5. E-visa / visa application or correction request.
+Use for Kazakhstan e-visa, visa invitation, error correction, missing document or embassy/portal question.
+Source basis: official gov.kz e-visa guide; eGov visa guide.
+Template fields:
+1. Application/invitation number if any.
+2. Applicant passport and travel purpose.
+3. Incorrect or missing field and corrected value.
+4. Sponsor/inviting party details if applicable.
+5. Attached documents and payment/portal evidence.
+Draft wording:
+I respectfully request review or correction of my Kazakhstan visa/e-visa application using the accurate information and documents listed above.
+
+Section 6. Temporary residence permit / stay regularization checklist.
+Use for TRP, long stay, address change, receiving party notice, family, study, work or treatment basis.
+Source basis: eGov TRP service; Law on Migration; entry/exit rules.
+Template fields:
+1. Applicant identity and current stay basis.
+2. Receiving party: employer, landlord, family member, school, clinic or company.
+3. Purpose and expected term.
+4. Documents: passport, address, contract/invitation, employment or study/treatment/family basis.
+5. Problem: expired stay, address change, missing notification, document correction.
+Draft wording:
+I request guidance and acceptance of documents for lawful temporary residence / regularization of my stay based on the facts and evidence described above.
+
+Section 7. Residence permit checklist.
+Use for permanent residence, solvency documents, housing confirmation, no-objection/departure documents or renewal.
+Source basis: eGov residence permit guide; Law on Migration; Law on Legal Status of Foreigners.
+Template fields:
+1. Applicant passport, nationality, current legal stay.
+2. Basis for residence and family/employment/business ties.
+3. Solvency confirmation and housing arrangement.
+4. Police clearance / departure or no-objection document if required by applicable procedure.
+5. Requested review: eligibility, missing documents, timing and territorial migration body.
+
+Section 8. Work permit / employment checklist.
+Use for foreign employment, employer permit, EAEU/Russian citizen employment, labour contract or TRP for work.
+Source basis: Labour Code; eGov work permit and foreign labour procedure; Law on Migration.
+Template fields:
+1. Worker identity, citizenship, passport and qualifications.
+2. Employer: legal name, BIN, workplace, position.
+3. Employment basis: EAEU employment contract, employer permit, intra-corporate transfer or other.
+4. Documents: employment contract, ESUTD registration if applicable, permits, address, TRP documents.
+5. Questions for review: whether a permit is needed, who applies, timing, renewal and tax/social obligations.
+
+Section 9. Foreign real-estate purchase due-diligence checklist.
+Use before a Russian citizen or other foreigner pays deposit or signs for apartment, house, land, commercial premises or new-build property.
+Source basis: Civil Code; Land Code; Housing Relations Law; State Registration of Rights to Immovable Property Law; construction law.
+Template fields:
+1. Buyer: passport, nationality, Kazakhstan stay/residence status, IIN if available.
+2. Property: address, cadastral number, apartment/house/land/commercial status, seller/developer.
+3. Eligibility: whether foreigner can own the asset type; land restrictions; apartment versus land plot distinction; residence-status implications.
+4. Title and encumbrances: state registration, owner authority, mortgage/arrest/claims, cadastral passport.
+5. Contract terms: deposit, price, currency, deadline, taxes/fees, default, handover, defects.
+6. Russian-specific risk checks: cross-border bank transfer route, sanctions/payment delays, currency controls, Russian tax reporting advice if needed.
+Draft request:
+Please review whether this property can lawfully be acquired by a foreign individual and identify missing documents before I pay deposit or sign the sale agreement.
+
+Section 10. Lease / long-term rental / address registration checklist.
+Use for apartment rent, landlord deposit dispute, temporary address, receiving-party notification or proof of housing for TRP/residence.
+Source basis: Civil Code; Housing Relations Law; migration/entry rules.
+Template fields:
+1. Tenant and landlord identity.
+2. Premises: address, term, rent, deposit, utilities, inventory/photos.
+3. Landlord authority and ownership/registration documents.
+4. Migration angle: receiving-party notification, address confirmation, lease term for TRP/residence.
+5. Dispute remedy: deposit return, repairs, early termination, written explanation.
+
+Section 11. Demand letter to developer, seller, real-estate agent or landlord.
+Use for deposit refusal, misleading ownership promise, construction defect, delayed transfer, rental deposit dispute or unauthorized fee.
+Source basis: Civil Code; Consumer Protection Law; Housing Relations Law; Real Estate Registration Law; construction law.
+Template fields:
+1. Claimant and respondent details.
+2. Contract/reservation/lease details and amounts paid.
+3. Problem and legal/business basis.
+4. Evidence: contract, receipts, chats, advertisements, photos, registry/cadastral documents.
+5. Demand and deadline.
+Draft wording:
+I request that you resolve the issue described above by the stated deadline. If no satisfactory response is received, I reserve all rights to file complaints and seek legal remedies in Kazakhstan.
+
+Section 12. Real-estate registration / cadastral correction request.
+Use when ownership registration, encumbrance removal, cadastral passport, address mismatch or registry extract is needed.
+Source basis: Law on State Registration of Rights to Immovable Property; Civil Code; Land Code.
+Template fields:
+1. Applicant and property details.
+2. Right or transaction to register/correct.
+3. Current registry issue and requested correction.
+4. Attached documents: contract, ID/passport, cadastral documents, payment proof, power of attorney.
+5. Requested result: registration, extract, correction, refusal explanation.
+
+Section 13. Foreign investor / company setup checklist.
+Use for business, individual entrepreneur/company, property-related business, employment of foreigners or tax questions.
+Source basis: Entrepreneur Code; Civil Code; Tax Code; Labour Code; Migration Law.
+Template fields:
+1. Investor identity and nationality.
+2. Planned activity, location, partners and capital.
+3. Legal form: individual entrepreneur, LLP/company, branch, representative office or other.
+4. Licenses/permits/tax registration and employer obligations.
+5. Risk flags: nominee arrangements, property restrictions, foreign labour permits, tax residency.
+
+Section 14. Administrative fine / protocol response template.
+Use for migration fine, traffic/consumer/business fine, protocol disagreement or need to appeal administrative action.
+Source basis: Code on Administrative Offences; Civil Procedure/administrative court context where applicable.
+Template fields:
+1. Person/entity fined and protocol details.
+2. Authority, date, article cited, amount, deadline.
+3. Facts disputed or mitigating circumstances.
+4. Evidence and witnesses.
+5. Requested action: terminate, reduce, correct, provide copy, restore appeal term.
+Draft wording:
+I do not agree with the protocol/decision for the reasons stated above and request review of the evidence, correction of errors and a reasoned written decision.
+
+Section 15. Consular support request for Russian citizen.
+Use after lost passport, arrest, accident, illness, visa/stay issue, property dispute or document legalization.
+Source basis: legal status of foreigners, migration rules, criminal procedure principles and practical consular workflows.
+Template fields:
+1. Citizen identity and Russian passport/internal passport details if available.
+2. Kazakhstan location and contact.
+3. Emergency facts and authority involved.
+4. Documents/evidence and people to contact.
+5. Requested support: return certificate, police/migration liaison, document confirmation, lawyer/translator contacts.

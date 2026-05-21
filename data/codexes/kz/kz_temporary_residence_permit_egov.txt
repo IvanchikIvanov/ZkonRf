@@ -1,0 +1,80 @@
+Kazakhstan source: Temporary residence permit for foreigners in Kazakhstan
+Category: Immigration and visas
+Source URL: https://egov.kz/cms/en/services/for_foreigners/00203002_mvd
+Note: Official eGov service page for temporary residence permits.
+
+Section 1. Original section/article: 80. Source: Temporary residence permit for foreigners in Kazakhstan.
+of the Law of the Republic of Kazakhstan "On Notaries". 
+In accordance with Clause 60 of the Decree of the President of the Republic of Kazakhstan as of April 25, 2016 No. 240 "On approval of the Consular Charter of the Republic of Kazakhstan", documents and acts drawn up with participation of foreign authorities or emanating from these authorities are accepted for consideration with legalization only, unless otherwise provided by the legislation of the Republic of Kazakhstan or an international treaty ratified by the Republic of Kazakhstan.
+Information on a foreigner`s fingerprints registration and on acceptance of documents for delivery of the public service "Issuance of permanent residence permits to foreigners and stateless persons" is obtained by a service provider from the information system.
+Result of the service delivery 
+Issuance of a temporary residence permit in the Republic of Kazakhstan or a reasoned response to refuse to provide a public service. 
+External resources
+E-licensing 
+Taxpayer cabinet 
+Judicial office 
+Debtor-creditor 
+Activity calendar 
+Anti-corruption measures 
+State agencies of RK 
+Constitution of the RK 
+National symbols of the RK 
+Address of the President of the RK 
+State agencies of RK 
+Anti-corruption measures 
+Legislation 
+Privacy policy 
+Feedback 
+Site map 
+Government for citizens
+Reserve queue 
+Contacts 
+Services list 
+Legislation 
+Privacy policy 
+Feedback 
+Site map 
+Social networks
+E-mail: support@goscorp.kz 
+Found a mistake?
+Select it and click Ctrl+Enter 
+Social networks
+E-mail: support@goscorp.kz 
+Found a mistake?
+Select it and click Ctrl+Enter 
+© Electronic government of the Republic of Kazakhstan 
+Page up 
+× 
+Notification
+Dear user!
+Make sure NCALayer has been run/installed and try again.
+Guidelines on running the program 
+For further working with egov.kz, you need to install the certificate issued by National Certification Authority of the Republic of Kazakhstan .
+Dear user!
+Make sure NCALayer has been run/installed and try again.
+Guidelines on running the program 
+Close 
+Help 
+About Portal 
+Personal account Help 
+Total visitors per month:
+Total visitors for yesterday:
+Now on the portal:
+URL:
+Error:
+Comment:
+Send 
+Cancel 
+Спасибо, информация об ошибке принята.
+Извините, в данный момент информация об ошибке не может быть обработана.
+Попробуйте позже. 
+OK 
+CHAT_DOMAIN = 'https://kenes.1414.kz';
+(function (d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s);
+js.id = id;
+js.src = CHAT_DOMAIN + "/static/js/local_loader.js";
+fjs.parentNode.insertBefore(js, fjs);
+})(document, 'script', 'chatbotscript');

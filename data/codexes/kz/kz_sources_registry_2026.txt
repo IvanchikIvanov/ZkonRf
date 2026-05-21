@@ -1,0 +1,152 @@
+Kazakhstan legal sources registry (2026-05-22)
+English translations are reference materials unless the source explicitly says otherwise.
+For legal force in Kazakhstan, verify against the Kazakh/Russian text published by the competent authority.
+
+Imported sources:
+- Constitution of the Republic of Kazakhstan
+  file: kz_constitution.txt
+  category: Core constitutional law
+  sections: 182
+  url: https://adilet.zan.kz/eng/docs/K950001000_
+  note: Official English reference text from Adilet legal information system.
+- Civil Code of the Republic of Kazakhstan, General Part
+  file: kz_civil_code_general_part.txt
+  category: Core codes
+  sections: 1889
+  url: https://adilet.zan.kz/eng/docs/K940001000_
+  note: Official English reference text from Adilet.
+- Civil Code of the Republic of Kazakhstan, Special Part
+  file: kz_civil_code_special_part.txt
+  category: Core codes
+  sections: 1253
+  url: https://adilet.zan.kz/eng/docs/K990000409_
+  note: Official English reference text from Adilet.
+- Civil Procedure Code of the Republic of Kazakhstan
+  file: kz_civil_procedure_code.txt
+  category: Procedure
+  sections: 1013
+  url: https://adilet.zan.kz/eng/docs/K1500000377
+  note: Official English reference text from Adilet.
+- Penal Code of the Republic of Kazakhstan
+  file: kz_penal_code.txt
+  category: Core codes
+  sections: 1077
+  url: https://adilet.zan.kz/eng/docs/K1400000226
+  note: Official English reference text from Adilet.
+- Criminal Procedure Code of the Republic of Kazakhstan
+  file: kz_criminal_procedure_code.txt
+  category: Procedure
+  sections: 1886
+  url: https://adilet.zan.kz/eng/docs/K1400000231
+  note: Official English reference text from Adilet.
+- Code of the Republic of Kazakhstan on Administrative Offences
+  file: kz_administrative_offences_code.txt
+  category: Administrative offences
+  sections: 2352
+  url: https://adilet.zan.kz/eng/docs/K1400000235
+  note: Current administrative offences code; Adilet official English reference.
+- Labour Code of the Republic of Kazakhstan
+  file: kz_labour_code.txt
+  category: Labour
+  sections: 466
+  url: https://adilet.zan.kz/eng/docs/K1500000414
+  note: Official English reference text from Adilet.
+- Tax Code of the Republic of Kazakhstan
+  file: kz_tax_code.txt
+  category: Tax
+  sections: 2083
+  url: https://adilet.zan.kz/eng/docs/K2500000214
+  note: Current Tax Code of the Republic of Kazakhstan; official English reference from Adilet.
+- Entrepreneur Code of the Republic of Kazakhstan
+  file: kz_entrepreneur_code.txt
+  category: Business and consumer protection
+  sections: 863
+  url: https://adilet.zan.kz/eng/docs/K1500000375
+  note: Covers entrepreneurship, competition, state control and consumer-rights context.
+- Law of the Republic of Kazakhstan on Protection of Consumer Rights
+  file: kz_consumer_protection_law.txt
+  category: Consumer protection
+  sections: 111
+  url: https://adilet.zan.kz/eng/docs/Z100000274_
+  note: Official English reference text from Adilet.
+- Land Code of the Republic of Kazakhstan
+  file: kz_land_code.txt
+  category: Land and real estate
+  sections: 580
+  url: https://www.adilet.zan.kz/eng/docs/K030000442_
+  note: Land ownership and land-use rules; official English reference from Adilet.
+- Law of the Republic of Kazakhstan on Housing Relations
+  file: kz_housing_relations_law.txt
+  category: Land and real estate
+  sections: 418
+  url: https://www.adilet.zan.kz/eng/docs/Z970000094_
+  note: Housing relations, apartments and housing-stock rules.
+- Law on State Registration of Rights to Immovable Property
+  file: kz_real_estate_registration_law.txt
+  category: Land and real estate
+  sections: 152
+  url: https://www.adilet.zan.kz/eng/docs/Z070000310_
+  note: Real-estate registration rules; useful for apartment/ownership questions.
+- Law on Architectural, Town-planning and Construction Activity
+  file: kz_architecture_construction_law.txt
+  category: Land and real estate
+  sections: 292
+  url: https://www.adilet.zan.kz/eng/docs/Z010000242_
+  note: Construction and permitting context for new-build or developer disputes.
+- Law of the Republic of Kazakhstan on Population Migration
+  file: kz_migration_law.txt
+  category: Immigration and visas
+  sections: 187
+  url: https://adilet.zan.kz/eng/docs/Z1100000477
+  note: Migration law governing stay, residence and migration categories.
+- Law of the Republic of Kazakhstan on the Legal Status of Foreigners
+  file: kz_foreigners_legal_status_law.txt
+  category: Immigration and visas
+  sections: 60
+  url: https://adilet.zan.kz/eng/docs/U950002337_
+  note: Rights, duties and legal status of foreigners in Kazakhstan.
+- Rules for entry and exit from Kazakhstan for foreign nationals
+  file: kz_entry_exit_foreigners_egov.txt
+  category: Immigration and visas
+  sections: 4
+  url: https://egov.kz/cms/en/articles/move_abroad/exit-entry_of_foreign_nationals
+  note: Official eGov practical guidance on entry, stay and receiving-party notification.
+- How to get an e-visa to Kazakhstan
+  file: kz_evisa_official_guide.txt
+  category: Immigration and visas
+  sections: 1
+  url: https://www.gov.kz/uploads/2020/6/18/6af70adb08dfffdfa70dad92fb26e239_original.102322.pdf
+  note: Official gov.kz guide pointing to the Visa and Migration Portal.
+- Obtaining visa of the Republic of Kazakhstan
+  file: kz_visa_obtaining_egov.txt
+  category: Immigration and visas
+  sections: 1
+  url: https://egov.kz/cms/en/articles/rk_visa_obtaining
+  note: Official eGov visa guide and service overview.
+- Temporary residence permit for foreigners in Kazakhstan
+  file: kz_temporary_residence_permit_egov.txt
+  category: Immigration and visas
+  sections: 1
+  url: https://egov.kz/cms/en/services/for_foreigners/00203002_mvd
+  note: Official eGov service page for temporary residence permits.
+- How to get residence permit in Kazakhstan
+  file: kz_residence_permit_egov.txt
+  category: Immigration and visas
+  sections: 7
+  url: https://egov.kz/cms/en/articles/for_foreigners/vid_na_jitelstvo?mobile=no
+  note: Official eGov practical guidance on residence permit for foreigners.
+- How foreigners can obtain a work permit in Kazakhstan
+  file: kz_work_permit_egov.txt
+  category: Labour
+  sections: 1
+  url: https://egov.kz/cms/en/articles/workpermit
+  note: Official eGov guide; notes EAEU citizens, including Russian citizens, may work under an employment contract without a permit.
+- Procedure for employment of foreign labour in Kazakhstan
+  file: kz_foreign_labour_procedure_egov.txt
+  category: Labour
+  sections: 6
+  url: https://egov.kz/cms/en/articles/job_search/inostrannyi_trud
+  note: Official eGov guide on employer permits and foreign labour procedure.
+
+Failed sources:
+- none

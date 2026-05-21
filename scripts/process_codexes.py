@@ -218,14 +218,16 @@ def parse_codex_file(file_path: Path, codexes_dir: Path) -> List[Dict[str, str]]
         
         # Определяем формат статей в документе
         article_pattern = None
-        if "Статья" in content or "статья" in content:
+        if "Section" in content or "section" in content:
+            # Английский формат: Section X.
+            # В английских переводах Adilet могут встречаться русские маркеры
+            # "Статья" в метаданных, поэтому Section имеет приоритет.
+            article_pattern = r"Section\s+(\d+)[\.\s]+(.*?)(?=Section\s+\d+|$)"
+            log.info("Обнаружен формат 'Section X.'")
+        elif "Статья" in content or "статья" in content:
             # Русский формат: Статья X.
             article_pattern = r"Статья\s+(\d+)[\.\s]+(.*?)(?=Статья\s+\d+|$)"
             log.info("Обнаружен формат 'Статья X.'")
-        elif "Section" in content or "section" in content:
-            # Английский формат: Section X.
-            article_pattern = r"Section\s+(\d+)[\.\s]+(.*?)(?=Section\s+\d+|$)"
-            log.info("Обнаружен формат 'Section X.'")
         else:
             log.warning(f"В тексте файла {file_path.name} не найдено ни 'Статья', ни 'Section'. Возможно, формат другой.")
             # Показываем первые строки для понимания формата

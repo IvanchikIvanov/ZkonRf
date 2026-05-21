@@ -1,0 +1,127 @@
+Kazakhstan source: How foreigners can obtain a work permit in Kazakhstan
+Category: Labour
+Source URL: https://egov.kz/cms/en/articles/workpermit
+Note: Official eGov guide; notes EAEU citizens, including Russian citizens, may work under an employment contract without a permit.
+
+Section 1. Original section/article: 1. Source: How foreigners can obtain a work permit in Kazakhstan.
+How foreigners can obtain a work permit in Kazakhstan | Electronic government of the Republic of Kazakhstan 
+ҚАЗ РУС ENG 
+Go to the visually impaired mode
+Mobile version 
+History of obtainment of services History of service payment History of obtainment of services (PSC) Citizens' e-applications Notifications NDB Services Online reception (secretary) Online reception (admin) Personal account Log out 
+Log in or 
+sign up 
+Public services
+and online information 
+Single contact center
+the call is free
+paid call
+for foreign calls (free through the internet) 
+1414 +7 7172 906 984 
+For example: Address reference 
+Single contact center
+the call is free
+paid call
+for foreign calls (free through the internet) 
+1414 +7 7172 906 984 
+Menu
+Services 
+--> Proactive services 
+-->
+Open Government 
+Personal account 
+Register of state services 
+Payment 
+About Portal 
+Help 
+Home 
+Pass to heading 
+How foreigners can obtain a work permit in Kazakhstan 
+Printable version 
+Last update: 22.04.2026 
+Also look:
+Holidays and weekends in the Republic of Kazakhstan in 2026 
+Rest timе 
+Factory calendar for 2026 in the Republic of Kazakhstan 
+Useful online services 
+Professional holidays of the Republic of Kazakhstan 
+If you are a foreign national planning to engage in employment within the Republic of Kazakhstan, this article outlines the steps required to obtain the permit.
+To cross the state border of the Republic of Kazakhstan, you will need a valid national passport. Upon entry, the border service will place an entry stamp in your passport.
+All the subsequent procedures, including obtaining a temporary residence permit, applying for an IIN (individual identification number), if required, and securing a work permit for employment with an individual, are carried out at Citizen Service Centers (CSCs).
+Issuance of a temporary residence permit 
+Foreign nationals arriving in Kazakhstan are allowed to stay for up to 30 days without obtaining a temporary residence permit (TRP).
+For stays exceeding 30 days (for purposes such as employment, study, medical treatment, business immigration, family reunification, or missionary activity ), a TRP must be obtained.
+To obtain the public service, applicants must apply to the local police authorities at the place of registration, State Corporation or via the Portal and submit an application for the issuance of a temporary residence permit to a foreigner or a stateless person in the Republic of Kazakhstan, with supporting documents attached depending on the purpose of stay and according to the list of the major requirements for the provision of the public service “Issuance of a permit to foreigners and stateless persons for temporary residence in the Republic of Kazakhstan”.
+Obtaining an IIN for payment of state fees 
+To obtain a work permit, a foreign national must first find an employer within the Republic of Kazakhstan and conclude an employment contract. Citizens of Uzbekistan, Tajikistan, Azerbaijan, Moldova, Georgia, and Ukraine are allowed to work for private individuals without obtaining a permit. Citizens of the Eurasian Economic Union (EAEU) (Russia, Kyrgyzstan, Belarus, and Armenia) may work in the Republic of Kazakhstan without a permit on the basis of an employment contract.
+To pay the required state fee, migrants must obtain an IIN.
+To receive an IIN, applicants must apply at a Citizen Service Center (CSC) and present a valid national passport.
+External resources
+E-licensing 
+Taxpayer cabinet 
+Judicial office 
+Debtor-creditor 
+Activity calendar 
+Anti-corruption measures 
+State agencies of RK 
+Constitution of the RK 
+National symbols of the RK 
+Address of the President of the RK 
+State agencies of RK 
+Anti-corruption measures 
+Legislation 
+Privacy policy 
+Feedback 
+Site map 
+Government for citizens
+Reserve queue 
+Contacts 
+Services list 
+Legislation 
+Privacy policy 
+Feedback 
+Site map 
+Social networks
+E-mail: support@goscorp.kz 
+Found a mistake?
+Select it and click Ctrl+Enter 
+Social networks
+E-mail: support@goscorp.kz 
+Found a mistake?
+Select it and click Ctrl+Enter 
+© Electronic government of the Republic of Kazakhstan 
+Page up 
+× 
+Notification
+Dear user!
+Make sure NCALayer has been run/installed and try again.
+Guidelines on running the program 
+For further working with egov.kz, you need to install the certificate issued by National Certification Authority of the Republic of Kazakhstan .
+Dear user!
+Make sure NCALayer has been run/installed and try again.
+Guidelines on running the program 
+Close 
+Help 
+About Portal 
+Personal account Help 
+Total visitors per month:
+Total visitors for yesterday:
+Now on the portal:
+URL:
+Error:
+Comment:
+Send 
+Cancel 
+Спасибо, информация об ошибке принята.
+Извините, в данный момент информация об ошибке не может быть обработана.
+Попробуйте позже. 
+OK 
+CHAT_DOMAIN = 'https://kenes.1414.kz';
+(function (d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s);
+js.id = id;
+js.src = CHAT_DOMAIN + "/static/js/local_loader.js";
+fjs.parentNode.insertBefore(js, fjs);
+})(document, 'script', 'chatbotscript');
