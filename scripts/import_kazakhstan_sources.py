@@ -207,6 +207,55 @@ SOURCES: tuple[KazakhstanSource, ...] = (
         category="Labour",
         note="Official eGov guide on employer permits and foreign labour procedure.",
     ),
+    KazakhstanSource(
+        filename="kz_marriage_family_code",
+        title="Code of the Republic of Kazakhstan on Marriage (Matrimony) and Family",
+        url="https://www.adilet.zan.kz/eng/docs/K1100000518",
+        category="Family",
+        note="Marriage, divorce, family status, children, adoption and civil-status acts.",
+    ),
+    KazakhstanSource(
+        filename="kz_citizenship_law",
+        title="Law of the Republic of Kazakhstan on Citizenship",
+        url="https://www.adilet.zan.kz/eng/docs/Z910004800_",
+        category="Immigration and citizenship",
+        note="Acquisition, termination, loss and renunciation of Kazakhstan citizenship.",
+    ),
+    KazakhstanSource(
+        filename="kz_personal_data_law",
+        title="Law of the Republic of Kazakhstan on Personal Data and Their Protection",
+        url="https://adilet.zan.kz/eng/docs/Z1300000094",
+        category="Digital services",
+        note="Personal data collection, processing, rights and protection duties.",
+    ),
+    KazakhstanSource(
+        filename="kz_touristic_activity_law",
+        title="Law of the Republic of Kazakhstan on Touristic Activity",
+        url="https://adilet.zan.kz/eng/docs/Z010000211_",
+        category="Tourism and travel complaints",
+        note="Tourism services, tour operators, guides, tourist fee and tourist rights context.",
+    ),
+    KazakhstanSource(
+        filename="kz_online_platforms_advertising_law",
+        title="Law on Online Platforms and Online Advertising",
+        url="https://adilet.zan.kz/eng/docs/Z2300000018",
+        category="Digital services",
+        note="Online platform and online advertising duties, labeling and data restrictions.",
+    ),
+    KazakhstanSource(
+        filename="kz_permits_notifications_law",
+        title="Law of the Republic of Kazakhstan on Permissions and Notifications",
+        url="https://adilet.zan.kz/eng/docs/Z1400000202",
+        category="Business and investment",
+        note="Permit and notification regime for business activities and operations.",
+    ),
+    KazakhstanSource(
+        filename="kz_investments_law",
+        title="Law of the Republic of Kazakhstan on Investments",
+        url="https://adilet.zan.kz/eng/docs/Z030000373_",
+        category="Business and investment",
+        note="Investor rights, investment guarantees and state support context.",
+    ),
 )
 
 
@@ -380,6 +429,62 @@ Template fields:
 3. Emergency facts and authority involved.
 4. Documents/evidence and people to contact.
 5. Requested support: return certificate, police/migration liaison, document confirmation, lawyer/translator contacts.
+
+Section 16. Marriage / family-status checklist for foreigner or Russian citizen.
+Use for marriage with a Kazakhstan citizen, divorce, child status, family reunification, civil-status record, paternity, adoption or name/status correction.
+Source basis: Marriage and Family Code; Civil Code; migration and legal-status rules where residence is involved.
+Template fields:
+1. Applicant and spouse/child details: names, passport/ID, citizenship, IIN if available, residence address.
+2. Family event: marriage, divorce, birth, paternity, adoption, guardianship, civil-status correction.
+3. Foreign documents: marital-status certificate, divorce judgment, birth certificate, apostille/legalization and translation needs.
+4. Kazakhstan authority/service involved and current stage.
+5. Requested action: document review, registration, correction, court/registry route, migration effect.
+Russian-specific notes:
+Check whether Russian civil-status documents need apostille/legalization, notarized translation and whether the family event affects TRP/residence-permit strategy.
+
+Section 17. Citizenship / statelessness / renunciation checklist.
+Use for Kazakhstan citizenship, loss/renunciation, former Kazakhstan citizens, stateless persons, dual-citizenship risk and simplified procedures.
+Source basis: Citizenship Law; Constitution; Law on Legal Status of Foreigners; Law on Migration.
+Template fields:
+1. Applicant identity, birth place, current citizenship and prior Kazakhstan/Soviet citizenship history.
+2. Current residence status and family ties in Kazakhstan.
+3. Target: acquire, restore, renounce, confirm, avoid loss, or resolve statelessness.
+4. Documents: passport, birth/marriage certificates, residence permit, police/solvency/housing documents, prior citizenship proof.
+5. Risk flags: foreign citizenship recognition, dual-citizenship consequences, missed notification, loss/deprivation grounds.
+
+Section 18. Personal data complaint / deletion / correction request.
+Use for misuse of passport/IIN, leaked data, bank/platform/employer data issue, unwanted marketing, account/profile dispute or online-advertising profiling.
+Source basis: Law on Personal Data and Their Protection; Law on Online Platforms and Online Advertising; Consumer Protection Law.
+Template fields:
+1. Data subject: name, passport/IIN/contact and representative if any.
+2. Data controller/platform/company details.
+3. Data involved: passport, IIN, address, phone, photo, biometrics, health, payments, account or employment data.
+4. Violation: no consent, excessive collection, refusal to delete/correct, leak, targeted advertising issue.
+5. Requested action: provide information, correct, block, delete, stop processing, compensate, preserve evidence.
+Draft wording:
+I request that you review the collection and processing of my personal data, provide the legal basis for processing, and take the corrective actions listed above within the statutory period.
+
+Section 19. Tourism operator complaint / tourist fee / guide service template.
+Use for inbound tourism, tour operator/agent problems, guide services, tourist accommodation, tourist fee disputes or unsafe tourist service.
+Source basis: Law on Touristic Activity; Consumer Protection Law; Entrepreneur Code.
+Template fields:
+1. Tourist/customer details and itinerary.
+2. Tour operator/agent/guide/accommodation provider details.
+3. Contract, voucher, payment and promised service.
+4. Problem: cancelled tour, unsafe service, misleading description, unauthorized tourist fee, guide misconduct, non-refund.
+5. Evidence and requested remedy.
+Draft wording:
+I request review of the tourist service described above and reimbursement/correction/compensation for the violation of the agreed and legally required service conditions.
+
+Section 20. Investment / permits / online platform checklist.
+Use for foreign investor, LLP/company, licensing, permit/notification, online platform or advertising-compliance questions.
+Source basis: Law on Investments; Law on Permissions and Notifications; Entrepreneur Code; Tax Code; Online Platforms and Online Advertising Law.
+Template fields:
+1. Investor/business identity and citizenship/jurisdiction.
+2. Planned activity, legal form, location, capital, partners and online/offline channel.
+3. Required status: company registration, permit, notification, license, tax registration, employer duties.
+4. Online/platform issues: advertising labeling, targeted ads, user data, platform obligations, content/account evidence.
+5. Requested review: allowed activity, missing permit/notification, compliance risks, tax/labour/migration implications.
 """
 
 

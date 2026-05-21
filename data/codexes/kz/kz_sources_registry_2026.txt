@@ -147,6 +147,48 @@ Imported sources:
   sections: 6
   url: https://egov.kz/cms/en/articles/job_search/inostrannyi_trud
   note: Official eGov guide on employer permits and foreign labour procedure.
+- Code of the Republic of Kazakhstan on Marriage (Matrimony) and Family
+  file: kz_marriage_family_code.txt
+  category: Family
+  sections: 528
+  url: https://www.adilet.zan.kz/eng/docs/K1100000518
+  note: Marriage, divorce, family status, children, adoption and civil-status acts.
+- Law of the Republic of Kazakhstan on Citizenship
+  file: kz_citizenship_law.txt
+  category: Immigration and citizenship
+  sections: 103
+  url: https://www.adilet.zan.kz/eng/docs/Z910004800_
+  note: Acquisition, termination, loss and renunciation of Kazakhstan citizenship.
+- Law of the Republic of Kazakhstan on Personal Data and Their Protection
+  file: kz_personal_data_law.txt
+  category: Digital services
+  sections: 75
+  url: https://adilet.zan.kz/eng/docs/Z1300000094
+  note: Personal data collection, processing, rights and protection duties.
+- Law of the Republic of Kazakhstan on Touristic Activity
+  file: kz_touristic_activity_law.txt
+  category: Tourism and travel complaints
+  sections: 97
+  url: https://adilet.zan.kz/eng/docs/Z010000211_
+  note: Tourism services, tour operators, guides, tourist fee and tourist rights context.
+- Law on Online Platforms and Online Advertising
+  file: kz_online_platforms_advertising_law.txt
+  category: Digital services
+  sections: 34
+  url: https://adilet.zan.kz/eng/docs/Z2300000018
+  note: Online platform and online advertising duties, labeling and data restrictions.
+- Law of the Republic of Kazakhstan on Permissions and Notifications
+  file: kz_permits_notifications_law.txt
+  category: Business and investment
+  sections: 289
+  url: https://adilet.zan.kz/eng/docs/Z1400000202
+  note: Permit and notification regime for business activities and operations.
+- Law of the Republic of Kazakhstan on Investments
+  file: kz_investments_law.txt
+  category: Business and investment
+  sections: 32
+  url: https://adilet.zan.kz/eng/docs/Z030000373_
+  note: Investor rights, investment guarantees and state support context.
 
 Failed sources:
 - none

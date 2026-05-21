@@ -1,6 +1,7 @@
 from pathlib import Path
 
 from scripts.import_kazakhstan_sources import (
+    SOURCES,
     KazakhstanSource,
     build_indexable_text,
     build_registry_file,
@@ -116,10 +117,27 @@ def test_statement_templates_are_parser_compatible(tmp_path: Path):
 
     parsed = parse_codex_file(tmp_path / "kz_statement_templates.txt", tmp_path)
 
-    assert len(parsed) == 15
+    assert len(parsed) == 20
     assert parsed[0]["country"] == "kz"
     assert "Consumer complaint" in parsed[0]["text"]
     assert "Visa and migration checklist for a Russian citizen" in parsed[3]["text"]
     assert "Foreign real-estate purchase due-diligence checklist" in parsed[8]["text"]
     assert "Russian-specific risk checks" in parsed[8]["text"]
     assert "Consular support request for Russian citizen" in parsed[14]["text"]
+    assert "Marriage / family-status checklist" in parsed[15]["text"]
+    assert "Citizenship / statelessness / renunciation checklist" in parsed[16]["text"]
+    assert "Personal data complaint" in parsed[17]["text"]
+    assert "Tourism operator complaint" in parsed[18]["text"]
+    assert "Investment / permits / online platform checklist" in parsed[19]["text"]
+
+
+def test_kazakhstan_source_list_covers_followup_gaps():
+    filenames = {source.filename for source in SOURCES}
+
+    assert "kz_marriage_family_code" in filenames
+    assert "kz_citizenship_law" in filenames
+    assert "kz_personal_data_law" in filenames
+    assert "kz_touristic_activity_law" in filenames
+    assert "kz_online_platforms_advertising_law" in filenames
+    assert "kz_permits_notifications_law" in filenames
+    assert "kz_investments_law" in filenames

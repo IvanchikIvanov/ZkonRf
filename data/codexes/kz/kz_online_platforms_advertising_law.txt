@@ -1,0 +1,323 @@
+Kazakhstan source: Law on Online Platforms and Online Advertising
+Category: Digital services
+Source URL: https://adilet.zan.kz/eng/docs/Z2300000018
+Note: Online platform and online advertising duties, labeling and data restrictions.
+
+Section 1. Original section/article: 1. Source: Law on Online Platforms and Online Advertising.
+Basic concepts used in this Law 
+The following basic concepts are used in this Law:
+1) account – the personal page of the user of the online platform, which is created after registration on the online platform;
+2) sponsored content - a type of content on online platforms distributed by users of online platforms by placing it on an account created by the user of the online platform and (or) the sponsor;
+3) false information – information that does not correspond to reality or contains significant distortions of facts, creating a false idea about persons, objects, events, phenomena and processes, recorded in any form;
+4) public community – a page registered by a user of an online platform on an online platform that posts information for an indefinite number of users of online platforms;
+5) moderator of the public community – a person who is the owner and (or) user of the online platform, entitled to post and (or) delete and (or) edit content on the online platform;
+6) influencer (blogger) – an online platform user who publishes information on an online platform addressed to an indefinite group of persons for the purposes of entrepreneurial activity; 
+7) instant messaging service – software designed and (or) used by users of the online platform for instant messaging or their transmission to a specific person (certain persons) in real time using telecommunications networks, with the exception of software designed to provide financial services and e-commerce;
+8) online advertising – advertising on online platforms produced and (or) posted, and (or) distributed, and (or) stored by users of online platforms and (or) owners of online platforms in the form of targeted advertising and (or) sponsored content, and (or) other information, intended for an indefinite group of people;
+9) distributor of online advertising - a user of an online platform engaged in the production and (or) placement and (or) distribution of online advertising;
+10) an online platform – an Internet resource and (or) software operating on the Internet, and (or) an instant messaging service designed to receive, produce and (or) post, and (or) distribute, and (or) store content on an online platform by an online platform user through an account created by him, a public community, with the exception of an Internet resource and (or) software operating on the Internet, and (or) an instant messaging service designed to provide financial services and e-commerce;
+11) content on the online platform (hereinafter referred to as content) – information received and (or) produced, and (or) posted, and (or) distributed, and (or) stored by the user of the online platform through the reception and (or) transmission of signs and (or) signals, and (or) voice information, and (or) written text, and (or) images, and (or) sounds, and (or) audiovisual form on an online platform to a specifically defined or indefinite group of persons;
+12) the owner of the online platform - an individual and (or) a legal entity that has the right of ownership of the online platform;
+13) the online platform recommendation system - a fully or partially automated online platform system that determines the priority of the online platform content on its interface, as well as the priority of search results;
+14) the user of the online platform (hereinafter referred to as the user) - an individual and (or) a legal entity that has registered and (or) provided their personal data, and (or) has been identified on the online platform;
+15) profiling – a set of algorithms aimed at determining the preferences and (or) interests of users;
+16) targeted online advertising – online advertising intended for target groups determined on the basis of profiling, and aimed at increasing user coverage and (or) increasing its priority, including using the recommendation system of the online platform;
+17) authorized body – the central executive body that carries out state regulation in the field of online platforms and online advertising.
+
+Section 2. Original section/article: 2. Source: Law on Online Platforms and Online Advertising.
+Legislation of the Republic of Kazakhstan on online platforms and online advertising 
+1. The legislation of the Republic of Kazakhstan on online platforms and online advertising is based on the Constitution of the Republic of Kazakhstan, consists of this Law and other regulatory legal acts of the Republic of Kazakhstan.
+2. International treaties ratified by the Republic of Kazakhstan shall have priority over this Law. The procedure and conditions for the operation on the territory of the Republic of Kazakhstan of international treaties to which the Republic of Kazakhstan is a party are determined by the legislation of the Republic of Kazakhstan.
+3. This Law does not apply to relations arising between users when using instant messaging services for personal and family needs, unless the rights and legitimate interests of other individuals and (or) legal entities and the requirements of the laws of the Republic of Kazakhstan are violated.
+
+Section 3. Original section/article: 3. Source: Law on Online Platforms and Online Advertising.
+Goals and objectives of this Law 
+1. The purpose of this Law is to determine the legal basis for the functioning of online platforms, as well as the production, placement, distribution and storage of online advertising, prevention and suppression of illegal content.
+2. The objectives of this Law are:
+1) ensuring the transparency of the functioning of online platforms;
+2) ensuring the security of the information space of the Republic of Kazakhstan;
+3) prevention of illegal content;
+4) protection of children on online platforms from information that harms their health and development;
+5) ensuring the protection of human and civil rights and freedoms when collecting and processing his personal data within the limits established by the laws of the Republic of Kazakhstan.
+
+Section 4. Original section/article: 4. Source: Law on Online Platforms and Online Advertising.
+Principles of this Law 
+The principles of this Law are: 
+1) ensuring and protecting the rights of a person and a citizen to freely receive and disseminate information on online platforms by any means not prohibited by the laws of the Republic of Kazakhstan;
+2) ensuring freedom of speech and creativity on online platforms;
+3) ensuring legality in the collection, accumulation and dissemination of information about users who are citizens of the Republic of Kazakhstan;
+4) ensuring state protection of the interests of citizens of the Republic of Kazakhstan on online platforms;
+5) restriction of the rights of owners of online platforms and users in case they violate the legislation of the Republic of Kazakhstan.
+
+Section 5. Original section/article: 5. Source: Law on Online Platforms and Online Advertising.
+Language of online platforms 
+1. The owner of the online platform creates the possibility of using the interface, as well as familiarization with the user agreement of the online platform, including a summary of its main terms in the Kazakh language.
+2. The owner of the online platform creates the possibility of automatic translation of content into Kazakh.
+3. The owner of the online platform, in order to prevent violations of the legislation of the Republic of Kazakhstan, ensures the moderation of content in the Kazakh language.
+Chapter 2. STATE REGULATION IN THE FIELD OF ONLINE PLATFORMS AND ONLINE ADVERTISING
+
+Section 6. Original section/article: 6. Source: Law on Online Platforms and Online Advertising.
+State regulation in the field of online platforms and online advertising 
+1. State regulation in the field of online platforms and online advertising is carried out through state control over compliance with the legislation of the Republic of Kazakhstan on online platforms and online advertising.
+2. State control over compliance with the legislation of the Republic of Kazakhstan on online platforms and online advertising is carried out by the authorized body in the form of preventive control without visiting the subject (object) of control in accordance with the Entrepreneurial Code of the Republic of Kazakhstan and this Law.
+3. The objectives of preventive control without visiting the subject (object) of control are timely suppression and prevention of violations, granting the subjects of control the right to independently eliminate violations identified by the results of preventive control without visiting the subject (object) of control, and reducing the administrative burden on them.
+4. The object of preventive control without visiting the subject (object) of control is the functioning of online platforms, production, placement, distribution of online advertising.
+The subjects of preventive control without visiting the subject (object) of control are moderators of public communities, distributors of online advertising.
+5. If violations are detected based on the results of preventive control without visiting the subject (object) of control, a recommendation on the elimination of violations is issued and sent no later than five working days from the date of detection of violations.
+6. A recommendation on elimination of violations must be handed over to the subject of control personally under the signature or in any other way confirming the facts of sending and receiving the recommendation on the elimination of violations.
+A recommendation for elimination of violations sent by one of the following methods is considered to be handed over in the following cases:
+1) by express – from the date of the acknowledgement of receipt in the recommendation on the elimination of violations;
+2) by mail – from the date of notification of receipt of the postal item by registered mail;
+3) by electronic means – from the date of sending to the email address of the subject of control specified in the letter upon request. 
+7. The recommendation to eliminate violations identified by the results of preventive control without visiting the subject (object) of control must be executed within three working days from the day following the day of its delivery.
+8. The subject of control, in case of disagreement with the violations specified in the recommendation on the elimination of violations, has the right to send an objection to the authorized body that sent the recommendation on the elimination of violations within three working days from the day following the day of delivery of the recommendation on the elimination of violations.
+9. Preventive control without visiting the subject (object) of control is carried out no more than once a quarter.
+
+Section 7. Original section/article: 7. Source: Law on Online Platforms and Online Advertising.
+Competence of the Government of the Republic of Kazakhstan in the field of online platforms and online advertising 
+The Government of the Republic of Kazakhstan:
+1) develops the main directions of state policy in the field of online platforms and online advertising;
+2) performs other functions assigned to it by the Constitution of the Republic of Kazakhstan, laws of the Republic of Kazakhstan and acts of the President of the Republic of Kazakhstan.
+
+Section 8. Original section/article: 8. Source: Law on Online Platforms and Online Advertising.
+Competence of the authorized body 
+The authorized body:
+1) ensures the implementation of the state policy in the field of online platforms and online advertising;
+2) within its competence, develops and approves regulatory legal acts in the field of online platforms and online advertising;
+3) coordinates the activities of central and local executive bodies in the field of online platforms and online advertising;
+4) monitors online platforms;
+5) issues prescriptions upon detection of violations of the requirements of the legislation of the Republic of Kazakhstan on online platforms and online advertising;
+6) requests from the owner and (or) legal representative of the online platform information about the number of users per day;
+7) determines the number of users if there is no function for determining the number of users on the online platform;
+8) requests information about users from the owners and (or) legal representatives of online platforms on the basis of judicial acts, requests from law enforcement or special state bodies of the Republic of Kazakhstan;
+9) exercises other powers provided for by this Law, other laws of the Republic of Kazakhstan, acts of the President of the Republic of Kazakhstan and the Government of the Republic of Kazakhstan.
+Chapter 3. LEGAL REGIME OF FUNCTIONING OF ONLINE PLATFORMS
+
+Section 9. Original section/article: 9. Source: Law on Online Platforms and Online Advertising.
+Legal regime of online platforms functioning on the territory of the Republic of Kazakhstan 
+1. To operate within the Republic of Kazakhstan the owners and/or other legal representatives of online platforms whose average daily access to online platforms during a month is more than one hundred thousand users located within the Republic of Kazakhstan shall appoint a legal representative to interact with:
+the authorized body in accordance with the requirements established by the Civil Code of the Republic of Kazakhstan;
+the government body in charge of the collection of taxes and other mandatory payments to the budget, as required by the Civil Code of the Republic of Kazakhstan.
+2. The authorized body shall keep a register of legal representatives of online platforms on the territory of the Republic of Kazakhstan in accordance with the procedure determined by it.
+3. Online platforms should have the following functions:
+1) determining the number of users in the territory of the Republic of Kazakhstan;
+2) submission by users of the complaint established by
+
+Section 10. Original section/article: 11. Source: Law on Online Platforms and Online Advertising.
+of this Law and automatic confirmation of its receipt.
+The interface of the online platform should not mislead or otherwise hinder the user in making a decision.
+4. Owners and (or) legal representatives of online platforms are obliged to: 
+1) take measures to counter the spread of illegal content on the territory of the Republic of Kazakhstan;
+2) consider the request of the authorized body within twenty-four hours after its receipt;
+3) ensure the fulfillment of judicial acts that have entered into legal force;
+4) ensure the reception, consideration of prescriptions, submissions, notifications, decisions of state bodies with taking measures on them established by
+
+Section 11. Original section/article: 41-1. Source: Law on Online Platforms and Online Advertising.
+of the Law of the Republic of Kazakhstan "On communications";
+5) immediately notify the law enforcement agencies of the Republic of Kazakhstan in case of detection of illegal content that entails a threat to the life or security of a person and citizen;
+6) inform the authorized body about measures to counteract illegal content;
+7) publish publicly available information on the average monthly number of users in the territory of the Republic of Kazakhstan for the last six months of the online platform's operation;
+8) take measures to ensure the safety of minors;
+9) submit information about users requested by the authorized body on the basis of judicial acts, requests of law enforcement or special state bodies of the Republic of Kazakhstan;
+10) suspend the activity of accounts on the territory of the Republic of Kazakhstan that post and distribute illegal content, information recognized as cyberbullying against a child, on the basis of an order of the authorized body.
+Footnote.
+
+Section 12. Original section/article: 9. Source: Law on Online Platforms and Online Advertising.
+as amended by Law of the Republic of Kazakhstan dated 18.07.2025 № 215-VIII (shall take effect on 01.01.2026).
+
+Section 13. Original section/article: 10. Source: Law on Online Platforms and Online Advertising.
+Features of personal data protection on online platforms 
+The owner and (or) legal representative of the online platform in order to protect personal data on the online platform:
+1) familiarizes users with the privacy policy of the online platform before completing their registration;
+2) ensures the integrity, safety and confidentiality of personal data;
+3) does not allow the dissemination of personal data without the consent of the user or his legal representative;
+4) immediately notifies the user in case of violation of the confidentiality of his personal data;
+5) performs other duties stipulated by the Law of the Republic of Kazakhstan "On personal data and their protection".
+
+Section 14. Original section/article: 11. Source: Law on Online Platforms and Online Advertising.
+Submission and processing of user complaints 
+1. The user has the right to file a complaint to the owner of the online platform about the content, interface, other users, actions of the online platform.
+2. The mechanism and rules for filing a complaint by the user are determined by the owner of the online platform.
+The complaint mechanism should be accessible to the user and provide for the possibility of describing the content of the complaint.
+3. The owner of the online platform is obliged to provide a reasoned response to the user who filed a complaint within twenty calendar days from the day following the day of receipt of the complaint.
+
+Section 15. Original section/article: 12. Source: Law on Online Platforms and Online Advertising.
+Recommendation system of the online platform 
+1. The parameters used in the recommendation system of the online platform must be described in the user agreement of the online platform.
+2. The recommendation system of the online platform should provide the user with the opportunity to receive content without using profiling.
+
+Section 16. Original section/article: 13. Source: Law on Online Platforms and Online Advertising.
+Content moderation 
+1. The owner of the online platform is obliged to take measures to improve:
+1) content moderation systems;
+2) artificial intelligence algorithms;
+3) the safety of minors on the online platform;
+4) countering the placement and distribution of illegal content on the territory of the Republic of Kazakhstan;
+5) interaction with the state bodies of the Republic of Kazakhstan.
+2. The owner of the online platform annually publishes a report that includes the following information about:
+1) identified systemic risks;
+2) measures taken to reduce the identified systemic risks;
+3) content moderation, indicating the illegal content deleted by automated moderation systems, the number of orders received from the authorized body, user complaints and decisions taken on them.
+
+Section 17. Original section/article: 14. Source: Law on Online Platforms and Online Advertising.
+Grounds for attributing information to illegal content, suspension, termination of placement and distribution of illegal content 
+1. Posting and distribution of illegal content on online platforms in the territory of the Republic of Kazakhstan is prohibited.
+Illegal content includes calls, propaganda or agitation for violent change of the constitutional order, violation of the integrity of the Republic of Kazakhstan, undermining the security of the state, war, social, racial, national, religious, class and tribal superiority, the cult of cruelty and violence, suicide, pornography, narcotic drugs, psychotropic substances, their analogues and precursors, ideas of separatism, fraud, information that contributes to the violation of interethnic and interfaith harmony, as well as statements that question the statehood and territorial integrity of the Republic of Kazakhstan, information that reveals state secrets or other secrets protected by law, and other information prohibited by the laws of the Republic of Kazakhstan.
+2. Suspension, termination of placement and distribution of illegal content shall be carried out in accordance with
+
+Section 18. Original section/article: 41-1. Source: Law on Online Platforms and Online Advertising.
+of the Law of the Republic of Kazakhstan "On communications".
+3. The owner and (or) the legal representative of the online platform, within twenty-four hours after receiving the order of the authorized body, must take measures to delete information recognized as cyberbullying in relation to the child.
+Footnote.
+
+Section 19. Original section/article: 14. Source: Law on Online Platforms and Online Advertising.
+as amended by the Law of the Republic of Kazakhstan dated 19.06.2024 № 94-VIII (shall come into effect upon expiry of sixty calendar days after the date of its first official publication).
+
+Section 20. Original section/article: 15. Source: Law on Online Platforms and Online Advertising.
+Removing false information 
+1. A person in respect of whom false information has been disseminated has the right to apply to the owner of the online platform with a request to delete false information.
+2. If the owner of the online platform refuses to delete false information, the person has the right to apply to the court. 
+Chapter 4. RIGHTS AND OBLIGATIONS OF USERS
+
+Section 21. Original section/article: 16. Source: Law on Online Platforms and Online Advertising.
+Rights and obligations of users 
+1. Users in the territory of the Republic of Kazakhstan have the right to:
+1) the receipt, production, placement, distribution of content in any way not prohibited by the laws of the Republic of Kazakhstan;
+2) free expression of opinion on online platforms in accordance with the laws of the Republic of Kazakhstan;
+3) protection of their rights, freedoms and legitimate interests in court;
+4) creating an account, a public community;
+5) appeal to the owner of the online platform or his legal representative with a requirement to respect their rights, freedoms and legitimate interests provided for by the laws of the Republic of Kazakhstan;
+6) rejection of products offered by online platforms if it contradicts their beliefs;
+7) limiting the demonstration of uninteresting content.
+2. Users are required to:
+1) comply with the legislation of the Republic of Kazakhstan on online platforms and online advertising;
+2) check the authenticity of the posted, distributed content;
+3) do not post or distribute false information;
+4) do not post or distribute illegal content;
+5) delete false information, illegal content in case of their placement, distribution;
+6) when collecting voluntary donations, comply with the requirements established by the legislation of the Republic of Kazakhstan on combating legalization (laundering) of proceeds from crime, financing of terrorism and financing of the proliferation of weapons of mass destruction.
+Footnote.
+
+Section 22. Original section/article: 9. Source: Law on Online Platforms and Online Advertising.
+as amended by the Law of the Republic of Kazakhstan dated 19.09.2025 № 219-VIII (effective sixty calendar days after the date of its first official publication).
+
+Section 23. Original section/article: 17. Source: Law on Online Platforms and Online Advertising.
+Rights and obligations of influencers (bloggers) 
+1. An influencer (blogger) has the rights and responsibilities established by
+
+Section 24. Original section/article: 16. Source: Law on Online Platforms and Online Advertising.
+of this Law.
+2. An influencer (blogger) carries out his business activities on the territory of the Republic of Kazakhstan in accordance with the legislation of the Republic of Kazakhstan.
+
+Section 25. Original section/article: 18. Source: Law on Online Platforms and Online Advertising.
+Placement and distribution of the depicted person 
+1. When posting and distributing content, users do not need the consent of the person depicted in the following cases:
+1) if this person is present or participates in spectacular cultural events, socially significant in the field of culture, mass sports events, peaceful gatherings and other public events;
+2) if the content contains an image of a person and information related to the official and (or) public activities of this person, as well as posted, distributed by the person himself, his legal representative or authorized person in sources to which access is not restricted;
+3) if the use of the depicted person is carried out in order to protect the constitutional order, protect public order, human rights and freedoms, health and morals of the population.
+2. The placement and distribution of content using the depicted person shall be carried out in accordance with the requirements established by
+
+Section 26. Original section/article: 145. Source: Law on Online Platforms and Online Advertising.
+of the Civil Code of the Republic of Kazakhstan.
+Chapter 5. REGULATION OF ONLINE ADVERTISING
+
+Section 27. Original section/article: 19. Source: Law on Online Platforms and Online Advertising.
+Requirements for online advertising 
+1. Online advertising must be identifiable and labeled.
+2. Online advertising is marked in accordance with the procedure determined by the authorized body.
+3. Placement and distribution of online advertising are carried out in accordance with the requirements of the Law of the Republic of Kazakhstan "On advertising".
+
+Section 28. Original section/article: 20. Source: Law on Online Platforms and Online Advertising.
+Targeted online advertising 
+1. The online platform provides users with the ability to identify targeted online advertising using text and (or) graphic and (or) other designations.
+2. Targeted online advertising should:
+1) contain text and (or) graphic and (or) other designations indicating that the content is an online advertisement;
+2) designate the account of the user who placed the online advertisement.
+3. Profiling based on data on race or nationality, political views, biometric or personal data that allows identifying an individual, information about the user's health status is prohibited.
+4. Targeted online advertising should not be distributed to users identified by the online platform as a minor user.
+
+Section 29. Original section/article: 21. Source: Law on Online Platforms and Online Advertising.
+Sponsored content 
+1. Sponsored content must contain text and (or) graphic and (or) other designations indicating the sponsor.
+2. Sponsored content should not:
+1) discredit individuals or legal entities, their goods, works, services; 
+2) contain opinions and (or) audio recordings, and (or) photo and video images of third parties without their prior consent.
+3. If the sponsored content contains recommendations, reviews and supporting documents, then they must be authentic and verifiable.
+
+Section 30. Original section/article: 22. Source: Law on Online Platforms and Online Advertising.
+Identification and storage of online advertising 
+1. Online platforms should provide users with the technical ability to identify online advertising using text and (or) graphic and (or) other designations.
+2. The online platform must have a secure repository containing information about online advertising, including targeted online advertising. This information must be stored for one year after the last placement, distribution of online advertising.
+The storage must not contain personal data of users among whom online advertising was or could have been distributed. 
+Chapter 6. INTERNATIONAL COOPERATION IN THE FIELD OF ONLINE PLATFORMS AND ONLINE ADVERTISING
+
+Section 31. Original section/article: 23. Source: Law on Online Platforms and Online Advertising.
+International cooperation in the field of online platforms and online advertising 
+1. International cooperation of the Republic of Kazakhstan in the field of online platforms and online advertising is carried out in accordance with international treaties and legislation of the Republic of Kazakhstan.
+2. State bodies, in coordination with the authorized body, interact in the field of online platforms and online advertising with state bodies of foreign states, international organizations and foreign legal entities.
+Chapter 7. FINAL PROVISIONS
+
+Section 32. Original section/article: 24. Source: Law on Online Platforms and Online Advertising.
+Responsibility for violation of the legislation of the Republic of Kazakhstan on online platforms and online advertising 
+Violation of the legislation of the Republic of Kazakhstan on online platforms and online advertising entails liability established by the laws of the Republic of Kazakhstan.
+If the owners and (or) legal representatives of online platforms carry out the activities of the online platform on the territory of the Republic of Kazakhstan without complying with the requirements established by
+
+Section 33. Original section/article: 9. Source: Law on Online Platforms and Online Advertising.
+of this Law, the authorized body has the right to restrict their activities on the territory of the Republic of Kazakhstan in accordance with the laws of the Republic of Kazakhstan.
+
+Section 34. Original section/article: 25. Source: Law on Online Platforms and Online Advertising.
+Procedure for enactment of this Law
+This Law shall enter into force upon the expiration of sixty calendar days after the date of its first official publication.
+President 
+of the Republic of Kazakhstan 
+K.Tokayev 
+If you found any error on the page, please highlight a word or a phrase and then press «Ctrl+Enter» key combination
+Database status
+Total documents: 451977 
+In Kazakh: 224985 
+In Russian: 224786 
+In English: 2205 
+Update date: 05/21/2026 
+Documents as of: 05/18/2026 
+Ministry of Justice of the Republic of Kazakhstan law information services
+Free call from landline phones 
+(7172) 58-00-58 over Kazakhstan 
+58-00-58 for Astana, Almaty 
+Feedback 
+Legal Advice 
+Screen Reader 
+Site map 
+Support
+Email: support@zqai.kz 
+Telephone (for technical issues of the site):
+(7172) - 572496 
+Working hours: 09:00 - 18:30 
+(Astana time) 
+Off days: Saturday, Sunday 
+Recent documents
+Civil procedural code of the Republic of Kazakhstan 
+Civil Code of the Republic of Kazakhstan (Special part) 
+Entrepreneur Code of the Republic of Kazakhstan 
+On Administrative Infractions 
+On Public Procurement 
+all latest documents 
+Popular documents
+Labour code of the Republic of Kazakhstan 
+On taxes and other obligatory payments to the budget (Tax Code) 
+On Administrative Infractions 
+Civil procedural code of the Republic of Kazakhstan 
+On Public Procurement 
+Civil Code of the Republic of Kazakhstan 
+Penal Code of the Republic of Kazakhstan 
+ADMINISTRATIVE PROCEDURAL AND PROCESS-RELATED CODE OF THE REPUBLIC OF KAZAKHSTAN 
+Civil Code of the Republic of Kazakhstan (Special part) 
+Entrepreneur Code of the Republic of Kazakhstan 
+Criminal Procedure Code of the Republic of Kazakhstan 
+Land Code of the Republic of Kazakhstan 
+© 2012. «Institute of legislation and legal information of the Republic of Kazakhstan» of the Ministry of Justice of the Republic of Kazakhstan 
+On-page search
+Next 
+Previous 
+Remove 
+Enter text to search
+Hint: Browser has internal on-page search. It works faster and is usually activated by pressing ctrl-F.
