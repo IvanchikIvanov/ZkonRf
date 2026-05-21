@@ -1,0 +1,158 @@
+Uzbekistan legal sources registry (2026-05-22)
+Primary source is LexUz, the National Database of Legislation of the Republic of Uzbekistan.
+Verify current legal force against official Uzbekistan text before filing or court use.
+
+Imported sources:
+- Constitution of the Republic of Uzbekistan
+  file: uz_constitution.txt
+  category: Core constitutional law
+  sections: 184
+  url: https://lex.uz/docs/6451070
+  note: Official LexUz page; English tab is marked as unofficial translation.
+- Civil Code of the Republic of Uzbekistan, Part One
+  file: uz_civil_code_part_1.txt
+  category: Core codes
+  sections: 750
+  url: https://lex.uz/docs/111181
+  note: Contracts, property, obligations and civil-law remedies.
+- Civil Code of the Republic of Uzbekistan, Part Two
+  file: uz_civil_code_part_2.txt
+  category: Core codes
+  sections: 1573
+  url: https://lex.uz/docs/180550
+  note: Special part of civil law, including specific contracts and IP context.
+- Civil Procedure Code of the Republic of Uzbekistan
+  file: uz_civil_procedure_code.txt
+  category: Procedure
+  sections: 1045
+  url: https://lex.uz/docs/3517334
+  note: Civil court procedure and procedural remedies.
+- Criminal Code of the Republic of Uzbekistan
+  file: uz_criminal_code.txt
+  category: Core codes
+  sections: 853
+  url: https://lex.uz/docs/111457
+  note: Criminal liability and offences.
+- Criminal Procedure Code of the Republic of Uzbekistan
+  file: uz_criminal_procedure_code.txt
+  category: Procedure
+  sections: 1650
+  url: https://lex.uz/docs/111463
+  note: Criminal complaints, reports and investigation procedure.
+- Code of Administrative Responsibility of the Republic of Uzbekistan
+  file: uz_administrative_responsibility_code.txt
+  category: Administrative offences
+  sections: 1526
+  url: https://lex.uz/docs/97661
+  note: Administrative liability, including migration and consumer-related penalties.
+- Labour Code of the Republic of Uzbekistan
+  file: uz_labour_code.txt
+  category: Labour
+  sections: 1164
+  url: https://lex.uz/ru/docs/6257291
+  note: Employment contracts, workers' rights and labour disputes.
+- Tax Code of the Republic of Uzbekistan
+  file: uz_tax_code.txt
+  category: Tax
+  sections: 1036
+  url: https://lex.uz/ru/docs/4674893
+  note: Tax obligations, administration and taxpayer rights.
+- Family Code of the Republic of Uzbekistan
+  file: uz_family_code.txt
+  category: Family
+  sections: 450
+  url: https://lex.uz/docs/104723
+  note: Marriage, divorce, children, alimony and civil-status context.
+- Land Code of the Republic of Uzbekistan
+  file: uz_land_code.txt
+  category: Land and real estate
+  sections: 251
+  url: https://lex.uz/docs/149947
+  note: Land rights, land-use rules and land restrictions.
+- Housing Code of the Republic of Uzbekistan
+  file: uz_housing_code.txt
+  category: Land and real estate
+  sections: 290
+  url: https://lex.uz/docs/106134
+  note: Housing rights, residential premises and housing-use rules.
+- Law on Citizenship of the Republic of Uzbekistan
+  file: uz_citizenship_law.txt
+  category: Immigration and citizenship
+  sections: 114
+  url: https://lex.uz/docs/4761986
+  note: Citizenship acquisition, termination, passports and citizenship status.
+- Law on Legal Status of Foreign Citizens and Stateless Persons
+  file: uz_foreigners_legal_status_law.txt
+  category: Immigration and visas
+  sections: 84
+  url: https://lex.uz/docs/5443901
+  note: Entry, stay, residence, registration and rights of foreigners.
+- Law on Protection of Consumer Rights
+  file: uz_consumer_protection_law.txt
+  category: Consumer protection
+  sections: 48
+  url: https://www.lex.uz/acts/14643
+  note: Consumer complaints, refunds, defects, services and seller duties.
+- Law on State Registration of Rights to Immovable Property
+  file: uz_real_estate_registration_law.txt
+  category: Land and real estate
+  sections: 167
+  url: https://lex.uz/ru/docs/6297080
+  note: Registration of immovable property rights and related transactions.
+- Law on Personal Data
+  file: uz_personal_data_law.txt
+  category: Digital services
+  sections: 73
+  url: https://lex.uz/docs/4396428
+  note: Personal data processing, localization, consent, subject rights and complaints.
+- Law on Tourism
+  file: uz_tourism_law.txt
+  category: Tourism and travel complaints
+  sections: 89
+  url: https://lex.uz/docs/4428101
+  note: Tourism services, tour operators, guides and tourist rights context.
+- Law on Investments and Investment Activity
+  file: uz_investments_law.txt
+  category: Business and investment
+  sections: 135
+  url: https://lex.uz/ru/docs/4664144
+  note: Investor rights, investment guarantees and investment activity context.
+- Law on Electronic Commerce
+  file: uz_ecommerce_law.txt
+  category: Digital services
+  sections: 64
+  url: https://lex.uz/ru/docs/6213428
+  note: E-commerce contracts, platforms, sellers and online consumer context.
+- Law on Advertising
+  file: uz_advertising_law.txt
+  category: Digital services
+  sections: 104
+  url: https://lex.uz/ru/docs/6052633
+  note: Advertising duties, restrictions and online/offline advertising rules.
+- Law on Guarantees of Freedom of Entrepreneurial Activity
+  file: uz_entrepreneurship_guarantees_law.txt
+  category: Business and investment
+  sections: 120
+  url: https://lex.uz/docs/2006777
+  note: Business rights, state guarantees and entrepreneur protections.
+- Law on Limited and Additional Liability Companies
+  file: uz_llc_law.txt
+  category: Business and investment
+  sections: 120
+  url: https://lex.uz/docs/18793
+  note: Company formation, participants, charter capital and governance.
+- Law on Notariat
+  file: uz_notariat_law.txt
+  category: Land and real estate
+  sections: 260
+  url: https://lex.uz/docs/57043
+  note: Notarial actions, useful for real-estate and power-of-attorney questions.
+- Law on Appeals of Individuals and Legal Entities
+  file: uz_appeals_law.txt
+  category: Administrative complaints
+  sections: 113
+  url: https://lex.uz/docs/3336169
+  note: Administrative complaint/request format, deadlines and competent bodies.
+
+Failed sources:
+- none

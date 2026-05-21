@@ -1,0 +1,104 @@
+Uzbekistan statement and application templates for common bot questions.
+These are practical drafting/checklist templates for Russian citizens and other foreigners. They are not official forms unless a competent Uzbekistan authority publishes a specific form.
+
+Section 1. Consumer complaint / demand letter against seller or service provider.
+Use for defective goods, refund refusal, misleading service, online order, warranty dispute, delivery problem or paid service failure.
+Source basis: Consumer Protection Law; Civil Code; E-commerce Law; Advertising Law.
+Template fields: consumer identity and contacts; seller/service provider; order and payment details; defect or breach; evidence; refund, replacement, repair, compensation or written-response demand.
+
+Section 2. Tourism service complaint.
+Use for hotel, tour operator, guide, transport, booking, overcharge or unsafe service problems in Uzbekistan.
+Source basis: Tourism Law; Consumer Protection Law; Civil Code.
+Template fields: tourist identity, passport and itinerary; provider; booking/payment; incident; evidence/witnesses; requested refund, replacement service, compensation or authority complaint.
+
+Section 3. Police report for theft, fraud, assault, lost passport or property.
+Use when a Russian citizen or foreigner needs a written incident report for police, embassy, insurer or migration authority.
+Source basis: Criminal Code; Criminal Procedure Code; Law on Legal Status of Foreign Citizens and Stateless Persons.
+Template fields: applicant; incident date/place; suspect if known; property/value; evidence; requested registration, case reference and copy for embassy/insurer.
+
+Section 4. Visa and migration checklist for a Russian citizen.
+Use before entry, visa/e-visa question, registration, stay extension, temporary residence or residence planning.
+Source basis: Law on Legal Status of Foreign Citizens and Stateless Persons; Constitution; citizenship and passport context.
+Template fields: passport; arrival/departure and address; host; purpose; entry/stay basis; registration duty; residence/work/study grounds.
+Russian-specific notes: Russian citizens may have simplified practical entry/stay routes compared with visa nationals, but registration, permitted-stay, residence and employment conditions still need separate checks.
+
+Section 5. Visa / stay application or correction request.
+Use for visa, invitation, registration error, missing document or authority/portal question.
+Source basis: Law on Legal Status of Foreign Citizens and Stateless Persons; Appeals Law; administrative liability rules.
+Template fields: application or registration number; applicant passport; incorrect or missing field; host/inviting party; attachments and payment/portal evidence.
+
+Section 6. Temporary or permanent residence checklist.
+Use for longer stay, family, study, work, investment/business or residence status questions.
+Source basis: Law on Legal Status of Foreign Citizens and Stateless Persons; Citizenship Law; Constitution.
+Template fields: current stay deadline; residence ground; address and housing proof; income/work/study documents; medical/criminal-record/insurance items if required; prior entries and offences.
+
+Section 7. Work / employment checklist for foreigner or Russian citizen.
+Use for employment contract, work authorization, employer documents or labour dispute.
+Source basis: Labour Code; Law on Legal Status of Foreign Citizens and Stateless Persons.
+Template fields: worker citizenship and status; employer; contract terms; permit/authorization issue if any; wages, dismissal, safety or migration risk; evidence.
+
+Section 8. Administrative offence / fine response.
+Use for migration, traffic, consumer, public-order or other administrative offence notices.
+Source basis: Code of Administrative Responsibility; procedural rules; Appeals Law.
+Template fields: person; protocol/notice; authority and article; facts and objections; mitigating circumstances; request to terminate, reclassify, reduce fine, restore deadline or provide copies.
+
+Section 9. Foreign real-estate purchase due-diligence checklist.
+Use for apartment, house, land, lease, new-build, registration or seller/developer due diligence.
+Source basis: Civil Code; Land Code; Housing Code; Law on State Registration of Rights to Immovable Property; Notariat Law.
+Template fields: buyer citizenship/passport/marital status; property and cadastral data; seller/developer title; encumbrances; contract price and payment route; notary/registration steps.
+Russian-specific risk checks: verify foreign ownership restrictions, land-right limits, payment/banking route from Russia, notarization and registration duty, tax/residency consequences, sanctions/bank compliance risk.
+
+Section 10. Real-estate registration / correction request.
+Use for registration of ownership, correction of registry error, encumbrance removal or transaction registration.
+Source basis: Law on State Registration of Rights to Immovable Property; Civil Code; Notariat Law.
+Template fields: applicant and representative; property identifier; requested registration/correction/removal; basis document; attachments and payment proof.
+
+Section 11. Civil claim / pre-trial demand.
+Use for contract debt, damage, service failure, unjust enrichment, property dispute or compensation.
+Source basis: Civil Code; Civil Procedure Code.
+Template fields: claimant/respondent; contract/legal basis; timeline; amount and calculation; evidence; voluntary settlement demand and deadline.
+
+Section 12. Tax / payment-residency checklist.
+Use for tax registration, income, rental income, business income, VAT, customs/payment questions.
+Source basis: Tax Code; Civil Code; Investments Law.
+Template fields: person/entity and residency facts; income or transaction type; amounts/currency; Uzbekistan-source indicators; contracts, invoices, bank statements and notices.
+
+Section 13. Digital service / e-commerce / advertising complaint.
+Use for online store, platform, electronic contract, misleading ad, blocked account or digital-service issue.
+Source basis: E-commerce Law; Advertising Law; Personal Data Law; Consumer Protection Law.
+Template fields: platform/service; account/order/ad details; issue; screenshots/logs/emails/payment proof; requested correction, refund, account restoration, ad removal or record preservation.
+
+Section 14. Appeal to Uzbekistan state body.
+Use for administrative request, complaint against official action/inaction, request for information or deadline issue.
+Source basis: Appeals Law; Constitution.
+Template fields: applicant; authority/addressee; facts and previous applications; legal interest; requested action; attachments and preferred response channel.
+
+Section 15. Consular support request for Russian citizen.
+Use for lost passport, detention, accident, death, emergency travel document, migration problem or document legalization.
+Source basis: Law on Legal Status of Foreign Citizens and Stateless Persons; Criminal Procedure Code; citizenship/passport context.
+Template fields: Russian citizen identity; location and emergency facts; Uzbekistan authority involved; needed support; attachments and contact person.
+
+Section 16. Marriage / family-status checklist.
+Use for marriage registration, divorce, child issues, alimony, civil-status certificates or spouse consent.
+Source basis: Family Code; Civil Code; Appeals Law.
+Template fields: parties, citizenship, passports and addresses; event; foreign documents; legalization/translation; competent body; Russian-specific marital-status and passport documents.
+
+Section 17. Citizenship / passport / statelessness checklist.
+Use for Uzbekistan citizenship, loss/termination, child citizenship, passport/documentation question or statelessness.
+Source basis: Citizenship Law; Constitution; Law on Legal Status of Foreign Citizens and Stateless Persons.
+Template fields: citizenship history; birthplace/parents/marriage/residence; existing foreign citizenship; requested result; evidence and risk flags.
+
+Section 18. Personal data complaint.
+Use for unlawful data collection, publication, refusal to correct/delete data, localization issue or platform leak.
+Source basis: Personal Data Law; Information/digital-service context; administrative liability context.
+Template fields: data subject; operator/controller; data categories; violation; evidence; demand for access, correction, deletion, restriction, explanation or authority complaint.
+
+Section 19. Tourism service complaint / insurance checklist.
+Use for package tour, hotel, guide, transport, accident, denied service or tourist insurance issue.
+Source basis: Tourism Law; Consumer Protection Law; Civil Code.
+Template fields: tourist and booking data; provider; breach/loss/incident; evidence and medical/insurance documents; remedy and authority complaint.
+
+Section 20. Investment / permits / e-commerce checklist.
+Use for foreign investment, LLC/business participation, online trade, advertising, permits, real estate or commercial dispute.
+Source basis: Investments Law; Entrepreneurship Guarantees Law; LLC Law; E-commerce Law; Tax Code.
+Template fields: investor/business participant and citizenship/residence; transaction; company/permit/registration checks; tax, currency/payment and beneficial-owner risk checks; documents and correspondence.
