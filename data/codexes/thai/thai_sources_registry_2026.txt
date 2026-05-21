@@ -213,6 +213,42 @@ Imported sources:
   sections: 289
   url: https://laksong.metro.police.go.th/api-console/public/media/a46c4c2c695fe181be951770868789091.pdf
   note: English reference translation of Thai land traffic law.
+- Royal Thai Embassy in Moscow: general visa information
+  file: thai_visa_general_moscow_russians.txt
+  category: Visa templates and checklists
+  sections: 2
+  url: https://moscow.thaiembassy.org/en/page/84779-general-visa-information?menu=5d843dbc15e39c1abc00588d
+  note: Official Moscow embassy visa information, relevant to Russian citizens and residents.
+- Royal Thai Embassy in Moscow: tourist visa requirements
+  file: thai_visa_tourist_moscow_russians.txt
+  category: Visa templates and checklists
+  sections: 1
+  url: https://moscow.thaiembassy.org/en/publicservice/83954-2-tourist-visa?cate=5d843b6a15e39c1abc0051a3
+  note: Official Moscow embassy tourist visa requirements and document checklist.
+- Royal Thai Embassy in Moscow: applying for a visa
+  file: thai_visa_applying_moscow_russians.txt
+  category: Visa templates and checklists
+  sections: 1
+  url: https://moscow.thaiembassy.org/en/page/cate-7699-applying-for-a-visa?menu=5d843dba15e39c1abc005796
+  note: Official Moscow embassy visa category index for Russian applicants/residents.
+- Immigration forms: TM.7, TM.8, TM.30, TM.47 and related forms
+  file: thai_immigration_download_forms.txt
+  category: Visa templates and checklists
+  sections: 1
+  url: https://www.samutprakanimmigration.go.th/download-forms/
+  note: Immigration-office forms page with extension, re-entry, 90-day reporting and residence certificate forms.
+- Buying a condominium in Thailand as a foreigner
+  file: thai_foreign_condo_purchase_guide.txt
+  category: Foreign real estate
+  sections: 1
+  url: https://www.thailandlawonline.com/thai-real-estate-law/buying-a-condominium-in-thailand-as-a-foreigner-what-you-need-to-know
+  note: Practical foreign-condominium purchase guide cross-referencing Condominium Act requirements.
+- Condominium Act foreign ownership rules and 2008 amendment text
+  file: thai_condominium_act_foreign_ownership.txt
+  category: Foreign real estate
+  sections: 214
+  url: https://www.samuiforsale.com/law-texts/new-thailand-condominium-act-2008.html
+  note: English reference translation of Condominium Act ownership provisions and amendments.
 
 Failed sources:
 - none

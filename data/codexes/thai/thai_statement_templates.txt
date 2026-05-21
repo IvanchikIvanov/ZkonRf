@@ -64,3 +64,115 @@ Template fields:
 4. Problem: overcharge, refusal, unsafe driving, accident, lost property, ticket/reservation issue, misconduct.
 5. Evidence: receipt, ticket, photos, GPS route, video, witnesses.
 6. Requested action: investigation, refund, penalty/disciplinary action, assistance recovering property, written response.
+
+Section 6. Visa application checklist for a Russian citizen applying through the Royal Thai Embassy in Moscow or Thai e-Visa.
+Use for tourist visa, long-stay visa, DTV or other visa-route questions where the applicant is a Russian citizen or resident applying from Russia.
+Source basis: Royal Thai Embassy in Moscow visa pages and official Thai e-Visa portal.
+Template fields:
+1. Applicant: full name as in passport, Russian passport number, date of birth, nationality, phone, email, current address.
+2. Visa route: visa exemption, tourist visa, non-immigrant visa, Destination Thailand Visa, retirement, education, work, family, or other category.
+3. Trip facts: expected entry date, length of stay, city/province in Thailand, accommodation, previous Thai entries and overstays if any.
+4. Passport and identity documents: passport validity, passport bio page, photo, prior Thai visas/stamps.
+5. Financial/travel evidence: bank statement, ticket/itinerary, hotel booking or invitation, insurance if required for the route, employment/self-employment or sponsor documents if relevant.
+6. Russian-specific filing details: whether applying via Royal Thai Embassy in Moscow or Thai e-Visa, whether the applicant is physically in Russia/resident there, whether documents need translation.
+7. Questions for embassy/visa support: confirm correct visa category, confirm required documents for Russian citizens, confirm processing time and fee, confirm whether visa exemption is enough for the planned stay.
+
+Draft request:
+Please confirm the appropriate Thai visa category for the applicant described above and the current document checklist for a Russian citizen/resident applying from Russia. The applicant requests confirmation before submission because the planned stay and purpose are as described in this statement.
+
+Section 7. Extension of stay in Thailand (TM.7) checklist.
+Use when a Russian citizen or other foreigner is already in Thailand and needs to extend permission to stay.
+Source basis: Thai Immigration form TM.7 / immigration forms pages.
+Template fields:
+1. Applicant and passport details.
+2. Current entry: date of entry, immigration checkpoint, visa type or visa-exempt entry, permitted-until date, TM.30/address status if available.
+3. Requested extension: number of days/months, reason for extension, planned departure or continuing stay plan.
+4. Address in Thailand: hotel/condo/house, landlord or manager contact, province immigration office.
+5. Supporting documents: passport copies, entry stamp, photo, application form, fee receipt, accommodation evidence, TM.30 receipt if required locally, financial/sponsor/medical/school/work documents if relevant.
+6. Risk flags: overstay risk, passport expiring soon, missing TM.30, multiple recent extensions, mismatch between visa purpose and actual activity.
+
+Draft wording:
+I request an extension of temporary stay in the Kingdom of Thailand for the reason and period stated above. I confirm that the address and supporting documents are accurate and that I understand the conditions of temporary stay.
+
+Section 8. Re-entry permit (TM.8) checklist.
+Use when a foreigner in Thailand has a current extension or permission to stay and needs to leave Thailand without losing that permission.
+Source basis: Thai Immigration form TM.8 / immigration forms pages.
+Template fields:
+1. Applicant and passport details.
+2. Current permission to stay: visa/extension type, permitted-until date, issuing immigration office.
+3. Travel plan: departure date, return date, destination country, reason for travel.
+4. Permit requested: single re-entry or multiple re-entry.
+5. Supporting documents: passport, photo, copies of passport bio page, visa/extension stamp, departure card/entry record if applicable, application fee.
+
+Draft wording:
+I request a re-entry permit for the travel described above so that my current permission to stay in Thailand remains valid upon return.
+
+Section 9. TM.30 address notification / 90-day report (TM.47) checklist.
+Use for questions about address reporting, landlord/hotel reporting, or 90-day notification.
+Source basis: Thai Immigration forms TM.30 and TM.47 / immigration forms pages.
+Template fields for TM.30:
+1. House owner, possessor, hotel manager or landlord details.
+2. Foreigner details: name, nationality, passport, arrival date, visa/permission type.
+3. Address: house/condo/hotel name, room/unit, district, province.
+4. Evidence: passport copy, entry stamp, rental/booking evidence, owner/manager documents if required by local office.
+Template fields for TM.47:
+1. Foreigner details and passport.
+2. Current address in Thailand.
+3. Date of last entry and date when 90-day period is reached.
+4. Prior 90-day receipt if any.
+
+Section 10. Residence certificate request for visa, driving licence, bank, or property transaction.
+Use when a foreigner needs proof of address in Thailand.
+Source basis: immigration forms pages and local immigration practice.
+Template fields:
+1. Applicant identity and passport.
+2. Purpose: driving licence, bank account, condominium purchase/transfer, vehicle purchase, school/work, other.
+3. Address in Thailand and evidence of residence.
+4. Supporting documents: passport copies, photo, TM.30/address evidence, lease or owner letter if available.
+Draft wording:
+I request a residence certificate confirming my current address in Thailand for the purpose stated above.
+
+Section 11. Foreign condominium purchase due-diligence checklist for a Russian citizen.
+Use before paying deposit or signing SPA/reservation for a Thai condominium.
+Source basis: Condominium Act, Land Department materials and Thailand.go.th foreign-property guidance.
+Template fields:
+1. Buyer: Russian citizen passport details, Thai address/contact, source of funds.
+2. Unit/project: project name, juristic person, room/unit number, floor, area, title details, seller/developer details.
+3. Foreign quota: written confirmation that the unit can be transferred under the foreign ownership quota and that total foreign ownership does not exceed the legal limit.
+4. Funds: foreign currency remittance evidence, bank letter/FET or equivalent bank certificate, sender/beneficiary consistency with buyer and purchase price.
+5. Title and encumbrances: land office title search, mortgage/lease/servitude/litigation check, developer permits for new projects.
+6. Contract review: price, deposit, transfer date, taxes/fees split, default clauses, refund conditions, furniture list, sinking fund/common fee, handover defects.
+7. Russian-specific risk checks: payment route from Russian bank or third country, sanctions/bank transfer delays, currency conversion evidence, Russian tax/currency-control advice if needed.
+8. Requested action: review documents, confirm foreign freehold eligibility, identify missing documents before deposit/transfer.
+
+Draft request:
+Please review the condominium transaction described above before payment or transfer. The key issues are foreign quota eligibility, clean title, lawful foreign-source funds evidence, contract risks, and documents required at the Land Office for registration in the buyer's name.
+
+Section 12. Foreign real-estate lease / villa / house-on-land checklist.
+Use when a foreigner, including a Russian citizen, wants to lease land/house/villa or structure a long-term residence without owning land.
+Source basis: Land Code, Civil and Commercial Code lease rules, Thailand.go.th foreign land-ownership guidance.
+Template fields:
+1. Lessee/buyer: passport, nationality, Thai address/contact.
+2. Property: land title type, owner, location, buildings, access road, utilities, zoning or hotel/villa-use issues.
+3. Legal structure: lease term, renewal promises, usufruct/superficies/servitude if proposed, company/nominee structure warning.
+4. Registration: whether lease over three years must be registered at Land Office, taxes/fees, who signs and pays.
+5. Due diligence: owner title, mortgages/encumbrances, spouse consent, building permits, access rights, developer/agent authority.
+6. Risk flags: nominee Thai company, promise of foreign land ownership, unregistered long lease, unclear renewal, prepaid rent without registration, land title below Chanote/Nor Sor 3 Gor.
+
+Draft request:
+Please review the proposed lease/property structure for compliance with Thai restrictions on foreign land ownership and identify documents needed before signing or paying deposit.
+
+Section 13. Complaint or demand letter to real-estate agent, developer, landlord, or seller.
+Use for deposit refusal, misleading foreign-quota promise, construction defect, delayed transfer, rental deposit dispute, or failed property service.
+Recipient: agent/developer/landlord/seller, with possible escalation to consumer/tourism/land-office/lawyer channels depending on facts.
+Template fields:
+1. Claimant and respondent details.
+2. Contract/reservation/lease details: date, property, unit, amount paid, payment proof.
+3. Misconduct/problem: failure to transfer, false foreign-quota statement, defect, delay, refusal to refund deposit, unauthorized fee, missing documents.
+4. Evidence: reservation form, SPA/lease, receipts, chats, advertisements, photos, Land Office or juristic person letters.
+5. Legal basis to mention: consumer protection/unfair terms, Civil and Commercial Code contract principles, Condominium Act foreign ownership rules where relevant.
+6. Demand: refund, document delivery, repair, transfer by date, cancellation, compensation, written explanation.
+7. Deadline and escalation: set a reasonable response date and reserve rights to file complaint or seek legal action.
+
+Draft wording:
+I request that you resolve the issue described above by the stated deadline. If no satisfactory response is received, I reserve all rights to submit complaints to the competent Thai authorities and to seek legal remedies.

@@ -88,7 +88,10 @@ def test_statement_templates_are_parser_compatible(tmp_path: Path):
 
     parsed = parse_codex_file(tmp_path / "thai_statement_templates.txt", tmp_path)
 
-    assert len(parsed) == 5
+    assert len(parsed) == 13
     assert parsed[0]["country"] == "thai"
     assert "Consumer complaint to the Office of the Consumer Protection Board" in parsed[0]["text"]
     assert "Tourist Police report" in parsed[2]["text"]
+    assert "Visa application checklist for a Russian citizen" in parsed[5]["text"]
+    assert "Foreign condominium purchase due-diligence checklist" in parsed[10]["text"]
+    assert "Russian-specific risk checks" in parsed[10]["text"]
