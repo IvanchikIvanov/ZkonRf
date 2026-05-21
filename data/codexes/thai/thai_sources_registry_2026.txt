@@ -111,6 +111,108 @@ Imported sources:
   sections: 1
   url: https://complaint-center.tourismthailand.org/en/p/other-complaints
   note: Official tourism complaint category page referencing Department of Land Transport complaint contacts.
+- Revenue Code, Title 1 General provisions
+  file: thai_revenue_code_title_1_general.txt
+  category: Tax
+  sections: 23
+  url: https://www.rd.go.th/english/37694.html
+  note: Revenue Department English publication; Thai version controls for official use.
+- Revenue Code, Title 2 Revenue Taxes, Chapter 1 General provisions
+  file: thai_revenue_code_title_2_general.txt
+  category: Tax
+  sections: 28
+  url: https://www.rd.go.th/english/37698.html
+  note: Revenue Department English publication; Thai version controls for official use.
+- Revenue Code, assessment tax procedures
+  file: thai_revenue_code_assessment.txt
+  category: Tax
+  sections: 31
+  url: https://www.rd.go.th/english/37744.html
+  note: Revenue Department English publication; Thai version controls for official use.
+- Revenue Code, income tax
+  file: thai_revenue_code_income_tax.txt
+  category: Tax
+  sections: 65
+  url: https://www.rd.go.th/english/37748.html
+  note: Revenue Department English publication; Thai version controls for official use.
+- Revenue Code, value added tax
+  file: thai_revenue_code_vat.txt
+  category: Tax
+  sections: 110
+  url: https://www.rd.go.th/english/37718.html
+  note: Revenue Department English publication; Thai version controls for official use.
+- Revenue Code, specific business tax
+  file: thai_revenue_code_sbt.txt
+  category: Tax
+  sections: 21
+  url: https://www.rd.go.th/english/37752.html
+  note: Revenue Department English publication; Thai version controls for official use.
+- Revenue Code, stamp duty
+  file: thai_revenue_code_stamp_duty.txt
+  category: Tax
+  sections: 67
+  url: https://www.rd.go.th/english/37758.html
+  note: Revenue Department English publication; Thai version controls for official use.
+- Act Promulgating the Land Code B.E. 2497 (1954), update 2008
+  file: thai_land_code.txt
+  category: Land and real estate
+  sections: 214
+  url: https://www.thailandlawonline.com/thai-real-estate-law/thai-land-law-land-code-act
+  note: Office of the Council of State/Krisdika English reference translation.
+- Condominium Act B.E. 2522 (1979), 2008 amendment reference
+  file: thai_condominium_act.txt
+  category: Land and real estate
+  sections: 214
+  url: https://www.samuiforsale.com/law-texts/new-thailand-condominium-act-2008.html
+  note: Department of Lands-hosted English unofficial translation of the 2008 amendment reference.
+- Labour Protection Act B.E. 2541 (1998), revised 2019
+  file: thai_labour_protection_act.txt
+  category: Labour
+  sections: 243
+  url: https://www.samuiforsale.com/law-texts/labour-protection-act.html
+  note: Ministry of Labour regional office PDF; English/Thai labour protection text.
+- Royal Ordinance concerning Management of Employment of Foreign Workers B.E. 2560 (2017)
+  file: thai_foreign_workers_emergency_decree.txt
+  category: Labour and immigration
+  sections: 97
+  url: https://www.doe.go.th/prd/assets/upload/files/sukhothai_th/928cb9d2c6e07cd3e5812a43993a0fdd.pdf
+  note: ILO NATLEX record for foreign-worker management legislation.
+- Immigration Act B.E. 2522 (1979)
+  file: thai_immigration_act.txt
+  category: Immigration
+  sections: 193
+  url: https://www.samutprakanimmigration.go.th/downloads/Immigration_Act.pdf
+  note: Refworld English translation; comments note later Thai amendments.
+- Foreign Business Act B.E. 2542 (1999)
+  file: thai_foreign_business_act.txt
+  category: Business and investment
+  sections: 79
+  url: https://investmentpolicy.unctad.org/investment-laws/laws/589/print/3
+  note: UNCTAD Investment Policy Hub English text.
+- Tourism Business and Guide Act B.E. 2551 (2008)
+  file: thai_tourism_business_and_guide_act.txt
+  category: Tourism
+  sections: 1
+  url: https://osos.boi.go.th/One-Stop/faq-group/200/Setting-up-Tourism-Business/
+  note: Office of the Council of State/Krisdika English reference translation linked by BOI OSOS.
+- Hotel Act B.E. 2547 (2004)
+  file: thai_hotel_act.txt
+  category: Tourism and accommodation
+  sections: 133
+  url: https://www.samuiforsale.com/law-texts/thailand-hotel-act-2004-translation.html
+  note: English reference translation; official Thai Royal Gazette text controls.
+- Air Navigation Act B.E. 2497 (1954), consolidated English translation
+  file: thai_air_navigation_act.txt
+  category: Transport
+  sections: 1
+  url: https://doa.airports.go.th/th/gov_law/21/478.html
+  note: Civil Aviation Authority of Thailand consolidated English translation.
+- Land Traffic Act B.E. 2522 (1979)
+  file: thai_land_traffic_act.txt
+  category: Transport
+  sections: 289
+  url: https://laksong.metro.police.go.th/api-console/public/media/a46c4c2c695fe181be951770868789091.pdf
+  note: English reference translation of Thai land traffic law.
 
 Failed sources:
 - none

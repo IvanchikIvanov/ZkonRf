@@ -80,6 +80,7 @@ def test_thailand_procedure_codes_normalize_as_procedural():
     assert legal_scope_service.normalize_codex_key("thai_criminal_procedure_code") == "procedural"
     assert legal_scope_service.normalize_codex_key("thai_civil_procedure_overview") == "procedural"
     assert legal_scope_service.normalize_codex_key("thai_civil_commercial_code_part_1") == "civil"
+    assert legal_scope_service.normalize_codex_key("thai_revenue_code_income_tax") == "tax"
 
 
 def test_statement_templates_are_parser_compatible(tmp_path: Path):

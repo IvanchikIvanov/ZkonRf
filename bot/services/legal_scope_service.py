@@ -225,7 +225,7 @@ class LegalScopeService:
             "koap": ("коап", " koap ", "административ", "admin"),
             "family": ("семейн", " sk ", "family"),
             "consumer": ("потреб", "зпп", "zpp", "2300", "consumer"),
-            "tax": ("налог", " nk ", "tax"),
+            "tax": ("налог", " nk ", "tax", "revenue"),
             "housing": ("жилищ", " jk ", "housing"),
         }
         padded = f" {normalized} "
