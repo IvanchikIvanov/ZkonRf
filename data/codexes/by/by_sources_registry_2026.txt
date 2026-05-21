@@ -1,0 +1,164 @@
+Belarus legal sources registry (2026-05-22)
+Primary source is the National Legal Internet Portal of Belarus / NCLI services.
+Verify current legal force against official Belarus text before filing or court use.
+
+Imported sources:
+- Constitution of the Republic of Belarus
+  file: by_constitution.txt
+  category: Core constitutional law
+  sections: 152
+  url: https://pravo.by/document/?guid=3871&p0=V19402875
+  note: Official text from the National Legal Internet Portal of Belarus.
+- Civil Code of the Republic of Belarus
+  file: by_civil_code.txt
+  category: Core codes
+  sections: 1301
+  url: https://pravo.by/document/?guid=3871&p0=hk9800218
+  note: Civil-law basis for contracts, obligations, property and damages.
+- Civil Procedure Code of the Republic of Belarus
+  file: by_civil_procedure_code.txt
+  category: Procedure
+  sections: 1085
+  url: https://pravo.by/document/?guid=3871&p0=hk9900238
+  note: Civil court procedure and procedural remedies.
+- Criminal Code of the Republic of Belarus
+  file: by_criminal_code.txt
+  category: Core codes
+  sections: 981
+  url: https://pravo.by/document/?guid=3871&p0=hk9900275
+  note: Criminal liability and offences.
+- Criminal Procedure Code of the Republic of Belarus
+  file: by_criminal_procedure_code.txt
+  category: Procedure
+  sections: 1158
+  url: https://pravo.by/document/?guid=3871&p0=hk9900295
+  note: Criminal complaints, reports and investigation procedure.
+- Labour Code of the Republic of Belarus
+  file: by_labour_code.txt
+  category: Labour
+  sections: 833
+  url: https://pravo.by/document/?guid=3871&p0=hk9900296
+  note: Employment contracts, workers' rights and labour disputes.
+- Code of the Republic of Belarus on Marriage and Family
+  file: by_family_code.txt
+  category: Family
+  sections: 517
+  url: https://pravo.by/document/?guid=3871&p0=hk9900278
+  note: Marriage, divorce, family status, children and civil-status context.
+- Land Code of the Republic of Belarus
+  file: by_land_code.txt
+  category: Land and real estate
+  sections: 221
+  url: https://pravo.by/document/?guid=3871&p0=hk0800425
+  note: Land rights and land-use rules.
+- Housing Code of the Republic of Belarus
+  file: by_housing_code.txt
+  category: Land and real estate
+  sections: 375
+  url: https://pravo.by/document/?guid=3871&p0=hk1200428
+  note: Housing rights, residential premises and housing-use rules.
+- Code of the Republic of Belarus on Administrative Offences
+  file: by_administrative_offences_code.txt
+  category: Administrative offences
+  sections: 808
+  url: https://pravo.by/document/?guid=3871&p0=hk2100091
+  note: Administrative liability, including migration and consumer-related penalties.
+- Procedural-Executive Code of Administrative Offences of Belarus
+  file: by_administrative_procedure_execution_code.txt
+  category: Administrative procedure
+  sections: 457
+  url: https://pravo.by/document/?guid=3871&p0=hk2100092
+  note: Administrative-offence proceedings and execution procedure.
+- Tax Code of the Republic of Belarus, General Part
+  file: by_tax_code_general_part.txt
+  category: Tax
+  sections: 116
+  url: https://pravo.by/document/?guid=3871&p0=hk0200166
+  note: General tax rules and tax obligations.
+- Tax Code of the Republic of Belarus, Special Part
+  file: by_tax_code_special_part.txt
+  category: Tax
+  sections: 310
+  url: https://pravo.by/document/?guid=3871&p0=hk0900071
+  note: Specific taxes, duties and special tax regimes.
+- Law on Citizenship of the Republic of Belarus
+  file: by_citizenship_law.txt
+  category: Immigration and citizenship
+  sections: 45
+  url: https://pravo.by/document/?guid=3871&p0=H10200136
+  note: Citizenship acquisition, termination, passports and citizenship status.
+- Law on the Legal Status of Foreign Citizens and Stateless Persons
+  file: by_foreigners_legal_status_law.txt
+  category: Immigration and visas
+  sections: 85
+  url: https://pravo.by/document/?guid=3871&p0=H11000105
+  note: Entry, stay, residence, registration and rights of foreigners.
+- Law on External Labour Migration
+  file: by_external_labour_migration_law.txt
+  category: Labour
+  sections: 1
+  url: https://etalonline.by/document/?regnum=H11000225
+  note: Foreign labour migration and employment-related migration rules.
+- Law on Protection of Consumer Rights
+  file: by_consumer_protection_law.txt
+  category: Consumer protection
+  sections: 51
+  url: https://pravo.by/document/?guid=3871&p0=H10200090
+  note: Consumer complaints, refunds, defects, services and seller duties.
+- Law on State Registration of Immovable Property, Rights and Transactions
+  file: by_real_estate_registration_law.txt
+  category: Land and real estate
+  sections: 80
+  url: https://pravo.by/document/?guid=3871&p0=H10200133
+  note: Registration of immovable property, rights, encumbrances and transactions.
+- Law on Personal Data Protection
+  file: by_personal_data_law.txt
+  category: Digital services
+  sections: 21
+  url: https://pravo.by/document/?guid=3871&p0=H12100099
+  note: Personal data processing, consent, subject rights and complaints.
+- Law on Tourism
+  file: by_tourism_law.txt
+  category: Tourism and travel complaints
+  sections: 42
+  url: https://pravo.by/document/?guid=3871&p0=H12100129
+  note: Tourism services, tour operators, guides and tourist rights context.
+- Law on Investments
+  file: by_investments_law.txt
+  category: Business and investment
+  sections: 52
+  url: https://pravo.by/document/?guid=3871&p0=H11300053
+  note: Investor rights, investment guarantees and investment activity context.
+- Law on State Regulation of Trade and Public Catering
+  file: by_trade_food_service_law.txt
+  category: Business and consumer protection
+  sections: 29
+  url: https://pravo.by/document/?guid=3871&p0=H11400128
+  note: Retail, catering, trade and practical consumer-commerce context.
+- Law on Information, Informatization and Information Protection
+  file: by_information_protection_law.txt
+  category: Digital services
+  sections: 46
+  url: https://pravo.by/document/?guid=3871&p0=H10800455
+  note: Information systems, access to information and information protection.
+- Law on Electronic Document and Electronic Digital Signature
+  file: by_electronic_document_signature_law.txt
+  category: Digital services
+  sections: 34
+  url: https://pravo.by/document/?guid=3871&p0=H10900113
+  note: Electronic documents, digital signatures and online transactions.
+- Law on Appeals of Citizens and Legal Entities
+  file: by_appeals_law.txt
+  category: Administrative complaints
+  sections: 33
+  url: https://pravo.by/document/?guid=3871&p0=H11100300
+  note: Administrative complaint/request format, deadlines and competent bodies.
+- Decree on Documentation of the Population of Belarus
+  file: by_documentation_population_decree.txt
+  category: Immigration and citizenship
+  sections: 1
+  url: https://pravo.by/document/?guid=3871&p0=P30800294
+  note: Passports and identity documents, useful for citizenship/passport questions.
+
+Failed sources:
+- none
