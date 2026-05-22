@@ -2,6 +2,7 @@
 import asyncio
 import json
 import math
+import os
 import re
 from pathlib import Path
 from typing import List, Dict
@@ -10,6 +11,43 @@ from bot.utils.logger import log
 from bot.services.embeddings_service import embeddings_service
 from bot.services.vector_db import vector_db
 from bot.services.legal_scope_service import legal_scope_service
+
+
+async def generate_embeddings_with_retries(texts: List[str]) -> List[List[float]]:
+    """Generate embeddings with retries for transient OpenAI/proxy failures."""
+    max_attempts = int(os.getenv("EMBEDDING_RETRY_ATTEMPTS", "5"))
+    base_delay = float(os.getenv("EMBEDDING_RETRY_BASE_DELAY", "2"))
+
+    for attempt in range(1, max_attempts + 1):
+        try:
+            return await embeddings_service.generate_embeddings(texts)
+        except Exception as exc:
+            if attempt >= max_attempts:
+                log.error(
+                    f"Embeddings failed after {max_attempts} attempts; "
+                    "saved rows remain in pgvector and the next run will skip them."
+                )
+                raise
+
+            delay = min(base_delay * (2 ** (attempt - 1)), 60)
+            log.warning(
+                f"Embeddings attempt {attempt}/{max_attempts} failed: {exc}. "
+                f"Retrying in {delay:.1f}s..."
+            )
+            await asyncio.sleep(delay)
+
+    raise RuntimeError("unreachable embeddings retry state")
+
+
+def save_indexed_article(article: Dict[str, object], existing_ids: set[str]) -> bool:
+    """Persist one indexed article/chunk immediately so restarts can resume."""
+    article_id = str(article["id"])
+    if article_id in existing_ids:
+        return False
+
+    vector_db.add_articles([article])
+    existing_ids.add(article_id)
+    return True
 
 
 def extract_text_from_odt(file_path: Path) -> str:
@@ -346,8 +384,8 @@ async def process_codexes():
     max_tokens_per_chunk = 6000  # Запас от лимита 8192 токенов (уменьшено для безопасности)
     chars_per_token = 1.5  # Для русского текста примерно 1.5 символа = 1 токен (более точная оценка)
     max_chars_per_chunk = int(max_tokens_per_chunk * chars_per_token)  # ~9000 символов на чанк
-    articles_with_embeddings = []
     skipped_count = 0
+    added_count = 0
     
     for article in all_articles:
         # Формируем базовый ID статьи с учетом страны (без чанков)
@@ -425,7 +463,7 @@ async def process_codexes():
                 
                 log.info(f"Обработка чанка {chunk_num + 1}/{len(chunks)} статьи {article['article_number']} ({len(chunk_text)} символов, ~{int(len(chunk_text) / chars_per_token)} токенов)...")
                 
-                embeddings = await embeddings_service.generate_embeddings([chunk_text])
+                embeddings = await generate_embeddings_with_retries([chunk_text])
                 
                 # Сохраняем каждый чанк как отдельную запись с метаданными
                 chunk_article = {
@@ -442,7 +480,12 @@ async def process_codexes():
                     "chunk_number": chunk_num + 1,
                     "total_chunks": len(chunks)
                 }
-                articles_with_embeddings.append(chunk_article)
+                if save_indexed_article(chunk_article, existing_ids):
+                    added_count += 1
+                    log.info(
+                        f"Saved {chunk_id} to pgvector "
+                        f"(added={added_count}, skipped={skipped_count})"
+                    )
                 
         else:
             # Статья нормальной длины - обрабатываем целиком
@@ -454,41 +497,25 @@ async def process_codexes():
             
             log.info(f"Статья {article['article_number']}: {text_length} символов (~{int(estimated_tokens)} токенов) → обрабатываем целиком")
             
-            embeddings = await embeddings_service.generate_embeddings([text])
+            embeddings = await generate_embeddings_with_retries([text])
             
             article["embedding"] = embeddings[0]
             article["id"] = base_id
-            articles_with_embeddings.append(article)
+            if save_indexed_article(article, existing_ids):
+                added_count += 1
+                log.info(
+                    f"Saved {base_id} to pgvector "
+                    f"(added={added_count}, skipped={skipped_count})"
+                )
     
     if skipped_count > 0:
         log.info(f"Пропущено {skipped_count} уже обработанных статей/чанков")
     
-    # Проверка на дубликаты ID перед добавлением
-    seen_ids = set()
-    unique_articles = []
-    duplicates_count = 0
-    
-    for article in articles_with_embeddings:
-        article_id = article["id"]
-        if article_id in seen_ids:
-            duplicates_count += 1
-            log.warning(f"Пропущен дубликат ID: {article_id}")
-        else:
-            seen_ids.add(article_id)
-            unique_articles.append(article)
-    
-    if duplicates_count > 0:
-        log.warning(f"Найдено {duplicates_count} дубликатов, они будут пропущены")
-    
-    if not unique_articles:
-        log.info("Нет новых статей для добавления. Все статьи уже обработаны.")
+    if added_count == 0:
+        log.info("No new articles to add. All articles are already processed.")
         return
-    
-    # Добавление в векторную БД
-    log.info(f"Добавление {len(unique_articles)} уникальных статей в векторную БД...")
-    vector_db.add_articles(unique_articles)
-    
-    log.info(f"Обработка завершена. Добавлено {len(unique_articles)} статей")
+
+    log.info(f"Processing complete. Added {added_count} articles/chunks")
 
 
 if __name__ == "__main__":
