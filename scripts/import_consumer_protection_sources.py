@@ -24,17 +24,20 @@ class Source:
 SOURCES: List[Source] = [
     Source(
         filename="zpp_pravo_gov_portal",
-        title="Официальный портал правовой информации (замена: Consultant+; pravo.gov.ru с этой сети недоступен)",
-        url="https://www.consultant.ru/",
+        title="Официальный портал правовой информации (publication.pravo.gov.ru; HTTP — при сбое TLS на HTTPS)",
+        url="https://publication.pravo.gov.ru/",
         category="Официальный источник",
-        alt_urls=("https://zpp.rospotrebnadzor.ru/",),
+        alt_urls=(
+            "http://publication.pravo.gov.ru/",
+            "https://zpp.rospotrebnadzor.ru/",
+        ),
     ),
     Source(
         filename="zpp_pravo_gov_codex",
-        title="Раздел кодексов (замена: справочник Consultant+; pravo.gov.ru/codex с этой сети недоступен)",
-        url="https://www.consultant.ru/law/ref/",
+        title="Раздел кодексов (pravo.gov.ru; HTTP — при сбое TLS на HTTPS)",
+        url="http://publication.pravo.gov.ru/search",
         category="Официальный источник",
-        alt_urls=("https://sudact.ru/law/koap/",),
+        alt_urls=("https://www.consultant.ru/law/ref/", "https://sudact.ru/law/koap/"),
     ),
     Source(
         filename="zpp_law_2300_consultant",
@@ -495,6 +498,17 @@ def detect_encoding(response: httpx.Response) -> str:
     return "utf-8"
 
 
+def _pravo_http_fallback(url: str) -> str | None:
+    """Для publication.pravo.gov.ru / pravo.gov.ru: зеркало на http (TLS в части окружений падает)."""
+    if url.startswith("https://publication.pravo.gov.ru"):
+        return "http://publication.pravo.gov.ru" + url[len("https://publication.pravo.gov.ru") :]
+    if url.startswith("https://www.pravo.gov.ru"):
+        return "http://www.pravo.gov.ru" + url[len("https://www.pravo.gov.ru") :]
+    if url.startswith("https://pravo.gov.ru"):
+        return "http://pravo.gov.ru" + url[len("https://pravo.gov.ru") :]
+    return None
+
+
 def download_text(client: httpx.Client, source: Source) -> tuple[str, str]:
     """Скачивает и очищает текст документа. Перебирает url и alt_urls."""
     urls = (source.url,) + source.alt_urls
@@ -528,6 +542,25 @@ def download_text(client: httpx.Client, source: Source) -> tuple[str, str]:
                 log.warning(
                     f"Не удалось скачать {fetch_url} (попытка {attempt}/3, источник {source.filename}): {exc}"
                 )
+                alt_http = _pravo_http_fallback(fetch_url)
+                if alt_http and alt_http != fetch_url:
+                    try:
+                        response = client.get(alt_http, follow_redirects=True)
+                        response.raise_for_status()
+                        encoding = detect_encoding(response)
+                        try:
+                            raw_html = response.content.decode(encoding, errors="replace")
+                        except Exception:
+                            raw_html = response.text
+                        cleaned = strip_html(raw_html)
+                        cleaned = extract_relevant_text(cleaned)
+                        if len(cleaned) < 200:
+                            raise ValueError("Слишком мало текста после очистки")
+                        log.info(f"Использован HTTP-fallback pravo.gov для {source.filename}: {alt_http}")
+                        return cleaned, alt_http
+                    except Exception as exc2:
+                        last_error = exc2
+                        log.warning(f"HTTP-fallback pravo также не удался: {exc2}")
     raise RuntimeError(f"Ошибка загрузки {source.filename} (все URL исчерпаны): {last_error}")
 
 
